@@ -20,14 +20,6 @@
          <b>Home</b> -> Privacy & Policy
       </div>
    </div>
-   <section class="container mt-3">
-      <div class="row">
-         <div class="">
-            <h3 class="text-center">Privacy Policy</h3>
-         </div>
-      </div>
-   </section>
-
    <section class="container mt-5">
       <div class="row">
          <div class="col-12 col-lg-5">

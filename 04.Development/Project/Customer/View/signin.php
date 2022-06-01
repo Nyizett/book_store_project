@@ -19,7 +19,7 @@
 
 <body>
    <!-- nav -->
-   <nav class="navbar navbar-expand-lg bg-light ">
+   <!-- <nav class="navbar navbar-expand-lg bg-light ">
       <div class="container-fluid">
          <a class="navbar-brand font-color-primary ps-3 " href="#">
             <img src="../resource/img/main-logoNew.png" alt="main-logo" class="d-inline-block align-text-top main-logo">
@@ -76,7 +76,7 @@
             </div>
          </div>
       </div>
-   </nav>
+   </nav> -->
    <!-- nav -->
    <div class="wrapper">
       <div class="col-12 col-md-6 mx-auto">
@@ -104,7 +104,7 @@
    </div>
 
    <!-- footer -->
-   <footer id="footer" class="container-fluid commom-bg">
+   <!-- <footer id="footer" class="container-fluid commom-bg">
       <div class="row">
          <div class="col-12 col-lg-4 ps-5 pt-4">
             <div class="">
@@ -212,10 +212,11 @@
             </div>
          </div>
       </div>
-   </footer>
+   </footer> -->
    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
    <script src="../resource/UI Library/fontawesome-free/js/all.min.js"></script>
+   <script src="../resource/UI Library/bootstrap-5.0.2-dist/js/bootstrap.js"></script>
    <script type="text/javascript">
       $(".slider").slick({
          prevArrow: '<span class="priv_arrow btn  btn-primary "><i class="fas fa-angle-left"></i></span>',
