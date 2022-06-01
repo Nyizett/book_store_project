@@ -1,36 +1,41 @@
-*{
-    margin: 0;
-    padding: 0;
+:root {
+   --primary-darkblue: #1f4287;
+   --secondary-lightblue: #1f4287;
+   --font-color1: #484343;
+   --font-color2: #595e68;
+   --font-color3: #2964da;
+   --yellow-icon: #f4d221;
 }
-.my-class{
-    font-family:Inria Sans;
+.my-class {
+   font-family: Inria Sans;
 }
 
 .wrapper {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #ccc;
+   height: 100vh;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #ccc;
 }
 
 .inner-left {
-    border: 30px solid blue;
-    border-right: none;
-    background-color: #fff;
+   border: 30px solid #1f4287;
+   /* border-color: var(--primary-darkblue); */
+
+   border-right: none;
+   background-color: #fff;
 }
 
 .inner-right {
-    border: 30px solid #fff;
-    border-left: none;
-    background-color: blue;
+   border: 30px solid #fff;
+   border-left: none;
+   background-color: var(--primary-darkblue);
 }
 
 @media (max-width: 768px) {
-
-    .inner-left,
-    .inner-right {
-        border: none;
-    }
+   .inner-left,
+   .inner-right {
+      border: none;
+   }
 }

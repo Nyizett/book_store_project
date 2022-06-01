@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,68 +11,15 @@
    <link rel="stylesheet" href="../resource/UI Library/slick/slick-theme.css">
    <link rel="stylesheet" href="../resource/UI Library/fontawesome-free/css/all.min.css">
    <link rel="stylesheet" href="../resource/UI Library/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+   <link rel="stylesheet" href="../resource/css/common.css">
 </head>
 
 <body>
-   <nav class="navbar navbar-expand-lg  position-fixed top-0 w-100 header">
-      <div class="container-fluid">
-         <a class="navbar-brand font-color-primary ps-3 " href="#">
-            <img src="../resource/img/logo.png" alt="main-logo" class="d-inline-block  main-logo">
-            <span class="my-fcolor ms-4 fw-bolder fs-4 border-bottom">စာ အုပ် ဆိုင်</span>
-         </a>
-         <button class="navbar-toggler font-color-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <ion-icon class="my-fcolor font-color-primary fs-2" name="menu-outline"></ion-icon>
-         </button>
-         <button class="categories border-white dropdown btn commom-bg ms-4">
-            <a class="text-decoration-none fs-6 dropdown-toggle  text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-               <ion-icon class="pe-2 pt-2" name="apps-outline"></ion-icon>
-               <span class="my-fcolor cat d-inlineblock text-center">Categories </span>
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-               <li><a class="dropdown-item" href="#">Language</a></li>
-               <li><a class="dropdown-item" href="#">Education</a></li>
-               <li><a class="dropdown-item" href="#">Novels</a></li>
-               <li><a class="dropdown-item" href="#">Technology</a></li>
-               <li><a class="dropdown-item" href="#">Cartoons</a></li>
-            </ul>
-         </button>
-         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto me-4 mb-2 mb-lg-0 ">
-               <li class="nav-item me-4">
-                  <a class="text-white nav-link  text-decoration-none fw-bold fs-6 border-bottom border-white" aria-current="page" href="#">Home</a>
-               </li>
-               <li class="nav-item me-4 ">
-                  <a class="text-white nav-link font-color-primary text-decoration-none fw-bold fs-6" href="#">Search</a>
-               </li>
-               <li class="nav-item me-4 ">
-                  <a class="text-white nav-link text-decoration-none fw-bold fs-6" href="#" tabindex="-1">Authors</a>
-               </li>
-               <li class="nav-item me-4">
-                  <a class="text-white nav-link  text-decoration-none fw-bold fs-6" href="#" tabindex="-1">Shops</a>
-               </li>
-
-               <li class="nav-item dropdown me-4 ">
-                  <a class="text-white nav-link  text-decoration-none fw-bold fs-6 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                     Contact us
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                     <li><a class="my-fcolor dropdown-item" href="#">View Profile</a></li>
-                     <li><a class="my-fcolor dropdown-item" href="#">Guide</a></li>
-                     <li><a class="my-fcolor dropdown-item" href="#">Servies</a></li>
-                     <li><a class="my-fcolor dropdown-item" href="#">Privacy and Policy</a></li>
-                     <li><a class="my-fcolor dropdown-item" href="#">FAQ's</a></li>
-                  </ul>
-               </li>
-            </ul>
-            <div class=" d-flex  justify-content-center align-items-center  font-color-primary ">
-               <ion-icon class="text-white fs-4 me-4" name="cart-outline"></ion-icon>
-               <ion-icon class="text-white fs-4 me-4 person-hover" name="person-outline"></ion-icon>
-               <ion-icon class="text-white fs-4" name="moon-outline"></ion-icon>
-            </div>
-
-         </div>
-      </div>
+   <!-- Header -->
+   <nav class="navbar navbar-expand-lg  position-fixed top-0 w-100 header" id="cum_navbar">
+      
    </nav>
+   <!-- Slider -->
    <section id="welcome-section" class="slider container">
       <div class="row pt-5 ">
          <div class="col-12 col-lg-6 ps-5 pb-5">
@@ -98,7 +44,7 @@
       </div>
    </section>
 
-   <section id="blueBox" class="container my-5">
+<section id="blueBox" class="container my-5">
       <div class="row pt-3">
          <div class="col-12 col-lg-4 content">
             <div class=" container commom-bg rounded">
@@ -149,9 +95,6 @@
          </div>
       </div>
    </section>
-
-
-
    <section class="container my-5 vh-100" id="newsBooks">
       <div class="row justify-content-evenly align-items-center ">
          <div class="my-5"></div>
@@ -274,8 +217,6 @@
          </div>
       </div>
    </section>
-
-
    <section class="container bg-lightBlue  my-5  " id="">
       <div class="row justify-content-evenly h-100 content ">
          <div class="my-5"></div>
@@ -407,9 +348,6 @@
          </div>
       </div>
    </section>
-
-
-
    <section class="container-fluid my-5 pt-5 vh-100">
       <div class="row">
          <div class="col-12">
@@ -440,7 +378,6 @@
                </div>
             </div>
          </div>
-
          <div class="col-12 col-lg-2 col-xl-2">
             <div class="card mt-5 card-width">
                <img src="../resource/img/book cover/jsEi.png" class="img-fluid w-75 mx-auto mt-3" alt="" />
@@ -512,8 +449,7 @@
                </div>
             </div>
          </div>
-
-         <div class="col-12 col-lg-4 col-xl-2 book-card-lg2">
+         <div lass="col-12 col-lg-4 col-xl-2 book-card-lg-2">
             <div class="card py-3 cardLg">
                <img src="../resource/img/book cover/jsEi.png" class="img-fluid w-75 mx-auto mt-3" alt="" />
                <div class="card-body d-flex flex-column justify-content-center align-items-center">
@@ -524,7 +460,6 @@
                      <i class="fa-solid fa-star"></i>
                      <i class="fa-solid fa-star"></i>
                   </small>
-
                   <div class="d-flex d justify-content-between align-items-center">
                      <p class="fw-bold mb-0 fs-3 font-color-primary">
                         Technology
@@ -535,10 +470,6 @@
          </div>
       </div>
    </section>
-
-
-
-
    <section class="container py-5">
       <div class="row">
          <div class="col-12 col-lg-6">
@@ -575,12 +506,8 @@
          </div>
       </div>
    </section>
-
-
-
    <section id="blueBox" class="container mt-5">
       <div class="row pt-3">
-
          <div class="col-12 col-lg-3  col-sm-12   ">
             <div class="container border rounded border-dark">
                <div class="row align-items-center justify-content-center">
@@ -596,7 +523,6 @@
                </div>
             </div>
          </div>
-
          <div class="col-12 col-lg-3  col-sm-12   ">
             <div class="container border rounded border-dark">
                <div class="row align-items-center justify-content-center">
@@ -612,8 +538,6 @@
                </div>
             </div>
          </div>
-
-
          <div class="col-12 col-lg-3  col-sm-12   ">
             <div class="container border rounded border-dark">
                <div class="row align-items-center justify-content-center">
@@ -629,8 +553,6 @@
                </div>
             </div>
          </div>
-
-
          <div class="col-12 col-lg-3  col-sm-12   ">
             <div class="container border rounded border-dark">
                <div class="row align-items-center justify-content-center">
@@ -646,16 +568,10 @@
                </div>
             </div>
          </div>
-
-
       </div>
    </section>
-
-
-
-
    <footer id="footer" class="container-fluid commom-bg  mt-5   ">
-      <div class="row">
+      <!-- <div class="row">
          <div class="col-12 col-lg-3 ps-5 pt-4">
             <div class="">
                <h2 class="text-white align-top">Paradise</h2>
@@ -760,7 +676,7 @@
                </div>
             </div>
          </div>
-      </div>
+      </div> -->
    </footer>
 
    <a href="#welcome-section" onclick="topFunction()" id="myBtn" class="btn btn-primary  rounded  position-fixed  scroll-to-top  scroll-to-top-d">
@@ -777,6 +693,8 @@
    <script src="../resource/UI Library/slick/slick.js"></script>
    <script src="../resource/UI Library/way_point/jquery.waypoints.js"></script>
    <script src="../resource/UI Library/counter_up/counter_up.js"></script>
+   <script src="../resource/js/common.js"></script>
+   <script src="../resource/js/footerCommon.js"></script>
    <script type="text/javascript">
       // Counter_Up
       $(".counter-one").counterUp({
