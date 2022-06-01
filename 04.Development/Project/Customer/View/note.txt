@@ -1,0 +1,6 @@
+hello
+http://localhost/paradise_BookStore/04.Development/Project/Customer/View/homepage.php
+
+
+
+

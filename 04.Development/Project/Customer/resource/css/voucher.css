@@ -1,0 +1,19 @@
+.header {
+    color: #1F4287;
+    background-color: #EBF1FD;
+}
+
+textarea {
+    resize: none;
+}
+
+.btn {
+    background-color: #1F4287;
+    color: white;
+}
+
+.btn:hover {
+    border: 1px solid #1F4287;
+    color: #1F4287;
+    background-color: white;
+}

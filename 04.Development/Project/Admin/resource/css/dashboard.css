@@ -1,0 +1,67 @@
+/* Dashboard */
+.div{
+    height: 16vh;
+    border-radius: 10px;
+    border: 1px solid  var(--dashboard-items-color);
+    background-color: var(--dashboard-items-color);
+    color: var( --color-white);
+}
+.iconic{
+    font-size: 3.5em;
+    color: black;
+}
+.admin-log{
+    border: none;
+}
+.box,.top-box{
+    padding-top: 3em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    cursor: pointer;
+}
+.box1{
+    width: 27%;
+    height: 18vh;
+    display: flex;
+    flex-direction: row;
+    padding-top: 1em;
+    justify-content:space-around;
+    color: white;
+    border-radius: 15px;
+    background-color: var( --dashboard-items-color);
+}
+.top{
+    margin-left: 2em;
+    
+}
+.quantity{
+    font-size: 1.5em;
+    color: black;
+    padding-top: 2em;
+}
+.number{
+    font-size: 1.5em;
+    font-weight: 800;
+    padding-top: 1em;
+    color: black;
+}
+.my-col{
+    padding-top: 2.1em;
+    padding-right: 8em;
+}
+
+@media screen and (max-width:720px){
+    button span{
+        display: none;
+    }
+    .box1{
+        height: 12vh;
+    }
+    .number,.quantity{
+        display: none;
+    }
+    .table{
+        margin-right: 5%;
+    }
+}

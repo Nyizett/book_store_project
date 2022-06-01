@@ -1,0 +1,92 @@
+:root {
+   --primary-darkblue: #1f4287;
+   --secondary-lightblue: #1f4287;
+   --font-color1: #484343;
+   --font-color2: #595e68;
+   --font-color3: #2964da;
+   --yellow-icon: #f4d221;
+}
+
+.img-slide1 {
+   width: 200px;
+   height: 200px;
+}
+
+.img-slide2 {
+   width: 200px;
+   height: 200px;
+}
+
+.slide-bg {
+   width: 300px;
+   height: 300px;
+}
+
+.btn-width {
+   width: 20px !important;
+}
+
+.details-text {
+   background-color: #a1baed;
+}
+
+.commentbox {
+   margin-top: 3px;
+   width: 600px;
+   height: 300px;
+   border: 1px solid #ddd;
+}
+.commentboxheader {
+   /* background-color: var(--primary-darkblue); */
+   /* color: aliceblue; */
+   color: white;
+   height: 50px;
+   margin-top: -19px;
+   border-radius: 10px;
+   font-size: 20px;
+}
+.QuestionHeader {
+   color: black;
+   padding-left: 20px;
+   padding-top: 6px;
+   font-size: 22px;
+   text-align: center;
+   align-items: center;
+}
+.userComment {
+   padding-left: 30px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   font-size: 20px;
+   display: flex;
+   flex-direction: row;
+   border-bottom: 2px solid darkgray;
+   display: none;
+   animation-delay: 3s;
+}
+.commenticon {
+   color: #156fd6;
+}
+.Deletebutton {
+   position: absolute;
+   left: 560px;
+}
+.commentinner {
+   position: absolute;
+   left: 100px;
+   margin-top: -25px;
+}
+.commentinput {
+   border: 2px solid darkgray;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   width: 600px;
+}
+.sendbutton {
+   position: absolute;
+   left: 550px;
+}
+.inputtextbox {
+   width: 440px;
+   margin-left: 20px;
+}

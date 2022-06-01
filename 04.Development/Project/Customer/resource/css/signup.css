@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccc;
+}
+.inner-left {
+    border-right: none;
+    background-color: #fff;
+}
+
+.inner-right {
+    border-left: none;
+    background-color: blue;
+}
+
+@media (max-width: 768px) {
+
+    .inner-left,
+    .inner-right {
+        border: none;
+    }
+}

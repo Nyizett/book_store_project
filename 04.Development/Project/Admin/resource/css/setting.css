@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.customtable{
+    width: 50%;
+
+}
+.custombutton{
+    background-color: var(--btn-color);
+    color: var( --color-black);
+}
+.customimagesize{
+    width: 50%;
+    
+}
+.viewmaster{
+    display: block;
+}
+.closemaster{
+    display: none;
+}
+.slideimg{
+    width: 40%;
+}
+.customstyle{
+    background-color: var(--input-box-color);
+    
+}

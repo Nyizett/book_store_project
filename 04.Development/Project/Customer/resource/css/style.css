@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+   font-family: "Roboto", sans-serif;
+}
+
+:root {
+   --primary-darkblue: #1f4287;
+   --secondary-lightblue: #1f4287;
+   --font-color1: #484343;
+   --font-color2: #595e68;
+   --font-color3: #2964da;
+   --yellow-icon: #f4d221;
+}
+
+.commom-bg {
+   background-color: var(--primary-darkblue);
+}
+
+.font-color-primary {
+   color: var(--primary-darkblue);
+}
+
+.font-color-secondary {
+   color: var(--font-color3);
+}

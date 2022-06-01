@@ -1,0 +1,6 @@
+.custombutton{
+    background-color: var( --btn-color);
+}
+.customstyle{
+    background-color: var(--input-box-color);
+}
