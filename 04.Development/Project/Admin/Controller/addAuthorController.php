@@ -27,4 +27,6 @@ if(isset($_POST)){
     $sql->bindValue(":autbio", $authorBio);
 
     $sql->execute();
+
+    require "./authorListController.php";
 }
