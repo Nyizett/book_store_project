@@ -19,20 +19,22 @@
 <button class="custombutton btn btn-sm offset-4 fw-bold">BACK</button>
 <div class="row offset-4">
 <div class="col-5 mt-3">
+  <form action="../Controller/addAdminController.php" method="POST">
 <div class="mb-3">
   <label for="exampleFormControlInput1" class="form-label">Write your name</label>
-  <input type="email" class="customstyle form-control" id="exampleFormControlInput1" placeholder="">
+  <input type="text" class="customstyle form-control" id="name" name="name">
 </div>
 <div class="mb-3">
   <label for="exampleFormControlInput1" class="form-label">Write your email</label>
-  <input type="email" class="customstyle form-control" id="exampleFormControlInput1" placeholder="example@email.com">
+  <input type="email" class="customstyle form-control" id="email" name="email" placeholder="example@email.com">
 </div>
 <div class="mb-3">
   <label for="exampleFormControlInput1" class="form-label">Creat your password</label>
-  <input type="password" class="customstyle form-control" id="exampleFormControlInput1" placeholder="">
+  <input type="password" class="customstyle form-control" id="pwd" name="password" placeholder="">
 </div>
 
-<button class="custombutton btn btn-sm offset-10 mt-3 fw-bold">ADD ADMIN</button>
+<button type="submit" class="custombutton btn btn-sm offset-10 mt-3 fw-bold">ADD ADMIN</button>
+</form>
 
 </div>
 </div>
