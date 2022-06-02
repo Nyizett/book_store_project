@@ -27,5 +27,8 @@ if(isset($_POST)){
 
     if(count($result) > 0){
         header("Location: ../View/dashboard.php ");
+        setcookie("wrong","",);
+    }else{
+        header("Location: ../View/adminLoginError.php ");
     }
 }
