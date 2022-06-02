@@ -21,8 +21,11 @@
 .my-fcolor {
     color: white;
 }
+.image-container{
+    width: 2rem;
+}
 .main-logo {
-    width: 8em;
+    width: 9em;
 }
 .my-title {
     padding-left: 9%;
