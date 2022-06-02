@@ -22,5 +22,10 @@ if(isset($_POST)){
     $sql->execute();
 
     $result = $sql -> fetchAll(PDO :: FETCH_ASSOC);
-    if(count($result));
+    // echo"<pre>";
+    // print_r($result);
+
+    if(count($result) > 0){
+        header("Location: ../View/dashboard.php ");
+    }
 }

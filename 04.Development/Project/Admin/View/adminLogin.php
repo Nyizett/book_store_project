@@ -30,7 +30,7 @@
             <span class="input-group-text" id="addon-wrapping">
                <ion-icon name="lock-open-outline"></ion-icon>
             </span>
-            <input type="password" class="form-control" id="psd" name="pswd" placeholder="Enter password" name="pswd">
+            <input type="password" class="form-control" id="psd" name="pswd" placeholder="Enter password">
          </div>
          <div class="d-grid mt-5">
             <button type="submit" class="btn btn-primary btn-block btn-lg fw-bold mt-3">Login</button>
