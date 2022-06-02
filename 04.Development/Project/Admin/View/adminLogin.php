@@ -18,22 +18,22 @@
 <body>
    <div class="container mt-3">
       <h2 class="text-center title">Admin Login</h2>
-      <form action="/action_page.php">
+      <form action="../Controller/adminLoginController.php" method="POST">
          <div class="input-group flex-nowrap mt-5">
             <span class="input-group-text" id="addon-wrapping">
                <ion-icon name="person-outline"></ion-icon>
             </span>
-            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+            <input type="text" class="form-control" id="name" name="username" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
          </div>
 
          <div class="input-group flex-nowrap mt-5">
             <span class="input-group-text" id="addon-wrapping">
                <ion-icon name="lock-open-outline"></ion-icon>
             </span>
-            <input type="password" class="form-control" id="" placeholder="Enter password" name="pswd">
+            <input type="password" class="form-control" id="psd" name="pswd" placeholder="Enter password" name="pswd">
          </div>
          <div class="d-grid mt-5">
-            <button type="button" class="btn btn-primary btn-block btn-lg fw-bold mt-3">Login</button>
+            <button type="submit" class="btn btn-primary btn-block btn-lg fw-bold mt-3">Login</button>
          </div>
       </form>
    </div>
