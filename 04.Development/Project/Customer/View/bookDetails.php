@@ -154,13 +154,15 @@
    <script src="../resource/js/common.js"></script>
    <script src="../resource/js/footerCommon.js"></script>
   
+
    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
    <script src="../resource/js/homepage.js"></script>
    <script src="../resource/UI Library/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
-   <!-- <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script> -->
-   <!-- <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> -->
+   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
    <script src="../resource/UI Library/fontawesome-free/js/all.min.js"></script>
    <script src="../resource//js/bookDetails.js"></script>
+
    <script type="text/javascript">
       $(".slider").slick({
          prevArrow: '<span class="slick-prev slick-arrow d-flex align-items-center m-5  arrows"><i class="fas fa-angle-left"></i></span>',

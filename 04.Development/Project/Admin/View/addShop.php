@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../resource/UI Library/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../resource/css/style.css" />
     <link rel="stylesheet" href="../resource/css/common.css">
-    <script src="../resource/UI Library/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="../resource/UI Library/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
     <script src="../resource/UI Library/jquery-3.3.1.min.js"></script>
     <script src="../resource/js/common.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
@@ -19,49 +19,49 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-        <!-- Navigation Bar -->
-        <div id="navbar" class="my-nav"></div>
+            <!-- Navigation Bar -->
+            <div id="navbar" class="my-nav"></div>
             <!--Add Shop-->
             <div class="col-8 offset-3">
-                <button class="custombutton btn mt-4 col-1 ms-4"><a href="../View/shopInfo.php" class="col-1 text-dark fw-bold">Back</a></button>
+                <button class="custombutton btn mt-4 col-1 ms-4"><a href="../View/shopInfo.php" class="text-dec col-1 text-dark fw-bold">Back</a></button>
                 <p class="h4 mt-4 ms-4">Insert Shop</p>
-                <form>
+                <form action="../Controller/addShopController.php" method="POST">
                     <div class="row container col-md-8 mt-3 ">
                         <div class="row">
                             <div class="col mb-3 mt-3">
-                                <label for="email" class="form-label">Shop</label><br>
-                                <select name="" id="">
-                                    <option value="Yangon">Yangon</option>
-                                    <option value="Mandalay">Mandalay</option>
-                                    <option value="Nay Pyi Taw">Nay Pyi Taw</option>
+                                <label for="" class="form-label">Shop</label><br>
+                                <select name="shopCity" id="" class="custombutton btn btn-white col-12">
+                                    <option class="custombutton" value="Yangon">Yangon</option>
+                                    <option class="custombutton" value="Mandalay">Mandalay</option>
+                                    <option class="custombutton" value="NayPyiTaw">NayPyiTaw</option>
                                 </select>
                             </div>
                             <div class="col mb-3 mt-3 ms-4">
-                                <label for="pwd" class="form-label">Name</label>
-                                <input type="text" class="form-control" id="pwd" name="">
+                                <label for="" class="form-label">Name</label>
+                                <input type="text" class="form-control" name="shopName">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col mb-3 mt-3 ">
-                                <label for="email" class="form-label">Phone</label>
-                                <input type="email" class="form-control" id="email" name="">
+                                <label for="" class="form-label">Phone</label>
+                                <input type="text" class="form-control"  name="shopPh">
                             </div>
                             <div class="col mb-3 mt-3 ms-4">
-                                <label for="pwd" class="form-label">Website</label>
-                                <input type="text" class="form-control" id="pwd" name="">
+                                <label for="" class="form-label">Website</label>
+                                <input type="text" class="form-control"  name="shopWeb">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col mb-3 mt-3 ">
-                                <label for="email" class="form-label">Image</label>
-                                <input type="file" class="form-control" id="email" name="">
+                                <label for="" class="form-label">Image</label>
+                                <input type="file" class="form-control"  name="shopImage">
                             </div>
                         </div>
                         <div class="row">
-                            <label for="comment">Address</label>
-                            <textarea class="form-control ms-2" rows="8" id="comment" name="text"></textarea>
+                            <label for="">Address</label>
+                            <textarea class="form-control ms-2" rows="8" id="comment" name="shopAddress"></textarea>
                         </div>
-                        <button type="submit" class="custombutton btn fw-bold mt-4">Save</button>
+                        <button type="submit" class="custombutton btn fw-bold mt-4 mb-4">ADD SHOP</button>
                     </div>
                 </form>
             </div>
