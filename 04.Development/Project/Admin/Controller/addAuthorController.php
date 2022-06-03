@@ -27,4 +27,5 @@ if(isset($_POST)){
     $sql->bindValue(":autbio", $authorBio);
 
     $sql->execute();
+    header ("Location: ../View/authorInfo.php");
 }

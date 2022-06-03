@@ -15,66 +15,7 @@
 </head>
 
 <body>
-   <!-- nav -->
-   <nav class="navbar navbar-expand-lg ">
-      <div class="container-fluid">
-         <a class="navbar-brand font-color-primary ps-3 " href="#">
-            <img src="../resource/img/main-logoNew.png" alt="main-logo" class="d-inline-block align-text-top main-logo">
-            <span class=" ms-4 fw-bolder fs-4 ">Paradise Book Store</span>
-         </a>
-         <button class="navbar-toggler font-color-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <ion-icon class="font-color-primary fs-2" name="menu-outline"></ion-icon>
-         </button>
-         <button class="dropdown btn commom-bg ms-4 categories">
-            <a class="text-decoration-none fs-6 dropdown-toggle  text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-               <ion-icon class="pe-2 pt-2" name="apps-outline"></ion-icon>
-               <span class=" d-inlineblock text-center">Categories </span>
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-               <li><a class="dropdown-item" href="#">Language</a></li>
-               <li><a class="dropdown-item" href="#">Education</a></li>
-               <li><a class="dropdown-item" href="#">Novels</a></li>
-               <li><a class="dropdown-item" href="#">Technology</a></li>
-               <li><a class="dropdown-item" href="#">Cartoons</a></li>
-            </ul>
-         </button>
-         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto me-4 mb-2 mb-lg-0 ">
-               <li class="nav-item me-4">
-                  <a class="nav-link font-color-primary text-decoration-none fw-bold fs-6 border-bottom border-primary" aria-current="page" href="#">Home</a>
-               </li>
-               <li class="nav-item me-4 ">
-                  <a class="nav-link font-color-primary text-decoration-none fw-bold fs-6" href="#">Search</a>
-               </li>
-               <li class="nav-item me-4 ">
-                  <a class="nav-link font-color-primary text-decoration-none fw-bold fs-6" href="#" tabindex="-1">Authors</a>
-               </li>
-               <li class="nav-item me-4">
-                  <a class="nav-link font-color-primary text-decoration-none fw-bold fs-6" href="#" tabindex="-1">Shops</a>
-               </li>
-
-               <li class="nav-item dropdown me-4 ">
-                  <a class="nav-link font-color-primary text-decoration-none fw-bold fs-6 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                     Contact us
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                     <li><a class="dropdown-item" href="#">View Profile</a></li>
-                     <li><a class="dropdown-item" href="#">Guide</a></li>
-                     <li><a class="dropdown-item" href="#">Servies</a></li>
-                     <li><a class="dropdown-item" href="#">Privacy and Policy</a></li>
-                     <li><a class="dropdown-item" href="#">FAQ's</a></li>
-                  </ul>
-               </li>
-            </ul>
-            <div class=" d-flex  justify-content-center align-items-center  font-color-primary ">
-               <ion-icon class="me-4" name="cart-outline"></ion-icon>
-               <ion-icon class="me-4" name="person-outline"></ion-icon>
-               <ion-icon class="" name="moon-outline"></ion-icon>
-            </div>
-         </div>
-      </div>
-   </nav>
-   <!-- nav -->
+   
    <div class="wrapper ">
       <div class="col-12 col-md-6 mx-auto ">
          <div class="row g-0 flex-column-reverse flex-md-row ">

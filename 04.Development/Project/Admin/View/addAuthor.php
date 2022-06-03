@@ -25,19 +25,19 @@
             <div class="col-8 offset-3">
                 <button class="custombutton btn btn-sm mt-4 col-1 ms-4"><a href="../View/authorInfo.php" class="fw-bold text-dark text-wrap">Back</a></button>
                 <p class="h3 mt-4 ms-4">Insert Author</p>
-                <form>
+                <form action="../Controller/addAuthorController.php" method="POST">
                     <div class="row container col-md-7 mt-3 ">
                         <div class="mb-3 mt-3">
-                            <label for="email" class="form-label">Name</label>
-                            <input type="email" class="form-control" id="email" name="aut_name">
+                            <label for="" class="form-label">Name</label>
+                            <input type="text" class="form-control" name="autName">
                         </div>
                         <div class="mb-3 mt-3">
                             <label for="pwd" class="form-label">Image</label>
-                            <input type="file" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                            <input type="file" class="form-control" name="autImage">
                         </div>
 
                         <label for="comment">Biography</label>
-                        <textarea class="form-control ms-2" rows="8" id="comment" name="text"></textarea>
+                        <textarea class="form-control ms-2" rows="8" name="autBio"></textarea>
                         
                         <button type="submit" class="custombutton btn fw-bold mt-4 ms-1">Save</button>
                         

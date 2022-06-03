@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
 }
-/* .my-nav{
-    background-color: var(--main-color);
-} */
+.aut-bio{
+    overflow: hidden;
+    max-height:100px ;
+}
+.aut-img{
+    width: 100%;
+}
