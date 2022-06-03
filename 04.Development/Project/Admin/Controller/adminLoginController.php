@@ -27,8 +27,10 @@ if(isset($_POST)){
 
     if(count($result) > 0){
         header("Location: ../View/dashboard.php ");
-        setcookie("wrong","",);
     }else{
-        header("Location: ../View/adminLoginError.php ");
+        // header("Location: ../View/adminLogin.php ");
+        
+        require "../View/adminLogin.php ";
+        echo '<div class="text-center mt-2 text-danger fs-4">Wrong Username or Password.Login Again!</div>';
     }
 }

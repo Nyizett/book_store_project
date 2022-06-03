@@ -108,7 +108,7 @@
                             </tr>
 
                             <tr class="tb-text">
-                                <td >2</td>
+                                <td>2</td>
                                 <td>Novels</td>
                                 <td><button class="btn btn-outline-primary ">
                                         <ion-icon name="create"></ion-icon>
@@ -118,7 +118,7 @@
                             </tr>
 
                             <tr class="tb-text">
-                                <td >3</td>
+                                <td>3</td>
                                 <td>Programming</td>
                                 <td><button class="btn btn-outline-primary ">
                                         <ion-icon name="create"></ion-icon>
@@ -135,13 +135,13 @@
                     <div class="mt-5">
                         <table class="table table-striped table-sm">
                             <tr class="tb-text">
-                                <th class="col-1" >No</th>
+                                <th class="col-1">No</th>
                                 <th class="col-3 ">Image</th>
                                 <th class="col-6">Guide Paragraph</th>
                                 <th class="col-2">Actions</th>
                             </tr>
                             <tr class="tb-text">
-                                <td >1</td>
+                                <td>1</td>
                                 <td><img src="../resource/img/faq.png" alt="" class="customimagesize" /> </td>
                                 <td class=" overflow-hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur exercitationem ipsum natus recusandae aut commodi doloremque quis eius dicta accusantium sit,</td>
                                 <td><button class="btn btn-outline-primary ">
@@ -151,7 +151,7 @@
                                     </button></td>
                             </tr>
                             <tr class="tb-text">
-                                <td >2</td>
+                                <td>2</td>
                                 <td><img src="../resource/img/faq.png" alt="" class="customimagesize" /> </td>
                                 <td class=" overflow-hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur exercitationem ipsum natus recusandae aut commodi doloremque quis eius dicta accusantium sit,</td>
                                 <td><button class="btn btn-outline-primary ">
@@ -374,9 +374,24 @@
                                 <th class="col-2">No</th>
                                 <th class="col-4">Name</th>
                                 <th class="col-4">Email</th>
-                                <th class="col-2">Actions</th>
+                                <th class="col-2" colspan="2">Actions</th>
                             </tr>
+                            <?php
+                            require "../Controller/showAdaminController.php";
+                             $no=1;
 
+                            foreach($result as $key => $value){
+                                global $no;
+                                echo"<tr class=tb-text>";
+                                echo"<td>".$no++."</td>";
+                                echo"<td>". $value['admin_username']."</td>";
+                                echo"<td>". $value['admin_email']."</td>";
+                                echo"<td>". $value['del_flg']."</td>";
+                                echo"</tr>";
+                            }
+                            ?>
+
+                            <!-- 
                             <tr class="tb-text">
                                 <td>1</td>
                                 <td>john</td>
@@ -408,7 +423,7 @@
                                     </button> <button class="btn btn-outline-danger ms-1">
                                         <ion-icon name="trash-sharp"></ion-icon>
                                     </button></td>
-                            </tr>
+                            </tr> -->
                         </table>
                         <button class="btn btn-sm offset-10 custombutton">ADD Admin</button>
                     </div>
