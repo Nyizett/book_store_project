@@ -24,10 +24,10 @@
       <div class="row pt-5 ">
          <div class="col-12 col-lg-6 ps-5 pb-5">
             <div class="slider secondary-bg content">
-               <div class="">
+               <div class="ms-4">
                   <img class="img-slide1" src="../resource/img/main slider_1.png" alt="">
                </div>
-               <div>
+               <div class="ms-4">
                   <img class="img-slide2" src="../resource/img/main slider_2.png" alt="">
                </div>
             </div>

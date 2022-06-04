@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Author</title>
+    <title>Edit Author</title>
     <link rel="stylesheet" href="../resource/UI Library/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../resource/css/style.css" />
     <link rel="stylesheet" href="../resource/css/dashboard.css" />
@@ -24,20 +24,21 @@
             <!-- Insert Author -->
             <div class="col-8 offset-3">
                 <button class="custombutton btn btn-sm mt-4 col-1 ms-4"><a href="../View/authorInfo.php" class="text-dec fw-bold text-dark text-wrap">Back</a></button>
-                <p class="h3 mt-4 ms-4">Insert Author</p>
-                <form action="../Controller/addAuthorController.php" method="POST">
+                <p class="h3 mt-4 ms-4">Edit Author</p>
+                <form action="../Controller/updateDBAuthorController.php" method="POST">
                     <div class="row container col-md-7 mt-3 ">
                         <div class="mb-3 mt-3">
+                            <input type="hidden" name="id" value ="<?php require_once "../Controller/editAuthorController.php";  echo $result[0]['id'];?>">
                             <label for="" class="form-label">Name</label>
-                            <input type="text" class="form-control" name="autName">
+                            <input type="text" value="<?php  echo $result[0]['author_name'];?>" class="form-control" name="autName">
                         </div>
                         <div class="mb-3 mt-3">
                             <label for="pwd" class="form-label">Image</label>
-                            <input type="file" class="form-control" name="autImage">
+                            <input type="file" value="<?php echo $result[0]['author_image'];?>" class="form-control" name="autImage">
                         </div>
 
                         <label for="comment">Biography</label>
-                        <textarea class="form-control ms-2" rows="8" name="autBio"></textarea>
+                        <textarea class="form-control ms-2" rows="8" value="" name="autBio"><?php echo $result[0]['author_bio'];?></textarea>
                         
                         <button type="submit" class="custombutton btn fw-bold mt-4 ms-1">SAVE</button>
                         
@@ -47,5 +48,4 @@
         </div>
     </div>
 </body>
-
 </html>

@@ -35,19 +35,21 @@
                         <th colspan="2">Action</th>
                     </tr>
                     <?php
+                    $count = 1;
                     require "../Controller/authorListController.php";
                     foreach ($result as $key => $value) {
                         echo "<tr>";
-                        echo "<td>" . $value['id'] . "</td>";
+                        echo "<td>" . $count . "</td>";
                         echo "<td>" . $value['author_name'] . "</td>";
                         echo "<td class='aut-img'> <img src='../resource/img/authors/" . $value['author_image'] . "' </td>";
                         echo "<td class='aut-bio w-20'>" . $value['author_bio'] . "</td>";
-                        echo "<td><a href='../Controller/updateBookController.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-primary'><ion-icon name='create-outline'></ion-icon></button></a></td>";
-                        echo "<td><a href='../Controller/deleteBookController.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-danger'><ion-icon name='trash-outline'></ion-icon></button></a></td>";
+                        echo "<td><a href='../View/editAuthor.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-primary'><ion-icon name='create-outline'></ion-icon></button></a></td>";
+                        echo "<td><a href='../Controller/deleteAuthorController.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-danger'><ion-icon name='trash-outline'></ion-icon></button></a></td>";
+                        $count++;
                     }
                     ?>
                 </table>
-                <button class="text-dec custombutton btn-sm offset-10 col-2"><a href="../View/addAuthor.php" class="fw-bold text-dark">ADD AUTHOR</a></button>
+                <button class="text-dec custombutton btn-sm offset-10 col-2 mb-4"><a href="../View/addAuthor.php" class="text-dec fw-bold text-dark ">ADD AUTHOR</a></button>
             </div>
         </div>
     </div>

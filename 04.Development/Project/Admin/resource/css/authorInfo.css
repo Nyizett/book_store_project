@@ -6,6 +6,6 @@
     overflow: hidden;
     max-height:100px ;
 }
-.aut-img{
+.aut-img > img{
     width: 100%;
 }
