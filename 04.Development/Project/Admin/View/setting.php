@@ -378,16 +378,16 @@
                             </tr>
                             <?php
                             require "../Controller/showAdaminController.php";
-                             $no=1;
+                            $no = 1;
 
-                            foreach($result as $key => $value){
+                            foreach ($result as $key => $value) {
                                 global $no;
-                                echo"<tr class=tb-text>";
-                                echo"<td>".$no++."</td>";
-                                echo"<td>". $value['admin_username']."</td>";
-                                echo"<td>". $value['admin_email']."</td>";
-                                echo"<td>". $value['del_flg']."</td>";
-                                echo"</tr>";
+                                echo "<tr class=tb-text>";
+                                echo "<td>" . $no++ . "</td>";
+                                echo "<td>" . $value['admin_username'] . "</td>";
+                                echo "<td>" . $value['admin_email'] . "</td>";
+                                echo "<td><a href='../View/editAdmin.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-primary'><ion-icon name='create-outline'></ion-icon></button></a></td>";
+                                echo "<td><a href='../Controller/deleteAuthorController.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-danger'><ion-icon name='trash-outline'></ion-icon></button></a></td>";
                             }
                             ?>
 
