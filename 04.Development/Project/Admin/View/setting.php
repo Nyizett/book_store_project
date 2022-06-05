@@ -92,42 +92,27 @@
                     <div class="mt-5 ">
                         <table class="table table-striped table-sm container">
                             <tr class="tb-text">
-                                <th class="col-4 ">No</th>
+                                <th class="col-2">No</th>
                                 <th class="col-6 ">Name</th>
-                                <th class="col-2 ">Actions</th>
+                                <th colspan=2>Actions</th>
                             </tr>
+                            <?php
+                            $count = 1;
+                            require "../Controller/categoryListController.php";
+                            foreach ($result as $key => $value) {
+                                echo "<tr class='tb-text'>";
+                                echo "<td>" . $count . "</td>";
+                                echo "<td>" . $value['category_name'] . "</td>";
+                                echo "<td><a href='../View/editCategory.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-primary'><ion-icon name='create-outline'></ion-icon></button></a></td>";
+                                echo "<td><a href='../Controller/deleteCategoryController.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-danger'><ion-icon name='trash-outline'></ion-icon></button></a></td>";
+                                echo "</tr>";
+                                $count++;
+                            }
+                            ?>
 
-                            <tr class="tb-text">
-                                <td class="">1</td>
-                                <td>Education</td>
-                                <td><button class="btn btn-outline-primary ">
-                                        <ion-icon name="create"></ion-icon>
-                                    </button> <button class="btn btn-outline-danger ms-1">
-                                        <ion-icon name="trash-sharp"></ion-icon>
-                                    </button></td>
-                            </tr>
 
-                            <tr class="tb-text">
-                                <td>2</td>
-                                <td>Novels</td>
-                                <td><button class="btn btn-outline-primary ">
-                                        <ion-icon name="create"></ion-icon>
-                                    </button> <button class="btn btn-outline-danger ms-1">
-                                        <ion-icon name="trash-sharp"></ion-icon>
-                                    </button></td>
-                            </tr>
-
-                            <tr class="tb-text">
-                                <td>3</td>
-                                <td>Programming</td>
-                                <td><button class="btn btn-outline-primary ">
-                                        <ion-icon name="create"></ion-icon>
-                                    </button> <button class="btn btn-outline-danger ms-1">
-                                        <ion-icon name="trash-sharp"></ion-icon>
-                                    </button></td>
-                            </tr>
                         </table>
-                        <button class="btn btn-sm offset-10 custombutton fw-bold">ADD CATEGORY</button>
+                        <button class="btn btn-sm offset-10 custombutton fw-bold "><a href="./addCategory.php" class="text-dec text-dark">ADD CATEGORY</a></button>
                     </div>
                     <!-- Category Table end -->
 
@@ -386,8 +371,13 @@
                                 echo "<td>" . $no++ . "</td>";
                                 echo "<td>" . $value['admin_username'] . "</td>";
                                 echo "<td>" . $value['admin_email'] . "</td>";
+<<<<<<< HEAD
                                 echo "<td><a href='../View/editAdmin.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-primary'><ion-icon name='create-outline'></ion-icon></button></a></td>";
                                 echo "<td><a href='../Controller/deleteAuthorController.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-danger'><ion-icon name='trash-outline'></ion-icon></button></a></td>";
+=======
+                                echo "<td>" . $value['del_flg'] . "</td>";
+                                echo "</tr>";
+>>>>>>> origin/main
                             }
                             ?>
 

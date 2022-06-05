@@ -38,7 +38,7 @@
                         </div>
 
                         <label for="comment">Biography</label>
-                        <textarea class="form-control ms-2" rows="8" value="" name="autBio"><?php echo $result[0]['author_bio'];?></textarea>
+                        <textarea class="form-control ms-2" rows="8"  name="autBio"><?php echo $result[0]['author_bio'];?></textarea>
                         
                         <button type="submit" class="custombutton btn fw-bold mt-4 ms-1">SAVE</button>
                         

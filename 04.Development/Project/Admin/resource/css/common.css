@@ -41,6 +41,10 @@
 .icons{
     margin-top: 2.1px;
 }
+/* inputbox color */
+.input-box{
+    background-color: var(--input-box-color);
+}
 @media screen and (max-width:1030px){
     .buttonbox{
         width: 13%;

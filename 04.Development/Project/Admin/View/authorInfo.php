@@ -45,7 +45,9 @@
                         echo "<td class='aut-bio w-20'>" . $value['author_bio'] . "</td>";
                         echo "<td><a href='../View/editAuthor.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-primary'><ion-icon name='create-outline'></ion-icon></button></a></td>";
                         echo "<td><a href='../Controller/deleteAuthorController.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-danger'><ion-icon name='trash-outline'></ion-icon></button></a></td>";
+                        echo "</tr>";
                         $count++;
+                        
                     }
                     ?>
                 </table>
