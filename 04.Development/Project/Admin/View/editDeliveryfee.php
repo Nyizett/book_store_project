@@ -18,19 +18,22 @@
 <div class="container-fluid mt-5">
 <button class="custombutton btn btn-sm offset-4 fw-bold">BACK</button>
 <div class="row offset-4">
+<form action="../Controller/updateDeliveryFeeController.php" method="POST">
 <div class="col-5 mt-3">
+<input type="hidden" name="id" value ="<?php require_once "../Controller/editDeliveryFeeController.php";  echo $result[0]['id'];?>">
 <div class="mb-3">
   <label for="exampleFormControlInput1" class="form-label">Write City or Township</label>
-  <input type="email" class="customstyle form-control" id="exampleFormControlInput1">
+  <input type="text" value="<?php echo $result[0]['delivery_city_name'];?>" class="customstyle form-control" id="exampleFormControlInput1" name="dcity">
 </div>
 <div class="mb-3">
   <label for="exampleFormControlInput1" class="form-label">Write Delivery Price</label>
-  <input type="email" class="customstyle form-control" id="exampleFormControlInput1">
+  <input type="text" value="<?php echo $result[0]['delivery_fees'].",000";?>" class="customstyle form-control" id="exampleFormControlInput1" name="dprice">
 </div>
 
 <button class="custombutton btn btn-sm offset-10 mt-3 fw-bold">SAVE</button>
 
 </div>
+</form>
 </div>
 </div>
 </body>

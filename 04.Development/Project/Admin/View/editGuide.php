@@ -18,19 +18,23 @@
 <div class="container-fluid mt-5">
 <button class="custombutton btn btn-sm offset-4 fw-bold">BACK</button>
 <div class="row offset-4">
-<div class="col-5 mt-3">
+<form action="../Controller/updateGuideController.php" method="POST">
 
-<div class="input-group mb-3">
-  <input type="file" class="form-control" id="inputGroupFile02">
-</div>
-<div class="mb-3">
-  <label for="exampleFormControlTextarea1" class="form-label">Write Guide for Users</label>
-  <textarea class="customstyle form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-</div>
+        <div class="col-5 mt-3">
 
-<button class="custombutton btn btn-sm offset-10 mt-3 fw-bold">SAVE</button>
+        <input type="hidden" name="id" value ="<?php require_once "../Controller/editGuideController.php";  echo $result[0]['id']; ?>">
+          <div class="input-group mb-3">
+            <input type="file" value="<?php echo $result[0]["guide_image"]; ?>"  class="form-control" id="inputGroupFile02" name="guideImg">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Write Guide for Users</label>
+            <textarea class="customstyle form-control" id="exampleFormControlTextarea1" rows="3" name="guideParagraph"><?php echo $result[0]["guide_text"]; ?></textarea>
+          </div>
 
-</div>
+          <button type="submit" class="custombutton btn btn-sm offset-10 mt-3 fw-bold">ADD GUIDE</button>
+
+        </div>
+      </form>
 </div>
 </div>
 </body>

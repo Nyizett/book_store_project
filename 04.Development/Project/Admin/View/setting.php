@@ -133,10 +133,10 @@
                                 global $no;
                                 echo "<tr class=tb-text>";
                                 echo "<td>" . $no++ . "</td>";
-                                echo "<td class='aut-img'> <img src='../resource/img/authors/" . $value['author_image'] . "' </td>";
-                                echo "<td>" . $value['guide_text'] . "</td>";
-                                echo "<td><a href='../View/editAdmin.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-primary'><ion-icon name='create-outline'></ion-icon></button></a></td>";
-                                echo "<td><a href='../Controller/deleteAdminController.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-danger'><ion-icon name='trash-outline'></ion-icon></button></a></td>";
+                                echo "<td> <img class=customimagesize src='../resource/img/guide/" . $value['guide_image'] ."'</td>";
+                                echo "<td class=overflow-hidden>" . $value['guide_text'] . "</td>";
+                                echo "<td><a href='../View/editGuide.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-primary'><ion-icon name='create-outline'></ion-icon></button></a></td>";
+                                echo "<td><a href='../Controller/deleteGuideController.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-danger'><ion-icon name='trash-outline'></ion-icon></button></a></td>";
                             }
                             ?>
                             <!-- <tr class="tb-text">
@@ -174,16 +174,33 @@
                     </div>
                     <!-- Guide Table end -->
 
+
+                    <!-- Delivery Fee Table Start -->
                     <div class=" mt-5 ">
                         <table class="table table-striped table-sm">
                             <tr class="tb-text">
                                 <th>No</th>
                                 <th>City/Township</th>
                                 <th>Price</th>
-                                <th>Actions</th>
+                                <th colspan="2">Actions</th>
                             </tr>
 
-                            <tr class="tb-text">
+                            <?php
+                            require "../Controller/showDeliveryFeeController.php";
+                            $no = 1;
+
+                            foreach ($result as $key => $value) {
+                                global $no;
+                                echo "<tr class=tb-text>";
+                                echo "<td>" . $no++ . "</td>";
+                                echo "<td>" . $value['delivery_city_name'] . "</td>";
+                                echo "<td>" . $value['delivery_fees'] .  ",000 MMK" ."</td>";
+                                echo "<td><a href='../View/editDeliveryFee.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-primary'><ion-icon name='create-outline'></ion-icon></button></a></td>";
+                                echo "<td><a href='../Controller/deleteDeliveryFeeController.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-danger'><ion-icon name='trash-outline'></ion-icon></button></a></td>";
+                            }
+                            ?>
+
+                            <!-- <tr class="tb-text">
                                 <td>1</td>
                                 <td>Monywa</td>
                                 <td>3000MMK</td>
@@ -214,10 +231,11 @@
                                     </button> <button class="btn btn-outline-danger ms-1">
                                         <ion-icon name="trash-sharp"></ion-icon>
                                     </button></td>
-                            </tr>
+                            </tr> -->
                         </table>
-                        <button class="btn btn-sm offset-10 custombutton fw-bold">ADD DELIVERY FEE</button>
+                        <button class="btn btn-sm offset-10 custombutton fw-bold">ADD DELIVERY FEES</button>
                     </div>
+                    <!-- Delivery Fee Table end -->
 
 
                     <div class=" mt-5 ">
