@@ -123,9 +123,23 @@
                                 <th class="col-1">No</th>
                                 <th class="col-3 ">Image</th>
                                 <th class="col-6">Guide Paragraph</th>
-                                <th class="col-2">Actions</th>
+                                <th class="col-2" colspan="2">Actions</th>
                             </tr>
-                            <tr class="tb-text">
+                            <?php
+                            require "../Controller/showGuideController.php";
+                            $no = 1;
+
+                            foreach ($result as $key => $value) {
+                                global $no;
+                                echo "<tr class=tb-text>";
+                                echo "<td>" . $no++ . "</td>";
+                                echo "<td class='aut-img'> <img src='../resource/img/authors/" . $value['author_image'] . "' </td>";
+                                echo "<td>" . $value['guide_text'] . "</td>";
+                                echo "<td><a href='../View/editAdmin.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-primary'><ion-icon name='create-outline'></ion-icon></button></a></td>";
+                                echo "<td><a href='../Controller/deleteAdminController.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-danger'><ion-icon name='trash-outline'></ion-icon></button></a></td>";
+                            }
+                            ?>
+                            <!-- <tr class="tb-text">
                                 <td>1</td>
                                 <td><img src="../resource/img/faq.png" alt="" class="customimagesize" /> </td>
                                 <td class=" overflow-hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur exercitationem ipsum natus recusandae aut commodi doloremque quis eius dicta accusantium sit,</td>
@@ -154,7 +168,7 @@
                                     </button> <button class="btn btn-outline-danger mt-1 ">
                                         <ion-icon name="trash-sharp"></ion-icon>
                                     </button></td>
-                            </tr>
+                            </tr> -->
                         </table>
                         <button class="btn btn-sm offset-10 custombutton fw-bold">ADD GUIDE</button>
                     </div>
@@ -371,13 +385,8 @@
                                 echo "<td>" . $no++ . "</td>";
                                 echo "<td>" . $value['admin_username'] . "</td>";
                                 echo "<td>" . $value['admin_email'] . "</td>";
-<<<<<<< HEAD
                                 echo "<td><a href='../View/editAdmin.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-primary'><ion-icon name='create-outline'></ion-icon></button></a></td>";
-                                echo "<td><a href='../Controller/deleteAuthorController.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-danger'><ion-icon name='trash-outline'></ion-icon></button></a></td>";
-=======
-                                echo "<td>" . $value['del_flg'] . "</td>";
-                                echo "</tr>";
->>>>>>> origin/main
+                                echo "<td><a href='../Controller/deleteAdminController.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-danger'><ion-icon name='trash-outline'></ion-icon></button></a></td>";
                             }
                             ?>
 
