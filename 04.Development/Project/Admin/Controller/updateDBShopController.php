@@ -1,9 +1,9 @@
 <?php
 require_once "../Model/DBConnection.php";
-// Get Data from Add Book From
+// Get Data from Add Shop From
 if(isset($_POST)){
     $id = $_POST['id'];
-    
+    $shopCity   = $_POST['shopCity'];
     $shopName   = $_POST['shopName'];
     $shopPhone  = $_POST['shopPh'];
     $shopWebsite= $_POST['shopWeb'];
@@ -16,6 +16,7 @@ if(isset($_POST)){
 
     $sql = $dbconnect->prepare(
         "UPDATE m_shop SET
+            shop_city = :city,
             shop_name = :name,
             shop_image = :image,
             shop_address= :address,
@@ -23,6 +24,7 @@ if(isset($_POST)){
             shop_website = :web
             WHERE id = :id"
     );
+    $sql->bindValue(":city", $shopCity );
     $sql->bindValue(":name", $shopName );
     $sql->bindValue(":image", $shopImage);
     $sql->bindValue(":address", $shopAddress);

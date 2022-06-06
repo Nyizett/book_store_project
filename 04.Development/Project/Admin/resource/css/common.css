@@ -45,6 +45,10 @@
 .input-box{
     background-color: var(--input-box-color);
 }
+/* Table Image */
+.tb-img > img{
+    width: 50%;
+}
 @media screen and (max-width:1030px){
     .buttonbox{
         width: 13%;
