@@ -18,19 +18,21 @@
 <div class="container-fluid mt-5">
 <button class="custombutton btn btn-sm offset-4 fw-bold">BACK</button>
 <div class="row offset-4">
+<form action="../Controller/addDeliveryFeeController.php" method="POST">
 <div class="col-5 mt-3">
 <div class="mb-3">
   <label for="exampleFormControlInput1" class="form-label">Write City or Township</label>
-  <input type="email" class="customstyle form-control" id="exampleFormControlInput1">
+  <input type="text" class="customstyle form-control" id="exampleFormControlInput1" name="delicity">
 </div>
 <div class="mb-3">
   <label for="exampleFormControlInput1" class="form-label">Write Delivery Price</label>
-  <input type="email" class="customstyle form-control" id="exampleFormControlInput1">
+  <input type="type" class="customstyle form-control" id="exampleFormControlInput1" name="deliprice">
 </div>
 
-<button class="custombutton btn btn-sm offset-10 mt-3 fw-bold">ADD DELIVERY FEE</button>
+<button type="submit" class="custombutton btn btn-sm offset-10 mt-3 fw-bold">ADD DELIVERY FEE</button>
 
 </div>
+</form>
 </div>
 </div>
 </body>
