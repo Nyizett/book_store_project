@@ -1,8 +1,6 @@
 <?php
-
 require_once "../Model/DBConnection.php";
 {
-
 $id =  $_GET['id'];
 
 //Call DB Connection
@@ -24,8 +22,6 @@ $result = $sql->fetchAll(PDO::FETCH_ASSOC);
 // print_r($result);
 
 // header ("Location: ../View/editAuthor.php");
-
-
 }
 
 

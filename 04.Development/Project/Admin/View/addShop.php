@@ -38,17 +38,17 @@
                             </div>
                             <div class="col mb-3 mt-3 ms-4">
                                 <label for="" class="form-label">Name</label>
-                                <input type="text" class="form-control" name="shopName">
+                                <input type="text" class="input-box form-control" name="shopName">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col mb-3 mt-3 ">
                                 <label for="" class="form-label">Phone</label>
-                                <input type="text" class="form-control"  name="shopPh">
+                                <input type="number" class="input-box form-control"  name="shopPh">
                             </div>
                             <div class="col mb-3 mt-3 ms-4">
                                 <label for="" class="form-label">Website</label>
-                                <input type="text" class="form-control"  name="shopWeb">
+                                <input type="text" class="input-box form-control"  name="shopWeb">
                             </div>
                         </div>
                         <div class="row">
@@ -59,7 +59,7 @@
                         </div>
                         <div class="row">
                             <label for="">Address</label>
-                            <textarea class="form-control ms-2" rows="8" id="comment" name="shopAddress"></textarea>
+                            <textarea class="input-box form-control ms-2" rows="8" id="comment" name="shopAddress"></textarea>
                         </div>
                         <button type="submit" class="custombutton btn fw-bold mt-4 mb-4">ADD SHOP</button>
                     </div>

@@ -24,7 +24,7 @@
             <!-- Author List-->
             <div class="col-8 offset-3">
                 <p class="h3 mt-5">Book List</p>
-                
+                <button class="custombutton btn-sm offset-10  bg-warning  col-2 mb-4"><a href="../View/addBook.php" class="text-dec fw-bold text-dark">ADD BOOK</a></button>
                 <table class="table table-striped table-sm mt-4">
                     <tr class="tb-text">
                         <th class="col-1">No</th>
@@ -33,55 +33,28 @@
                         <th class="col-2">Category</th>
                         <th class="col-2">Author</th>
                         <th class="col-2">Price</th>
-                        <th class="col-2">Actions</th>
+                        <th colspan=2>Actions</th>
                     </tr>
-                    <tr class="tb-text">
-                        <td >1</td>
-                        <td ><img src="../resource/img/authors/minlu.jpg" alt="" class="customimagesize" /> </td>
-                        <td >TookP</td>
-                        <td>Cartoon</td>
-                        <td>No</td>
-                        <td>2,000 MMK</td>
-                        <td>
-                            <button class="btn btn-outline-primary ">
-                                <ion-icon name="create"></ion-icon>
-                            </button> <button class="btn btn-outline-danger mt-1 ">
-                                <ion-icon name="trash-sharp"></ion-icon>
-                            </button>
-                        </td>
-                    </tr>
-                    <tr class="tb-text">
-                        <td>2</td>
-                        <td><img src="../resource/img/authors/minlu.jpg" alt="" class="customimagesize" /> </td>
-                        <td >TookP</td>
-                        <td>Cartoon</td>
-                        <td>No</td>
-                        <td>2,000 MMK</td>
-                        <td>
-                            <button class="btn btn-outline-primary ">
-                                <ion-icon name="create"></ion-icon>
-                            </button> <button class="btn btn-outline-danger mt-1 ">
-                                <ion-icon name="trash-sharp"></ion-icon>
-                            </button>
-                        </td>
-                    </tr>
-                    <tr class="tb-text">
-                        <td>3</td>
-                        <td><img src="../resource/img/authors/minlu.jpg" alt="" class="customimagesize" /> </td>
-                        <td >TookP</td>
-                        <td>Cartoon</td>
-                        <td>No</td>
-                        <td>2,000 MMK</td>
-                        <td>
-                            <button class="btn btn-outline-primary ">
-                                <ion-icon name="create"></ion-icon>
-                            </button> <button class="btn btn-outline-danger mt-1 ">
-                                <ion-icon name="trash-sharp"></ion-icon>
-                            </button>
-                        </td>
-                    </tr>
+                    <?php
+                    $count = 1;
+                    require "../Controller/bookListController.php";
+                    foreach ($result as $key => $value) {
+                        echo "<tr class='tb-text'>";
+                        echo "<td>" . $count . "</td>";
+                        echo "<td>" . $value['book_name'] . "</td>";
+                        echo "<td class='tb-img'> <img src='../../Images/" . $value['book_image'] . "' </td>";
+                        echo "<td>" . $value['category_id'] . "</td>";
+                        echo "<td>" . $value['author_id'] . "</td>";
+                        echo "<td>" . $value['book_price'] . "</td>";
+                        echo "<td><a href='../View/editBook.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-primary'><ion-icon name='create-outline'></ion-icon></button></a></td>";
+                        echo "<td><a href='../Controller/deleteBookController.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-danger'><ion-icon name='trash-outline'></ion-icon></button></a></td>";
+                        echo "</tr>";
+                        $count++;
+                        
+                    }
+                    ?>
                 </table>
-                <button class="custombutton btn-sm offset-10  bg-warning  col-2"><a href="../View/addBook.php" class="text-dec fw-bold text-dark">ADD BOOK</a></button>
+                <button class="custombutton btn-sm offset-10  bg-warning  col-2 mb-4"><a href="../View/addBook.php" class="text-dec fw-bold text-dark">ADD BOOK</a></button>
             </div>
         </div>
     </div>

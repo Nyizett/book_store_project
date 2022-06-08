@@ -24,20 +24,22 @@
                   <h3 class="text-white ">Welcome Back!</h3>
                   <p class="text-light mt-5 mx-1">To Keep Connected With Us Please Login</p>
                   <p class="text-light ">With Your Personal Infomation</p>
-                  <button class="btn btn-light text-primary mt-4 px-4 fw-bolder">SIGN IN</button>
+                  <a href="../View/signin.php"><button class="btn btn-light text-primary mt-4 px-4 fw-bolder">SIGN IN</button></a>
                </div>
             </div>
             <div class="col-12 col-md-6 inner-left">
                <div class="text-center m-3">
                   <h3 class="fw-bolder">Create Account</h3>
                   <p>use your email for registration</p>
-                  <form action="">
-                     <input class="mb-3 px-3" type="text" name="" id="" placeholder="Name">
-                     <input class="mb-3 px-3" type="text" name="" id="" placeholder="password">
-                     <input class="mb-3 px-3" type="text" name="" id="" placeholder="Email">
-                     <input class="mb-3 px-3" type="text" name="" id="" placeholder="Phone">
-                     <input class="mb-3 px-3" type="text" name="" id="" placeholder="Address">
-                     <button class="btn btn-outline-primary mb-3 fw-bolder">SIGN UP</button>
+                  <form id="signUpForm" method="POST">
+                     <div class="form-control ">
+                     <input class="mt-3 mb-3 px-3" type="text" name="name" id="name" placeholder="Name">
+                     <input class="mb-3 px-3" type="password" name="password" id="password" placeholder="password">
+                     <input class="mb-3 px-3" type="email" name="email" id="email" placeholder="Email">
+                     <input class="mb-3 px-3" type="text" name="phone" id="phone" placeholder="Phone">
+                     <input class="mb-3 px-3" type="text" name="address" id="address" placeholder="Address">
+                     </div>
+                     <button type="submit" class="btn btn-outline-primary mb-3 fw-bolder mt-3">SIGN UP</button>
                   </form>
                </div>
             </div>
@@ -45,125 +47,16 @@
       </div>
    </div>
 
-   <!-- footer -->
-   <!-- <footer id="footer" class="container-fluid commom-bg">
-      <div class="row">
-         <div class="col-12 col-lg-4 ps-5 pt-4">
-            <div class="">
-               <h2 class="text-white align-top">Paradise</h2>
-               <p></p>
-               <p class="text-white">Address</p>
-               <p class="text-white">SHOW ON MAP</p>
-               <div class="d-flex">
-                  <i class="fab fa-facebook text-white mx-1"></i>
-                  <i class="fab fa-instagram text-white mx-1"></i>
-                  <i class="fab fa-youtube text-white mx-1"></i>
-                  <i class="fab fa-twitter text-white mx-1"></i>
-               </div>
-            </div>
-         </div>
-         <div class="col-12 col-lg-8 col-xl-6">
-            <div class="container-fluid">
-               <div class="row mt-5 hello">
-                  <div class="col-6 col-lg-3 text-white">
-                     <div class="cs-width me-5">
-                        <p class="fw-bold">Customer Service</p>
-                        <small>09-123456789</small>
-                        <br />
-                        <br />
-                        <small>hello@gmail.com</small>
-                     </div>
-                  </div>
-                  <div class="col-6 col-lg-3 text-white">
-                     <div class="">
-                        <p class="fw-bold">Our Service</p>
-                        <a href="#" class="btn-link text-white text-decoration-none">
-                           <small>Contact Us </small>
-                        </a>
-                        <br />
-                        <a href="#" class="btn-link text-white text-decoration-none">
-                           <small> Guide </small>
-                        </a>
-                        <br />
-                        <a href="#" class="btn-link text-white text-decoration-none">
-                           <small>Delivery Free</small>
-                        </a>
-                        <br />
-                        <a href="#" class="btn-link text-white text-decoration-none">
-                           <small> Good Print Quality</small>
-                        </a>
-                     </div>
-                  </div>
-                  <div class="col-6 col-lg-3">
-                     <div class="">
-                        <p class="fw-bold text-white">Categories</p>
-                        <a href="#" class="btn-link text-white text-decoration-none">
-                           <small>Language</small>
-                        </a>
-                        <br />
-                        <a href="#" class="btn-link text-white text-decoration-none">
-                           <small>Education</small>
-                        </a>
-                        <br />
-                        <a href="#" class="btn-link text-white text-decoration-none">
-                           <small>Novels</small>
-                        </a>
-                        <br />
-                        <a href="#" class="btn-link text-white text-decoration-none">
-                           <small>Technology</small>
-                        </a>
-                        <br />
-                        <a href="#" class="btn-link text-white text-decoration-none">
-                           <small>Cartoons</small>
-                        </a>
-                     </div>
-                  </div>
-                  <div class="col-6 col-lg-3">
-                     <div class="">
-                        <p class="fw-bold text-white">Shop List</p>
-                        <a href="#" class="btn-link text-white text-decoration-none">
-                           <small>Yagnon</small>
-                        </a>
-                        <br />
-                        <a href="#" class="btn-link text-white text-decoration-none">
-                           <small>Mandalay </small>
-                        </a>
-                        <br />
-                        <a href="tel:09250152018" class="btn-link text-white text-decoration-none">
-                           <small>NayPyiTaw</small>
-                        </a>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="row">
-            <hr class="text-white" />
-            <div class="col-12 col-lg-6">
-               <div class="">
-                  <p class="text-white">
-                     Copyright © 2022 ParadiseBookStore All rights reserved.
-                  </p>
-               </div>
-            </div>
-            <div class="col-12 col-lg-6">
-               <div class="d-flex justify-content-end">
-                  <i class="fab fa-cc-visa text-white mx-1"></i>
-                  <i class="fab fa-cc-mastercard text-white mx-1"></i>
-               </div>
-            </div>
-         </div>
-      </div>
-   </footer> -->
+   
+   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+   <script src="../resource/js/signup.js"></script>
    <script src="../resource/UI Library/fontawesome-free/js/all.min.js"></script>
    <script src="../resource/UI Library/bootstrap-5.0.2-dist/js/bootstrap.js"></script>
    <script type="text/javascript">
-      $(".slider").slick({
-         prevArrow: '<span class="priv_arrow btn  btn-primary "><i class="fas fa-angle-left"></i></span>',
-         nextArrow: '<span class="next_arrow btn btn-primary "><i class="fas fa-angle-right"></i></span>'
-      });
+    
    </script>
 </body>
 

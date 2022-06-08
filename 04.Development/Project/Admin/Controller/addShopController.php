@@ -39,6 +39,5 @@ if(isset($_POST)){
     $sql->bindValue(":shweb", $shopWebsite);
 
     $sql->execute();
-
-    
+    header ("Location: ../View/shopInfo.php");
 }
