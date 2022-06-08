@@ -9,18 +9,8 @@
    <link rel="stylesheet" href="../resource/UI Library/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
    <link rel="stylesheet" href="../resource/css/style.css" />
    <link rel="stylesheet" href="../resource/css/homepage.css" />
-<<<<<<< HEAD
-<<<<<<< HEAD
-   <link rel="stylesheet" href="../resource/css/author.css" />
-   <link rel="stylesheet" href="../resource/css/common.css" />
-=======
    <link rel="stylesheet" href="../resource/css/author.css">
    <link rel="stylesheet" href="../resource/css/common.css">
->>>>>>> c96144a9980a79e57346fe75a5d34c78a597f182
-=======
-   <link rel="stylesheet" href="../resource/css/author.css">
-   <link rel="stylesheet" href="../resource/css/common.css">
->>>>>>> origin/main
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
    <link rel="stylesheet" href="../resource/UI Library/fontawesome-free/css/all.min.css">
 
@@ -28,71 +18,6 @@
 </head>
 
 <body>
-<<<<<<< HEAD
-<<<<<<< HEAD
-   <!-- Header -->
-   <nav class="navbar navbar-expand-lg  position-fixed top-0 w-100 header" id="cum_navbar">
-
-   </nav>
-   <!-- Header -->
-   <!-- Slider -->
-   <div class="container header d-flex justify-content-between align-items-center p-4">
-      <h3>Authors</h3>
-      <div>
-         <b>Home</b> -> Authors
-      </div>
-   </div>
-   <div class="fw-bolder text-primary d-flex justify-content-center align-items-center "><u>All </u>
-      <div class="mx-4 text-dark space"> A B C D E F G H I K L M N O P Q R S T U V W X Y Z </div>
-   </div>
-   <div>
-      <table class="table mt-5">
-         <tr>
-            <th scope="col">Items</th>
-            <th scope="col"></th>
-            <th scope="col">Price</th>
-            <th scope="col">Quatity</th>
-            <th scope="col">Total</th>
-            <th></th>
-         </tr>
-         </thead>
-         <tbody>
-            <tr>
-               <th scope="row"><img src="./education.jpg" alt="" class="images"></th>
-               <td>Book Name<br> Author Name</td>
-               <td>1000</td>
-               <td>2</td>
-               <td>2000</td>
-               <td>
-                  <ion-icon name="close-circle-outline"></ion-icon>
-               </td>
-            </tr>
-            <tr>
-               <th scope="row"><img src="./education.jpg" alt=""></th>
-               <td>Book Name<br> Author Name</td>
-               <td>4000</td>
-               <td>1</td>
-               <td>4000</td>
-               <td>
-                  <ion-icon name="close-circle-outline"></ion-icon>
-               </td>
-            </tr>
-            <tr>
-               <th scope="row"><img src="./education.jpg" alt=""></th>
-               <td>Book Name<br> Author Name</td>
-               <td>5000</td>
-               <td>2</td>
-               <td>10000</td>
-               <td>
-                  <ion-icon name="close-circle-outline"></ion-icon>
-               </td>
-            </tr>
-         </tbody>
-      </table>
-   </div>
-=======
-=======
->>>>>>> origin/main
    <!-- nav -->
    <nav class="navbar navbar-expand-lg  position-fixed top-0 w-100 header" id="cum_navbar">
    </nav>
@@ -152,11 +77,7 @@
          </div>
       </div>
    </div> -->
-<<<<<<< HEAD
->>>>>>> c96144a9980a79e57346fe75a5d34c78a597f182
-=======
 
->>>>>>> origin/main
    <!-- footer -->
    <footer id="footer" class="container-fluid commom-bg mt-5">
       <div class="row">
@@ -275,14 +196,7 @@
    <script src="../resource/UI Library/fontawesome-free/js/all.min.js"></script>
    <script src="../resource/js/common.js"></script>
    <script src="../resource/js/footerCommon.js"></script>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
    <script src="../resource/js/authorShow.js"></script>
->>>>>>> c96144a9980a79e57346fe75a5d34c78a597f182
-=======
-   <script src="../resource/js/authorShow.js"></script>
->>>>>>> origin/main
    <script type="text/javascript">
       $(".slider").slick({
          prevArrow: '<span class="priv_arrow btn  btn-primary "><i class="fas fa-angle-left"></i></span>',

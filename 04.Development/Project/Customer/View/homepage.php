@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,7 +18,7 @@
 <body>
    <!-- Header -->
    <nav class="navbar navbar-expand-lg  position-fixed top-0 w-100 header" id="cum_navbar">
-      
+
    </nav>
    <!-- Slider -->
    <section id="welcome-section" class="slider container">
@@ -44,7 +45,7 @@
       </div>
    </section>
 
-<section id="blueBox" class="container my-5">
+   <section id="blueBox" class="container my-5">
       <div class="row pt-3">
          <div class="col-12 col-lg-4 content">
             <div class=" container commom-bg rounded">
@@ -217,7 +218,8 @@
          </div>
       </div>
    </section>
-   <section class="container bg-lightBlue  my-5  " id="">
+   <!-- Best selling books Start -->
+   <section class="container bg-lightBlue my-5 " id="">
       <div class="row justify-content-evenly h-100 content ">
          <div class="my-5"></div>
          <div class="col-12">
@@ -229,9 +231,9 @@
                </div>
             </div>
          </div>
-         <div class="col-6 col-lg-3 col-xl-2">
+         <div class="col-6 col-lg-3 col-xl-2 mb-5 mx-3">
             <div class="card mb-5 mb-lg-0 card-width bg-lightBlue border-0 content">
-               <img src="../resource/img/book cover/jsEi.png" class="img-fluid w-75 mx-auto mt-3" alt="" />
+               <img src="../resource/img/book cover/language2.jpg" class="img-fluid mx-auto mt-3" width="90%" alt="" />
                <div class="card-body d-flex flex-column justify-content-center align-items-center">
                   <p class="card-title fw-bold mb-0 font-color-primary">
                      JavaScript
@@ -252,10 +254,9 @@
                </div>
             </div>
          </div>
-
-         <div class="col-6 col-lg-3 col-xl-2">
+         <div class="col-6 col-lg-3 col-xl-2 mb-5 mx-3">
             <div class="card mb-5 mb-lg-0 card-width bg-lightBlue border-0 content">
-               <img src="../resource/img/book cover/jsEi.png" class="img-fluid w-75 mx-auto mt-3" alt="" />
+               <img src="../resource/img/book cover/language2.jpg" class="img-fluid mx-auto mt-3" width="90%" alt="" />
                <div class="card-body d-flex flex-column justify-content-center align-items-center">
                   <p class="card-title fw-bold mb-0 font-color-primary">
                      JavaScript
@@ -270,62 +271,15 @@
                   <small class="card-text d-block mb-3 font-color-secondary">
                      Ei Maung
                   </small>
-                  <div class="d-flex justify-content-between align-items-center">
-                     <p class="fw-bold mb-0 font-color-primary">39999 MMK</p>
+                  <div class="d-flex d justify-content-between align-items-center">
+                     <p class="fw-bold mb-0 font-color-primary">5000 MMK</p>
                   </div>
                </div>
             </div>
          </div>
-
-         <div class="col-6 col-lg-3 col-xl-2 book-card-lg mb-5">
-            <div class="card bg-lightBlue border-0 content">
-               <img src="../resource/img/book cover/jsEi.png" class="img-fluid w-75 mx-auto mt-3" alt="" />
-               <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                  <p class="card-title fw-bold fs-4 mb-0 font-color-primary">
-                     JavaScript
-                  </p>
-                  <small>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                  </small>
-                  <p class="card-text d-block mb-3 font-color-secondary">
-                     Ei Maung
-                  </p>
-                  <div class="d-flex justify-content-between align-items-center">
-                     <p class="fw-bold mb-0 font-color-primary">000 MMK</p>
-                  </div>
-               </div>
-            </div>
-         </div>
-
-         <div class="col-6 col-lg-3 col-xl-2">
+         <div class="col-6 col-lg-3 col-xl-2 mb-5 mx-3">
             <div class="card mb-5 mb-lg-0 card-width bg-lightBlue border-0 content">
-               <img src="../resource/img/book cover/jsEi.png" class="img-fluid w-75 mx-auto mt-3" alt="" />
-               <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                  <p class="card-title fw-bold mb-0">JavaScript</p>
-                  <small>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                  </small>
-                  <small class="card-text text-black-50 d-block mb-3">
-                     Ei Maung
-                  </small>
-                  <div class="d-flex justify-content-between align-items-center">
-                     <p class="fw-bold mb-0 font-color-primary">999 MMK</p>
-                  </div>
-               </div>
-            </div>
-         </div>
-
-         <div class="col-6 col-lg-3 col-xl-2">
-            <div class="card mb-5 mb-lg-0 card-width bg-lightBlue border-0 content">
-               <img src="../resource/img/book cover/jsEi.png" class="img-fluid w-75 mx-auto mt-3" alt="" />
+               <img src="../resource/img/book cover/language2.jpg" class="img-fluid mx-auto mt-3" width="90%" alt="" />
                <div class="card-body d-flex flex-column justify-content-center align-items-center">
                   <p class="card-title fw-bold mb-0 font-color-primary">
                      JavaScript
@@ -338,26 +292,119 @@
                      <i class="fa-solid fa-star"></i>
                   </small>
                   <small class="card-text d-block mb-3 font-color-secondary">
-                     Hello
+                     Ei Maung
                   </small>
-                  <div class="d-flex justify-content-between align-items-center">
-                     <p class="fw-bold mb-0 font-color-primary">3000 MMK</p>
+                  <div class="d-flex d justify-content-between align-items-center">
+                     <p class="fw-bold mb-0 font-color-primary">5000 MMK</p>
                   </div>
                </div>
             </div>
          </div>
-      </div>
+         <div class="col-6 col-lg-3 col-xl-2 mb-5 mx-3">
+            <div class="card mb-5 mb-lg-0 card-width bg-lightBlue border-0 content">
+               <img src="../resource/img/book cover/language2.jpg" class="img-fluid mx-auto mt-3" width="90%" alt="" />
+               <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                  <p class="card-title fw-bold mb-0 font-color-primary">
+                     JavaScript
+                  </p>
+                  <small>
+                     <i class="fa-solid fa-star text-warning"></i>
+                     <i class="fa-solid fa-star text-warning"></i>
+                     <i class="fa-solid fa-star text-warning"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                  </small>
+                  <small class="card-text d-block mb-3 font-color-secondary">
+                     Ei Maung
+                  </small>
+                  <div class="d-flex d justify-content-between align-items-center">
+                     <p class="fw-bold mb-0 font-color-primary">5000 MMK</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-6 col-lg-3 col-xl-2 mb-5 mx-3">
+            <div class="card mb-5 mb-lg-0 card-width bg-lightBlue border-0 content">
+               <img src="../resource/img/book cover/language2.jpg" class="img-fluid mx-auto mt-3" width="90%" alt="" />
+               <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                  <p class="card-title fw-bold mb-0 font-color-primary">
+                     JavaScript
+                  </p>
+                  <small>
+                     <i class="fa-solid fa-star text-warning"></i>
+                     <i class="fa-solid fa-star text-warning"></i>
+                     <i class="fa-solid fa-star text-warning"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                  </small>
+                  <small class="card-text d-block mb-3 font-color-secondary">
+                     Ei Maung
+                  </small>
+                  <div class="d-flex d justify-content-between align-items-center">
+                     <p class="fw-bold mb-0 font-color-primary">5000 MMK</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-6 col-lg-3 col-xl-2 mb-5 mx-3">
+            <div class="card mb-5 mb-lg-0 card-width bg-lightBlue border-0 content">
+               <img src="../resource/img/book cover/language2.jpg" class="img-fluid mx-auto mt-3" width="90%" alt="" />
+               <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                  <p class="card-title fw-bold mb-0 font-color-primary">
+                     JavaScript
+                  </p>
+                  <small>
+                     <i class="fa-solid fa-star text-warning"></i>
+                     <i class="fa-solid fa-star text-warning"></i>
+                     <i class="fa-solid fa-star text-warning"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                  </small>
+                  <small class="card-text d-block mb-3 font-color-secondary">
+                     Ei Maung
+                  </small>
+                  <div class="d-flex d justify-content-between align-items-center">
+                     <p class="fw-bold mb-0 font-color-primary">5000 MMK</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-6 col-lg-3 col-xl-2 mb-5 mx-3">
+            <div class="card mb-5 mb-lg-0 card-width bg-lightBlue border-0 content">
+               <img src="../resource/img/book cover/language2.jpg" class="img-fluid mx-auto mt-3" width="90%" alt="" />
+               <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                  <p class="card-title fw-bold mb-0 font-color-primary">
+                     JavaScript
+                  </p>
+                  <small>
+                     <i class="fa-solid fa-star text-warning"></i>
+                     <i class="fa-solid fa-star text-warning"></i>
+                     <i class="fa-solid fa-star text-warning"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                  </small>
+                  <small class="card-text d-block mb-3 font-color-secondary">
+                     Ei Maung
+                  </small>
+                  <div class="d-flex d justify-content-between align-items-center">
+                     <p class="fw-bold mb-0 font-color-primary">5000 MMK</p>
+                  </div>
+               </div>
+            </div>
+         </div>
    </section>
-   <section class="container-fluid my-5 pt-5 vh-100">
+   <!-- Best selling books end -->
+   <!-- Popular Books start -->
+   <section class="container my-5 ">
       <div class="row">
          <div class="col-12">
-            <h1 class="font-color-primary ms-5 ps-5">Popular Books</h1>
+            <h1 class="font-color-primary ms-5 ">Popular Books</h1>
          </div>
       </div>
-      <div class="row justify-content-center">
-         <div class="col-12 col-lg-2 col-xl-2">
-            <div class="card card-width mt-5">
-               <img src="../resource/img/book cover/jsEi.png" class="img-fluid w-75 mx-auto mt-3" alt="" />
+      <div class="row justify-content-evenly content mt-3">
+         <div class="col-6 col-lg-3 col-xl-2 my-3 mx-3">
+            <div class="card mb-5 mb-lg-0 card-width bg-lightBlue border-1 content">
+               <img src="../resource/img/book cover/language2.jpg" class="img-fluid mx-auto mt-3" width="90%" alt="" />
                <div class="card-body d-flex flex-column justify-content-center align-items-center">
                   <p class="card-title fw-bold mb-0 font-color-primary">
                      JavaScript
@@ -378,9 +425,9 @@
                </div>
             </div>
          </div>
-         <div class="col-12 col-lg-2 col-xl-2">
-            <div class="card mt-5 card-width">
-               <img src="../resource/img/book cover/jsEi.png" class="img-fluid w-75 mx-auto mt-3" alt="" />
+         <div class="col-6 col-lg-3 col-xl-2 my-3 mx-3">
+            <div class="card mb-5 mb-lg-0 card-width bg-lightBlue border-1 content">
+               <img src="../resource/img/book cover/language2.jpg" class="img-fluid mx-auto mt-3" width="90%" alt="" />
                <div class="card-body d-flex flex-column justify-content-center align-items-center">
                   <p class="card-title fw-bold mb-0 font-color-primary">
                      JavaScript
@@ -401,10 +448,9 @@
                </div>
             </div>
          </div>
-
-         <div class="col-12 col-lg-2 col-xl-2">
-            <div class="card mt-5 card-width">
-               <img src="../resource/img/book cover/jsEi.png" class="img-fluid w-75 mx-auto mt-3" alt="" />
+         <div class="col-6 col-lg-3 col-xl-2 my-3 mx-3">
+            <div class="card mb-5 mb-lg-0 card-width bg-lightBlue border-1 content">
+               <img src="../resource/img/book cover/language2.jpg" class="img-fluid mx-auto mt-3" width="90%" alt="" />
                <div class="card-body d-flex flex-column justify-content-center align-items-center">
                   <p class="card-title fw-bold mb-0 font-color-primary">
                      JavaScript
@@ -425,10 +471,9 @@
                </div>
             </div>
          </div>
-
-         <div class="col-12 col-lg-2 col-xl-2">
-            <div class="card mt-5 card-width">
-               <img src="../resource/img/book cover/jsEi.png" class="img-fluid w-75 mx-auto mt-3" alt="" />
+         <div class="col-6 col-lg-3 col-xl-2 my-3 mx-3">
+            <div class="card mb-5 mb-lg-0 card-width bg-lightBlue border-1 content">
+               <img src="../resource/img/book cover/language2.jpg" class="img-fluid mx-auto mt-3" width="90%" alt="" />
                <div class="card-body d-flex flex-column justify-content-center align-items-center">
                   <p class="card-title fw-bold mb-0 font-color-primary">
                      JavaScript
@@ -449,10 +494,13 @@
                </div>
             </div>
          </div>
-         <div lass="col-12 col-lg-4 col-xl-2 book-card-lg-2">
-            <div class="card py-3 cardLg">
-               <img src="../resource/img/book cover/jsEi.png" class="img-fluid w-75 mx-auto mt-3" alt="" />
+         <div class="col-6 col-lg-3 col-xl-2 my-3 mx-3">
+            <div class="card mb-5 mb-lg-0 card-width bg-lightBlue border-1 content">
+               <img src="../resource/img/book cover/language2.jpg" class="img-fluid mx-auto mt-3" width="90%" alt="" />
                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                  <p class="card-title fw-bold mb-0 font-color-primary">
+                     JavaScript
+                  </p>
                   <small>
                      <i class="fa-solid fa-star text-warning"></i>
                      <i class="fa-solid fa-star text-warning"></i>
@@ -460,15 +508,62 @@
                      <i class="fa-solid fa-star"></i>
                      <i class="fa-solid fa-star"></i>
                   </small>
+                  <small class="card-text d-block mb-3 font-color-secondary">
+                     Ei Maung
+                  </small>
                   <div class="d-flex d justify-content-between align-items-center">
-                     <p class="fw-bold mb-0 fs-3 font-color-primary">
-                        Technology
-                     </p>
+                     <p class="fw-bold mb-0 font-color-primary">5000 MMK</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-6 col-lg-3 col-xl-2 my-3 mx-3">
+            <div class="card mb-5 mb-lg-0 card-width bg-lightBlue border-1 content">
+               <img src="../resource/img/book cover/language2.jpg" class="img-fluid mx-auto mt-3" width="90%" alt="" />
+               <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                  <p class="card-title fw-bold mb-0 font-color-primary">
+                     JavaScript
+                  </p>
+                  <small>
+                     <i class="fa-solid fa-star text-warning"></i>
+                     <i class="fa-solid fa-star text-warning"></i>
+                     <i class="fa-solid fa-star text-warning"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                  </small>
+                  <small class="card-text d-block mb-3 font-color-secondary">
+                     Ei Maung
+                  </small>
+                  <div class="d-flex d justify-content-between align-items-center">
+                     <p class="fw-bold mb-0 font-color-primary">5000 MMK</p>
                   </div>
                </div>
             </div>
          </div>
       </div>
+      <!-- <div class="row justify-content-evenly content">
+         <div class="mt-5 mx-2">
+            <img src="../resource/img/book cover/jsEi.png" class="img-fluid  mx-auto mt-3" width="15%" alt="" />
+            <div class="card-body d-flex flex-column justify-content-center align-items-center">
+               <p class="card-title fw-bold mb-0 font-color-primary">
+                  JavaScript
+               </p>
+               <small>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+               </small>
+               <small class="card-text d-block mb-3 font-color-secondary">
+                  Ei Maung
+               </small>
+               <div class="d-flex d justify-content-between align-items-center">
+                  <p class="fw-bold mb-0 font-color-primary">5000 MMK</p>
+               </div>
+            </div>
+         </div>
+      </div> -->
    </section>
    <section class="container py-5">
       <div class="row">
