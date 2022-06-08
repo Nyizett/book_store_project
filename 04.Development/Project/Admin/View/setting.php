@@ -237,17 +237,32 @@
                     </div>
                     <!-- Delivery Fee Table end -->
 
-
+                    <!-- Service Table start -->
                     <div class=" mt-5 ">
                         <table class="table table-striped table-sm">
                             <tr class="tb-text">
                                 <th class="col-1">No</th>
                                 <th class="col-3">Title</th>
                                 <th class="col-6">Paragraph</th>
-                                <th class="col-2">Actions</th>
+                                <th class="col-2" colspan="2">Actions</th>
                             </tr>
 
-                            <tr class="tb-text">
+                            <?php
+                            require "../Controller/showServiceController.php";
+                            $no = 1;
+
+                            foreach ($result as $key => $value) {
+                                global $no;
+                                echo "<tr class=tb-text>";
+                                echo "<td>" . $no++ . "</td>";
+                                echo "<td>" . $value['service_tilte'] . "</td>";
+                                echo "<td>" . $value['service_paragraph'] ."</td>";
+                                echo "<td><a href='../View/editService.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-primary'><ion-icon name='create-outline'></ion-icon></button></a></td>";
+                                echo "<td><a href='../Controller/deleteServiceController.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-danger'><ion-icon name='trash-outline'></ion-icon></button></a></td>";
+                            }
+                            ?>
+
+                            <!-- <tr class="tb-text">
                                 <td>1</td>
                                 <td>Delivery</td>
                                 <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit voluptate et dolores aliquam numquam minima illo qui, nulla inventore! Porro </td>
@@ -278,23 +293,39 @@
                                     </button> <button class="btn btn-outline-danger mt-1">
                                         <ion-icon name="trash-sharp"></ion-icon>
                                     </button></td>
-                            </tr>
+                            </tr> -->
                         </table>
                         <button class="btn btn-sm offset-10 custombutton fw-bold">ADD SERVICES</button>
                     </div>
+                    <!-- Service Table end -->
 
 
-
+                    <!-- Privacy Policy Table Start -->
                     <div class=" mt-5 ">
                         <table class="table table-striped table-sm">
                             <tr class="tb-text">
                                 <th class="col-1">No</th>
                                 <th class="col-3">Title</th>
                                 <th class="col-6">Paragraph</th>
-                                <th class="col-2">Actions</th>
+                                <th class="col-2" colspan="2">Actions</th>
                             </tr>
 
-                            <tr class="tb-text">
+                            <?php
+                            require "../Controller/showPrivacyPolicyController.php";
+                            $no = 1;
+
+                            foreach ($result as $key => $value) {
+                                global $no;
+                                echo "<tr class=tb-text>";
+                                echo "<td>" . $no++ . "</td>";
+                                echo "<td>" . $value['pp_title'] . "</td>";
+                                echo "<td class=overflow-hidden>" . $value['pp_paragraph'] . "</td>";
+                                echo "<td><a href='../View/editPrivacyPolicy.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-primary'><ion-icon name='create-outline'></ion-icon></button></a></td>";
+                                echo "<td><a href='../Controller/deletePrivacyPolicyController.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-danger'><ion-icon name='trash-outline'></ion-icon></button></a></td>";
+                            }
+                            ?>
+
+                            <!-- <tr class="tb-text">
                                 <td>1</td>
                                 <td>Delivery &payment</td>
                                 <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit voluptate et dolores aliquam numquam minima illo qui, nulla inventore! Porro </td>
@@ -325,10 +356,11 @@
                                     </button> <button class="btn btn-outline-danger mt-1">
                                         <ion-icon name="trash-sharp"></ion-icon>
                                     </button></td>
-                            </tr>
+                            </tr> -->
                         </table>
                         <button class="btn btn-sm offset-10 custombutton fw-bold">ADD PRIVACY POLICY</button>
                     </div>
+                    <!-- Privacy Policy Table End -->
 
 
                     <div class=" mt-5 ">
