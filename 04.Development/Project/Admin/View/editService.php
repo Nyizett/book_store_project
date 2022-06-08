@@ -18,19 +18,22 @@
 <div class="container-fluid mt-5">
 <button class="custombutton btn btn-sm offset-4 fw-bold">BACK</button>
 <div class="row offset-4">
+<form action="../Controller/updateServiceController.php" method="POST">
 <div class="col-5 mt-3">
+<input type="hidden" name="id" value ="<?php require_once "../Controller/editServiceController.php";  echo $result[0]['id'];?>">
 <div class="mb-3">
   <label for="exampleFormControlInput1" class="form-label">Title</label>
-  <input type="email" class="customstyle form-control" id="exampleFormControlInput1">
+  <input type="text" class="customstyle form-control" value="<?php echo $result[0]['service_tilte'];?>" id="exampleFormControlInput1" name="estt">
 </div>
 <div class="mb-3">
   <label for="exampleFormControlTextarea1" class="form-label">Paragraph</label>
-  <textarea class="customstyle form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  <textarea class="customstyle form-control" id="exampleFormControlTextarea1" rows="3" name="espg"><?php echo $result[0]['service_paragraph'];?></textarea>
 </div>
 
 <button class="custombutton btn btn-sm offset-10 mt-3 fw-bold">SAVE</button>
 
 </div>
+</form>
 </div>
 </div>
 </body>
