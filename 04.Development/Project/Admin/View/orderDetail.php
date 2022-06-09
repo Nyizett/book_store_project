@@ -23,39 +23,56 @@
             <div id="navbar" class="my-nav"></div>
             <!--Order Detail-->
             <div class="col-8 offset-3">
-            <p class="h4 mt-5">Order Detail</p>
-            <table class="table table-striped mt-4 col-10">
-                    <tr class="bg-danger">
+                <p class="h4 mt-5">Order Detail</p>
+                <table class="table table-striped mt-4 col-10">
+                    <tr class="tb-text bg-danger">
                         <th class="col-1">No</th>
                         <th class="col-2">BookName</th>
                         <th class="col-3">Price</th>
                         <th class="col-2">Quantity</th>
                         <th class="col-1">Total</th>
                     </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>N5</td>
-                        <td>3,500MMK</td>
-                        <td>2</td>
-                        <td>7,000MMK</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>N5</td>
-                        <td>3,500MMK</td>
-                        <td>2</td>
-                        <td>7,000MMK</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>N5</td>
-                        <td>3,500MMK</td>
-                        <td>2</td>
-                        <td>7,000MMK</td>
-                    </tr>
+
+                    <?php
+                    require_once "../Model/DBConnection.php"; {
+                        $id =  $_GET['id'];
+
+                        //Call DB Connection
+                        $db =  new DBConnect();
+                        $dbconnect = $db->connect();
+
+                        $sql = $dbconnect->prepare(
+                       "SELECT * FROM `m_order_details` 
+                        LEFT JOIN m_book ON m_order_details.book_id =m_book.id 
+                        WHERE m_order_details.user_id=:id ; "
+                        );
+
+                        $sql->bindValue(":id", $id);
+
+                        $sql->execute();
+
+                        $result = $sql->fetchAll(PDO::FETCH_ASSOC);
+                        // echo "<pre>";
+                        // print_r($result);
+
+
+                        $no = 1;
+
+                        foreach ($result as $key => $value) {
+                            global $no;
+                            echo "<tr class=tb-text>";
+                            echo "<td>" . $no++ . "</td>";
+                            echo "<td >" . $value['book_name'] . "</td>";
+                            echo "<td >" . $value['book_price'] .  ",000 MMK" . "</td>";
+                            echo "<td >" . $value['order_d_quantity'] . "</td>";
+                            echo "<td >" . $value['total_amount'] .  ",000 MMK" . "</td>";
+                        }
+                    }
+                    ?>
                 </table>
             </div>
         </div>
     </div>
 </body>
+
 </html>

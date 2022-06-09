@@ -27,19 +27,37 @@
                 <ul class="list-group mt-4">
                     <li class="h4 mt-3 d-flex justify-content-between align-items-center">
                         Order List
-                        <span class="badge bg-warning rounded-pill"><a href="./orderDetail.php" class="text-dark">Order Detail</a></span>
+                        <!-- <span class="badge bg-warning rounded-pill"><a href="./orderDetail.php" class="text-dark">Order Detail</a></span> -->
                     </li>
                 </ul>
                 <table class="table table-striped mt-4">
-                    <tr class="bg-warning">
+                    <tr class="tb-text bg-warning ">
                         <th class="col-1">No</th>
                         <th class="col-2">CustomerName</th>
                         <th class="col-3 ">Address</th>
-                        <th class="col-2 ">City</th>
+                        <th class="col-1 ">City</th>
                         <th class="col-2">Total</th>
                         <th class="col-2">Delivery Fees</th>
+                        <th class="col-1">Details</th>
                     </tr>
-                    <tr>
+
+                    <?php
+                    require "../Controller/showOrderInfoController.php";
+                    $no = 1;
+
+                    foreach ($result as $key => $value) {
+                        global $no;
+                        echo "<tr class=tb-text>";
+                        echo "<td>" . $no++ . "</td>";
+                        echo "<td >" . $value['user_name'] . "</td>";
+                        echo "<td >" . $value['order_address'] . "</td>";
+                        echo "<td >" . $value['delivery_city_name'] . "</td>";
+                        echo "<td >" . $value['total_amount'].  ",000 MMK" . "</td>";
+                        echo "<td >" . $value['delivery_fees'].  ",000 MMK" . "</td>";
+                        echo "<td><a href='../View/orderDetail.php?id=" . $value['customer_id'] . "'><button type='button' class='btn btn-outline-danger'><ion-icon name='enter-outline'></ion-icon></button></a></td>";
+                    }
+                    ?>
+                    <!-- <tr>
                         <td>1</td>
                         <td>helloJohn</td>
                         <td>No.7B,Kamayut Township</td>
@@ -63,7 +81,7 @@
                         <td>Yangon</td>
                         <td>5,000MMK</td>
                         <td>2,000MMK</td>
-                    </tr>
+                    </tr> -->
                 </table>
             </div>
         </div>
