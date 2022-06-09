@@ -50,7 +50,7 @@
                         echo "<tr class=tb-text>";
                         echo "<td>" . $no++ . "</td>";
                         echo "<td >" . $value['user_name'] . "</td>";
-                        echo "<td >" . $value['order_address'] . "</td>";
+                        echo "<td >" . $value['user_address'] . "</td>";
                         echo "<td >" . $value['delivery_city_name'] . "</td>";
                         echo "<td >" . $value['total_amount'].  ",000 MMK" . "</td>";
                         echo "<td >" . $value['delivery_fees'].  ",000 MMK" . "</td>";
