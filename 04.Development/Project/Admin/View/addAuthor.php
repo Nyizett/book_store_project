@@ -25,11 +25,12 @@
             <div class="col-8 offset-3">
                 <button class="custombutton btn btn-sm mt-4 col-1 ms-4"><a href="../View/authorInfo.php" class="text-dec fw-bold text-dark text-wrap">Back</a></button>
                 <p class="h3 mt-4 ms-4">Insert Author</p>
+                
                 <form action="../Controller/addAuthorController.php" method="POST">
                     <div class="row container col-md-7 mt-3 ">
                         <div class="mb-3 mt-3">
                             <label for="" class="form-label">Name</label>
-                            <input type="text" class="form-control" name="autName">
+                            <input type="text" class="input-box form-control" name="autName">
                         </div>
                         <div class="mb-3 mt-3">
                             <label for="pwd" class="form-label">Image</label>
@@ -37,7 +38,7 @@
                         </div>
 
                         <label for="comment">Biography</label>
-                        <textarea class="form-control ms-2" rows="8" name="autBio"></textarea>
+                        <textarea class="input-box form-control ms-2" rows="8" name="autBio"></textarea>
                         
                         <button type="submit" class="custombutton btn fw-bold mt-4 ms-1">ADD AUTHOR</button>
                         

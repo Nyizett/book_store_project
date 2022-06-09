@@ -30,7 +30,7 @@
                         <div class="mb-3 mt-3">
                             <input type="hidden" name="id" value ="<?php require_once "../Controller/editAuthorController.php";  echo $result[0]['id'];?>">
                             <label for="" class="form-label">Name</label>
-                            <input type="text" value="<?php  echo $result[0]['author_name'];?>" class="form-control" name="autName">
+                            <input type="text" value="<?php  echo $result[0]['author_name'];?>" class="input-box form-control" name="autName">
                         </div>
                         <div class="mb-3 mt-3">
                             <label for="pwd" class="form-label">Image</label>
@@ -38,7 +38,7 @@
                         </div>
 
                         <label for="comment">Biography</label>
-                        <textarea class="form-control ms-2" rows="8"  name="autBio"><?php echo $result[0]['author_bio'];?></textarea>
+                        <textarea class="input-box  form-control ms-2" rows="8"  name="autBio"><?php echo $result[0]['author_bio'];?></textarea>
                         
                         <button type="submit" class="custombutton btn fw-bold mt-4 ms-1">SAVE</button>
                         

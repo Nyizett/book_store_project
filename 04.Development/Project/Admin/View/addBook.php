@@ -31,7 +31,7 @@
                         <div class="row">
                             <div class="col mb-3 mt-3 ">
                                 <label for="pwd" class="form-label">Name</label>
-                                <input type="text" class="form-control" id="pwd" name="bookName">
+                                <input type="text" class="input-box form-control" id="pwd" name="bookName">
                             </div>
                             <div class="col mb-3 mt-3">
                                 <label for="email" class="form-label">Category</label><br>
@@ -50,7 +50,7 @@
                         <div class="row">
                             <div class="col mb-3 mt-3 ">
                                 <label for="email" class="form-label ">Price</label>
-                                <input type="text" class="form-control" id="email" name="bookPrice">
+                                <input type="text" class="input-box form-control" id="email" name="bookPrice">
                             </div>
                             <div class="col mb-3 mt-3">
                                 <label for="email" class="form-label">Author</label><br>
@@ -67,17 +67,17 @@
                         <div class="row">
                             <div class="col mb-3 mt-3 ">
                                 <label for="pwd" class="form-label">Pages</label>
-                                <input type="text" class="form-control" id="pwd" name="bookPg">
+                                <input type="text" class="input-box form-control" id="pwd" name="bookPg">
                             </div>
                             <div class="col mb-3 mt-3 ">
                                 <label for="pwd" class="form-label">Size</label>
-                                <input type="text" class="form-control" id="pwd" name="bookSize">
+                                <input type="text" class="input-box form-control" id="pwd" name="bookSize">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col mb-3 mt-3 ">
                                 <label for="pwd" class="form-label">Established</label>
-                                <input type="text" class="form-control" id="pwd" name="bookEsta">
+                                <input type="text" class="input-box form-control" id="pwd" name="bookEsta">
                             </div>
                         </div>
                         <div class="row">
@@ -88,7 +88,7 @@
                         </div>
                         <div class="row">
                             <label for="comment" class="mt-3">Description</label>
-                            <textarea class="form-control ms-2" rows="8" id="comment" name="bookDes"></textarea>
+                            <textarea class="input-box form-control ms-2" rows="8" id="comment" name="bookDes"></textarea>
                         </div>
                         <!-- <button type="submit" id="submitBtn" class="custombutton btn fw-bold mt-4 mb-4">ADD BOOK</button> -->
                         <!-- <input type="submit" id="submitBtn" name="submitBtn" class="custombutton btn fw-bold mt-4 mb-4" value="ADD BOOK" > -->

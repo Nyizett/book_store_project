@@ -40,27 +40,34 @@
 
                 <!-- site Master start -->
                 <div class="stm">
-                    <!-- Change Fav-Icon -->
+                    <!-- Update Fav-Icon -->
                     <form action="../Controller/updateFICONController.php" method="POST">
                         <div class="input-group mb-3 mt-5">
                             <input type="file" class="form-control" id="inputGroupFile02" name="fIcon">
                         </div>
-                        <button type="submit" class="custombutton btn btn-sm offset-10 mt-2 mb-3 fw-bold">CHANGE FAV-ICON</button>
+                        <button type="submit" class="custombutton btn btn-sm offset-10 mt-2 mb-3 fw-bold col-2">CHANGE FAV-ICON</button>
                     </form>
-                    <!-- Change Logo Start-->
+                    <!-- Update Logo Start-->
                     <form action="../Controller/updatelogoController.php" method="POST">
                         <div class="input-group mb-3 mt-5">
                             <input type="file" class="form-control" id="inputGroupFile02" name="webLogo">
                         </div>
-                        <button type="submit" class="custombutton btn btn-sm offset-10 mt-2 mb-3 fw-bold">CHANGE LOGO</button>
+                        <button type="submit" class="custombutton btn btn-sm offset-10 mt-2 mb-3 fw-bold col-2">CHANGE LOGO</button>
+                    </form>
+                    <!-- Update Google Map Start-->
+                    <form action="../Controller/updateGMController.php" method="POST">
+                        <div class="input-group mb-3 mt-5">
+                            <input type="text" class="form-control"  name="webGM">
+                        </div>
+                        <button type="submit" class="custombutton btn btn-sm offset-10 mt-2 mb-3 fw-bold">CHANGE GOOGLE MAP</button>
                     </form>
                     
-                    <!-- Change Web-Name Start -->
+                    <!--Update Web-Name Start -->
                     <form action="../Controller/updateWebNameController.php" method="POST">
                         <div class="mb-3 mt-2">
                             <label for="exampleFormControlInput1" class="form-label">Write New Name</label>
                             <input type="text" class="customstyle form-control" id="exampleFormControlInput1" name="wName">
-                            <button type="submit" class="custombutton btn btn-sm offset-10 mt-4 fw-bold">CHANGE NAME</button>
+                            <button type="submit" class="custombutton btn btn-sm offset-10 mt-4 fw-bold col-2">CHANGE NAME</button>
                         </div>
                     </form>
                     
@@ -68,16 +75,13 @@
                     <!-- Change Slider Start -->
                     <form action="../Controller/updateSliderContoller.php" method="POST">
                     <div >
-                        <!-- <img src="../../Customer/resource/img/main slider_1.png" alt="" class="slideimg" name="sliderOne" />
-                        <img src="../../Customer/resource/img/main slider_1.png" alt="" class="slideimg" name="sliderTwo" />
-                        <img src="../../Customer/resource/img/main slider_1.png" alt="" class="slideimg" name="sliderThree" />
-                        <img src="../../Customer/resource/img/main slider_1.png" alt="" class="slideimg" name="sliderFour" /> -->
-                        <label for="" class="mb-2">Web Slider</label>
-                        <input type="file" class="form-control" name="sliderOne">
-                        <!-- <input type="file" class="form-control" name="sliderTwo"><br><br>
-                        <input type="file" class="form-control" name="sliderThree"><br><br>
-                        <input type="file" class="form-control" name="sliderFour"><br><br> -->
-                        <button type="submit" class="custombutton btn btn-sm offset-10 mt-4 fw-bold">ADD SLIDER</button>
+                        
+                        <label for="" class="mb-2">Web Sliders</label>
+                        <input type="file" class="form-control" name="sliderOne"><br>
+                        <input type="file" class="form-control" name="sliderTwo"><br>
+                        <input type="file" class="form-control" name="sliderThree"><br>
+                        <input type="file" class="form-control" name="sliderFour">
+                        <button type="submit" class="custombutton btn btn-sm offset-10 mt-4 fw-bold col-2">ADD SLIDER</button>
                     </div>
                     </form>
                     <!-- Change Slider End -->
@@ -88,7 +92,7 @@
                         <label for="exampleFormControlTextarea1" class="form-label">Change Welcome Text</label>
                         <textarea class="customstyle form-control" id="exampleFormControlTextarea1" rows="3" name="textOne"></textarea>
                         <textarea class="customstyle form-control mt-3" id="exampleFormControlTextarea1" rows="3" name="textTwo"></textarea>
-                        <button type="submit" class="custombutton btn btn-sm offset-10 mt-4 fw-bold">CHANGE WELCOME TEXT</button>
+                        <button type="submit" class="custombutton btn btn-sm offset-10 mt-4 fw-bold col-2">CHANGE WELCOME TEXT</button>
                     </div>
                     </form>
 
@@ -97,7 +101,7 @@
                     <div class="mb-3 mt-2">
                         <label for="exampleFormControlInput1" class="form-label">Write Phone.No</label>
                         <input type="number" class="customstyle form-control" id="exampleFormControlInput1" name="wPhone">
-                        <button class="custombutton btn btn-sm offset-10 mt-4 fw-bold">CHANGE PHONE.NO</button>
+                        <button class="custombutton btn btn-sm offset-10 mt-4 fw-bold col-2">CHANGE PHONE.NO</button>
                     </div>
                     </form>
 
@@ -206,38 +210,7 @@
                             }
                             ?>
 
-                            <!-- <tr class="tb-text">
-                                <td>1</td>
-                                <td>Monywa</td>
-                                <td>3000MMK</td>
-                                <td><button class="btn btn-outline-primary ">
-                                        <ion-icon name="create"></ion-icon>
-                                    </button> <button class="btn btn-outline-danger ms-1">
-                                        <ion-icon name="trash-sharp"></ion-icon>
-                                    </button></td>
-                            </tr>
-
-                            <tr class="tb-text">
-                                <td>2</td>
-                                <td>Yangon</td>
-                                <td>3000MMK</td>
-                                <td><button class="btn btn-outline-primary ">
-                                        <ion-icon name="create"></ion-icon>
-                                    </button> <button class="btn btn-outline-danger ms-1">
-                                        <ion-icon name="trash-sharp"></ion-icon>
-                                    </button></td>
-                            </tr>
-
-                            <tr class="tb-text">
-                                <td>3</td>
-                                <td>Mandalay</td>
-                                <td>3000MMK</td>
-                                <td><button class="btn btn-outline-primary ">
-                                        <ion-icon name="create"></ion-icon>
-                                    </button> <button class="btn btn-outline-danger ms-1">
-                                        <ion-icon name="trash-sharp"></ion-icon>
-                                    </button></td>
-                            </tr> -->
+                            
                         </table>
                         <button class="btn btn-sm offset-10 custombutton fw-bold">ADD DELIVERY FEES</button>
                     </div>
@@ -268,38 +241,7 @@
                             }
                             ?>
 
-                            <!-- <tr class="tb-text">
-                                <td>1</td>
-                                <td>Delivery</td>
-                                <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit voluptate et dolores aliquam numquam minima illo qui, nulla inventore! Porro </td>
-                                <td><button class="btn btn-outline-primary ">
-                                        <ion-icon name="create"></ion-icon>
-                                    </button> <button class="btn btn-outline-danger mt-1">
-                                        <ion-icon name="trash-sharp"></ion-icon>
-                                    </button></td>
-                            </tr>
-
-                            <tr class="tb-text">
-                                <td>2</td>
-                                <td>Delivery</td>
-                                <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit voluptate et dolores aliquam numquam minima illo qui, nulla inventore! Porro</td>
-                                <td><button class="btn btn-outline-primary ">
-                                        <ion-icon name="create"></ion-icon>
-                                    </button> <button class="btn btn-outline-danger mt-1">
-                                        <ion-icon name="trash-sharp"></ion-icon>
-                                    </button></td>
-                            </tr>
-
-                            <tr class="tb-text">
-                                <td>3</td>
-                                <td>Delivery</td>
-                                <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit voluptate et dolores aliquam numquam minima illo qui, nulla inventore! Porro </td>
-                                <td><button class="btn btn-outline-primary ">
-                                        <ion-icon name="create"></ion-icon>
-                                    </button> <button class="btn btn-outline-danger mt-1">
-                                        <ion-icon name="trash-sharp"></ion-icon>
-                                    </button></td>
-                            </tr> -->
+                            
                         </table>
                         <button class="btn btn-sm offset-10 custombutton fw-bold">ADD SERVICES</button>
                     </div>
@@ -331,38 +273,7 @@
                             }
                             ?>
 
-                            <!-- <tr class="tb-text">
-                                <td>1</td>
-                                <td>Delivery &payment</td>
-                                <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit voluptate et dolores aliquam numquam minima illo qui, nulla inventore! Porro </td>
-                                <td><button class="btn btn-outline-primary ">
-                                        <ion-icon name="create"></ion-icon>
-                                    </button> <button class="btn btn-outline-danger mt-1">
-                                        <ion-icon name="trash-sharp"></ion-icon>
-                                    </button></td>
-                            </tr>
-
-                            <tr class="tb-text">
-                                <td>2</td>
-                                <td>Buying</td>
-                                <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit voluptate et dolores aliquam numquam minima illo qui, nulla inventore! Porro</td>
-                                <td><button class="btn btn-outline-primary ">
-                                        <ion-icon name="create"></ion-icon>
-                                    </button> <button class="btn btn-outline-danger mt-1">
-                                        <ion-icon name="trash-sharp"></ion-icon>
-                                    </button></td>
-                            </tr>
-
-                            <tr class="tb-text">
-                                <td>3</td>
-                                <td>Delivery</td>
-                                <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit voluptate et dolores aliquam numquam minima illo qui, nulla inventore! Porro </td>
-                                <td><button class="btn btn-outline-primary ">
-                                        <ion-icon name="create"></ion-icon>
-                                    </button> <button class="btn btn-outline-danger mt-1">
-                                        <ion-icon name="trash-sharp"></ion-icon>
-                                    </button></td>
-                            </tr> -->
+                            
                         </table>
                         <button class="btn btn-sm offset-10 custombutton fw-bold">ADD PRIVACY POLICY</button>
                     </div>
@@ -446,39 +357,7 @@
                             }
                             ?>
 
-                            <!-- 
-                            <tr class="tb-text">
-                                <td>1</td>
-                                <td>john</td>
-                                <td>Jon@email.com</td>
-                                <td><button class="btn btn-outline-primary ">
-                                        <ion-icon name="create"></ion-icon>
-                                    </button> <button class="btn btn-outline-danger ms-1">
-                                        <ion-icon name="trash-sharp"></ion-icon>
-                                    </button></td>
-                            </tr>
-
-                            <tr class="tb-text">
-                                <td>2</td>
-                                <td>john</td>
-                                <td>Jon@email.com</td>
-                                <td><button class="btn btn-outline-primary ">
-                                        <ion-icon name="create"></ion-icon>
-                                    </button> <button class="btn btn-outline-danger ms-1">
-                                        <ion-icon name="trash-sharp"></ion-icon>
-                                    </button></td>
-                            </tr>
-
-                            <tr class="tb-text">
-                                <td>3</td>
-                                <td>john</td>
-                                <td>Jon@email.com</td>
-                                <td><button class="btn btn-outline-primary ">
-                                        <ion-icon name="create"></ion-icon>
-                                    </button> <button class="btn btn-outline-danger ms-1">
-                                        <ion-icon name="trash-sharp"></ion-icon>
-                                    </button></td>
-                            </tr> -->
+                            
                         </table>
                         <button class="btn btn-sm offset-10 custombutton">ADD Admin</button>
                     </div>
