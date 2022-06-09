@@ -23,7 +23,7 @@
    <nav class="navbar navbar-expand-lg   top-0 w-100 " id="cum_navbar">
    <div class="container-fluid">
   <div class="image-container">
-    <img src="../resource/img/logo.png" alt="main-logo" id="logo" class="main-logo" >
+    <img src="../resource/img/logo.png" alt="main-logo" id="logo" class="img-logo" >
    </div>
     <a class="my-title navbar-brand font-color-primary pt-4" href="#">
         <span class="my-fcolor fw-bolder fs-4 border-bottom">စာ အုပ် ဆိုင်</span>

@@ -91,7 +91,8 @@
                             <textarea class="form-control ms-2" rows="8" id="comment" name="bookDes"></textarea>
                         </div>
                         <!-- <button type="submit" id="submitBtn" class="custombutton btn fw-bold mt-4 mb-4">ADD BOOK</button> -->
-                        <input type="submit" id="submitBtn" name="submitBtn" class="custombutton btn fw-bold mt-4 mb-4" value="ADD BOOK">
+                        <!-- <input type="submit" id="submitBtn" name="submitBtn" class="custombutton btn fw-bold mt-4 mb-4" value="ADD BOOK" > -->
+                        <a href="./bookInfo.php"><input type="submit" id="submitBtn" name="submitBtn" class="custombutton btn fw-bold mt-4 mb-4" value="ADD BOOK" ></a>
                     </div>
                 </form>
                 <p class="mt-4 fs-3 text-success" id="result"></p>

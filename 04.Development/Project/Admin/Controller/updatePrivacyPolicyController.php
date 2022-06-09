@@ -21,5 +21,5 @@ if(isset($_POST)){
     $sql->bindValue(":id", $id);
 
     $sql->execute();
-     header("location: ../view/setting.php");
+    header("location: ../view/setting.php");
 }
