@@ -43,10 +43,16 @@
                         echo "<td>" . $count . "</td>";
                         echo "<td>" . $value['book_name'] . "</td>";
                         echo "<td class='tb-img'> <img src='../../Images/" . $value['book_image'] . "' </td>";
+<<<<<<< HEAD
                         echo "<td>" . $value['category_id'] . "</td>";
                         echo "<td>" . $value['author_id'] . "</td>";
                         // echo "<td>" . $value['book_price'] .  ",000 MMK" . "</td>";
                         echo "<td>" .number_format($value['book_price'])." MMK" ."</td>";
+=======
+                        echo "<td>" . $value['category_name'] . "</td>";
+                        echo "<td>" . $value['author_name'] . "</td>";
+                        echo "<td>" . $value['book_price'] .  ",000 MMK" . "</td>";
+>>>>>>> origin/main
                         echo "<td><a href='../View/editBook.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-primary'><ion-icon name='create-outline'></ion-icon></button></a></td>";
                         echo "<td><a href='../Controller/deleteBookController.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-danger'><ion-icon name='trash-outline'></ion-icon></button></a></td>";
                         echo "</tr>";

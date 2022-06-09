@@ -66,9 +66,9 @@
                         foreach ($result as $key => $value) {
                             echo "<tr class='tb-text'>";
                             echo "<td>" . $count . "</td>";
-                            echo "<td>" . $value['customer_id'] . "</td>";
-                            echo "<td>" . $value['book_id'] . "</td>";
-                            echo "<td>" . $value['category_id'] . "</td>";
+                            echo "<td>" . $value['user_name'] . "</td>";
+                            echo "<td>" . $value['book_name'] . "</td>";
+                            echo "<td>" . $value['category_name'] . "</td>";
                             echo "<td>" . $value['customer_rating'] . "</td>";
                             echo "<td>" . $value['customer_comment'] . "</td>";
                             echo "</tr>";
