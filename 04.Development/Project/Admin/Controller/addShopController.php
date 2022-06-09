@@ -21,7 +21,8 @@ if(isset($_POST)){
             shop_city,
             shop_address,
             shop_phone_no,
-            shop_website
+            shop_website,
+            create_date
         )
         VALUES (
             :shname,
