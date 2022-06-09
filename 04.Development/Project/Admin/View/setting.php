@@ -148,10 +148,8 @@
                                 $count++;
                             }
                             ?>
-
-
                         </table>
-                        <button class="btn btn-sm offset-10 custombutton fw-bold "><a href="./addCategory.php" class="text-dec text-dark">ADD CATEGORY</a></button>
+                        <button class="btn btn-sm offset-10 custombutton fw-bold col-2"><a href="./addCategory.php" class="text-dec text-dark">ADD CATEGORY</a></button>
                     </div>
                     <!-- Category Table end -->
 
@@ -180,7 +178,7 @@
                             ?>
 
                         </table>
-                        <button class="btn btn-sm offset-10 custombutton fw-bold">ADD GUIDE</button>
+                        <button class="btn btn-sm offset-10 custombutton fw-bold col-2">ADD GUIDE</button>
                     </div>
                     <!-- Guide Table end -->
 
@@ -212,7 +210,7 @@
 
                             
                         </table>
-                        <button class="btn btn-sm offset-10 custombutton fw-bold">ADD DELIVERY FEES</button>
+                        <button class="btn btn-sm offset-10 custombutton fw-bold col-2">ADD DELIVERY FEES</button>
                     </div>
                     <!-- Delivery Fee Table end -->
 
@@ -243,7 +241,7 @@
 
                             
                         </table>
-                        <button class="btn btn-sm offset-10 custombutton fw-bold">ADD SERVICES</button>
+                        <button class="btn btn-sm offset-10 custombutton fw-bold col-2">ADD SERVICES</button>
                     </div>
                     <!-- Service Table end -->
 
@@ -275,7 +273,7 @@
 
                             
                         </table>
-                        <button class="btn btn-sm offset-10 custombutton fw-bold">ADD PRIVACY POLICY</button>
+                        <button class="btn btn-sm offset-10 custombutton fw-bold col-2">ADD PRIVACY POLICY</button>
                     </div>
                     <!-- Privacy Policy Table End -->
 
@@ -287,46 +285,25 @@
                                 <th class="col-2">Category</th>
                                 <th class="col-4">Questions</th>
                                 <th class="col-4">Answers</th>
-                                <th class="col-1">Actions</th>
+                                <th colspan="2">Actions</th>
                             </tr>
-
-                            <tr class="tb-text">
-                                <td>1</td>
-                                <td>Delivery</td>
-                                <td> Fugit voluptate et dolores aliquam numquam minima illo qui, nulla inventore! Porro</td>
-                                <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </td>
-                                <td><button class="btn btn-outline-primary ">
-                                        <ion-icon name="create"></ion-icon>
-                                    </button> <button class="btn btn-outline-danger mt-1">
-                                        <ion-icon name="trash-sharp"></ion-icon>
-                                    </button></td>
-                            </tr>
-
-                            <tr class="tb-text">
-                                <td>2</td>
-                                <td>Delivery</td>
-                                <td> Fugit voluptate et dolores aliquam numquam minima illo qui, nulla inventore! Porro</td>
-                                <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </td>
-                                <td><button class="btn btn-outline-primary ">
-                                        <ion-icon name="create"></ion-icon>
-                                    </button> <button class="btn btn-outline-danger mt-1">
-                                        <ion-icon name="trash-sharp"></ion-icon>
-                                    </button></td>
-                            </tr>
-
-                            <tr class="tb-text">
-                                <td>3</td>
-                                <td>Delivery</td>
-                                <td> Fugit voluptate et dolores aliquam numquam minima illo qui, nulla inventore! Porro</td>
-                                <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </td>
-                                <td><button class="btn btn-outline-primary ">
-                                        <ion-icon name="create"></ion-icon>
-                                    </button> <button class="btn btn-outline-danger mt-1">
-                                        <ion-icon name="trash-sharp"></ion-icon>
-                                    </button></td>
-                            </tr>
+                            <?php
+                            require "../Controller/faqListController.php";
+                            $no = 1;
+                                foreach ($result as $key => $value) {
+                                global $no;
+                                echo "<tr class=tb-text>";
+                                echo "<td>" . $no++ . "</td>";
+                                echo "<td>" . $value['faq_q_text'] . "</td>";
+                                echo "<td class=overflow-hidden>" . $value['faq_ans_text'] . "</td>";
+                                echo "<td>" . $value['faq_category'] . "</td>";
+                                echo "<td><a href='../View/editFaqs.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-primary'><ion-icon name='create-outline'></ion-icon></button></a></td>";
+                                echo "<td><a href='../Controller/deleteFAQController.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-danger'><ion-icon name='trash-outline'></ion-icon></button></a></td>";
+                            }
+                            ?>
+                            
                         </table>
-                        <button class="btn btn-sm offset-10 custombutton fw-bold">ADD FAQS</button>
+                        <button class="btn btn-sm offset-10 custombutton fw-bold col-2"><a href="./addFaqs.php" class="text-dec text-dark">ADD FAQS</a></button>
                     </div>
                 </div>
                 <!-- App Master End -->

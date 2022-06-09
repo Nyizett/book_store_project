@@ -52,6 +52,17 @@
                                 <label for="email" class="form-label ">Price</label>
                                 <input type="text" value="<?php echo $result[0]['book_price']; ?>" class="input-box form-control" id="email" name="bookPrice">
                             </div>
+                            <div class="col mb-3 mt-3">
+                                <label for="email" class="form-label">Author</label><br>
+                                <select name="authorID" id="" class="custombutton btn btn-white col-12">
+                                <?php
+                                    
+                                    foreach ($authorList as $key => $val) {
+                                        echo "<option value='".$val['id']."' >" . $val['author_name'] . '</option>';
+                                    }
+                                    ?>
+                                </select>
+                            </div>
 
                         </div>
                         <div class="row">
