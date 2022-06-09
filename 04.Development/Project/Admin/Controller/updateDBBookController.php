@@ -26,7 +26,8 @@ if(isset($_POST)){
             book_size = :size,
             book_established = :est,
             book_description = :des,
-            book_image = :bimage
+            book_image = :bimage,
+            update_date =:updateDate
             WHERE id = :id"
     );
         $sql->bindValue(":name", $bookName);
@@ -38,6 +39,7 @@ if(isset($_POST)){
         $sql->bindValue(":est", $bookEstablished);
         $sql->bindValue(":des", $bookDescription);
         $sql->bindValue(":bimage", $bookFile);
+        $sql->bindValue(":updateDate", date("d/m/Y"));
         $sql->bindValue(":id", $id);
         $sql->execute();
     header ("Location: ../View/bookInfo.php");

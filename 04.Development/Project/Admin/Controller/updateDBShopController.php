@@ -21,7 +21,8 @@ if(isset($_POST)){
             shop_image = :image,
             shop_address= :address,
             shop_phone_no = :phone,
-            shop_website = :web
+            shop_website = :web,
+            update_date =:updateDate
             WHERE id = :id"
     );
     $sql->bindValue(":city", $shopCity );
@@ -30,6 +31,7 @@ if(isset($_POST)){
     $sql->bindValue(":address", $shopAddress);
     $sql->bindValue(":phone", $shopPhone );
     $sql->bindValue(":web", $shopWebsite);
+    $sql->bindValue(":updateDate", date("d/m/Y"));
     $sql->bindValue(":id", $id);
     $sql->execute();
     header ("Location: ../View/shopInfo.php");
