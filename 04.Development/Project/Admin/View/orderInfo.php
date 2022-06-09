@@ -57,31 +57,6 @@
                         echo "<td><a href='../View/orderDetail.php?id=" . $value['customer_id'] . "'><button type='button' class='btn btn-outline-danger'><ion-icon name='enter-outline'></ion-icon></button></a></td>";
                     }
                     ?>
-                    <!-- <tr>
-                        <td>1</td>
-                        <td>helloJohn</td>
-                        <td>No.7B,Kamayut Township</td>
-                        <td>Yangon</td>
-                        <td>5,000MMK</td>
-                        <td>2,000MMK</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>helloMary</td>
-                        <td>No.7B,Kamayut Township</td>
-                        <td>Yangon</td>
-                        <td>5,000MMK</td>
-                        <td>2,000MMK</td>
-
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>helloNora</td>
-                        <td>No.7B,Kamayut Township</td>
-                        <td>Yangon</td>
-                        <td>5,000MMK</td>
-                        <td>2,000MMK</td>
-                    </tr> -->
                 </table>
             </div>
         </div>

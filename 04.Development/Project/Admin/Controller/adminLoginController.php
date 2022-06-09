@@ -26,7 +26,7 @@ if(isset($_POST)){
     // print_r($result);
 
     if(count($result) > 0){
-        header("Location: ../View/dashboard.php ");
+        header("Location: ../View/dashboard.php");
     }else{
         // header("Location: ../View/adminLogin.php ");
         
