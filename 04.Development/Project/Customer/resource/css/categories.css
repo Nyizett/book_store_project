@@ -66,3 +66,26 @@ icon{
 .cate{
     background-color: var(--primary-color);
 }
+
+.close {
+    width: 5%;
+    height: 5%;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    background: transparent;
+    border: none;
+}
+
+
+.btnCart {
+    border-style: solid;
+    background: var(--primary-color);
+    color: #fff;
+    border-color: transparent;
+}
+
+.btnShopping {
+    border-style: solid;
+    background-color: transparent;
+    border-color: var(--primary-color);
+}

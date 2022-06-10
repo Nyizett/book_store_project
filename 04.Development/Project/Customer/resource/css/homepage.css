@@ -1,75 +1,78 @@
 .categories {
-   border-radius: 1.25rem;
-   border: 1px solid white;
+  border-radius: 1.25rem;
+  border: 1px solid white;
 }
 .secondary-bg {
-   width: 540px;
-   height: 300px;
+  width: 540px;
+  height: 300px;
 }
 .shop-now {
-   width: 200px;
+  width: 200px;
 }
-.slider{
-   margin-top: 5%;
+.slider {
+  margin-top: 5%;
 }
 .img-slide1 {
-   width: 540px;
-   height: 300px;
+  width: 540px;
+  height: 300px;
 }
 .img-slide2 {
-   width: 500px;
-   height: 300px;
+  width: 500px;
+  height: 300px;
 }
 .card-width {
-   width: 200px;
+  width: 200px;
 }
 .cardLg {
-   width: 300px;
+  width: 300px;
 }
 .cs-width {
-   width: 200px;
+  width: 200px;
 }
 .hello {
-   width: 700px;
-   height: 180px;
+  width: 700px;
+  height: 180px;
 }
 .bg-lightBlue {
-   background-color: #ebf1fd;
+  background-color: #ebf1fd;
 }
 .book-card-lg {
-   width: 250px;
-   height: 500px;
+  width: 250px;
+  height: 500px;
 }
 .book-card-lg2 {
-   width: 320px;
-   height: 500px;
+  width: 320px;
+  height: 500px;
 }
 
 .circle-pink {
-   background-color: red;
+  background-color: red;
 }
 
 .scroll-to-top {
-   bottom: 50px;
-   right: 50px;
+  bottom: 50px;
+  right: 50px;
 }
 
 .scroll-to-top-d {
-   display: none;
+  display: none;
 }
 
 .bd-new-color {
-   border-color: #514e4e;
+  border-color: #514e4e;
 }
 
 #myBtn {
-   display: none;
-   position: fixed;
-   bottom: 50px;
-   right: 30px;
-   z-index: 99;
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  z-index: 99;
 }
 
 #myBtn:hover {
-   background-color: #555; /* Add a dark-grey background on hover */
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+.authorViewAll {
+  background-color: var(--primary-darkblue) !important;
 }

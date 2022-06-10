@@ -47,3 +47,7 @@ icon{
     background-color: var(--primary-color);
     color: white;
 }
+
+#logo {
+    width: 9em;
+}

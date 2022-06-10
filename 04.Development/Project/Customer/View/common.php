@@ -1,3 +1,4 @@
+
 <div class="container-fluid">
   <div class="image-container">
     <img src="../resource/img/logo.png" alt="main-logo" id="logo" class="main-logo" >
@@ -73,7 +74,10 @@
       </li>
     </ul>
     <div class="d-flex justify-content-center align-items-center font-color-primary">
-      <ion-icon class="text-white fs-4 me-4" name="cart-outline"></ion-icon>
+      <div class="cartdiv">
+        <button class="shop" onclick="shopCart()">    <ion-icon class="text-white fs-3 me-4" name="cart-outline"></ion-icon></button>
+        <span id="cartCount2" class="badge rounded-pill bg-danger cartcount"></span>
+      </div>
       <ion-icon class="text-white fs-4 me-4 person-hover" name="person-outline"></ion-icon>
       <ion-icon class="text-white fs-4" name="moon-outline"></ion-icon>
     </div>

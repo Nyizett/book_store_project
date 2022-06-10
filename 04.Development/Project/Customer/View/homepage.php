@@ -18,12 +18,12 @@
 <body>
    <!-- Header -->
    <nav class="navbar navbar-expand-lg  position-fixed top-0 w-100 header" id="cum_navbar">
-
+      <?php require "../View/common.php" ?>
    </nav>
    <!-- Slider -->
-   <section id="welcome-section" class="slider container">
+   <section id="welcome-section" class="container w-100">
       <div class="row pt-5 ">
-         <div class="col-12 col-lg-6 ps-5 pb-5">
+         <div class="col-12 col-lg-6 mt-5">
             <div class="slider secondary-bg content">
                <div class="ms-4">
                   <img class="img-slide1" src="../resource/img/main slider_1.png" alt="">
@@ -33,9 +33,9 @@
                </div>
             </div>
          </div>
-         <div class="col-12 col-lg-1"></div>
-         <div class="col-12 col-lg-5">
-            <div class="pt-5 content  ">
+
+         <div class="col-12 col-lg-5 mt-5 pt-4 ms-5">
+            <div class="pt-5 ps-5 content mt-5 ">
                <h3 class="font-color-primary">CHOOSE YOUR BRAIN FOOD</h3>
                <h1 class="fw-bold text-primary">BOOK IN STORE</h1>
                <p class="">Language / Education / Novels / Technology / Cartoons</p>
@@ -346,52 +346,6 @@
                </div>
             </div>
          </div>
-         <div class="col-6 col-lg-3 col-xl-2 mb-5 mx-3">
-            <div class="card mb-5 mb-lg-0 card-width bg-lightBlue border-0 content">
-               <img src="../resource/img/book cover/language2.jpg" class="img-fluid mx-auto mt-3" width="90%" alt="" />
-               <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                  <p class="card-title fw-bold mb-0 font-color-primary">
-                     JavaScript
-                  </p>
-                  <small>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                  </small>
-                  <small class="card-text d-block mb-3 font-color-secondary">
-                     Ei Maung
-                  </small>
-                  <div class="d-flex d justify-content-between align-items-center">
-                     <p class="fw-bold mb-0 font-color-primary">5000 MMK</p>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="col-6 col-lg-3 col-xl-2 mb-5 mx-3">
-            <div class="card mb-5 mb-lg-0 card-width bg-lightBlue border-0 content">
-               <img src="../resource/img/book cover/language2.jpg" class="img-fluid mx-auto mt-3" width="90%" alt="" />
-               <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                  <p class="card-title fw-bold mb-0 font-color-primary">
-                     JavaScript
-                  </p>
-                  <small>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                  </small>
-                  <small class="card-text d-block mb-3 font-color-secondary">
-                     Ei Maung
-                  </small>
-                  <div class="d-flex d justify-content-between align-items-center">
-                     <p class="fw-bold mb-0 font-color-primary">5000 MMK</p>
-                  </div>
-               </div>
-            </div>
-         </div>
    </section>
    <!-- Best selling books end -->
    <!-- Popular Books start -->
@@ -517,29 +471,7 @@
                </div>
             </div>
          </div>
-         <div class="col-6 col-lg-3 col-xl-2 my-3 mx-3">
-            <div class="card mb-5 mb-lg-0 card-width bg-lightBlue border-1 content">
-               <img src="../resource/img/book cover/language2.jpg" class="img-fluid mx-auto mt-3" width="90%" alt="" />
-               <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                  <p class="card-title fw-bold mb-0 font-color-primary">
-                     JavaScript
-                  </p>
-                  <small>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                  </small>
-                  <small class="card-text d-block mb-3 font-color-secondary">
-                     Ei Maung
-                  </small>
-                  <div class="d-flex d justify-content-between align-items-center">
-                     <p class="fw-bold mb-0 font-color-primary">5000 MMK</p>
-                  </div>
-               </div>
-            </div>
-         </div>
+
       </div>
       <!-- <div class="row justify-content-evenly content">
          <div class="mt-5 mx-2">
@@ -571,7 +503,7 @@
             <h3 class="font-color-primary fw-bold">Favorite Authors</h3>
          </div>
          <div class="col-12 col-lg-6  text-end ">
-            <a href="#" class="btn commom-bg text-white"> View All</a>
+            <button class="btn authorViewAll"><a href="../View/author.php" class="text-white text-decoration-none"> View All</a></button>
          </div>
       </div>
       <div class="row mt-5">
@@ -666,112 +598,7 @@
       </div>
    </section>
    <footer id="footer" class="container-fluid commom-bg  mt-5   ">
-      <!-- <div class="row">
-         <div class="col-12 col-lg-3 ps-5 pt-4">
-            <div class="">
-               <h2 class="text-white align-top">Paradise</h2>
-               <p></p>
-               <p class="text-white">Address</p>
-               <p class="text-white">SHOW ON MAP</p>
-               <div class="d-flex">
-                  <i class="fab fa-facebook text-white mx-1"></i>
-                  <i class="fab fa-instagram text-white mx-1"></i>
-                  <i class="fab fa-youtube text-white mx-1"></i>
-                  <i class="fab fa-twitter text-white mx-1"></i>
-               </div>
-            </div>
-         </div>
-         <div class="col-12 col-lg-8 col-xl-6">
-            <div class="container-fluid">
-               <div class="row mt-5 hello">
-                  <div class="col-6 col-lg-3 text-white">
-                     <div class="cs-width me-5">
-                        <p class="fw-bold">Customer Service</p>
-                        <small>09-123456789</small>
-                        <br />
-                        <small>hello@gmail.com</small>
-                     </div>
-                  </div>
-                  <div class="col-6 col-lg-3 text-white">
-                     <div class="">
-                        <p class="fw-bold">Our Service</p>
-                        <a href="#" class="btn-link text-white text-decoration-none">
-                           <small>Contact Us </small>
-                        </a>
-                        <br />
-                        <a href="#" class="btn-link text-white text-decoration-none">
-                           <small> Guide </small>
-                        </a>
-                        <br />
-                        <a href="#" class="btn-link text-white text-decoration-none">
-                           <small>Delivery Free</small>
-                        </a>
-                        <br />
-                        <a href="#" class="btn-link text-white text-decoration-none">
-                           <small> Good Print Quality</small>
-                        </a>
-                     </div>
-                  </div>
-                  <div class="col-6 col-lg-3">
-                     <div class="">
-                        <p class="fw-bold text-white">Categories</p>
-                        <a href="#" class="btn-link text-white text-decoration-none">
-                           <small>Language</small>
-                        </a>
-                        <br />
-                        <a href="#" class="btn-link text-white text-decoration-none">
-                           <small>Education</small>
-                        </a>
-                        <br />
-                        <a href="#" class="btn-link text-white text-decoration-none">
-                           <small>Novels</small>
-                        </a>
-                        <br />
-                        <a href="#" class="btn-link text-white text-decoration-none">
-                           <small>Technology</small>
-                        </a>
-                        <br />
-                        <a href="#" class="btn-link text-white text-decoration-none">
-                           <small>Cartoons</small>
-                        </a>
-                     </div>
-                  </div>
-                  <div class="col-6 col-lg-3">
-                     <div class="">
-                        <p class="fw-bold text-white">Shop List</p>
-                        <a href="#" class="btn-link text-white text-decoration-none">
-                           <small>Yagnon</small>
-                        </a>
-                        <br />
-                        <a href="#" class="btn-link text-white text-decoration-none">
-                           <small>Mandalay </small>
-                        </a>
-                        <br />
-                        <a href="tel:09250152018" class="btn-link text-white text-decoration-none">
-                           <small>NayPyiTaw</small>
-                        </a>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="row">
-            <hr class="text-white" />
-            <div class="col-12 col-lg-6">
-               <div class="">
-                  <p class="text-white">
-                     Copyright © 2022 ParadiseBookStore All rights reserved.
-                  </p>
-               </div>
-            </div>
-            <div class="col-12 col-lg-6">
-               <div class="d-flex justify-content-end">
-                  <i class="fab fa-cc-visa text-white mx-1"></i>
-                  <i class="fab fa-cc-mastercard text-white mx-1"></i>
-               </div>
-            </div>
-         </div>
-      </div> -->
+      <?php require "../View/footerCommon.php" ?>
    </footer>
 
    <a href="#welcome-section" onclick="topFunction()" id="myBtn" class="btn btn-primary  rounded  position-fixed  scroll-to-top  scroll-to-top-d">

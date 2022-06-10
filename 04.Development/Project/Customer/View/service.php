@@ -17,11 +17,11 @@
 
 <body>
 
-    <!-- Header -->
- <nav class="navbar navbar-expand-lg   top-0 w-100 " id="cum_navbar">
-      
-      </nav>
-      <!-- Header -->
+   <!-- Header -->
+   <nav class="navbar navbar-expand-lg   top-0 w-100 " id="cum_navbar">
+      <?php require "../View/common.php" ?>
+   </nav>
+   <!-- Header -->
    <div class="container-fluid header d-flex justify-content-between align-items-center p-4 bg-light">
       <h3 class="ms-5">SERVICES</h3>
       <div class="me-5">
@@ -75,7 +75,7 @@
    </section>
 
    <footer id="footer" class="container-fluid commom-bg  mt-5">
-     
+      <?php require "../View/footerCommon.php" ?>
    </footer>
    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
    <script src="../resource/js/common.js"></script>
