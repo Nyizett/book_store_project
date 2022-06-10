@@ -63,9 +63,9 @@
                             echo "<tr class=tb-text>";
                             echo "<td>" . $no++ . "</td>";
                             echo "<td >" . $value['book_name'] . "</td>";
-                            echo "<td >" . $value['book_price'] .  ",000 MMK" . "</td>";
+                            echo "<td >" .number_format($value['book_price'])." MMK" . "</td>";
                             echo "<td >" . $value['order_d_quantity'] . "</td>";
-                            echo "<td >" . $value['total_amount'] .  ",000 MMK" . "</td>";
+                            echo "<td >" .number_format($value['total_amount'])." MMK" . "</td>";
                         }
                     }
                     ?>
