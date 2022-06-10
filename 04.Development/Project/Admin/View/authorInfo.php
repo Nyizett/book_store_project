@@ -26,6 +26,7 @@
             <!-- Author List-->
             <div class="col-10 offset-2 ">
                 <p class="h3 mt-4">Author List</p>
+                <button class="text-dec custombutton btn-sm offset-10 col-2 mb-4"><a href="../View/addAuthor.php" class="text-dec fw-bold text-dark ">ADD AUTHOR</a></button>
                 <table class="table table-striped table-sm mt-4">
                     <tr>
                         <th>No</th>

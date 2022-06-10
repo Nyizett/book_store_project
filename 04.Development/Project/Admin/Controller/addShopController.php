@@ -21,7 +21,9 @@ if(isset($_POST)){
             shop_city,
             shop_address,
             shop_phone_no,
-            shop_website
+            shop_website,
+            create_date,
+            create_by,
         )
         VALUES (
             :shname,
@@ -29,7 +31,8 @@ if(isset($_POST)){
             :shcity,
             :shaddress,
             :shphone,
-            :shweb)"
+            :shweb,
+            :createDate)"
     );
     $sql->bindValue(":shname", $shopName );
     $sql->bindValue(":shimage", $shopImage);
@@ -37,6 +40,7 @@ if(isset($_POST)){
     $sql->bindValue(":shaddress", $shopAddress);
     $sql->bindValue(":shphone", $shopPhone );
     $sql->bindValue(":shweb", $shopWebsite);
+    $sql->bindValue(":createDate",date("d/m/Y"));
 
     $sql->execute();
     header ("Location: ../View/shopInfo.php");
