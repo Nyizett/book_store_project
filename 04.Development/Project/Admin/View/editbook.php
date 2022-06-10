@@ -50,24 +50,35 @@
                         <div class="row">
                             <div class="col mb-3 mt-3 ">
                                 <label for="email" class="form-label ">Price</label>
-                                <input type="text" value="<?php echo $result[0]['book_price']; ?>" class="form-control" id="email" name="bookPrice">
+                                <input type="text" value="<?php echo $result[0]['book_price']; ?>" class="input-box form-control" id="email" name="bookPrice">
+                            </div>
+                            <div class="col mb-3 mt-3">
+                                <label for="email" class="form-label">Author</label><br>
+                                <select name="authorID" id="" class="custombutton btn btn-white col-12">
+                                <?php
+                                    
+                                    foreach ($authorList as $key => $val) {
+                                        echo "<option value='".$val['id']."' >" . $val['author_name'] . '</option>';
+                                    }
+                                    ?>
+                                </select>
                             </div>
 
                         </div>
                         <div class="row">
                             <div class="col mb-3 mt-3 ">
                                 <label for="pwd" class="form-label">Pages</label>
-                                <input type="text" value="<?php echo $result[0]['book_pages']; ?>" class="form-control" id="pwd" name="bookPg">
+                                <input type="text" value="<?php echo $result[0]['book_pages']; ?>" class="input-box form-control" id="pwd" name="bookPg">
                             </div>
                             <div class="col mb-3 mt-3 ">
                                 <label for="pwd" class="form-label">Size</label>
-                                <input type="text" value="<?php echo $result[0]['book_size']; ?>" class="form-control" id="pwd" name="bookSize">
+                                <input type="text" value="<?php echo $result[0]['book_size']; ?>" class="input-box form-control" id="pwd" name="bookSize">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col mb-3 mt-3 ">
                                 <label for="pwd" class="form-label">Established</label>
-                                <input type="text" value="<?php echo $result[0]['book_established']; ?>" class="form-control" id="pwd" name="bookEsta">
+                                <input type="text" value="<?php echo $result[0]['book_established']; ?>" class="input-box form-control" id="pwd" name="bookEsta">
                             </div>
                         </div>
                         <div class="row">
@@ -78,7 +89,7 @@
                         </div>
                         <div class="row">
                             <label for="comment" class="mt-3">Description</label>
-                            <textarea class="form-control ms-2" rows="8" id="comment" name="bookDes"><?php echo $result[0]['book_description']; ?></textarea>
+                            <textarea class="input-box form-control ms-2" rows="8" id="comment" name="bookDes"><?php echo $result[0]['book_description']; ?></textarea>
                         </div>
                         <button type="submit" id="submitBtn" class="custombutton btn fw-bold mt-4 mb-4">ADD BOOK</button>
                         <!-- <input type="submit" id="submitBtn" name="submitBtn" class="custombutton btn fw-bold mt-4 mb-4" value="SAVE"> -->

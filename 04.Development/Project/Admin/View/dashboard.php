@@ -54,7 +54,7 @@
                 <div class="row mt-4 ms-4">
                     <p class="h4 mt-1">Daily Order</p>
                     <table class="table table-striped mt-4 mb-4 ms-2 ">
-                        <tr class="bg-warning">
+                        <tr class="tb-text bg-warning">
                             <th class="col-1">No</th>
                             <th class="col-2">Customer</th>
                             <th class="col-2">Date</th>
@@ -62,7 +62,23 @@
                             <th class="col-3">Address</th>
                             <th class="col-2">Delivery Fees</th>
                         </tr>
-                        <tr>
+
+                        <?php
+                    require "../Controller/dailyOrderController.php";
+                    $no = 1;
+
+                    foreach ($result as $key => $value) {
+                        global $no;
+                        echo "<tr class=tb-text>";
+                        echo "<td>" . $no++ . "</td>";
+                        echo "<td >" . $value['user_name'] . "</td>";
+                        echo "<td >" .date("d/m/Y"). "</td>";
+                        echo "<td >" . "1000" . "</td>";
+                        echo "<td >" . $value['user_address']. "</td>";
+                        echo "<td >" . $value['']. "</td>";
+                    }
+                    ?>
+                        <!-- <tr>
                             <td>1</td>
                             <td>helloJohn</td>
                             <td>25.05.2022</td>
@@ -85,7 +101,7 @@
                             <td>6,000MMK</td>
                             <td>No.7B,Kamayut Township</td>
                             <td>2,000MMK</td>
-                        </tr>
+                        </tr> -->
                     </table>
                 </div>
 

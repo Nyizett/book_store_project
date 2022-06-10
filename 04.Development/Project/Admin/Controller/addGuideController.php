@@ -18,7 +18,8 @@ if(isset($_POST)){
         )
         VALUES (
             :gtext,
-            :gimage)"
+            :gimage
+        )"
     );
     $sql->bindValue(":gtext", $Guidepargh  );
     $sql->bindValue(":gimage",  $Guideimg);

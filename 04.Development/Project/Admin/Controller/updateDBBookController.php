@@ -5,6 +5,7 @@ if(isset($_POST)){
     $id = $_POST['id'];
     $bookName = $_POST['bookName'];
     $bookCategory = $_POST['categoryID'];
+    $bookAuthor = $_POST['authorID'];
     $bookPrice = $_POST['bookPrice'];
     $bookPages = $_POST['bookPg'];
     $bookSize = $_POST['bookSize'];
@@ -20,24 +21,26 @@ if(isset($_POST)){
         "UPDATE m_book SET
             book_name = :name,
             category_id = :catID,
-            -- author_id = :autID,
+            author_id = :autID,
             book_price = :price,
             book_pages = :page,
             book_size = :size,
             book_established = :est,
             book_description = :des,
-            book_image = :bimage
+            book_image = :bimage,
+            update_date =:updateDate
             WHERE id = :id"
     );
         $sql->bindValue(":name", $bookName);
         $sql->bindValue(":catID", $bookCategory);
         $sql->bindValue(":price", $bookPrice);
-        // $sql->bindValue(":autID", $bookAuthor);
+        $sql->bindValue(":autID", $bookAuthor);
         $sql->bindValue(":page", $bookPages );
         $sql->bindValue(":size", $bookSize);
         $sql->bindValue(":est", $bookEstablished);
         $sql->bindValue(":des", $bookDescription);
         $sql->bindValue(":bimage", $bookFile);
+        $sql->bindValue(":updateDate", date("d/m/Y"));
         $sql->bindValue(":id", $id);
         $sql->execute();
     header ("Location: ../View/bookInfo.php");

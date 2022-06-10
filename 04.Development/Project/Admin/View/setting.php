@@ -40,49 +40,88 @@
 
                 <!-- site Master start -->
                 <div class="stm">
-                    <div class="input-group mb-3 mt-5">
-                        <input type="file" class="form-control" id="inputGroupFile02">
+                    <!-- Update Fav-Icon -->
+                    <form action="../Controller/updateFICONController.php" method="POST">
+                        <div class="input-group mb-3 mt-5">
+                            <input type="file" class="form-control" id="inputGroupFile02" name="fIcon">
+                        </div>
+                        <button type="submit" class="custombutton btn btn-sm offset-10 mt-2 mb-3 fw-bold col-2">CHANGE FAV-ICON</button>
+                    </form>
+                    <!-- Update Logo Start-->
+                    <form action="../Controller/updatelogoController.php" method="POST">
+                        <div class="input-group mb-3 mt-5">
+                            <input type="file" class="form-control" id="inputGroupFile02" name="webLogo">
+                        </div>
+                        <button type="submit" class="custombutton btn btn-sm offset-10 mt-2 mb-3 fw-bold col-2">CHANGE LOGO</button>
+                    </form>
+                    <!-- Update Google Map Start-->
+                    <form action="../Controller/updateGMController.php" method="POST">
+                        <div class="input-group mb-3 mt-5">
+                            <input type="text" class="form-control"  name="webGM">
+                        </div>
+                        <button type="submit" class="custombutton btn btn-sm offset-10 mt-2 mb-3 fw-bold">CHANGE GOOGLE MAP</button>
+                    </form>
+                    
+                    <!--Update Web-Name Start -->
+                    <form action="../Controller/updateWebNameController.php" method="POST">
+                        <div class="mb-3 mt-2">
+                            <label for="exampleFormControlInput1" class="form-label">Write New Name</label>
+                            <input type="text" class="customstyle form-control" id="exampleFormControlInput1" name="wName">
+                            <button type="submit" class="custombutton btn btn-sm offset-10 mt-4 fw-bold col-2">CHANGE NAME</button>
+                        </div>
+                    </form>
+                    
+
+                    <!-- Change Slider Start -->
+                    <form action="../Controller/updateSliderContoller.php" method="POST">
+                    <div >
+                        
+                        <label for="" class="mb-2">Web Sliders</label>
+                        <input type="file" class="form-control" name="sliderOne"><br>
+                        <input type="file" class="form-control" name="sliderTwo"><br>
+                        <input type="file" class="form-control" name="sliderThree"><br>
+                        <input type="file" class="form-control" name="sliderFour">
+                        <button type="submit" class="custombutton btn btn-sm offset-10 mt-4 fw-bold col-2">ADD SLIDER</button>
                     </div>
-                    <button class="custombutton btn btn-sm offset-10 mt-2 mb-3 fw-bold">CHANGE FAV-ICON</button>
-                    <div class="input-group mb-3 mt-5">
-                        <input type="file" class="form-control" id="inputGroupFile02">
-                    </div>
-                    <button class="custombutton btn btn-sm offset-10 mt-2 mb-3 fw-bold">CHANGE LOGO</button>
-                    <div class="mb-3 mt-2">
-                        <label for="exampleFormControlInput1" class="form-label">Write New Name</label>
-                        <input type="email" class="customstyle form-control" id="exampleFormControlInput1">
-                        <button class="custombutton btn btn-sm offset-10 mt-4 fw-bold">CHANGE NAME</button>
-                    </div>
-                    <div class="offset-2">
-                        <img src="../../Customer/resource/img/main slider_1.png" alt="" class="slideimg" />
-                        <img src="../../Customer/resource/img/main slider_1.png" alt="" class="slideimg" />
-                        <img src="../../Customer/resource/img/main slider_1.png" alt="" class="slideimg" />
-                        <img src="../../Customer/resource/img/main slider_1.png" alt="" class="slideimg" />
-                        <button class="custombutton btn btn-sm offset-10 mt-4 fw-bold">ADD SLIDER</button>
-                    </div>
+                    </form>
+                    <!-- Change Slider End -->
+
+                    <!-- Update Welcome Text -->
+                    <form action="../Controller/updateWebTextController.php" method="POST">
                     <div class="mb-3">
                         <label for="exampleFormControlTextarea1" class="form-label">Change Welcome Text</label>
-                        <textarea class="customstyle form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                        <textarea class="customstyle form-control mt-3" id="exampleFormControlTextarea1" rows="3"></textarea>
-                        <button class="custombutton btn btn-sm offset-10 mt-4 fw-bold">CHANGE WELCOME TEXT</button>
+                        <textarea class="customstyle form-control" id="exampleFormControlTextarea1" rows="3" name="textOne"></textarea>
+                        <textarea class="customstyle form-control mt-3" id="exampleFormControlTextarea1" rows="3" name="textTwo"></textarea>
+                        <button type="submit" class="custombutton btn btn-sm offset-10 mt-4 fw-bold col-2">CHANGE WELCOME TEXT</button>
                     </div>
+                    </form>
+
+                    <!-- Update Phone Number -->
+                    <form action="../Controller/UpdatePhoneController.php" method="POST">
                     <div class="mb-3 mt-2">
                         <label for="exampleFormControlInput1" class="form-label">Write Phone.No</label>
-                        <input type="email" class="customstyle form-control" id="exampleFormControlInput1">
-                        <button class="custombutton btn btn-sm offset-10 mt-4 fw-bold">CHANGE PHONE.NO</button>
+                        <input type="number" class="customstyle form-control" id="exampleFormControlInput1" name="wPhone">
+                        <button class="custombutton btn btn-sm offset-10 mt-4 fw-bold col-2">CHANGE PHONE.NO</button>
                     </div>
+                    </form>
+
+                    <!-- Update Shop Email -->
+                    <form action="../Controller/updateEmailController.php" method="POST">
                     <div class="mb-3 mt-2">
                         <label for="exampleFormControlInput1" class="form-label">Write Email Address</label>
-                        <input type="email" class="customstyle form-control" id="exampleFormControlInput1">
+                        <input type="text" class="customstyle form-control" id="exampleFormControlInput1" name="wEmail">
                         <button class="custombutton btn btn-sm offset-10 mt-4 fw-bold">CHANGE EMAIL ADDRESS</button>
                     </div>
+                    </form>
+
+                    <!-- Update Shop Address -->
+                    <form action="../Controller/updateAddressController.php" method="POST">
                     <div class="mb-3 mt-2">
                         <label for="exampleFormControlInput1" class="form-label">Write Shop Address</label>
-                        <input type="email" class="customstyle form-control" id="exampleFormControlInput1">
+                        <input type="text" class="customstyle form-control" id="exampleFormControlInput1" name="wShop">
                         <button class="custombutton btn btn-sm offset-10 mt-4 fw-bold">CHANGE SHOP ADDRESS</button>
                     </div>
-
-
+                    </form>
                 </div>
                 <!-- site Master end -->
 
@@ -109,10 +148,8 @@
                                 $count++;
                             }
                             ?>
-
-
                         </table>
-                        <button class="btn btn-sm offset-10 custombutton fw-bold "><a href="./addCategory.php" class="text-dec text-dark">ADD CATEGORY</a></button>
+                        <button class="btn btn-sm offset-10 custombutton fw-bold col-2"><a href="./addCategory.php" class="text-dec text-dark">ADD CATEGORY</a></button>
                     </div>
                     <!-- Category Table end -->
 
@@ -133,44 +170,15 @@
                                 global $no;
                                 echo "<tr class=tb-text>";
                                 echo "<td>" . $no++ . "</td>";
-                                echo "<td> <img class=customimagesize src='../resource/img/guide/" . $value['guide_image'] ."'</td>";
+                                echo "<td> <img class=customimagesize src='../../Images/" . $value['guide_image'] . "'</td>";
                                 echo "<td class=overflow-hidden>" . $value['guide_text'] . "</td>";
                                 echo "<td><a href='../View/editGuide.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-primary'><ion-icon name='create-outline'></ion-icon></button></a></td>";
                                 echo "<td><a href='../Controller/deleteGuideController.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-danger'><ion-icon name='trash-outline'></ion-icon></button></a></td>";
                             }
                             ?>
-                            <!-- <tr class="tb-text">
-                                <td>1</td>
-                                <td><img src="../resource/img/faq.png" alt="" class="customimagesize" /> </td>
-                                <td class=" overflow-hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur exercitationem ipsum natus recusandae aut commodi doloremque quis eius dicta accusantium sit,</td>
-                                <td><button class="btn btn-outline-primary ">
-                                        <ion-icon name="create"></ion-icon>
-                                    </button> <button class="btn btn-outline-danger mt-1 ">
-                                        <ion-icon name="trash-sharp"></ion-icon>
-                                    </button></td>
-                            </tr>
-                            <tr class="tb-text">
-                                <td>2</td>
-                                <td><img src="../resource/img/faq.png" alt="" class="customimagesize" /> </td>
-                                <td class=" overflow-hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur exercitationem ipsum natus recusandae aut commodi doloremque quis eius dicta accusantium sit,</td>
-                                <td><button class="btn btn-outline-primary ">
-                                        <ion-icon name="create"></ion-icon>
-                                    </button> <button class="btn btn-outline-danger mt-1 ">
-                                        <ion-icon name="trash-sharp"></ion-icon>
-                                    </button></td>
-                            </tr>
-                            <tr class="tb-text">
-                                <td>3</td>
-                                <td><img src="../resource/img/faq.png" alt="" class="customimagesize" /> </td>
-                                <td class=" overflow-hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur exercitationem ipsum natus recusandae aut commodi doloremque quis eius dicta accusantium sit,</td>
-                                <td><button class="btn btn-outline-primary ">
-                                        <ion-icon name="create"></ion-icon>
-                                    </button> <button class="btn btn-outline-danger mt-1 ">
-                                        <ion-icon name="trash-sharp"></ion-icon>
-                                    </button></td>
-                            </tr> -->
+
                         </table>
-                        <button class="btn btn-sm offset-10 custombutton fw-bold">ADD GUIDE</button>
+                        <button class="btn btn-sm offset-10 custombutton fw-bold col-2">ADD GUIDE</button>
                     </div>
                     <!-- Guide Table end -->
 
@@ -194,46 +202,15 @@
                                 echo "<tr class=tb-text>";
                                 echo "<td>" . $no++ . "</td>";
                                 echo "<td>" . $value['delivery_city_name'] . "</td>";
-                                echo "<td>" . $value['delivery_fees'] .  ",000 MMK" ."</td>";
+                                echo "<td>" . $value['delivery_fees'] .  ",000 MMK" . "</td>";
                                 echo "<td><a href='../View/editDeliveryFee.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-primary'><ion-icon name='create-outline'></ion-icon></button></a></td>";
                                 echo "<td><a href='../Controller/deleteDeliveryFeeController.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-danger'><ion-icon name='trash-outline'></ion-icon></button></a></td>";
                             }
                             ?>
 
-                            <!-- <tr class="tb-text">
-                                <td>1</td>
-                                <td>Monywa</td>
-                                <td>3000MMK</td>
-                                <td><button class="btn btn-outline-primary ">
-                                        <ion-icon name="create"></ion-icon>
-                                    </button> <button class="btn btn-outline-danger ms-1">
-                                        <ion-icon name="trash-sharp"></ion-icon>
-                                    </button></td>
-                            </tr>
-
-                            <tr class="tb-text">
-                                <td>2</td>
-                                <td>Yangon</td>
-                                <td>3000MMK</td>
-                                <td><button class="btn btn-outline-primary ">
-                                        <ion-icon name="create"></ion-icon>
-                                    </button> <button class="btn btn-outline-danger ms-1">
-                                        <ion-icon name="trash-sharp"></ion-icon>
-                                    </button></td>
-                            </tr>
-
-                            <tr class="tb-text">
-                                <td>3</td>
-                                <td>Mandalay</td>
-                                <td>3000MMK</td>
-                                <td><button class="btn btn-outline-primary ">
-                                        <ion-icon name="create"></ion-icon>
-                                    </button> <button class="btn btn-outline-danger ms-1">
-                                        <ion-icon name="trash-sharp"></ion-icon>
-                                    </button></td>
-                            </tr> -->
+                            
                         </table>
-                        <button class="btn btn-sm offset-10 custombutton fw-bold">ADD DELIVERY FEES</button>
+                        <button class="btn btn-sm offset-10 custombutton fw-bold col-2">ADD DELIVERY FEES</button>
                     </div>
                     <!-- Delivery Fee Table end -->
 
@@ -256,46 +233,15 @@
                                 echo "<tr class=tb-text>";
                                 echo "<td>" . $no++ . "</td>";
                                 echo "<td>" . $value['service_tilte'] . "</td>";
-                                echo "<td>" . $value['service_paragraph'] ."</td>";
+                                echo "<td>" . $value['service_paragraph'] . "</td>";
                                 echo "<td><a href='../View/editService.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-primary'><ion-icon name='create-outline'></ion-icon></button></a></td>";
                                 echo "<td><a href='../Controller/deleteServiceController.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-danger'><ion-icon name='trash-outline'></ion-icon></button></a></td>";
                             }
                             ?>
 
-                            <!-- <tr class="tb-text">
-                                <td>1</td>
-                                <td>Delivery</td>
-                                <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit voluptate et dolores aliquam numquam minima illo qui, nulla inventore! Porro </td>
-                                <td><button class="btn btn-outline-primary ">
-                                        <ion-icon name="create"></ion-icon>
-                                    </button> <button class="btn btn-outline-danger mt-1">
-                                        <ion-icon name="trash-sharp"></ion-icon>
-                                    </button></td>
-                            </tr>
-
-                            <tr class="tb-text">
-                                <td>2</td>
-                                <td>Delivery</td>
-                                <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit voluptate et dolores aliquam numquam minima illo qui, nulla inventore! Porro</td>
-                                <td><button class="btn btn-outline-primary ">
-                                        <ion-icon name="create"></ion-icon>
-                                    </button> <button class="btn btn-outline-danger mt-1">
-                                        <ion-icon name="trash-sharp"></ion-icon>
-                                    </button></td>
-                            </tr>
-
-                            <tr class="tb-text">
-                                <td>3</td>
-                                <td>Delivery</td>
-                                <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit voluptate et dolores aliquam numquam minima illo qui, nulla inventore! Porro </td>
-                                <td><button class="btn btn-outline-primary ">
-                                        <ion-icon name="create"></ion-icon>
-                                    </button> <button class="btn btn-outline-danger mt-1">
-                                        <ion-icon name="trash-sharp"></ion-icon>
-                                    </button></td>
-                            </tr> -->
+                            
                         </table>
-                        <button class="btn btn-sm offset-10 custombutton fw-bold">ADD SERVICES</button>
+                        <button class="btn btn-sm offset-10 custombutton fw-bold col-2">ADD SERVICES</button>
                     </div>
                     <!-- Service Table end -->
 
@@ -325,40 +271,9 @@
                             }
                             ?>
 
-                            <!-- <tr class="tb-text">
-                                <td>1</td>
-                                <td>Delivery &payment</td>
-                                <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit voluptate et dolores aliquam numquam minima illo qui, nulla inventore! Porro </td>
-                                <td><button class="btn btn-outline-primary ">
-                                        <ion-icon name="create"></ion-icon>
-                                    </button> <button class="btn btn-outline-danger mt-1">
-                                        <ion-icon name="trash-sharp"></ion-icon>
-                                    </button></td>
-                            </tr>
-
-                            <tr class="tb-text">
-                                <td>2</td>
-                                <td>Buying</td>
-                                <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit voluptate et dolores aliquam numquam minima illo qui, nulla inventore! Porro</td>
-                                <td><button class="btn btn-outline-primary ">
-                                        <ion-icon name="create"></ion-icon>
-                                    </button> <button class="btn btn-outline-danger mt-1">
-                                        <ion-icon name="trash-sharp"></ion-icon>
-                                    </button></td>
-                            </tr>
-
-                            <tr class="tb-text">
-                                <td>3</td>
-                                <td>Delivery</td>
-                                <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit voluptate et dolores aliquam numquam minima illo qui, nulla inventore! Porro </td>
-                                <td><button class="btn btn-outline-primary ">
-                                        <ion-icon name="create"></ion-icon>
-                                    </button> <button class="btn btn-outline-danger mt-1">
-                                        <ion-icon name="trash-sharp"></ion-icon>
-                                    </button></td>
-                            </tr> -->
+                            
                         </table>
-                        <button class="btn btn-sm offset-10 custombutton fw-bold">ADD PRIVACY POLICY</button>
+                        <button class="btn btn-sm offset-10 custombutton fw-bold col-2">ADD PRIVACY POLICY</button>
                     </div>
                     <!-- Privacy Policy Table End -->
 
@@ -370,46 +285,25 @@
                                 <th class="col-2">Category</th>
                                 <th class="col-4">Questions</th>
                                 <th class="col-4">Answers</th>
-                                <th class="col-1">Actions</th>
+                                <th colspan="2">Actions</th>
                             </tr>
-
-                            <tr class="tb-text">
-                                <td>1</td>
-                                <td>Delivery</td>
-                                <td> Fugit voluptate et dolores aliquam numquam minima illo qui, nulla inventore! Porro</td>
-                                <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </td>
-                                <td><button class="btn btn-outline-primary ">
-                                        <ion-icon name="create"></ion-icon>
-                                    </button> <button class="btn btn-outline-danger mt-1">
-                                        <ion-icon name="trash-sharp"></ion-icon>
-                                    </button></td>
-                            </tr>
-
-                            <tr class="tb-text">
-                                <td>2</td>
-                                <td>Delivery</td>
-                                <td> Fugit voluptate et dolores aliquam numquam minima illo qui, nulla inventore! Porro</td>
-                                <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </td>
-                                <td><button class="btn btn-outline-primary ">
-                                        <ion-icon name="create"></ion-icon>
-                                    </button> <button class="btn btn-outline-danger mt-1">
-                                        <ion-icon name="trash-sharp"></ion-icon>
-                                    </button></td>
-                            </tr>
-
-                            <tr class="tb-text">
-                                <td>3</td>
-                                <td>Delivery</td>
-                                <td> Fugit voluptate et dolores aliquam numquam minima illo qui, nulla inventore! Porro</td>
-                                <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </td>
-                                <td><button class="btn btn-outline-primary ">
-                                        <ion-icon name="create"></ion-icon>
-                                    </button> <button class="btn btn-outline-danger mt-1">
-                                        <ion-icon name="trash-sharp"></ion-icon>
-                                    </button></td>
-                            </tr>
+                            <?php
+                            require "../Controller/faqListController.php";
+                            $no = 1;
+                                foreach ($result as $key => $value) {
+                                global $no;
+                                echo "<tr class=tb-text>";
+                                echo "<td>" . $no++ . "</td>";
+                                echo "<td>" . $value['faq_q_text'] . "</td>";
+                                echo "<td class=overflow-hidden>" . $value['faq_ans_text'] . "</td>";
+                                echo "<td>" . $value['faq_category'] . "</td>";
+                                echo "<td><a href='../View/editFaqs.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-primary'><ion-icon name='create-outline'></ion-icon></button></a></td>";
+                                echo "<td><a href='../Controller/deleteFAQController.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-danger'><ion-icon name='trash-outline'></ion-icon></button></a></td>";
+                            }
+                            ?>
+                            
                         </table>
-                        <button class="btn btn-sm offset-10 custombutton fw-bold">ADD FAQS</button>
+                        <button class="btn btn-sm offset-10 custombutton fw-bold col-2"><a href="./addFaqs.php" class="text-dec text-dark">ADD FAQS</a></button>
                     </div>
                 </div>
                 <!-- App Master End -->
@@ -440,39 +334,7 @@
                             }
                             ?>
 
-                            <!-- 
-                            <tr class="tb-text">
-                                <td>1</td>
-                                <td>john</td>
-                                <td>Jon@email.com</td>
-                                <td><button class="btn btn-outline-primary ">
-                                        <ion-icon name="create"></ion-icon>
-                                    </button> <button class="btn btn-outline-danger ms-1">
-                                        <ion-icon name="trash-sharp"></ion-icon>
-                                    </button></td>
-                            </tr>
-
-                            <tr class="tb-text">
-                                <td>2</td>
-                                <td>john</td>
-                                <td>Jon@email.com</td>
-                                <td><button class="btn btn-outline-primary ">
-                                        <ion-icon name="create"></ion-icon>
-                                    </button> <button class="btn btn-outline-danger ms-1">
-                                        <ion-icon name="trash-sharp"></ion-icon>
-                                    </button></td>
-                            </tr>
-
-                            <tr class="tb-text">
-                                <td>3</td>
-                                <td>john</td>
-                                <td>Jon@email.com</td>
-                                <td><button class="btn btn-outline-primary ">
-                                        <ion-icon name="create"></ion-icon>
-                                    </button> <button class="btn btn-outline-danger ms-1">
-                                        <ion-icon name="trash-sharp"></ion-icon>
-                                    </button></td>
-                            </tr> -->
+                            
                         </table>
                         <button class="btn btn-sm offset-10 custombutton">ADD Admin</button>
                     </div>

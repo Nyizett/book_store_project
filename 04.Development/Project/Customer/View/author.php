@@ -14,7 +14,6 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
    <link rel="stylesheet" href="../resource/UI Library/fontawesome-free/css/all.min.css">
 
-
 </head>
 
 <body>
@@ -58,21 +57,29 @@
       <span class="mx-3 showByLetterIncluding">Z</span>
    </div>
    <div class="authorsContainer d-flex justify-content-center mt-3" id="authorContainer">
-   </div>
 
-   <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#authorInfo">
+   </div>
+   <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
       Launch demo modal
-   </button> -->
-   <div id="modalContainer"></div>
-   <!-- <div class="modal fade" id="authorInfo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   </button>
+
+  
+
+   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
          <div class="modal-content">
-            <div class="modal-header m-auto">
-               <h5 class="modal-title author" id="exampleModalLabel">Min Thein Kha</h5>
+            <div class="modal-header">
+               <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+               </button>
             </div>
-            <div class="modal-body d-flex flex-row">
-               <img src="../resource/img/author.png" width="30%" alt="">
-               <p class="ms-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora hic, reiciendis suscipit ipsam minima incidunt fugiat nemo, quo a ullam natus facere modi nam? Doloremque soluta quasi quisquam ea accusantium.</p>
+            <div class="modal-body">
+               ...
+            </div>
+            <div class="modal-footer">
+               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+               <button type="button" class="btn btn-primary">Save changes</button>
             </div>
          </div>
       </div>
@@ -190,9 +197,7 @@
    </footer>
    <script src="../resource/UI Library/jquery-3.3.1.min.js"></script>
    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+   <script nomodule src="https://unpkg.com/iozrnicons@5.5.2/dist/ionicons/ionicons.js"></script>
    <script src="../resource/UI Library/fontawesome-free/js/all.min.js"></script>
    <script src="../resource/js/common.js"></script>
    <script src="../resource/js/footerCommon.js"></script>

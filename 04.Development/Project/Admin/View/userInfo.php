@@ -26,8 +26,8 @@
             <div class="col-8 offset-3">
                 <p class="h3 mt-4">User List</p>
                 <table class="table table-striped mt-4">
-                    <tr>
-                    <tr class="bg-warning">
+
+                    <tr class="bg-warning tb-text">
                         <th class="col-1">No</th>
                         <th class="col-2">Name</th>
                         <th class="col-3 ">Email</th>
@@ -35,54 +35,27 @@
                         <th class="col-4">Address</th>
                         <th>Ban</th>
                     </tr>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>helloJohn</td>
-                        <td>john123@gmail.com </td>
-                        <td>09-202334456 <br>
-                            09-202334457
-                        </td>
-                        <td>No.7B,Kamayut Township</td>
-                        <td>
-                            <button class="btn-danger fs-3">
-                            <ion-icon name="remove-circle-outline" class="fs-4"></ion-icon>
-                            </button> 
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>helloMary</td>
-                        <td>john123@gmail.com </td>
-                        <td>09-202334456 <br>
-                            09-202334457
-                        </td>
-                        <td>No.7B,Kamayut Township</td>
-                        <td>
-                            <button class="btn-danger fs-3">
-                            <ion-icon name="remove-circle-outline" class="fs-4"></ion-icon>
-                            </button> 
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>helloNora</td>
-                        <td>john123@gmail.com </td>
-                        <td>09-202334456 <br>
-                            09-202334457
-                        </td>
-                        <td>No.7B,Kamayut Township</td>
-                        <td>
-                            <button class="btn-danger fs-3">
-                            <ion-icon name="remove-circle-outline" class="fs-4"></ion-icon>
-                            </button> 
-                        </td>
-                    </tr>
-                    
+
+                    <?php
+                    require "../Controller/showUserInfoController.php";
+                    $no = 1;
+
+                    foreach ($result as $key => $value) {
+                        global $no;
+                        echo "<tr class=tb-text>";
+                        echo "<td>" . $no++ . "</td>";
+                        echo "<td >" . $value['user_name'] . "</td>";
+                        echo "<td >" . $value['user_email'] . "</td>";
+                        echo "<td >" . $value['user_phone'] . "</td>";
+                        echo "<td >" . $value['user_address'] . "</td>";
+                        echo "<td><a href='../Controller/banUserController.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-danger'><ion-icon name='remove-circle-outline' class='fs-4'></ion-icon></button></a></td>";
+                    }
+                    ?>
                 </table>
-                
+
             </div>
         </div>
     </div>
 </body>
+
 </html>
