@@ -11,6 +11,7 @@ if(isset($_GET['id'])) {
         $sql->execute();
         $result = $sql->fetchAll(PDO::FETCH_ASSOC);
         if(count($result) > 0){
+            
             require '../../Customer/View/bookDetails.php';
         }else{
             echo "ur book does not exist";

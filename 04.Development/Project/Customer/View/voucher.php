@@ -2,27 +2,27 @@
 <html lang="en">
 
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Voucher</title>
-   <link rel="stylesheet" href="../resource/UI Library/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
-   <link rel="stylesheet" href="../resource/css/style.css" />
-   <link rel="stylesheet" href="../resource/css/homepage.css" />
-   <link rel="stylesheet" href="../resource/css/signup.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
-   <link rel="stylesheet" href="../resource/UI Library/fontawesome-free/css/all.min.css">
-   <link rel="stylesheet" href="../resource/css/common.css">
-   <link rel="stylesheet" href="../resource/css/footer.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voucher</title>
+    <link rel="stylesheet" href="../resource/UI Library/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../resource/css/style.css" />
+    <link rel="stylesheet" href="../resource/css/homepage.css" />
+    <link rel="stylesheet" href="../resource/css/signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="../resource/UI Library/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="../resource/css/common.css">
+    <link rel="stylesheet" href="../resource/css/footer.css">
 </head>
 
 <body>
-   <!-- Header -->
- <nav class="navbar navbar-expand-lg   top-0 w-100 " id="cum_navbar">
-      
-      </nav>
-      <!-- Header -->
-   <div class="container-fluid header">
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg   top-0 w-100 " id="cum_navbar">
+        <?php require "../View/common.php" ?>
+    </nav>
+    <!-- Header -->
+    <div class="container-fluid header">
         <div class="container d-flex justify-content-between align-items-center flex-wrap py-5 ">
             <h1>Checkout your order</h1>
             <span><b>Home</b> -> Checkout</span>
@@ -41,15 +41,13 @@
                         </div>
                         <div class="col">
                             <label for="email" class="mb-2">Email Address</label>
-                            <input class="form-control" type="text" name="email" id="email"
-                                placeholder="example@gmail.com">
+                            <input class="form-control" type="text" name="email" id="email" placeholder="example@gmail.com">
                         </div>
                     </div>
                     <div class="row mb-3">
                         <div class="col">
                             <label for="phone" class="mb-2">Phone</label>
-                            <input class="form-control" type="text" name="phone" id="phone"
-                                placeholder="09 xxx xxx xxx">
+                            <input class="form-control" type="text" name="phone" id="phone" placeholder="09 xxx xxx xxx">
                         </div>
                         <div class="col">
                             <label for="city" class="mb-2">City</label>
@@ -68,8 +66,7 @@
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="payment" id="master_card"
-                                value="master_card">
+                            <input class="form-check-input" type="radio" name="payment" id="master_card" value="master_card">
                             <label class="form-check-label" for="master_card">
                                 Master Card
                             </label>
@@ -81,8 +78,7 @@
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="payment" id="mobile_banking"
-                                value="mobile_banking">
+                            <input class="form-check-input" type="radio" name="payment" id="mobile_banking" value="mobile_banking">
                             <label class="form-check-label" for="mobile_banking">
                                 Mobile Banking
                             </label>
@@ -141,21 +137,18 @@
         </div>
     </div>
     <footer id="footer" class="container-fluid commom-bg  mt-5">
-     
-     </footer>
+        <?php require "../View/footerCommon.php" ?>
+    </footer>
 
-   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-   <script src="../resource/js/common.js"></script>
-   <script src="../resource/js/footerCommon.js"></script>
-   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-   <script src="../resource/UI Library/fontawesome-free/js/all.min.js"></script>
-   <script type="text/javascript">
-      $(".slider").slick({
-         prevArrow: '<span class="priv_arrow btn  btn-primary "><i class="fas fa-angle-left"></i></span>',
-         nextArrow: '<span class="next_arrow btn btn-primary "><i class="fas fa-angle-right"></i></span>'
-      });
-   </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../resource/js/common.js"></script>
+    <script src="../resource/js/footerCommon.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="../resource/UI Library/fontawesome-free/js/all.min.js"></script>
+    <script type="text/javascript">
+
+    </script>
 </body>
 
 </html>

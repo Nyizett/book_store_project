@@ -24,9 +24,7 @@
 .image-container{
     width: 2rem;
 }
-.main-logo {
-    width: 9em;
-}
+
 .my-title {
     padding-left: 9%;
 }
@@ -37,4 +35,21 @@
 .categories {
     border-radius: 1.25rem;
     border: 1px solid white;
+}
+.shop{
+    border: none;
+    background: transparent;
+    margin-top: 0.5rem;
+}
+#logo{
+    width: 9rem;
+}
+.cartdiv{
+    position: relative;
+}
+.cartcount{
+    
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
 }
