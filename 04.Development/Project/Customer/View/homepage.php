@@ -21,9 +21,9 @@
 
    </nav>
    <!-- Slider -->
-   <section id="welcome-section" class="slider container">
+   <section id="welcome-section" class="container w-100">
       <div class="row pt-5 ">
-         <div class="col-12 col-lg-6 ps-5 pb-5">
+         <div class="col-12 col-lg-6 mt-5">
             <div class="slider secondary-bg content">
                <div class="ms-4">
                   <img class="img-slide1" src="../resource/img/main slider_1.png" alt="">
@@ -33,9 +33,9 @@
                </div>
             </div>
          </div>
-         <div class="col-12 col-lg-1"></div>
-         <div class="col-12 col-lg-5">
-            <div class="pt-5 content  ">
+
+         <div class="col-12 col-lg-5 mt-5 pt-4 ms-5">
+            <div class="pt-5 ps-5 content mt-5 ">
                <h3 class="font-color-primary">CHOOSE YOUR BRAIN FOOD</h3>
                <h1 class="fw-bold text-primary">BOOK IN STORE</h1>
                <p class="">Language / Education / Novels / Technology / Cartoons</p>
@@ -346,52 +346,6 @@
                </div>
             </div>
          </div>
-         <div class="col-6 col-lg-3 col-xl-2 mb-5 mx-3">
-            <div class="card mb-5 mb-lg-0 card-width bg-lightBlue border-0 content">
-               <img src="../resource/img/book cover/language2.jpg" class="img-fluid mx-auto mt-3" width="90%" alt="" />
-               <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                  <p class="card-title fw-bold mb-0 font-color-primary">
-                     JavaScript
-                  </p>
-                  <small>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                  </small>
-                  <small class="card-text d-block mb-3 font-color-secondary">
-                     Ei Maung
-                  </small>
-                  <div class="d-flex d justify-content-between align-items-center">
-                     <p class="fw-bold mb-0 font-color-primary">5000 MMK</p>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="col-6 col-lg-3 col-xl-2 mb-5 mx-3">
-            <div class="card mb-5 mb-lg-0 card-width bg-lightBlue border-0 content">
-               <img src="../resource/img/book cover/language2.jpg" class="img-fluid mx-auto mt-3" width="90%" alt="" />
-               <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                  <p class="card-title fw-bold mb-0 font-color-primary">
-                     JavaScript
-                  </p>
-                  <small>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                  </small>
-                  <small class="card-text d-block mb-3 font-color-secondary">
-                     Ei Maung
-                  </small>
-                  <div class="d-flex d justify-content-between align-items-center">
-                     <p class="fw-bold mb-0 font-color-primary">5000 MMK</p>
-                  </div>
-               </div>
-            </div>
-         </div>
    </section>
    <!-- Best selling books end -->
    <!-- Popular Books start -->
@@ -517,29 +471,7 @@
                </div>
             </div>
          </div>
-         <div class="col-6 col-lg-3 col-xl-2 my-3 mx-3">
-            <div class="card mb-5 mb-lg-0 card-width bg-lightBlue border-1 content">
-               <img src="../resource/img/book cover/language2.jpg" class="img-fluid mx-auto mt-3" width="90%" alt="" />
-               <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                  <p class="card-title fw-bold mb-0 font-color-primary">
-                     JavaScript
-                  </p>
-                  <small>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                  </small>
-                  <small class="card-text d-block mb-3 font-color-secondary">
-                     Ei Maung
-                  </small>
-                  <div class="d-flex d justify-content-between align-items-center">
-                     <p class="fw-bold mb-0 font-color-primary">5000 MMK</p>
-                  </div>
-               </div>
-            </div>
-         </div>
+
       </div>
       <!-- <div class="row justify-content-evenly content">
          <div class="mt-5 mx-2">
@@ -571,7 +503,7 @@
             <h3 class="font-color-primary fw-bold">Favorite Authors</h3>
          </div>
          <div class="col-12 col-lg-6  text-end ">
-            <a href="#" class="btn commom-bg text-white"> View All</a>
+            <button class="btn authorViewAll"><a href="../View/author.php" class="text-white text-decoration-none"> View All</a></button>
          </div>
       </div>
       <div class="row mt-5">
