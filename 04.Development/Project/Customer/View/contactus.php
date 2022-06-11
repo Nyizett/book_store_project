@@ -64,19 +64,19 @@
                   <div class="d-flex justify-content-between pt-4">
                      <i class="fas fa-map-marker text-white"></i>
                      <p class="ms-3 text-white">
-                        No-7B,U Tun Lin Chan Lan Street Kamayut Township
+                     <?php require "../Controller/webAddressController.php"; echo $webAddress [0]['web_address']; ?>
                      </p>
                   </div>
                   <div class="d-flex justify-content-between pt-4">
                      <i class="fas fa-envelope text-white"></i>
-                     <p class="ms-3 text-white">
-                        No-7B,U Tun Lin Chan Lan Street Kamayut Township
+                     <p class="shop-email text-white ">
+                     <?php require "../Controller/webAddressController.php"; echo $webEmail [0]['web_email']; ?>
                      </p>
                   </div>
                   <div class="d-flex justify-content-between pt-4">
                      <i class="fas fa-phone text-white"></i>
-                     <p class="ms-3 text-white">
-                        No-7B,U Tun Lin Chan Lan Street Kamayut Township
+                     <p class="shop-ph text-white">
+                     <?php require "../Controller/webAddressController.php"; echo $webPhone[0]['web_phno']; ?>
                      </p>
                   </div>
                </div>
@@ -87,21 +87,18 @@
                <div class="row justify-content-center align-items-center">
                   <div class="col-12">
                      <h3 class="text-center font-color-primary pt-3">
-                        We Would Love To Heare From You.
+                        We Would Love To Hear From You.
                      </h3>
                      <br />
-                     <br />
-                     <form>
-                        <div class="mb-3 pt3">
-                           <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Name" />
+                     <form action="../Controller/contactController.php" method="POST">
+                        <div class="mb-1">
+                           <input type="text" class="form-control" name="cName" aria-describedby="emailHelp" placeholder="Your Name" />
                         </div>
-                        <div class="mb-3 pt-5">
-                           <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Email" />
+                        <div class="mb-2 pt-1">
+                           <input type="email" class="form-control" name="cEmail" placeholder="Email" />
                         </div>
-
-                        <div id="summernote" class="pt-5 mt-3 note">
-                           <p>Type Your Message here</p>
-                        </div>
+                        <textarea id="" class="pt-2" cols="99" rows="8" name="Message" placeholder="Type Your Message"></textarea>
+                        <button type="submit" class="send mb-2">Send</button>
                      </form>
                   </div>
                </div>
@@ -112,7 +109,9 @@
 
    <section class="container-fluid">
       <div class="row">
-         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3819.5624951106656!2d96.14726431395682!3d16.798428623946755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1eb5e3fffe455%3A0xb7d3ad319654cf6e!2sShwedagon%20Pagoda!5e0!3m2!1sen!2ssg!4v1653662623922!5m2!1sen!2ssg" width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      
+      
+      <iframe src='<?php require "../Controller/webAddressController.php"; echo $webGML[0]['g_map_link'];?>' width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
    </section>
 

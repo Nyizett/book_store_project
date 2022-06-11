@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../resource/css/dashboard.css" />
     <link rel="stylesheet" href="../resource/css/common.css">
     <script src="../resource/UI Library/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
-    <script src="../resource/UI Library/chart_js/Chart.min.js"></script>
+    <!-- <script src="../resource/UI Library/chart_js/Chart.min.js"></script> -->
     <script src="../resource/UI Library/jquery-3.3.1.min.js"></script>
     <script src="../resource/js/common.js"></script>
     <script src="../resource/js/dashboard.js" defer></script>
@@ -27,30 +27,40 @@
             <!-- Dashboard -->
             <div class="col-8 offset-3">
                 <div class="top-box offset-8">
-                    <div class="top"><ion-icon name="person" class="fs-2 text-primary"></ion-icon></div>
+                    <div class="top">
+                        <ion-icon name="person" class="fs-2 text-primary"></ion-icon>
+                    </div>
                     <div class="top"><a href="#" class="me-md-5 text-dec fs-5">CustomerPage</a></div>
                 </div>
                 <div class="box">
                     <div class="box1">
                         <ion-icon name="person-circle-outline" class="iconic"></ion-icon>
                         <p class="number">User</p>
-                        <p class="quantity fs-4 mt-1">30k</p>
+                        <p class="quantity fs-4 mt-1"><?php require "../Controller/dashboardController.php"; echo $userQty[0]['userQty']; ?></p>
                     </div>
                     <div class="box1">
                         <ion-icon name="cart-outline" class="iconic  "></ion-icon>
                         <p class="number">Sale</p>
-                        <p class="quantity">20k</p>
+                        <p class="quantity"><?php require "../Controller/dashboardController.php"; echo number_format( $totalPrice[0]['totalPrice']) . " MMK"; ?></p>
                     </div>
                     <div class="box1">
                         <ion-icon name="document-outline" class="iconic "></ion-icon>
                         <p class="number">Order</p>
-                        <p class="quantity">10k</p>
+                        <p class="quantity"><?php require "../Controller/dashboardController.php"; echo number_format( $totalOrder[0]['totalOrder']); ?></p>
                     </div>
                 </div>
-                <div class="row mt-4 ms-4">
+                <!-- <div class="row mt-4 ms-4">
                     <p class="h4 mt-1">Monthly Order</p>
                     <canvas id="myChart"></canvas>
+                </div> -->
+                <div id="chart-container">
+                    <canvas id="mycanvas"></canvas>
                 </div>
+
+
+
+
+
                 <div class="row mt-4 ms-4">
                     <p class="h4 mt-1">Daily Order</p>
                     <table class="table table-striped mt-4 mb-4 ms-2 ">
@@ -64,20 +74,20 @@
                         </tr>
 
                         <?php
-                    require "../Controller/dailyOrderController.php";
-                    $no = 1;
+                        require "../Controller/dailyOrderController.php";
+                        $no = 1;
 
-                    foreach ($result as $key => $value) {
-                        global $no;
-                        echo "<tr class=tb-text>";
-                        echo "<td>" . $no++ . "</td>";
-                        echo "<td >" . $value['user_name'] . "</td>";
-                        echo "<td >" .date("d/m/Y"). "</td>";
-                        echo "<td >" . "1000" . "</td>";
-                        echo "<td >" . $value['user_address']. "</td>";
-                        echo "<td >" . $value['']. "</td>";
-                    }
-                    ?>
+                        foreach ($result as $key => $value) {
+                            global $no;
+                            echo "<tr class=tb-text>";
+                            echo "<td>" . $no++ . "</td>";
+                            echo "<td >" . $value['user_name'] . "</td>";
+                            echo "<td >" . date("d/m/Y") . "</td>";
+                            echo "<td >" . "1000" . "</td>";
+                            echo "<td >" . $value['user_address'] . "</td>";
+                            echo "<td >" . $value[''] . "</td>";
+                        }
+                        ?>
                         <!-- <tr>
                             <td>1</td>
                             <td>helloJohn</td>
@@ -109,6 +119,8 @@
 
         </div>
     </div>
+    <script type="text/javascript" src="js/Chart.min.js"></script>
+
 </body>
 
 </html>
