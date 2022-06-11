@@ -8,7 +8,8 @@ $dbconnect = $db2 ->connect();
 $sql = $dbconnect -> prepare("SELECT * FROM m_orders 
  INNER JOIN m_user_list ON m_orders.customer_id=m_user_list.id  
  INNER JOIN m_delivery_fees ON m_orders.delivery_fees_id=m_delivery_fees.id 
-WHERE m_orders.del_flg = 0 ");
+WHERE m_orders.del_flg = 0  AND m_orders.create_date = :todaydate");
+$sql->bindValue(":todaydate", date("d/m/Y"));
 $sql->execute();
 
 $result = $sql->fetchAll(PDO::FETCH_ASSOC);

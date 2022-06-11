@@ -36,14 +36,11 @@
          <div class="col-12 col-md-10 col-lg-8">
             <form class="card card-sm">
                <div class="card-body row no-gutters align-items-center">
-                  <div class="col-auto">
-                     <button class="btn btn-lg commom-bg   text-white" type="submit">Search</button>
-                  </div>
                   <div class="col">
-                     <input class="form-control form-control-lg form-control-borderless" type="search" placeholder="Search Books here...">
+                     <input class="form-control form-control-lg form-control-borderless" id="searchInpt" type="text" placeholder="Search Books here...">
                   </div>
                   <div class="col-auto">
-                     <i class="fas fa-search h4 text-body font-color-primary"></i>
+                     <button class="btn btn-lg commom-bg   text-white" id="searchBtn" type="button">Search</button>
                   </div>
                </div>
             </form>
@@ -53,8 +50,8 @@
 
 
    <section class="container">
-      <div class="row">
-         <div class="col-12 col-lg-2 col-xl-2">
+      <div class="row" id="Bookbox">
+         <!-- <div class="col-12 col-lg-2 col-xl-2">
             <div class="card mt-5 card-width">
                <img src="../resource/img/book cover/jsEi.png" class="img-fluid w-75 mx-auto mt-3" alt="" />
                <div class="card-body d-flex flex-column justify-content-center align-items-center">
@@ -76,7 +73,10 @@
                   </div>
                </div>
             </div>
-         </div>
+         </div> -->
+
+         <!-- <div class="my-5 text-center h2 text-danger">There is no book with the name</div> -->
+
       </div>
    </section>
 
@@ -86,6 +86,7 @@
 
 
    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+   <script src="../resource/js/search.js"></script>
    <script src="../resource/js/common.js"></script>
    <script src="../resource/js/footerCommon.js"></script>
    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>

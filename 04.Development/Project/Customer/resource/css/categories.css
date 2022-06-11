@@ -1,91 +1,93 @@
 :root {
-    --primary-color: #1F4287;
-    --accent-color: #EBF1FD;
-    --navbar-color:#fff;
-    --body-color:white;
-
+  --primary-color: #1f4287;
+  --accent-color: #ebf1fd;
+  --navbar-color: #fff;
+  --body-color: white;
 }
-.b{
-    background-color: var(--body-color);
+.b {
+  background-color: var(--body-color);
 }
-.nav{
-    background-color: var(--navbar-color);
+.nav {
+  background-color: var(--navbar-color);
 }
-.bg{
-    background-color: var(--accent-color);
+.bg {
+  background-color: var(--accent-color);
 }
 .header {
-    width: 24%;
-    margin: 0.3rem;
-    background-color: var(--accent-color);
+  width: 24%;
+  margin: 0.3rem;
+  background-color: var(--accent-color);
 }
-img{
-    width: 30%;
-    height: 10vh;
-    object-fit: cover;
+img {
+  width: 30%;
+  height: 10vh;
+  object-fit: cover;
 }
 
-.underline{
-    width: 100%;
-    height: 30vh;
-    color: black;
+.underline {
+  width: 100%;
+  height: 30vh;
+  color: black;
 }
 .my-card {
-    width: 100%;
-    border: 0.5px solid #ccc;   
-    cursor: pointer;
+  width: 100%;
+  border: 0.5px solid #ccc;
+  cursor: pointer;
 }
 .my-card-img {
-    width: 100%;
-    height: 100%;
-    background-color: var(--accent-color);
-    padding: 20px 40px;
-    text-align: center;
-    
+  width: 100%;
+  height: 100%;
+  background-color: var(--accent-color);
+  padding: 20px 40px;
+  text-align: center;
 }
 .my-card-img img {
-    width: 100%;
-    height: 35vh;
-    object-fit: cover;
-   
+  width: 100%;
+  height: 35vh;
+  object-fit: cover;
 }
 
-icon{
-    color:b ;
+icon {
+  color: b;
 }
 .my-card-info {
-    width: 100%;
-    background-color: white;
-    padding: 20px 40px;
-    color: var(--primary-color);
+  width: 100%;
+  background-color: white;
+  padding: 20px 40px;
+  color: var(--primary-color);
 }
 .card-button {
-    background-color: var(--primary-color);
-    color: white;
+  background-color: var(--primary-color);
+  color: white;
 }
-.cate{
-    background-color: var(--primary-color);
+.cate {
+  background-color: var(--primary-color);
 }
 
 .close {
-    width: 5%;
-    height: 5%;
-    font-size: 1.5rem;
-    margin-right: 1rem;
-    background: transparent;
-    border: none;
+  width: 5%;
+  height: 5%;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  background: transparent;
+  border: none;
 }
 
-
 .btnCart {
-    border-style: solid;
-    background: var(--primary-color);
-    color: #fff;
-    border-color: transparent;
+  border-style: solid;
+  background: var(--primary-color);
+  color: #fff;
+  border-color: transparent;
 }
 
 .btnShopping {
-    border-style: solid;
-    background-color: transparent;
-    border-color: var(--primary-color);
+  border-style: solid;
+  background-color: transparent;
+  border-color: var(--primary-color);
+}
+
+.noBook {
+  background-color: rgba(255, 224, 224, 0.89) !important;
+  height: 40vh;
+  border-radius: 2vw;
 }

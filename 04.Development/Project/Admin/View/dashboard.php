@@ -77,17 +77,17 @@
                         require "../Controller/dailyOrderController.php";
                         $no = 1;
 
-                        foreach ($result as $key => $value) {
-                            global $no;
-                            echo "<tr class=tb-text>";
-                            echo "<td>" . $no++ . "</td>";
-                            echo "<td >" . $value['user_name'] . "</td>";
-                            echo "<td >" . date("d/m/Y") . "</td>";
-                            echo "<td >" . "1000" . "</td>";
-                            echo "<td >" . $value['user_address'] . "</td>";
-                            echo "<td >" . $value[''] . "</td>";
-                        }
-                        ?>
+                    foreach ($result as $key => $value) {
+                        global $no;
+                        echo "<tr class=tb-text>";
+                        echo "<td>" . $no++ . "</td>";
+                        echo "<td >" . $value['user_name'] . "</td>";
+                        echo "<td >" .date("d/m/Y"). "</td>";
+                        echo "<td >" . $value['total_amount']. "</td>";
+                        echo "<td >" . $value['user_address']. "</td>";
+                        echo "<td >" . $value['delivery_fees']. "</td>";
+                    }
+                    ?>
                         <!-- <tr>
                             <td>1</td>
                             <td>helloJohn</td>
