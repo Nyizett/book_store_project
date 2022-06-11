@@ -5,12 +5,17 @@ $(document).ready(function () {
   $("#allAuthor").click(function () {
     $startName = "";
     showAllAuthor($startName);
+    $("#allAuthor").addClass("selectedName");
+    $(".showByLetterIncluding").removeClass("selectedName");
   });
 
   //show specific authors on clicking individual letters
   $(".showByLetterIncluding").click(function () {
     $startName = $(this).text();
     showAllAuthor($startName);
+    $("#allAuthor").removeClass("selectedName");
+    $(".showByLetterIncluding").removeClass("selectedName");
+    $(this).addClass("selectedName");
   });
   //show all authors function
   function showAllAuthor($startName) {
@@ -55,7 +60,7 @@ $(document).ready(function () {
                     <div class="authorsCard d-flex flex-column justify-content-center align-items-center mx-4 my-3 gap-3">
                     <img src="../../Admin/resource/img/authors/${author.author_image}" alt="${author.author_name} Photo" width="50%" height="45%" class="mt-2">
                     <p class="authorName fw-bolder">${author.author_name} </p>
-                    <button type="button" class="btn authorInfoButton" id="${author.id}" data-bs-toggle="modal" data-bs-target="#authorInfo${author.id}">Read Profile</button>
+                    <button type="button" class="btn authorInfoButton text-white" data-bs-toggle="modal" data-bs-target="#authorInfo${author.id}">Read Profile</button>
                     </div>
                     `
             );

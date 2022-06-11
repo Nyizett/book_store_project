@@ -44,7 +44,7 @@
   color: var(--primary-darkblue);
 }
 .authorInfoButton {
-  background-color: var(--primary-darkblue);
+  background-color: var(--primary-darkblue) !important;
   color: white;
   width: 70%;
 }
