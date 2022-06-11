@@ -73,9 +73,9 @@
                         echo "<td>" . $no++ . "</td>";
                         echo "<td >" . $value['user_name'] . "</td>";
                         echo "<td >" .date("d/m/Y"). "</td>";
-                        echo "<td >" . "1000" . "</td>";
+                        echo "<td >" . $value['total_amount']. "</td>";
                         echo "<td >" . $value['user_address']. "</td>";
-                        echo "<td >" . $value['']. "</td>";
+                        echo "<td >" . $value['delivery_fees']. "</td>";
                     }
                     ?>
                         <!-- <tr>

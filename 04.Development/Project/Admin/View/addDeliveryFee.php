@@ -29,7 +29,7 @@
   <input type="type" class="customstyle form-control" id="exampleFormControlInput1" name="deliprice">
 </div>
 
-<button type="submit" class="custombutton btn btn-sm offset-10 mt-3 fw-bold">ADD DELIVERY FEE</button>
+<button type="submit" class="custombutton btn btn-sm offset-10 mt-3 fw-bold ">ADD DELIVERY FEE</button>
 
 </div>
 </form>

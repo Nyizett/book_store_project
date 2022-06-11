@@ -202,15 +202,14 @@
                                 echo "<tr class=tb-text>";
                                 echo "<td>" . $no++ . "</td>";
                                 echo "<td>" . $value['delivery_city_name'] . "</td>";
-                                echo "<td>" . $value['delivery_fees'] .  ",000 MMK" . "</td>";
+                                echo "<td>" .number_format($value['delivery_fees'])." MMK" . "</td>";
                                 echo "<td><a href='../View/editDeliveryFee.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-primary'><ion-icon name='create-outline'></ion-icon></button></a></td>";
                                 echo "<td><a href='../Controller/deleteDeliveryFeeController.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-danger'><ion-icon name='trash-outline'></ion-icon></button></a></td>";
                             }
                             ?>
 
-                            
                         </table>
-                        <button class="btn btn-sm offset-10 custombutton fw-bold col-2">ADD DELIVERY FEES</button>
+                        <button class="btn btn-sm offset-10 custombutton fw-bold col-2"><a href="./addDeliveryFee.php" class="text-dec text-dark ">ADD DELIVERY FEES</a></button>
                     </div>
                     <!-- Delivery Fee Table end -->
 
