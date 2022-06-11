@@ -5,15 +5,18 @@ require_once "../Model/DBConnection.php";
 $db2 =  new DBConnect();
 $dbconnect = $db2 ->connect();
 
-$sql = $dbconnect -> prepare("SELECT SUM(order_d_quantity) as totalQuantity,MONTH(create_date) as month
-FROM m_order_details GROUP BY month");
+$sql = $dbconnect -> prepare("SELECT SUM(order_d_quantity) as totalQuantity,MONTHNAME(create_date) 
+as month FROM m_order_details GROUP BY create_date ASC ");
 $sql->execute();
 
 $result = $sql->fetchAll(PDO::FETCH_ASSOC);
 
-$data = array();
+$month = array();
+$totalOrderQty = array();
 foreach ($result as $row) {
-    $data[] = $row;
+    $month[] = $row['month'];
+    $totalOrderQty[]  = $row['totalQuantity'];
 }
 
-// print json_encode($data);
+// print json_encode($month);
+// print json_encode($totalOrderQty);

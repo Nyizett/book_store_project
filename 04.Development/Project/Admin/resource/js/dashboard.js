@@ -1,53 +1,53 @@
 // const ctx = document.getElementById("myChart").getContext("2d");
 
-$(document).ready(function () {
-    $.ajax({
-        type: "GET",
-        url: "../Controller/monthlyOrderController.php",
-        contentType: false,
-        processData: false,
-        cache: false,
+// $(document).ready(function () {
+//     $.ajax({
+//         type: "GET",
+//         url: "../Controller/monthlyOrderController.php",
+//         contentType: false,
+//         processData: false,
+//         cache: false,
 
-        success: function (res) {
-            var totalquantity = [];
-            var month = [];
+//         success: function (res) {
+//             var totalquantity = [];
+//             var month = [];
 
-            for (var i in res) {
-                totalquantity.push(res[i].totalQuantity);
-                month.push(res[i].month);
-            }
-            var chartdata = {
-                labels: MonthlyOrder,
-                datasets: [
-                    {
-                        label: 'Total Quantities',
-                        backgroundColor: 'rgba(200, 200, 200, 0.75)',
-                        borderColor: 'rgba(200, 200, 200, 0.75)',
-                        hoverBackgroundColor: 'rgba(200, 200, 200, 1)',
-                        hoverBorderColor: 'rgba(200, 200, 200, 1)',
-                        data: totalquantity
-                    }
-                ]
-            };
+//             for (var i in res) {
+//                 totalquantity.push(res[i].totalQuantity);
+//                 month.push(res[i].month);
+//             }
+//             var chartdata = {
+//                 labels: 'Total Quantities',
+//                 datasets: [
+//                     {
+//                         label: 'Total Quantities',
+//                         backgroundColor: 'rgba(200, 200, 200, 0.75)',
+//                         borderColor: 'rgba(200, 200, 200, 0.75)',
+//                         hoverBackgroundColor: 'rgba(200, 200, 200, 1)',
+//                         hoverBorderColor: 'rgba(200, 200, 200, 1)',
+//                         data: totalquantity
+//                     }
+//                 ]
+//             };
 
-            var ctx = $("#mycanvas");
+//             var ctx = $("#mycanvas");
 
-            var barGraph = new Chart(ctx, {
-                type: 'bar',
-                data: chartdata
-            });
-        },
-        error: function (data) {
-            console.log(data);
-        }
+//             var barGraph = new Chart(ctx, {
+//                 type: 'bar',
+//                 data: chartdata
+//             });
+//         },
+//         error: function (data) {
+//             console.log(data);
+//         }
 
 
 
 
 
     
-    });
-});
+//     });
+// });
 
 // const ctx = document.getElementById('myChart').getContext('2d');
 // const myChart = new Chart(ctx, {

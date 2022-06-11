@@ -11,12 +11,13 @@
     <link rel="stylesheet" href="../resource/css/dashboard.css" />
     <link rel="stylesheet" href="../resource/css/common.css">
     <script src="../resource/UI Library/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
-    <!-- <script src="../resource/UI Library/chart_js/Chart.min.js"></script> -->
+    
     <script src="../resource/UI Library/jquery-3.3.1.min.js"></script>
     <script src="../resource/js/common.js"></script>
-    <script src="../resource/js/dashboard.js" defer></script>
+    <!-- <script src="../resource/js/dashboardChart.js"></script> -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
@@ -36,27 +37,27 @@
                     <div class="box1">
                         <ion-icon name="person-circle-outline" class="iconic"></ion-icon>
                         <p class="number">User</p>
-                        <p class="quantity fs-4 mt-1"><?php require "../Controller/dashboardController.php"; echo $userQty[0]['userQty']; ?></p>
+                        <p class="quantity fs-4 mt-1"><?php require "../Controller/dashboardController.php";
+                                                        echo $userQty[0]['userQty']; ?></p>
                     </div>
                     <div class="box1">
                         <ion-icon name="cart-outline" class="iconic  "></ion-icon>
                         <p class="number">Sale</p>
-                        <p class="quantity"><?php require "../Controller/dashboardController.php"; echo number_format( $totalPrice[0]['totalPrice']) . " MMK"; ?></p>
+                        <p class="quantity"><?php require "../Controller/dashboardController.php";
+                                            echo number_format($totalPrice[0]['totalPrice']) . " MMK"; ?></p>
                     </div>
                     <div class="box1">
                         <ion-icon name="document-outline" class="iconic "></ion-icon>
                         <p class="number">Order</p>
-                        <p class="quantity"><?php require "../Controller/dashboardController.php"; echo number_format( $totalOrder[0]['totalOrder']); ?></p>
+                        <p class="quantity"><?php require "../Controller/dashboardController.php";
+                                            echo number_format($totalOrder[0]['totalOrder']); ?></p>
                     </div>
                 </div>
-                <!-- <div class="row mt-4 ms-4">
-                    <p class="h4 mt-1">Monthly Order</p>
-                    <canvas id="myChart"></canvas>
-                </div> -->
-                <div id="chart-container">
-                    <canvas id="mycanvas"></canvas>
-                </div>
 
+                <!-- Monthly Order Chart -->
+                <div>
+                    <canvas id="myChart"></canvas>
+                </div>
 
 
 
@@ -77,41 +78,18 @@
                         require "../Controller/dailyOrderController.php";
                         $no = 1;
 
-                    foreach ($result as $key => $value) {
-                        global $no;
-                        echo "<tr class=tb-text>";
-                        echo "<td>" . $no++ . "</td>";
-                        echo "<td >" . $value['user_name'] . "</td>";
-                        echo "<td >" .date("d/m/Y"). "</td>";
-                        echo "<td >" . $value['total_amount']. "</td>";
-                        echo "<td >" . $value['user_address']. "</td>";
-                        echo "<td >" . $value['delivery_fees']. "</td>";
-                    }
-                    ?>
-                        <!-- <tr>
-                            <td>1</td>
-                            <td>helloJohn</td>
-                            <td>25.05.2022</td>
-                            <td>6,000MMK</td>
-                            <td>No.7B,Kamayut Township</td>
-                            <td>2,000MMK</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>helloMary</td>
-                            <td>25.05.2022</td>
-                            <td>6,000MMK</td>
-                            <td>No.7B,Kamayut Township</td>
-                            <td>2,000MMK</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>helloNora</td>
-                            <td>25.05.2022</td>
-                            <td>6,000MMK</td>
-                            <td>No.7B,Kamayut Township</td>
-                            <td>2,000MMK</td>
-                        </tr> -->
+                        foreach ($result as $key => $value) {
+                            global $no;
+                            echo "<tr class=tb-text>";
+                            echo "<td>" . $no++ . "</td>";
+                            echo "<td >" . $value['user_name'] . "</td>";
+                            echo "<td >" . date("d/m/Y") . "</td>";
+                            echo "<td >" . $value['total_amount'] . "</td>";
+                            echo "<td >" . $value['user_address'] . "</td>";
+                            echo "<td >" . $value['delivery_fees'] . "</td>";
+                        }
+                        ?>
+                        
                     </table>
                 </div>
 
@@ -119,7 +97,52 @@
 
         </div>
     </div>
-    <script type="text/javascript" src="js/Chart.min.js"></script>
+    <script>
+          const labels = <?php require"../Controller/monthlyOrderController.php"; echo json_encode($month)?>;
+  const data = {
+    labels: labels,
+    datasets: [{
+      label: 'Monthly Order',
+      data: <?php require"../Controller/monthlyOrderController.php"; echo json_encode($totalOrderQty)?>,
+      backgroundColor: [
+        'rgba(255, 99, 132, 0.2)',
+        'rgba(255, 159, 64, 0.2)',
+        'rgba(255, 205, 86, 0.2)',
+        'rgba(75, 192, 192, 0.2)',
+        'rgba(54, 162, 235, 0.2)',
+        'rgba(153, 102, 255, 0.2)',
+        'rgba(201, 203, 207, 0.2)'
+      ],
+      borderColor: [
+        'rgb(255, 99, 132)',
+        'rgb(255, 159, 64)',
+        'rgb(255, 205, 86)',
+        'rgb(75, 192, 192)',
+        'rgb(54, 162, 235)',
+        'rgb(153, 102, 255)',
+        'rgb(201, 203, 207)'
+      ],
+      borderWidth: 1
+    }]
+  };
+
+  const config = {
+    type: 'bar',
+    data: data,
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    },
+  };
+
+  const myChart = new Chart(
+    document.getElementById('myChart'),
+    config
+  );
+    </script>
 
 </body>
 
