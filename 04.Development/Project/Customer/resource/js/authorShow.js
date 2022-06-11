@@ -70,7 +70,7 @@ $(document).ready(function () {
           }
           $(".getAuthorId").click(function () {
             $authorID = $(this).attr("id");
-            console.log($authorID);
+            location.replace("./authorBook.php?id=" + $authorID);
           });
         }
       },

@@ -28,9 +28,9 @@
     <!-- Header -->
     <div class="container-fluid bg p-4">
         <div class="container d-flex justify-content-between align-items-center">
-            <h3 class="text-primary categoryName"></h3>
+            <h3 class="text-primary">Authors</h3>
             <div class="text-primary">
-                <b>Home</b> -> <span class="categoryName"></span>
+                <b>Author</b> -> <span class="authorName"></span>
             </div>
         </div>
     </div>
@@ -42,9 +42,10 @@
                 <?php
                 $id = $_GET["id"];
                 require "../Controller/authorBookSearchController.php";
+
                 if (count($result) == 0) {
                     echo "<div class='d-flex flex-column justify-content-center align-items-center mt-5 noBook'>";
-                    echo "<h4>There is no book about <span class='categoryName'></span>.</h4>";
+                    echo "<h4>There is no book by $result[$i]['author_name'].</h4>";
                     echo "</div>";
                 }
                 for ($i = 0; $i < count($result); $i++) {
@@ -100,7 +101,7 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="../resource/UI Library/fontawesome-free/js/all.min.js"></script>
-    <script src="../resource/js/categories.js" defer></script>
+    <script src="../resource/js/authorBook.js" defer></script>
     <script type="text/javascript"></script>
 
 </body>

@@ -41,6 +41,6 @@ $(document).ready(function () {
   }
   $("#logout").click(function () {
     localStorage.removeItem("user");
-    location.reload();
+    window.location.href = `../../Customer/View/homepage.php`;
   });
 });
