@@ -2,7 +2,8 @@ let books = [];
 let ids = [];
 
 $(document).ready(function () {
-  console.log(categoryId);
+  $("#CommonHomePage").addClass("border-bottom");
+
   $.ajax({
     type: "post",
     url: "../Controller/categoriesNameGetController.php",
@@ -12,6 +13,7 @@ $(document).ready(function () {
       $(".categoryName").text(json[0].category_name);
     },
   });
+
   $(".bookdetail").click(function (e) {
     console.log("hello");
 

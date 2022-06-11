@@ -46,7 +46,10 @@
 .authorInfoButton {
   background-color: var(--primary-darkblue) !important;
   color: white;
-  width: 70%;
+  width: 60% !important;
+  height: fit-content !important;
+  border-style: none;
+  border-radius: 5px;
 }
 .authorInfoButton:hover {
   color: var(--font-color3);
