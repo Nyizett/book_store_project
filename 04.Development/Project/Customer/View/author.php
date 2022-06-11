@@ -79,7 +79,7 @@
    <script src="../resource/js/footerCommon.js"></script>
    <script src="../resource/js/authorShow.js"></script>
    <script type="text/javascript">
-
+      $("#CommonAuthor").addClass("border-bottom");
    </script>
 </body>
 
