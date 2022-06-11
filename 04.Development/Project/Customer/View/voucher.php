@@ -29,65 +29,10 @@
         </div>
     </div>
 
-    <div class="container my-4">
-        <div class="row">
-            <div class="col-12 col-md-6 mb-3 mb-md-0">
-                <span class="border-dark border-bottom fs-4 py-2">Billing Information</span>
-                <form action="" class="mt-4">
-                    <div class="row mb-3">
-                        <div class="col">
-                            <label for="name" class="mb-2">Name</label>
-                            <input class="form-control" type="text" name="name" id="name" placeholder="eg. Mg Mg">
-                        </div>
-                        <div class="col">
-                            <label for="email" class="mb-2">Email Address</label>
-                            <input class="form-control" type="text" name="email" id="email" placeholder="example@gmail.com">
-                        </div>
-                    </div>
-                    <div class="row mb-3">
-                        <div class="col">
-                            <label for="phone" class="mb-2">Phone</label>
-                            <input class="form-control" type="text" name="phone" id="phone" placeholder="09 xxx xxx xxx">
-                        </div>
-                        <div class="col">
-                            <label for="city" class="mb-2">City</label>
-                            <input class="form-control" type="text" name="city" id="city" placeholder="eg. Yangon">
-                        </div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="address" class="mb-2">Address</label>
-                        <textarea class="form-control" type="text" name="address" id="address"></textarea>
-                    </div>
-                    <div class="mb-3">
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="payment" id="cod" value="cod">
-                            <label class="form-check-label" for="cod">
-                                Cash On Delivery
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="payment" id="master_card" value="master_card">
-                            <label class="form-check-label" for="master_card">
-                                Master Card
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="payment" id="visa" value="visa">
-                            <label class="form-check-label" for="visa">
-                                VISA
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="payment" id="mobile_banking" value="mobile_banking">
-                            <label class="form-check-label" for="mobile_banking">
-                                Mobile Banking
-                            </label>
-                        </div>
-                    </div>
-                    <button class="btn btn-primary">Continue</button>
-                </form>
-            </div>
-            <div class="col-12 col-md-6">
+    <div class="container-fluid">
+    
+            <div class="row">
+            <div class="col-md-6">
                 <span class="border-dark border-bottom fs-4 py-2">Voucher</span>
                 <div class="mt-4 p-4 border border-1">
                     <table class="table mb-3">
@@ -124,6 +69,9 @@
                             </tr>
                         </tbody>
                     </table>
+                </div>
+            </div>
+                <div class="col-md-4 mt-5 mx-4">
                     <div>
                         <p>Name : <span class="ms-3">Mg Mg</span></p>
                         <p>Phone : <span class="ms-3">09 111 111 111</span></p>
@@ -133,8 +81,9 @@
                     </div>
                     <button class="btn btn-primary">Place Order</button>
                 </div>
-            </div>
-        </div>
+            
+        
+    </div>
     </div>
     <footer id="footer" class="container-fluid commom-bg  mt-5">
         <?php require "../View/footerCommon.php" ?>

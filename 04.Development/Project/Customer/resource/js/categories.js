@@ -32,7 +32,7 @@ $(document).ready(function () {
                     success : function(res){
                         console.log(res);
                         books.push(JSON.parse(res));
-                        
+                      
 
                     $('#cartCount2').text(`${books.length}`);
                      
@@ -54,7 +54,13 @@ function shopCart(){
     console.log(books);
 
       let   data =JSON.stringify(books);
-        window.location.href = `../../Customer/Controller/cartListController.php?data=${data}`;
+      let deliver = JSON.parse(localStorage.getItem('user'));
+                        console.log();
+    // let address = JSON.stringify(deliver['user_address']);
+    let address = {
+        "address" : deliver['user_address']
+    }
+        window.location.href = `../../Customer/Controller/cartListController.php?data=${data}&address=${JSON.stringify(address)}`;
             // $.ajax({
             //     type: "POST",
             //     url: "../Controller/cartController.php",
