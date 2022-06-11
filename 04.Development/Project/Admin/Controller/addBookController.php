@@ -37,6 +37,7 @@ if (isset($_POST)) {
             book_description,
             book_image,
             create_date
+            
         )
         VALUES (
             :bname,
@@ -48,7 +49,8 @@ if (isset($_POST)) {
             :best,
             :bdes,
             :path,
-            :create_date)"
+            :create_date
+            )"
         );
 
         $sql->bindValue(":bname", $bookName);

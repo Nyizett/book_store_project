@@ -16,6 +16,7 @@ $(document).ready(function () {
                 $("#submitBtn").removeAttr("disabled");
                 $("#fupload").css("opacity", "1");
                 $("#result").text(res);
+                location.href ="./bookInfo.php";
                 
             },
             error: function (err) {

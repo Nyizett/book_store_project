@@ -17,18 +17,28 @@
 </head>
 
 <body>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2582a610167fd7ed92b86716f59fbff347df4d65
 
+   <script>
+      let categoryId = <?php echo $_GET["id"] ?>
+   </script>
    <!-- Header -->
    <nav class="navbar navbar-expand-lg   top-0 w-100 " id="cum_navbar">
+<<<<<<< HEAD
       <?php require "../View/common.php" ?>
+=======
+      <?php require "./common.php" ?>
+>>>>>>> 2582a610167fd7ed92b86716f59fbff347df4d65
    </nav>
    <!-- Header -->
    <div class="container-fluid bg p-4">
       <div class="container d-flex justify-content-between align-items-center">
-         <h3 class="text-primary">Language</h3>
+         <h3 class="text-primary categoryName"></h3>
          <div class="text-primary">
-            <b>Home</b> -> Language
+            <b>Home</b> -> <span class="categoryName"></span>
          </div>
       </div>
    </div>
@@ -36,11 +46,17 @@
    <div class="container-fluid d-flex justify-content-between align-items-center my-4">
       <div class="container">
          <div class="row g-0">
-            <?php
-            require "../Controller/bookListController.php";
 
+            <?php
+            $id = $_GET["id"];
+            require "../Controller/bookListController.php";
+            if (count($result) == 0) {
+               echo "<div class='d-flex flex-column justify-content-center align-items-center mt-5 noBook'>";
+               echo "<h4>There is no book about <span class='categoryName'></span>.</h4>";
+               echo "</div>";
+            }
             for ($i = 0; $i < count($result); $i++) {
-               echo "<div class='col-lg-3 col-md-6 col-sm-10 text-light header d-flex justify-content-between align-items-center  my-2'>";
+               echo "<div class='col-lg-3 col-md-6 col-sm-10 text-light  d-flex justify-content-between align-items-center mx-3 my-2'>";
                echo "<div class='my-card' >";
                echo " <div class='my-card-img'>";
                echo  "<img src='../../Admin/resource/img/book cover/" . $result[$i]["book_image"] . "' 
@@ -79,7 +95,11 @@
    </div>
 
    <footer id="footer" class="container-fluid commom-bg  mt-5">
+<<<<<<< HEAD
       <?php require "../View/footerCommon.php" ?>
+=======
+
+>>>>>>> 2582a610167fd7ed92b86716f59fbff347df4d65
    </footer>
 
 
@@ -93,11 +113,16 @@
    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
    <script src="../resource/UI Library/fontawesome-free/js/all.min.js"></script>
    <script src="../resource/js/categories.js" defer></script>
+<<<<<<< HEAD
    <script type="text/javascript">
 
 
    </script>
    </script>
+=======
+   <script type="text/javascript"></script>
+
+>>>>>>> 2582a610167fd7ed92b86716f59fbff347df4d65
 </body>
 
 </html>

@@ -9,3 +9,16 @@
 .note {
    padding-top: 10px;
 }
+.shop-email{
+   padding-right: 14em;
+}
+.shop-ph{
+   padding-right: 15.5em;
+}
+.send{
+   border: 1px solid gray;
+   width: 100%;
+   font-size: 1.5em;
+   color: white;
+   background-color: #4d82ed;
+}
