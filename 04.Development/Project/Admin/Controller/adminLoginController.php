@@ -1,5 +1,6 @@
 <?php
 require_once "../Model/DBConnection.php";
+$dbname=1;
 // Get Data from Add Book From
 if(isset($_POST)){
     $Name = $_POST['username'];
@@ -14,7 +15,6 @@ if(isset($_POST)){
     SELECT * FROM m_adminlogin
     WHERE admin_username = :name
     AND admin_password = :password
-   
     ");
     $sql->bindValue(":name",  $Name);
     $sql->bindValue(":password", $decpassword);
@@ -24,9 +24,14 @@ if(isset($_POST)){
     $result = $sql -> fetchAll(PDO :: FETCH_ASSOC);
     // echo"<pre>";
     // print_r($result);
+    $dbname=$result[0]["admin_username"];
 
     if(count($result) > 0){
-        header("Location: ../View/dashboard.php");
+        // session_start();
+        // $_SESSION['username1'] = 2;
+        // echo '<script>localStorage.setItem("name1", 1);</script>';
+        header("Location: ../View/dashboard.php?adname='".$dbname."'");
+
     }else{
         // header("Location: ../View/adminLogin.php ");
         

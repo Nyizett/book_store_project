@@ -40,12 +40,12 @@
         </a>
         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 
-          <li><a class="text-dark dropdown-item" href="#">Guide</a></li>
-          <li><a class="text-dark dropdown-item" href="#">Servies</a></li>
+          <li><a class="text-dark dropdown-item" href="../View/guide.php">Guide</a></li>
+          <li><a class="text-dark dropdown-item" href="../View/service.php">Servies</a></li>
           <li>
-            <a class="text-dark dropdown-item" href="#">Privacy and Policy</a>
+            <a class="text-dark dropdown-item" href="./privacyPolicy.php">Privacy and Policy</a>
           </li>
-          <li><a class="text-dark dropdown-item" href="#">FAQ's</a></li>
+          <li><a class="text-dark dropdown-item" href="./faqs.php">FAQ's</a></li>
         </ul>
       </li>
     </ul>

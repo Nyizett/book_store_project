@@ -31,23 +31,34 @@
    </div>
 
 
-   <section class="container mt-3">
-      <div class="row">
+   <section class="container ">
+      <!-- <div class="row">
          <div class="col-12">
             <h3 class="font-color-primary">Our Services</h3>
             <hr>
          </div>
-      </div>
+      </div> -->
 
 
       <div class="row">
          <div class="col-12">
-            <h5 class="font-color-primary">Store pickup & Delivery</h5>
+
+            <?php
+            require "../Controller/showServicesController.php";
+            $no = 1;
+
+            foreach ($result as $key => $value) {
+               echo '<h4 class="font-color-primary mt-4">'. $value['service_tilte'] ."</h4>";
+               echo '<p class="mt-1">' . $value['service_paragraph'] . "</p>";
+            }
+            ?>
+
+            <!-- <h5 class="font-color-primary">Store pickup & Delivery</h5>
             <br>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam incidunt expedita quidem consectetur? Fuga natus voluptatum, laudantium quibusdam placeat est, odio velit rem necessitatibus assumenda nemo tenetur saepe blanditiis ex.
                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam incidunt expedita quidem consectetur? Fuga natus voluptatum, laudantium quibusdam placeat est, odio velit rem necessitatibus assumenda nemo tenetur saepe blanditiis ex.
                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam incidunt expedita quidem consectetur? Fuga natus
-            </p>
+            
 
 
 
@@ -68,7 +79,7 @@
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam incidunt expedita quidem consectetur? Fuga natus voluptatum, laudantium quibusdam placeat est, odio velit rem necessitatibus assumenda nemo tenetur saepe blanditiis ex.
                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam incidunt expedita quidem consectetur? Fuga natus voluptatum, laudantium quibusdam placeat est, odio velit rem necessitatibus assumenda nemo tenetur saepe blanditiis ex.
                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam incidunt expedita quidem consectetur? Fuga natus
-            </p>
+            </p> -->
          </div>
       </div>
 

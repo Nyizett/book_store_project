@@ -4,7 +4,7 @@ require_once "../Model/DBConnection.php";
 if(isset($_POST)){
     $faqQ = $_POST['faqQ'];
     $faqAns = $_POST['faqAns'];
-    $faqCategory = $_POST['categoryID'];
+    
 
     //Call DB Connection
     $db =  new DBConnect();
@@ -15,19 +15,19 @@ if(isset($_POST)){
         (
             faq_q_text,
             faq_ans_text,
-            faq_category,
+            
             create_date
         )
         VALUES (
             :fQue,
             :fAns,
-            :fCat,
+            
             :createDate
         )"
     );
     $sql->bindValue(":fQue", $faqQ  );
     $sql->bindValue(":fAns",  $faqAns);
-    $sql->bindValue(":fCat",  $faqCategory);
+    
     $sql->bindValue(":createDate", date("d/m/Y"));
 
     $sql->execute();

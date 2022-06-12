@@ -23,7 +23,8 @@
 <input type="hidden" name="id" value ="<?php require_once "../Controller/editPrivacyPolicyController.php";  echo $result[0]['id'];?>">
 <div class="mb-3">
   <label for="exampleFormControlInput1" class="form-label">Title</label>
-  <input type="email" class="customstyle form-control" value="<?php echo $result[0]['pp_tilte'];?>" id="exampleFormControlInput1" name="editpptt">
+  <input type="text"  class="customstyle form-control" name="editpptt" value="<?php echo $result[0]['pp_title'];?>">
+  
 </div>
 <div class="mb-3">
   <label for="exampleFormControlTextarea1" class="form-label">Paragraph</label>
