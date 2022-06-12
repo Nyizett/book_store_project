@@ -7,5 +7,6 @@ $(document).ready(function () {
     var username = $("#name").val();
 
     localStorage.setItem("name", username);
+     
   });
 });

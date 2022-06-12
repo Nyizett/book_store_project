@@ -87,3 +87,6 @@
 //         }
 //     }
 // });
+$(document).ready(function () {
+sessionStorage.setItem("AdminName", adminname);
+});
