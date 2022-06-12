@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Voucher</title>
+    <link rel="shortcut icon" href="../../Images/latestLogo.png" type="image/x-icon" width="100vw" />
     <link rel="stylesheet" href="../resource/UI Library/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../resource/css/style.css" />
     <link rel="stylesheet" href="../resource/css/homepage.css" />
@@ -34,8 +35,8 @@
     </div>
 
     <div class="container-fluid">
-    
-            <div class="row">
+
+        <div class="row">
             <div class="col-md-6">
                 <span class="border-dark border-bottom fs-4 py-2">Voucher</span>
                 <div class="mt-4 p-4 border border-1">
@@ -80,25 +81,32 @@
                     </div>
                     <button class="btn btn-primary order" data-bs-toggle="modal" data-bs-target="#modal">Place Order</button>
                 </div>
-            
-        
-
-
-    </div>
-    </div>
-
-    <div id="modal" class="modal fade" role="dialog"  data-bs-backdrop="static" data-easein="bounceIn" data-bs-keyboard="false"
-    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="col-sm-4 modal-dialog modal-dialog-centered " role="document">
-          <div class="modal-content">
-        
-            <div class="d-flex justify-content-center mt-4">
-                <div><i class="fa-solid fa-handshake fs-3 text-muted icons"></i></div>
+                <button class="btn btn-primary order" data-bs-toggle="modal" data-bs-target="#modal">Place Order</button>
             </div>
 
-            <div class="modal-body">
-                <div class="request text-muted"><span><i class="fas fa-check-circle text-success mx-2"></i></span> Your Place Order has been received.
-                    We will be in touch and contact you soon!
+
+
+
+        </div>
+    </div>
+
+    <div id="modal" class="modal fade" role="dialog" data-bs-backdrop="static" data-easein="bounceIn" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="col-sm-4 modal-dialog modal-dialog-centered " role="document">
+            <div class="modal-content">
+
+                <div class="d-flex justify-content-center mt-4">
+                    <div><i class="fa-solid fa-handshake fs-3 text-muted icons"></i></div>
+                </div>
+
+                <div class="modal-body">
+                    <div class="request text-muted"><span><i class="fas fa-check-circle text-success mx-2"></i></span> Your Place Order has been received.
+                        We will be in touch and contact you soon!
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center m-3">
+                    <a href="./homepage.php"> <button type="button" id="backSite" class="btn btn-primary cancelbutton" data-bs-dismiss="modal">Back to site</button></a>
+
                 </div>
             </div>
            
@@ -108,7 +116,7 @@
             </div>
           </div>
         </div>
-      </div>
+    </div>
     <footer id="footer" class="container-fluid commom-bg  mt-5">
         <?php require "../View/footerCommon.php" ?>
     </footer>

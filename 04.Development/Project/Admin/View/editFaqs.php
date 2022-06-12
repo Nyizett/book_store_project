@@ -33,19 +33,7 @@
 
         
 
-          <div class="col mb-3 mt-3">
-            <label for="email" class="form-label">Category</label><br>
-            <select name="categoryID" id="" class="custombutton btn btn-white col-12">
-
-              <?php
-              require "../Controller/bookIDController.php";
-
-              foreach ($categoryList as $key => $val) {
-                echo "<option value='" . $val['id'] . "' >" . $val['category_name'] . '</option>';
-              }
-              ?>
-            </select>
-          </div>
+          
 
 
         

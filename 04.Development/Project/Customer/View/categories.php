@@ -6,6 +6,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Categories</title>
+   <link rel="shortcut icon" href="../../Images/latestLogo.png" type="image/x-icon" width="100vw" />
    <link rel="stylesheet" href="../resource/UI Library/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
    <link rel="stylesheet" href="../resource/css/style.css" />
    <link rel="stylesheet" href="../resource/css/homepage.css" />
@@ -19,7 +20,9 @@
 <body>
 
    <script>
-      let categoryId = <?php echo $_GET["id"] ?>
+      let categoryId = <?php if (isset($_GET["id"])) {
+                           echo $_GET["id"];
+                        } else echo 1 ?>;
    </script>
    <!-- Header -->
    <nav class="navbar navbar-expand-lg   top-0 w-100 " id="cum_navbar">
@@ -40,7 +43,11 @@
          <div class="row g-0">
 
             <?php
-            $id = $_GET["id"];
+            $id = 1;
+            if (isset($_GET["id"])) {
+               $id = $_GET["id"];
+            }
+
             require "../Controller/bookListController.php";
             if (count($result) == 0) {
                echo "<div class='d-flex flex-column justify-content-center align-items-center mt-5 noBook'>";

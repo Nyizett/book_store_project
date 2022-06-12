@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Categories</title>
+    <title>Author's Book</title>
+    <link rel="shortcut icon" href="../../Images/latestLogo.png" type="image/x-icon" width="100vw" />
     <link rel="stylesheet" href="../resource/UI Library/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../resource/css/style.css" />
     <link rel="stylesheet" href="../resource/css/homepage.css" />
@@ -71,10 +72,10 @@
                     echo "  <span style='font-size:x-small'>" . $result[$i]['author_name'] . "</span> ";
                     echo "</div>";
                     echo " <p style='font-weight:500 ;'>" . number_format($result[$i]['book_price']) . " MMK</p>";
-                    echo " <button class='btn cart card-button px-1 rounded-1 me-1' id='" . $result[$i]['id'] . "' ><i class='fa-solid fa-cart-shopping me-1'></i>add
+                    echo " <button class='btn cart card-button px-1 rounded-1 me-1' id='" . $result[$i]['Book_Id'] . "' ><i class='fa-solid fa-cart-shopping me-1'></i>add
                   to
                   cart</button>";
-                    echo " <span id='" . $result[$i]['id'] . "' class='btn btn-primary bookdetail card-button'><i class='fa-solid fa-eye'></i> 4</span>";
+                    echo " <span id='" . $result[$i]['Book_Id'] . "' class='btn btn-primary bookdetail card-button'><i class='fa-solid fa-eye'></i> 4</span>";
                     echo "</div>";
                     echo "</div>";
                     echo "</div>";

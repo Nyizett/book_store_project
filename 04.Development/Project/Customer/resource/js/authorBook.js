@@ -1,6 +1,27 @@
 let books = [];
 let ids = [];
+let numbers = [1, 2, 4, 4];
+let coreNumber;
+let subNumber;
 $(document).ready(function () {
+  for (let x = 0; x < numbers.length; x++) {
+    for (let index = 0; index < numbers.length; index++) {
+      if (x == index) {
+        subNumber = 0;
+        coreNumber = 0;
+      } else {
+        coreNumber = numbers[x];
+        subNumber = numbers[index];
+      }
+      sum = coreNumber + subNumber;
+      if (sum == 8) {
+        console.log(coreNumber + "," + subNumber);
+      } else {
+        console.log(false);
+      }
+    }
+  }
+
   $.ajax({
     type: "post",
     url: "../Controller/authorNameGetController.php",

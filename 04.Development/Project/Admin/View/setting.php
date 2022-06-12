@@ -281,7 +281,6 @@
                         <table class="table table-striped table-sm">
                             <tr class="tb-text">
                                 <th class="col-1">No</th>
-                                <th class="col-2">Category</th>
                                 <th class="col-4">Questions</th>
                                 <th class="col-4">Answers</th>
                                 <th colspan="2">Actions</th>
@@ -295,7 +294,7 @@
                                 echo "<td>" . $no++ . "</td>";
                                 echo "<td>" . $value['faq_q_text'] . "</td>";
                                 echo "<td class=overflow-hidden>" . $value['faq_ans_text'] . "</td>";
-                                echo "<td>" . $value['faq_category'] . "</td>";
+                                
                                 echo "<td><a href='../View/editFaqs.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-primary'><ion-icon name='create-outline'></ion-icon></button></a></td>";
                                 echo "<td><a href='../Controller/deleteFAQController.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-danger'><ion-icon name='trash-outline'></ion-icon></button></a></td>";
                             }

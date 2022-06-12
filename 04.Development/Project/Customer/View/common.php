@@ -22,16 +22,16 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ms-auto me-4 mb-2 mb-lg-0">
       <li class="nav-item me-4">
-        <a class="text-white nav-link text-decoration-none fw-bold fs-6 border-white" aria-current="page" href="./homepage.php" id="CommonHomePage">Home</a>
+        <a class="text-white nav-link text-decoration-none fw-bold fs-6 border-white" aria-current="page" href="../View/homepage.php" id="CommonHomePage">Home</a>
       </li>
       <li class="nav-item me-4">
-        <a class="text-white nav-link font-color-primary text-decoration-none fw-bold fs-6" href="./search.php" id="CommonSearch">Search</a>
+        <a class="text-white nav-link font-color-primary text-decoration-none fw-bold fs-6" href="../View/search.php" id="CommonSearch">Search</a>
       </li>
       <li class="nav-item me-4">
-        <a class="text-white nav-link text-decoration-none fw-bold fs-6" href="./author.php" tabindex="-1" id="CommonAuthor">Authors</a>
+        <a class="text-white nav-link text-decoration-none fw-bold fs-6" href="../View/author.php" tabindex="-1" id="CommonAuthor">Authors</a>
       </li>
       <li class="nav-item me-4">
-        <a class="text-white nav-link text-decoration-none fw-bold fs-6" href="./shops.php" tabindex="-1" id="CommonShops">Shops</a>
+        <a class="text-white nav-link text-decoration-none fw-bold fs-6" href="../View/shops.php" tabindex="-1" id="CommonShops">Shops</a>
       </li>
 
       <li class="nav-item dropdown me-4">
@@ -40,12 +40,12 @@
         </a>
         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 
-          <li><a class="text-dark dropdown-item" href="#">Guide</a></li>
-          <li><a class="text-dark dropdown-item" href="#">Servies</a></li>
+          <li><a class="text-dark dropdown-item" href="../View/guide.php">Guide</a></li>
+          <li><a class="text-dark dropdown-item" href="../View/service.php">Servies</a></li>
           <li>
-            <a class="text-dark dropdown-item" href="#">Privacy and Policy</a>
+            <a class="text-dark dropdown-item" href="./privacyPolicy.php">Privacy and Policy</a>
           </li>
-          <li><a class="text-dark dropdown-item" href="#">FAQ's</a></li>
+          <li><a class="text-dark dropdown-item" href="./faqs.php">FAQ's</a></li>
         </ul>
       </li>
     </ul>
@@ -66,7 +66,7 @@
         </ul>
       </li>
 
-      <ion-icon class="text-white fs-4" name="moon-outline"></ion-icon>
+
     </div>
   </div>
 </div>
