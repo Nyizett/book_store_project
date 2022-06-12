@@ -2,8 +2,8 @@
 require_once "../Model/DBConnection.php";
 // Get Data from Add Book From
 if(isset($_POST)){
-    $UpdateSTT = $_POST['estt'];
-    $UpdateSPG = $_POST['espg'];
+    $UpdatePTT = $_POST['editpptt'];
+    $UpdatePPG = $_POST['editpppg'];
     $id = $_POST['id'];
     // echo $id;
     //Call DB Connection
@@ -11,13 +11,13 @@ if(isset($_POST)){
     $dbconnect = $db->connect();
 
     $sql = $dbconnect->prepare(
-        "UPDATE m_service SET
-        service_tilte = :title,
-        service_paragraph = :paragraph
+        "UPDATE m_privacypolicy SET
+        pp_title = :title,
+        pp_paragraph = :paragraph
         WHERE id = :id"
     );
-    $sql->bindValue(":title",   $UpdateSTT);
-    $sql->bindValue(":paragraph",  $UpdateSPG);
+    $sql->bindValue(":title",   $UpdatePTT);
+    $sql->bindValue(":paragraph",  $UpdatePPG);
     $sql->bindValue(":id", $id);
 
     $sql->execute();
