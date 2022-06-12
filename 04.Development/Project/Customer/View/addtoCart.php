@@ -106,10 +106,8 @@
                echo "<th scope='row'>Delivery Price</th>";
                
                if(isset($delivery['0']['delivery_fees'])){
-                  echo "<td>".number_format($delivery['0']['delivery_fees'])."</td>";
+                  echo "<td id=".$delivery['0']['id']." class='dfee'>".number_format($delivery['0']['delivery_fees'])."</td>";
                  
-               }else{
-                  echo "<td>".number_format($delivery)."</td>";
                }
              
 

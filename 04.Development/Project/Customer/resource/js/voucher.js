@@ -3,6 +3,7 @@ $(document).ready(function(){
     let userinfo;
     let prices = [];
 
+  
     let itemLength =  $('.count').length;
         console.log(itemLength);
         $('.price').each(function(){
@@ -35,24 +36,53 @@ $(document).ready(function(){
     $('.order').click(function(){
 
        
-        let  data = {
-            "id" : userinfo['id'],
-            "address" : userinfo['user_address'],
-            "total" : sum
-        }
-        console.log(data);
+       
+        let datadetail = [];
+        $('.count').each(function(){
+            let qty = $(this).children('.qty').text();
+            let price = $(this).children('.price').text().replaceAll(',','').replaceAll('MMK','');
+            let total_amount = qty * price;
+            console.log(price);
+            let data2 = {
+                "id" : userinfo['id'],
+                "delivery_fees_id" : $('.address').attr('id'),
+                "total" : sum,
+                "book_id" : this.id,
+                "order_d_quantity" : $(this).children('.qty').text(),
+                "book_price" : total_amount
+            }
+            datadetail.push(data2);
+        })
+        
         // $.ajax({
         //     type: "POST",
-        //     url: "../Controller/cartController.php",
-        //     data: { send: JSON.stringify(data) },
+        //     url: "../Controller/orderDetailController.php",
+        //     data: { order: JSON.stringify(data) },
         //     success: function (res) {
         //       console.log(res);
-        //       books.push(JSON.parse(res));
+              
     
-        //       $("#cartCount2").text(`${books.length}`);
+              
         //     },
-        //     error: function (err) {},
+        //     error: function (err) {
+        //         console.log(err);
+        //     },
         //   });
+
+          $.ajax({
+            type: "POST",
+            url: "../Controller/orderDetailController.php",
+            data: { orderdetail: JSON.stringify(datadetail) },
+            success: function (res) {
+            
+              
+    
+              
+            },
+            error: function (err) {
+                
+            },
+          });
     })
 });
 

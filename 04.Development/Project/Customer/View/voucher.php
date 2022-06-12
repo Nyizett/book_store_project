@@ -18,6 +18,9 @@
 
 <body>
 
+    <script>
+           
+    </script>
     <!-- Header -->
     <nav class="navbar navbar-expand-lg   top-0 w-100 " id="cum_navbar">
         <?php require "../View/common.php" ?>
@@ -54,7 +57,7 @@
                                echo "<tr class='count' id=".$value['id'].">";
                                echo "<th scope='row'>".$i."</th>";
                                echo "<td>".$value['book_name']."</td>";
-                               echo "<td>".$value['quantity']."</td>";
+                               echo "<td class='qty'>".$value['quantity']."</td>";
                                echo "<td class='price'>".$value['book_price']." <span>MMK</span></td>";
                                $i++;
                            }
@@ -72,7 +75,7 @@
                         <p>Name : <span class="ms-3 name"></span></p>
                         <p>Phone : <span class="ms-3 phone"></span></p>
                         <p>Email : <span class="ms-3 email"></span></p>
-                        <p>Address : <span class="ms-3 address"></span></p>
+                        <p>Address : <?php echo "<span id=".$result['0']['delivery_fee_id']." class='ms-3 address'></span>" ?>  </p>
                         <p>Payment : <span class="ms-3">Cash On Delivery</span></p>
                     </div>
                     <button class="btn btn-primary order" data-bs-toggle="modal" data-bs-target="#modal">Place Order</button>
@@ -100,7 +103,7 @@
             </div>
            
             <div class="d-flex justify-content-center m-3">
-           <a href="./homepage.php"> <button type="button" id="backSite" class="btn btn-primary cancelbutton" data-bs-dismiss="modal" >Back to site</button></a>
+           <a href="../View/homepage.php"> <button type="button" id="backSite" class="btn btn-primary cancelbutton" data-bs-dismiss="modal" >Back to site</button></a>
               
             </div>
           </div>
