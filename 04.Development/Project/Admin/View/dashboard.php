@@ -1,8 +1,10 @@
 <?php
-// session_start();
-// if(!isset($_SESSION["AdminName"])){
-//   header("Location: ../View/adminLogin.php");
-// }
+session_start();
+if(!isset($_SESSION['username'])){
+  header("Location: ../View/adminLogin.php");
+}else{
+    echo $_SESSION['username'];
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">

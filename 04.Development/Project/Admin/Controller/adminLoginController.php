@@ -1,5 +1,6 @@
 <?php
 require_once "../Model/DBConnection.php";
+session_start();
 $dbname=1;
 // Get Data from Add Book From
 if(isset($_POST)){
@@ -24,18 +25,22 @@ if(isset($_POST)){
     $result = $sql -> fetchAll(PDO :: FETCH_ASSOC);
     // echo"<pre>";
     // print_r($result);
-    $dbname=$result[0]["admin_username"];
+    // $dbname=$result[0]["admin_username"];
 
     if(count($result) > 0){
-        // session_start();
-        // $_SESSION['username1'] = 2;
+
+        $_SESSION["username"] = 2;
         // echo '<script>localStorage.setItem("name1", 1);</script>';
         header("Location: ../View/dashboard.php?adname='".$dbname."'");
 
     }else{
         // header("Location: ../View/adminLogin.php ");
+        if(isset($_SESSION['username'])){
+            unset($_SESSION['username']);
+        }
         
         require "../View/adminLogin.php ";
         echo '<div class="text-center mt-2 text-danger fs-4">Wrong Username or Password.Login Again!</div>';
+
     }
 }
