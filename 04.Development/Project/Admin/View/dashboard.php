@@ -20,15 +20,10 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="../resource/UI Library/jquery-3.3.1.min.js"></script>
     <script src="../resource/js/common.js"></script>
-<<<<<<< HEAD
-    <script src="../resource/js/dashboard.js"></script>
-    <!-- <script src="../resource/js/dashboardChart.js"></script> -->
-=======
     <script src="../resource/js/dashboardChart.js" defer></script>
->>>>>>> origin/main
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    
+
 </head>
 
 <body>
@@ -103,7 +98,7 @@
                             echo "<td >" . $value['delivery_fees'] . "</td>";
                         }
                         ?>
-                        
+
                     </table>
                 </div>
 
@@ -112,4 +107,5 @@
         </div>
     </div>
 </body>
+
 </html>
