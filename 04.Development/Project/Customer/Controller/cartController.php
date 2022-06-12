@@ -21,9 +21,7 @@
        
         
         echo json_encode($result);
-        // print_r($books);
-        // echo(count($books));
-        // print_r($books);
+       
       
         
     

@@ -72,7 +72,7 @@
          echo "</tbody>
                </table>";
       } else {
-         echo 'There is no item in your cart.';
+         echo "<div class='container-fluid d-flex justify-content-center '><p class='fs-5 fw-bold'>There is no item in your cart.</p></div>";
       }
 
       ?>
@@ -94,7 +94,7 @@
                <?php
                foreach ($result as $key => $value) {
 
-                  echo "<tr id=".$value['0']['id']." class='voucher'>";
+                  echo "<tr id=".$value['0']['id']." class='vouchers'>";
                   echo "<th scope='row' class='bookname'>"  . $value['0']['book_name'] .  "</th>";
                   echo "<td class='cal'><span class='bookquantity'>1</span>*<span class='bookprice'>" . number_format($value['0']['book_price']) . "</span></td>";
                   echo "</tr>";
@@ -140,7 +140,7 @@
    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
    <script src="../resource/UI Library/fontawesome-free/js/all.min.js"></script>
-   <script src="../resource/js/addtoCart.js"></script>
+   <script src="../resource/js/addtoCart.js" defer></script>
    <script type="text/javascript" defer>
 
    </script>

@@ -123,17 +123,34 @@ $(document).on('click', '.minus', function() {
 
     $('.buy').click(function(e){
             e.preventDefault();
-            console.log('hello');
-            let items = [];
-            let itemCount = [];
-            let itemlength = $('.itembody tr').length;
+            // console.log('hello');
+            let  items = [];
+            let length = $('.vouchers').length;
+            console.log(length);
+            // let length = $('.')
+            $('.vouchers').each(function(){
+                    console.log($(this));
+                let item = {
+                    "id" : this.id,
+                    "book_name" : $(this).children('.bookname').text(),
+                    "quantity" : $(this).children(".cal").children('.bookquantity').text(),
+                    "book_price" : $(this).children(".cal").children('.bookprice').text(),
+                };
+
+                console.log(item['id']);
+                if(!items.includes(item['id'])){
+                    console.log('hello');
+                    items.push(item);
+                }
+               
+            });
+
+            
+            
+            // window.location.href = `../../Customer/Controller/orderController.php?data=${JSON.stringify(items)}`;
+            console.log(items);
            
-            console.log(itemlength);
-            if(itemlength >0){
-                for(let i = 0; i < itemlength ; i++){
-                    console.log($(this).parent().parent().children().children().next().children().prev(i).attr("id"));
-                }   
-            }
+           
     })
 });
 
@@ -143,9 +160,9 @@ function totalPrice(total){
     $('.total').each(function(){
        
         let prices = parseInt((($(this).text().replaceAll(',',''))));
-        console.log(prices);
+      
         total.push(prices);
-        console.log(total);
+       
 
     })
     let b_price = 0;
