@@ -16,6 +16,7 @@
 </head>
 
 <body>
+
    <!-- Header -->
    <nav class="navbar navbar-expand-lg  position-fixed top-0 w-100 header" id="cum_navbar">
       <?php require "../View/common.php" ?>
@@ -619,6 +620,9 @@
    <script src="../resource/js/footerCommon.js"></script>
    <script type="text/javascript">
       // Counter_Up
+
+      $("#CommonHomePage").addClass('border-bottom');
+
       $(".counter-one").counterUp({
          delay: 10,
          time: 1500

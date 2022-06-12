@@ -22,16 +22,16 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ms-auto me-4 mb-2 mb-lg-0">
       <li class="nav-item me-4">
-        <a class="text-white nav-link text-decoration-none fw-bold fs-6 border-bottom border-white" aria-current="page" href="#">Home</a>
+        <a class="text-white nav-link text-decoration-none fw-bold fs-6 border-white" aria-current="page" href="./homepage.php" id="CommonHomePage">Home</a>
       </li>
       <li class="nav-item me-4">
-        <a class="text-white nav-link font-color-primary text-decoration-none fw-bold fs-6" href="./search.php">Search</a>
+        <a class="text-white nav-link font-color-primary text-decoration-none fw-bold fs-6" href="./search.php" id="CommonSearch">Search</a>
       </li>
       <li class="nav-item me-4">
-        <a class="text-white nav-link text-decoration-none fw-bold fs-6" href="./author.php" tabindex="-1">Authors</a>
+        <a class="text-white nav-link text-decoration-none fw-bold fs-6" href="./author.php" tabindex="-1" id="CommonAuthor">Authors</a>
       </li>
       <li class="nav-item me-4">
-        <a class="text-white nav-link text-decoration-none fw-bold fs-6" href="./shops.php" tabindex="-1">Shops</a>
+        <a class="text-white nav-link text-decoration-none fw-bold fs-6" href="./shops.php" tabindex="-1" id="CommonShops">Shops</a>
       </li>
 
       <li class="nav-item dropdown me-4">
@@ -60,9 +60,9 @@
         <a class="text-white nav-link text-decoration-none" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           <ion-icon class="text-white  fs-4 person-hover" name="person-outline"></ion-icon>
         </a>
-        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-          <li><a class="text-dark dropdown-item" href="./userProfile.php">User Profile</a></li>
-          <li><a class="text-dark dropdown-item" href="#">Logout</a></li>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown" id="userLoginSignup">
+          <!-- <li><a class="text-dark dropdown-item" href="./userProfile.php">User Profile</a></li>
+          <li><a class="text-dark dropdown-item" href="#">Logout</a></li> -->
         </ul>
       </li>
 
