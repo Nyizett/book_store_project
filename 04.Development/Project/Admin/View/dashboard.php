@@ -25,7 +25,7 @@ if(!isset($_SESSION['username'])){
     <script src="../resource/js/dashboardChart.js" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    
+
 </head>
 
 <body>
@@ -100,7 +100,7 @@ if(!isset($_SESSION['username'])){
                             echo "<td >" . $value['delivery_fees'] . "</td>";
                         }
                         ?>
-                        
+
                     </table>
                 </div>
 
@@ -109,4 +109,5 @@ if(!isset($_SESSION['username'])){
         </div>
     </div>
 </body>
+
 </html>

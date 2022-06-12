@@ -3,7 +3,7 @@ let ids = [];
 
 $(document).ready(function () {
   $("#CommonHomePage").addClass("border-bottom");
-
+  console.log(categoryId);
   $.ajax({
     type: "post",
     url: "../Controller/categoriesNameGetController.php",
@@ -48,7 +48,7 @@ $(document).ready(function () {
 
 function shopCart() {
   console.log(books);
- 
+  
   
   if(localStorage.getItem('user') != null){
     let data = JSON.stringify(books);
@@ -60,7 +60,10 @@ function shopCart() {
     window.location.href = `../../Customer/Controller/cartListController.php?data=${data}&address=${JSON.stringify(deliver)}`;
   }else{
     let data = JSON.stringify(books);
-    window.location.href = `../../Customer/Controller/cartListController.php?data=${data}`;
+    let deliver = {
+      "address" : "Default"
+    }
+    window.location.href = `../../Customer/Controller/cartListController.php?data=${data}&address=${JSON.stringify(deliver)}`;
   }
  
   // let address = JSON.stringify(localStorage.getItem('user'))

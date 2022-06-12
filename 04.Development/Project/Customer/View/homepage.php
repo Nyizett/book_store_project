@@ -6,6 +6,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Homepage</title>
+   <link rel="shortcut icon" href="../../Images/latestLogo.png" type="image/x-icon" width="100vw" />
    <link rel="stylesheet" href="../resource/css/style.css" />
    <link rel="stylesheet" href="../resource/css/homepage.css" />
    <link rel="stylesheet" href="../resource/UI Library/slick/slick.css">
@@ -97,8 +98,9 @@
          </div>
       </div>
    </section>
+   <!-- NEW BOOK -->
    <section class="container my-5 vh-100" id="newsBooks">
-      <div class="row justify-content-evenly align-items-center ">
+      <div class="row justify-content-evenly align-items-center" id="newsBookAppend">
          <div class="my-5"></div>
          <hr class=" content">
          <div class="col-12  content">
@@ -108,115 +110,7 @@
                </div>
             </div>
          </div>
-         <div class="col-6 col-lg-3 col-xl-2   content">
-            <div class="card mb-5 mb-lg-0 card-width">
-               <img src="../resource/img/book cover/jsEi.png" class="img-fluid w-75 mx-auto mt-3" alt="" />
-               <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                  <p class="card-title fw-bold mb-0 font-color-primary">JavaScript</p>
-                  <small>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                  </small>
-                  <small class="card-text  d-block mb-3 font-color-secondary ">
-                     Ei Maung
-                  </small>
-                  <div class="d-flex d justify-content-between align-items-center">
-                     <p class="fw-bold mb-0 font-color-primary">5000 MMK</p>
-                  </div>
-               </div>
-            </div>
-         </div>
 
-         <div class="col-6 col-lg-3 col-xl-2 content">
-            <div class="card mb-5 mb-lg-0 card-width">
-               <img src="../resource/img/book cover/jsEi.png" class="img-fluid w-75 mx-auto mt-3" alt="" />
-               <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                  <p class="card-title fw-bold mb-0 font-color-primary">JavaScript</p>
-                  <small>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                  </small>
-                  <small class="card-text d-block mb-3 font-color-secondary">
-                     Ei Maung
-                  </small>
-                  <div class="d-flex justify-content-between align-items-center">
-                     <p class="fw-bold mb-0 font-color-primary">39999 MMK</p>
-                  </div>
-               </div>
-            </div>
-         </div>
-
-         <div class="col-6 col-lg-3 col-xl-2 content">
-            <div class="card mb-5 mb-lg-0 card-width">
-               <img src="../resource/img/book cover/jsEi.png" class="img-fluid w-75 mx-auto mt-3" alt="" />
-               <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                  <p class="card-title fw-bold mb-0 font-color-primary">JavaScript</p>
-                  <small>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                  </small>
-                  <small class="card-text  d-block mb-3 font-color-secondary">
-                     Ei Maung
-                  </small>
-                  <div class="d-flex justify-content-between align-items-center">
-                     <p class="fw-bold mb-0 font-color-primary">000 MMK</p>
-                  </div>
-               </div>
-            </div>
-         </div>
-
-         <div class="col-6 col-lg-3 col-xl-2 content">
-            <div class="card mb-5 mb-lg-0 card-width">
-               <img src="../resource/img/book cover/jsEi.png" class="img-fluid w-75 mx-auto mt-3" alt="" />
-               <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                  <p class="card-title fw-bold mb-0">JavaScript</p>
-                  <small>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                  </small>
-                  <small class="card-text text-black-50 d-block mb-3">
-                     Ei Maung
-                  </small>
-                  <div class="d-flex justify-content-between align-items-center">
-                     <p class="fw-bold mb-0 font-color-primary">999 MMK</p>
-                  </div>
-               </div>
-            </div>
-         </div>
-
-         <div class="col-6 col-lg-3 col-xl-2 content">
-            <div class="card mb-5 mb-lg-0 card-width">
-               <img src="../resource/img/book cover/jsEi.png" class="img-fluid w-75 mx-auto mt-3" alt="" />
-               <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                  <p class="card-title fw-bold mb-0 font-color-primary">JavaScript</p>
-                  <small>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                  </small>
-                  <small class="card-text d-block mb-3 font-color-secondary">
-                     Hello
-                  </small>
-                  <div class="d-flex justify-content-between align-items-center">
-                     <p class="fw-bold mb-0 font-color-primary">3000 MMK</p>
-                  </div>
-               </div>
-            </div>
-         </div>
       </div>
    </section>
    <!-- Best selling books Start -->
@@ -545,7 +439,7 @@
                      </button>
                   </div>
                   <div class="col-9 ps-3">
-                     <p class=" m-0 pt-3 fw-bold fs-4 counter-one">100</p>
+                     <p class=" m-0 pt-3 fw-bold fs-4 counter-one" id="totalBookShow"></p>
                      <p class=" m-0 pb-3">Total Books</p>
                   </div>
                </div>
@@ -560,7 +454,7 @@
                      </button>
                   </div>
                   <div class="col-9 ps-4">
-                     <p class=" m-0 pt-3 fw-bold fs-4 counter-one">100</p>
+                     <p class=" m-0 pt-3 fw-bold fs-4 counter-one" id="totalAuthorShow"></p>
                      <p class=" m-0 pb-3">Authors</p>
                   </div>
                </div>
@@ -590,7 +484,7 @@
                      </button>
                   </div>
                   <div class="col-9 ps-4">
-                     <p class=" m-0 pt-3 fw-bold fs-4 counter-one">100</p>
+                     <p class=" m-0 pt-3 fw-bold fs-4 counter-one" id="totalUserShow"></p>
                      <p class=" m-0 pb-3">Happy Customers</p>
                   </div>
                </div>
@@ -618,6 +512,7 @@
    <script src="../resource/UI Library/counter_up/counter_up.js"></script>
    <script src="../resource/js/common.js"></script>
    <script src="../resource/js/footerCommon.js"></script>
+   <script src="../resource/js/homepage.js"></script>
    <script type="text/javascript">
       // Counter_Up
 

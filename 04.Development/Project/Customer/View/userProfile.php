@@ -6,6 +6,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>User Profile</title>
+   <link rel="shortcut icon" href="../../Images/latestLogo.png" type="image/x-icon" width="100vw" />
    <link rel="stylesheet" href="../resource/UI Library/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
    <link rel="stylesheet" href="../resource/css/style.css" />
    <link rel="stylesheet" href="../resource/css/user_profile.css" />
@@ -29,60 +30,46 @@
    <section class="container mt-5">
       <div class="row">
 
+         <form id="signUpForm" method="POST">
+            <div class="col-12 col-lg-4 mx-5">
 
-         <div class="col-12 col-lg-4">
-            <form>
                <div class="mb-3">
                   <label for="exampleInputName" class="form-label font-color-primary fw-bold">NAME</label>
-                  <input type="text" class="form-control" id="exampleInputName" />
+                  <input type="text" class="form-control" name="name" id="usernameInput" />
                </div>
-            </form>
-         </div>
 
-         <div class="col-12 col-lg-4">
-            <form>
-               <div class="mb-3">
-                  <label for="exampleFormControlInput1" class="form-label font-color-primary fw-bold">EMAIL</label>
-                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
-               </div>
-            </form>
-         </div>
+            </div>
+
+
       </div>
 
       <div class="row mt-5">
-         <div class="col-12 col-lg-4">
-            <form>
-               <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label font-color-primary fw-bold">PASSWORD</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" />
-               </div>
-            </form>
+
+
+         <div class="col-12 col-lg-4 mx-5">
+
+            <div class="mb-3">
+               <label for="exampleInputPassword1" class="form-label font-color-primary fw-bold">PHONE</label>
+               <input type="number" class="form-control" name="phone" id="phoneInput" />
+            </div>
+
          </div>
 
-         <div class="col-12 col-lg-4">
-            <form>
-               <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label font-color-primary fw-bold">PHONE</label>
-                  <input type="number" class="form-control" id="exampleInputPassword1" />
-               </div>
-            </form>
-         </div>
+         <div class="col-12 col-lg-4 mx-5">
 
-         <div class="col-12 col-lg-4">
-            <form>
-               <div class="mb-3">
-                  <label for="exampleFormControlTextarea1" class="form-label font-color-primary fw-bold">ADDRESS</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-               </div>
-            </form>
+            <div class="mb-3">
+               <label for="exampleFormControlTextarea1" class="form-label font-color-primary fw-bold">ADDRESS</label>
+               <textarea class="form-control" id="addressInput" name="address" rows="3"></textarea>
+            </div>
+
          </div>
       </div>
       <div class="row">
-         <div class="col-12">
+         <div class="col-12  mx-5">
             <button type="submit" class="btn btn-primary me-5 commom-bg">SAVE</button>
-            <button type="submit" class="btn btn-primary commom-bg">CANCEL</button>
          </div>
       </div>
+      </form>
    </section>
    <footer id="footer" class="container-fluid commom-bg  mt-5">
       <?php require "../View/footerCommon.php" ?>
@@ -96,6 +83,7 @@
    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
    <script src="../resource/UI Library/fontawesome-free/js/all.min.js"></script>
+   <script src="../resource/js/userprofile.js"></script>
 </body>
 
 </html>
