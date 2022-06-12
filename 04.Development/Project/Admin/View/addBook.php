@@ -24,7 +24,7 @@
             <div id="navbar" class="my-nav"></div>
             <!--Add Book-->
             <div class="col-8 offset-3">
-                <button class=" custombutton btn mt-4 col-1 ms-4"><a href="../View/bookInfo.php" class="text-dec col-1 text-dark fw-bold">Back</a></button>
+            <a href="./bookInfo.php" class="custombutton text-dec text-dark btn btn-sm-2 fw-bold ms-4 mt-4">BACK</a>
                 <p class="h4 mt-4 ms-4">Insert Book</p>
                 <form action="" id="fupload" enctype="multipart/form-data">
                     <div class="row container col-md-8 mt-2 ">
