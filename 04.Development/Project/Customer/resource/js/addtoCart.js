@@ -128,27 +128,35 @@ $(document).on('click', '.minus', function() {
             let length = $('.vouchers').length;
             console.log(length);
             // let length = $('.')
-            $('.vouchers').each(function(){
-                    console.log($(this));
-                let item = {
-                    "id" : this.id,
-                    "book_name" : $(this).children('.bookname').text(),
-                    "quantity" : $(this).children(".cal").children('.bookquantity').text(),
-                    "book_price" : $(this).children(".cal").children('.bookprice').text(),
-                };
-
-                console.log(item['id']);
-                if(!items.includes(item['id'])){
-                    console.log('hello');
-                    items.push(item);
+            if(localStorage.getItem('user') != null){
+                if(length > 0){
+                    $('.vouchers').each(function(){
+                        // console.log($('.dfee').attr('id'));
+                    let item = {
+                        "id" : this.id,
+                        "delivery_fee_id" : $('.dfee').attr('id'),
+                        "book_name" : $(this).children('.bookname').text(),
+                        "quantity" : $(this).children(".cal").children('.bookquantity').text(),
+                        "book_price" : $(this).children(".cal").children('.bookprice').text(),
+                    };
+    
+                    // console.log(item['id']);
+                    
+                        // console.log('hello');
+                        items.push(item);
+                    
+                   
+                });
+    
+                
+                
+                window.location.href = `../../Customer/Controller/orderController.php?data=${JSON.stringify(items)}`;
+                // console.log(items);
                 }
-               
-            });
-
+            }else{
+                window.location.href = `../../Customer/View/signin.php`;
+            }
             
-            
-            // window.location.href = `../../Customer/Controller/orderController.php?data=${JSON.stringify(items)}`;
-            console.log(items);
            
            
     })

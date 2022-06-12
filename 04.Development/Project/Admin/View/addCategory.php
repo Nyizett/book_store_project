@@ -23,9 +23,9 @@
     <div class="row">
       <!-- Navbar Start -->
       <div id="navbar" class="my-nav"></div>
-      <div class="col-8 mt-4">
-        <button class="custombutton btn btn-sm offset-4 fw-bold">BACK</button>
-        <div class="row offset-4">
+      <div class="col-8 mt-4 offset-3">
+      <!-- <a href="./setting.php" class="custombutton text-dec text-dark btn btn-sm-2 fw-bold ms-4 mt-4">BACK</a> -->
+        <a href="./setting.php" class="">BACK</a>
           <form action="../Controller/addCategoryController.php" method="POST">
             <div class="col-5 mt-3">
               <div class="mb-3">
@@ -37,7 +37,7 @@
 
             </div>
           </form>
-        </div>
+        
       </div>
 
     </div>
