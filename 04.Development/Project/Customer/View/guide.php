@@ -21,54 +21,56 @@
       <?php require "../View/common.php" ?>
    </nav>
    <!-- Header -->
-   <div class="container-fluid header d-flex justify-content-between align-items-center p-4 box">
+   <div class="container-fluid header d-flex justify-content-between align-items-center p-4 box bg-light">
       <h3>Guide</h3>
       <div class=" me-5">
          <b>Home</b> -> Guide
       </div>
    </div>
 
-   <section class="container-fluid mt-5">
+   <section class="container-fluid mt-3 ms-1">
       <div class="row">
-         <div class="col-12 col-lg-4">
+
+         <?php
+         require "../Controller/showGuideController.php";
+
+         foreach ($result as $key => $value) {
+            global $no;
+            echo '<div class="col-6  mt-4">';
+            echo "<img class=img-thumbnail src='../../Images/" . $value['guide_image']. "'>";
+            echo '<p class="text-center fs-3 fw-bold mt-2">' . $value['guide_text'];
+            echo "</p>";
+            echo "</div>";
+         }
+         ?>
+         <!-- <div class="col-12 col-lg-4 mt-3">
             <img class="img-fluid" src="../resource/img/g1.png" alt="" />
             <p class="text-center fw-bold">New Books For You</p>
          </div>
-         <div class="col-12 col-lg-4">
+         <div class="col-12 col-lg-4 mt-3">
             <img src="../resource/img/g2.png" alt="" class="img-fluid" width="300px" />
             <p class="fw-bold ms-5">Review Box</p>
          </div>
 
-         <div class="col-12 col-lg-4">
+         <div class="col-12 col-lg-4 mt-3">
             <img src="../resource/img/g3.png" alt="" class="img-fluid" />
             <p class="fw-bold ms-5">5 Categories</p>
          </div>
       </div>
 
       <div class="row my-5">
-         <div class="col-12 col-lg-4">
+         <div class="col-12 col-lg-4 mt-3">
             <img src="../resource/img/g4.png" alt="" class="img-fluid " />
             <p class="fw-bold ms-5">Book Release Date and Sizes of Book</p>
          </div>
-         <div class="col-12 col-lg-4">
+         <div class="col-12 col-lg-4 mt-3">
             <img src="../resource/img/g5.png" alt="" class="img-fluid" />
             <p class="fw-bold text-center">Cart List</p>
          </div>
-         <div class="col-12 col-lg-4">
+         <div class="col-12 col-lg-4 mt-3">
             <img src="../resource/img/g6.png" alt="" class="img-fluid" />
             <p class="fw-bold ms-5">Payments</p>
-         </div>
-      </div>
-
-      <div class="row">
-         <div class="col-12 col-lg-4">
-            <img src="../resource/img/g7.png" alt="" class="img-fluid" />
-            <p class="fw-bold text-center">Author Profile</p>
-         </div>
-         <div class="col-12 col-lg-4">
-            <img src="../resource/img/g8.png" alt="" class="img-fluid" />
-            <p class="fw-bold text-center">Book Details</p>
-         </div>
+         </div> -->
       </div>
    </section>
    <footer id="footer" class="container-fluid commom-bg  mt-5">
