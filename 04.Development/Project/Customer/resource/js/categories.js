@@ -3,7 +3,7 @@ let ids = [];
 
 $(document).ready(function () {
   $("#CommonHomePage").addClass("border-bottom");
-
+  console.log(categoryId);
   $.ajax({
     type: "post",
     url: "../Controller/categoriesNameGetController.php",

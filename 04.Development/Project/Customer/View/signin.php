@@ -5,7 +5,8 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Homepage</title>
+   <title>Signin</title>
+   <link rel="shortcut icon" href="../../Images/latestLogo.png" type="image/x-icon" width="100vw" />
    <link rel="stylesheet" href="../resource/UI Library/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
    <link rel="stylesheet" href="../resource/css/style.css" />
    <link rel="stylesheet" href="../resource/css/homepage.css" />
@@ -26,10 +27,10 @@
             <div class="col-12 col-md-6 inner-left">
                <div class="text-center m-5">
                   <h3 class="my-class text-primary mb-3">Sign in</h3>
-                  <form id="signinForm" >
+                  <form id="signinForm">
                      <input class="form-control mb-3" type="email" name="email" id="email" placeholder="email">
                      <input class="form-control mb-3" type="password" name="password" id="password" placeholder="password">
-                 <button type="submit" class="btn btn-outline-primary mb-3">Sign in</button>
+                     <button type="submit" class="btn btn-outline-primary mb-3">Sign in</button>
                   </form>
                   <h6 class="text-primary">forget password?</h6>
                </div>
@@ -38,14 +39,14 @@
                <div class="text-center m-5 h-100">
                   <h2 class="text-white">Welcome To Our Book Store!</h2>
                   <p class="text-light">New Here!</p>
-                  <a href="../View/signup.php">  <button class="btn btn-light text-primary">Sign Up</button> </a>
+                  <a href="../View/signup.php"> <button class="btn btn-light text-primary">Sign Up</button> </a>
                </div>
             </div>
          </div>
       </div>
    </div>
 
-   
+
    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
@@ -54,7 +55,7 @@
    <script src="../resource/UI Library/fontawesome-free/js/all.min.js"></script>
    <script src="../resource/UI Library/bootstrap-5.0.2-dist/js/bootstrap.js"></script>
    <script type="text/javascript">
-    
+
    </script>
 </body>
 

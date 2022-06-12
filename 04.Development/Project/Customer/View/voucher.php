@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Voucher</title>
+    <link rel="shortcut icon" href="../../Images/latestLogo.png" type="image/x-icon" width="100vw" />
     <link rel="stylesheet" href="../resource/UI Library/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../resource/css/style.css" />
     <link rel="stylesheet" href="../resource/css/homepage.css" />
@@ -30,8 +31,8 @@
     </div>
 
     <div class="container-fluid">
-    
-            <div class="row">
+
+        <div class="row">
             <div class="col-md-6">
                 <span class="border-dark border-bottom fs-4 py-2">Voucher</span>
                 <div class="mt-4 p-4 border border-1">
@@ -71,19 +72,19 @@
                     </table>
                 </div>
             </div>
-                <div class="col-md-4 mt-5 mx-4">
-                    <div>
-                        <p>Name : <span class="ms-3">Mg Mg</span></p>
-                        <p>Phone : <span class="ms-3">09 111 111 111</span></p>
-                        <p>Email : <span class="ms-3">example@gamil.com</span></p>
-                        <p>Address : <span class="ms-3">No.(404), Not Found str, Dismiss City</span></p>
-                        <p>Payment : <span class="ms-3">Cash On Delivery</span></p>
-                    </div>
-                    <button class="btn btn-primary">Place Order</button>
+            <div class="col-md-4 mt-5 mx-4">
+                <div>
+                    <p>Name : <span class="ms-3">Mg Mg</span></p>
+                    <p>Phone : <span class="ms-3">09 111 111 111</span></p>
+                    <p>Email : <span class="ms-3">example@gamil.com</span></p>
+                    <p>Address : <span class="ms-3">No.(404), Not Found str, Dismiss City</span></p>
+                    <p>Payment : <span class="ms-3">Cash On Delivery</span></p>
                 </div>
-            
-        
-    </div>
+                <button class="btn btn-primary">Place Order</button>
+            </div>
+
+
+        </div>
     </div>
     <footer id="footer" class="container-fluid commom-bg  mt-5">
         <?php require "../View/footerCommon.php" ?>

@@ -5,7 +5,8 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Homepage</title>
+   <title>Signup</title>
+   <link rel="shortcut icon" href="../../Images/latestLogo.png" type="image/x-icon" width="100vw" />
    <link rel="stylesheet" href="../resource/UI Library/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
    <link rel="stylesheet" href="../resource/css/style.css" />
    <link rel="stylesheet" href="../resource/css/homepage.css" />
@@ -15,7 +16,7 @@
 </head>
 
 <body>
-   
+
    <div class="wrapper ">
       <div class="col-12 col-md-6 mx-auto ">
          <div class="row g-0 flex-column-reverse flex-md-row ">
@@ -33,11 +34,11 @@
                   <p>use your email for registration</p>
                   <form id="signUpForm" method="POST">
                      <div class="form-control ">
-                     <input class="mt-3 mb-3 px-3" type="text" name="name" id="name" placeholder="Name">
-                     <input class="mb-3 px-3" type="password" name="password" id="password" placeholder="password">
-                     <input class="mb-3 px-3" type="email" name="email" id="email" placeholder="Email">
-                     <input class="mb-3 px-3" type="text" name="phone" id="phone" placeholder="Phone">
-                     <input class="mb-3 px-3" type="text" name="address" id="address" placeholder="Address">
+                        <input class="mt-3 mb-3 px-3" type="text" name="name" id="name" placeholder="Name">
+                        <input class="mb-3 px-3" type="password" name="password" id="password" placeholder="password">
+                        <input class="mb-3 px-3" type="email" name="email" id="email" placeholder="Email">
+                        <input class="mb-3 px-3" type="text" name="phone" id="phone" placeholder="Phone">
+                        <input class="mb-3 px-3" type="text" name="address" id="address" placeholder="Address">
                      </div>
                      <button type="submit" class="btn btn-outline-primary mb-3 fw-bolder mt-3">SIGN UP</button>
                   </form>
@@ -47,7 +48,7 @@
       </div>
    </div>
 
-   
+
    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
@@ -56,7 +57,7 @@
    <script src="../resource/UI Library/fontawesome-free/js/all.min.js"></script>
    <script src="../resource/UI Library/bootstrap-5.0.2-dist/js/bootstrap.js"></script>
    <script type="text/javascript">
-    
+
    </script>
 </body>
 
