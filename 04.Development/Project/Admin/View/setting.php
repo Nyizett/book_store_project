@@ -149,7 +149,7 @@
                             }
                             ?>
                         </table>
-                        <button class="btn btn-sm offset-10 custombutton fw-bold col-2"><a href="./addCategory.php" class="text-dec text-dark">ADD CATEGORY</a></button>
+                        <a href="./addCategory.php"><button class="btn btn-sm offset-9 custombutton fw-bold col-3">ADD CATEGORY</button></a>
                     </div>
                     <!-- Category Table end -->
 
@@ -178,7 +178,7 @@
                             ?>
 
                         </table>
-                        <button class="btn btn-sm offset-10 custombutton fw-bold col-2">ADD GUIDE</button>
+                        <a href="./addGuide.php"><button class="btn btn-sm offset-10 custombutton fw-bold col-2">ADD GUIDE</button></a>
                     </div>
                     <!-- Guide Table end -->
 
@@ -209,7 +209,7 @@
                             ?>
 
                         </table>
-                        <button class="btn btn-sm offset-10 custombutton fw-bold col-2"><a href="./addDeliveryFee.php" class="text-dec text-dark ">ADD DELIVERY FEES</a></button>
+                        <a href="./addDeliveryFee.php"><button class="btn btn-sm offset-10 custombutton fw-bold col-2">ADD DELIVERY FEES</button></a>
                     </div>
                     <!-- Delivery Fee Table end -->
 
@@ -240,7 +240,7 @@
 
                             
                         </table>
-                        <button class="btn btn-sm offset-10 custombutton fw-bold col-2">ADD SERVICES</button>
+                        <a href="./addService.php" class="btn btn-sm offset-10 custombutton fw-bold col-2">ADD SERVICE</button></a>
                     </div>
                     <!-- Service Table end -->
 
@@ -272,7 +272,7 @@
 
                             
                         </table>
-                        <button class="btn btn-sm offset-10 custombutton fw-bold col-2">ADD PRIVACY POLICY</button>
+                        <a href="./addPrivacyPolicy.php"><button class="btn btn-sm-2 col-4 custombutton fw-bold offset-8">ADD PRIVACYPOLICY</button></a>
                     </div>
                     <!-- Privacy Policy Table End -->
 
@@ -301,7 +301,7 @@
                             ?>
                             
                         </table>
-                        <button class="btn btn-sm offset-10 custombutton fw-bold col-2"><a href="./addFaqs.php" class="text-dec text-dark">ADD FAQS</a></button>
+                        <a href="./addFaqs.php"><button class="btn btn-sm offset-10 custombutton fw-bold col-2">ADD FAQS</button></a>
                     </div>
                 </div>
                 <!-- App Master End -->
@@ -334,7 +334,7 @@
 
                             
                         </table>
-                        <button class="btn btn-sm offset-10 custombutton">ADD Admin</button>
+                        <a href="./addAdmin.php"><button class="btn btn-sm offset-10 custombutton fw-bold col-2">ADD ADMIN</button></a>
                     </div>
 
                 </div>

@@ -23,7 +23,7 @@
             <div id="navbar" class="my-nav"></div>
             <!--Add Book-->
             <div class="col-8 offset-3">
-                <button class=" custombutton btn mt-4 col-1 ms-4"><a href="../View/bookInfo.php" class="text-dec col-1 text-dark fw-bold">Back</a></button>
+            <a href="./bookInfo.php" class="custombutton text-dec text-dark btn btn-sm-2 fw-bold ms-4 mt-4">BACK</a>
 
                 <form action="../Controller/updateDBBookController.php" method="POST">
                     <div class="row container col-md-8 mt-2 ">
@@ -91,7 +91,7 @@
                             <label for="comment" class="mt-3">Description</label>
                             <textarea class="input-box form-control ms-2" rows="8" id="comment" name="bookDes"><?php echo $result[0]['book_description']; ?></textarea>
                         </div>
-                        <button type="submit" id="submitBtn" class="custombutton btn fw-bold mt-4 mb-4">ADD BOOK</button>
+                        <button type="submit" id="submitBtn" class="custombutton btn fw-bold mt-4 mb-4">SAVE</button>
                         <!-- <input type="submit" id="submitBtn" name="submitBtn" class="custombutton btn fw-bold mt-4 mb-4" value="SAVE"> -->
                     </div>
                 </form>

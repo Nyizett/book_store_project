@@ -37,10 +37,10 @@
             <!-- Dashboard -->
             <div class="col-8 offset-3">
                 <div class="top-box offset-8">
-                    <div class="top">
+                    <!-- <div class="top">
                         <ion-icon name="person" class="fs-2 text-primary"></ion-icon>
-                    </div>
-                    <div class="top"><a href="#" class="me-md-5 text-dec fs-5">CustomerPage</a></div>
+                    </div> -->
+                    <div class="top"><a href="../../Customer/View/signup.php" class="me-md-4 text-dec text-dark fs-5">CustomerPage</a></div>
                 </div>
                 <div class="box">
                     <div class="box1">

@@ -23,7 +23,7 @@
             <div id="navbar" class="my-nav"></div>
             <!-- Insert Author -->
             <div class="col-8 offset-3">
-                <button class="custombutton btn btn-sm mt-4 col-1 ms-4"><a href="../View/authorInfo.php" class="text-dec fw-bold text-dark text-wrap">Back</a></button>
+            <a href="./authorInfo.php" class="custombutton text-dec text-dark btn btn-sm-2 fw-bold ms-4 mt-4">BACK</a>
                 <p class="h3 mt-4 ms-4">Edit Author</p>
                 <form action="../Controller/updateDBAuthorController.php" method="POST">
                     <div class="row container col-md-7 mt-3 ">

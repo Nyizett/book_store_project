@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="../resource/UI Library/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="../resource/css/style.css" />
   <link rel="stylesheet" href="../resource/css/common.css">
-  <link rel="stylesheet" href="../resource/css/Add-faq.css" />
+  <link rel="stylesheet" href="../resource/css/addFaqs.css" />
   <script src="../resource/UI Library/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
   <script src="../resource/js/setting.js"></script>
   <script src="../resource/UI Library/jquery-3.3.1.min.js"></script>
@@ -23,8 +23,11 @@
     <div class="row">
       <!-- Navigation Bar -->
       <div id="navbar" class="my-nav"></div>
-      <a href="./setting.php" class="custombutton text-dec text-dark btn btn-sm-2 fw-bold ms-5 mt-4">BACK</a>
+      
       <div class="row offset-4">
+      <div class="col">
+      <a href="./setting.php" class="custombutton text-dec text-dark btn btn-sm-2 fw-bold mt-4 md-4">BACK</a>
+      </div>
         <form action="../Controller/addDeliveryFeeController.php" method="POST">
           <div class="col-5 mt-3">
             <div class="mb-3">
@@ -36,7 +39,7 @@
               <input type="type" class="customstyle form-control" id="exampleFormControlInput1" name="deliprice">
             </div>
 
-            <button type="submit" class="custombutton btn btn-sm offset-10 mt-3 fw-bold ">ADD DELIVERY FEE</button>
+            <button type="submit" class="custombutton btn btn-sm offset-9 mt-3 fw-bold col-3">ADD DELIVERY FEE</button>
 
           </div>
         </form>

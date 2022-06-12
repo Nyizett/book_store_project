@@ -8,7 +8,7 @@
   <title>Add Category</title>
   <link rel="stylesheet" href="../resource/UI Library/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="../resource/css/style.css" />
-  <link rel="stylesheet" href="../resource/css/Add-faq.css" />
+  <link rel="stylesheet" href="../resource/css/addFaqs.css" />
   <link rel="stylesheet" href="../resource/css/common.css">
   <script src="../resource/UI Library/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
   <script src="../resource/js/setting.js"></script>
@@ -24,20 +24,21 @@
       <!-- Navbar Start -->
       <div id="navbar" class="my-nav"></div>
       <div class="col-8 mt-4 offset-3">
-      <!-- <a href="./setting.php" class="custombutton text-dec text-dark btn btn-sm-2 fw-bold ms-4 mt-4">BACK</a> -->
-        <a href="./setting.php" class="">BACK</a>
-          <form action="../Controller/addCategoryController.php" method="POST">
-            <div class="col-5 mt-3">
-              <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Write Category Name</label>
-                <textarea class="customstyle form-control" name="catName" rows="3"></textarea>
-              </div>
-
-              <button class="custombutton btn btn-sm offset-10 mt-3 fw-bold">ADD CATEGORY</button>
-
+        <div class="col">
+          <a href="./setting.php" class="custombutton text-dec text-dark btn btn-sm-2 fw-bold mt-4 md-4">BACK</a>
+        </div>
+        <form action="../Controller/addCategoryController.php" method="POST">
+          <div class="col-5 mt-3">
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Write Category Name</label>
+              <textarea class="customstyle form-control" name="catName" rows="3"></textarea>
             </div>
-          </form>
-        
+
+            <button class="custombutton btn btn-sm offset-7 mt-3 fw-bold col-5">ADD CATEGORY</button>
+
+          </div>
+        </form>
+
       </div>
 
     </div>

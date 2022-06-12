@@ -25,5 +25,5 @@ if(isset($_POST)){
     $sql->bindValue(":gimage",  $Guideimg);
 
     $sql->execute();
-    header("location: ../view/setting.php");
+    header ("Location: ../View/setting.php");
 }
