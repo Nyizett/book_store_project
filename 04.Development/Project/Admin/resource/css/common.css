@@ -108,14 +108,9 @@
     font-size: 10px;
     font-weight: 800;
   }
-<<<<<<< HEAD
-  .nav-btngp{
-    height: 10em;
-=======
   .navBtnGp1,.navBtnGp2,.navBtnGp3,.navBtnGp4,
   .navBtnGp5,.navBtnGp6,.navBtnGp7,.navBtnGp8{
     width: 50px;
 
->>>>>>> origin/main
   }
 }
