@@ -6,7 +6,7 @@ $db2 =  new DBConnect();
 $dbconnect = $db2 ->connect();
 
 $sql = $dbconnect -> prepare("SELECT SUM(order_d_quantity) as totalQuantity,MONTHNAME(create_date) 
-as month FROM m_order_details GROUP BY create_date ASC ");
+as month FROM m_order_details GROUP BY create_by_month");
 $sql->execute();
 
 $chartData= $sql->fetchAll(PDO::FETCH_ASSOC);

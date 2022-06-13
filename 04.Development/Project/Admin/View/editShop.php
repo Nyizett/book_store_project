@@ -36,9 +36,9 @@ if(!isset($_SESSION['username'])){
                             
                                 <label for="email" class="form-label">Shop</label><br>
                                 <select name="shopCity" id="" class="custombutton btn btn-white col-12">
-                                    <option class="custombutton" value="Yangon">Yangon</option>
-                                    <option class="custombutton" value="Mandalay">Mandalay</option>
-                                    <option class="custombutton" value="NayPyiTaw">NayPyiTaw</option>
+                                    <option  class="custombutton" value="Yangon">Yangon</option>
+                                    <option  class="custombutton" value="Mandalay">Mandalay</option>
+                                    <option  class="custombutton" value="NayPyiTaw">NayPyiTaw</option>
                                 </select>
                             </div>
                             <div class="col mb-3 mt-3 ms-4">

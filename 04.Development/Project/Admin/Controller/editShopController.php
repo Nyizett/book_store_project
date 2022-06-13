@@ -9,9 +9,7 @@ $dbconnect = $db ->connect();
 
 $sql = $dbconnect->prepare(
     "SELECT * FROM m_shop
-            WHERE id = :id;
-            
-        ");
+            WHERE id = :id;");
 
 $sql->bindValue(":id", $id);
 

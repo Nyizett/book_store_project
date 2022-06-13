@@ -46,7 +46,12 @@ if(!isset($_SESSION['username'])){
                                     require "../Controller/bookIDController.php";
 
                                     foreach ($categoryList as $key => $val) {
-                                        echo "<option value='" . $val['id'] . "' >" . $val['category_name'] . '</option>';
+                                        if ($val['category_name']==$result[0]['category_name']) {
+                                            echo "<option selected value='".$val['id']."' >" . $val['category_name'] . '</option>';
+                                        }else{
+                                            echo "<option value='".$val['id']."' >" . $val['category_name'] . '</option>';
+                                        }
+                                        
                                     }
                                     ?>
 
