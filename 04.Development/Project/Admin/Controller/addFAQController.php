@@ -1,10 +1,12 @@
 <?php
 require_once "../Model/DBConnection.php";
+session_start();
+
 // Get Data from Add FAQ From
 if(isset($_POST)){
     $faqQ = $_POST['faqQ'];
     $faqAns = $_POST['faqAns'];
-    
+    $UserName=$_SESSION['username'];
 
     //Call DB Connection
     $db =  new DBConnect();
@@ -15,20 +17,20 @@ if(isset($_POST)){
         (
             faq_q_text,
             faq_ans_text,
-            
-            create_date
+            create_date,
+            create_by
         )
         VALUES (
             :fQue,
             :fAns,
-            
-            :createDate
+            :todayDate,
+            :adminName
         )"
     );
     $sql->bindValue(":fQue", $faqQ  );
     $sql->bindValue(":fAns",  $faqAns);
-    
-    $sql->bindValue(":createDate", date("d/m/Y"));
+    $sql->bindValue(":todayDate", date("d/m/Y"));
+    $sql->bindValue(":adminName", $UserName);
 
     $sql->execute();
     header("location: ../view/setting.php");

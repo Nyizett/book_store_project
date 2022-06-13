@@ -1,3 +1,9 @@
+<?php
+session_start();
+if(!isset($_SESSION['username'])){
+  header("Location: ../View/adminLogin.php");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -55,7 +61,7 @@
                     ?>
 
                 </table>
-                <button class="custombutton btn btn-sm offset-10 col-2"><a href="../View/addShop.php" class="text-dec text-dark fw-bold">ADD SHOP</a></button>
+                <a href="../View/addShop.php" class="text-dec text-dark "><button class=" text-dec btn fw-bold custombutton btn-sm offset-10 col-2 mb-4">ADD SHOP</button></a>
                 <!-- Mandalay Shop List -->
                 <div class="row">
                     <p class="h3 mt-4">Mandalay Shop List</p>
@@ -87,7 +93,7 @@
                         }
                         ?>
                     </table>
-                    <button class="custombutton btn btn-sm offset-10 col-2"><a href="../View/addShop.php" class="text-dec text-dark fw-bold">ADD SHOP</a></button>
+                    <a href="../View/addShop.php" class="text-dec text-dark "><button class=" text-dec btn fw-bold custombutton btn-sm offset-10 col-2 mb-4">ADD SHOP</button></a>
                 </div>
 
                 <!-- Nay Pyi Taw Shop List -->
@@ -122,7 +128,7 @@
                         ?>
 
                     </table>
-                    <button class="custombutton btn btn-sm offset-10 col-2 mb-4"><a href="../View/addShop.php" class="text-dec text-dark fw-bold">ADD SHOP</a></button>
+                    <a href="../View/addShop.php" class="text-dec text-dark "><button class=" text-dec btn fw-bold custombutton btn-sm offset-10 col-2 mb-4">ADD SHOP</button></a>
                 </div>
             </div>
         </div>

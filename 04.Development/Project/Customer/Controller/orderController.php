@@ -1,9 +1,13 @@
 <?php
+session_start();
 
+?>
+<?php
 if(isset($_GET["data"])){
  
     $data=json_decode($_GET["data"], true);
-    
+
+  
     if(count($data) > 0){
         $result = $data;
 

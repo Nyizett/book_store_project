@@ -43,14 +43,16 @@ require_once "../../Admin/Model/DBConnection.php";
                     book_id,
                     order_d_quantity,
                     total_amount,
-                    del_flg
+                    del_flg,
+                    create_by_month
                 )
                 VALUES(
                     :user,
                     :book,
                     :qty,
                     :total,
-                    :del_flg)"
+                    :del_flg,
+                    :cbm)"
             );
 
             $sql->bindValue(":user", $uid);
@@ -58,6 +60,8 @@ require_once "../../Admin/Model/DBConnection.php";
             $sql->bindValue(":qty", $qty);
             $sql->bindValue(":total", $total);
             $sql->bindValue(":del_flg",0);
+            $sql->bindValue(":cbm",date("Y-m"));
+
             $sql->execute();
         }
     }

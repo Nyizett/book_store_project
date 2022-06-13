@@ -20,6 +20,9 @@
 
 <body>
 
+   <script>
+      let id = <?php echo $_GET['id'] ?>
+   </script>
    <!-- Header -->
    <nav class="navbar navbar-expand-lg   top-0 w-100 " id="cum_navbar">
       <?php require "../View/common.php" ?>
@@ -32,7 +35,7 @@
             <div class="slider slide-bg d-flex">
                <div class="detail">
                   <?php
-                  echo "<img class='img-fluid mt-3' src='../resource/img/book cover/" . $result[0]['book_image'] . "' alt=''>"
+                  echo "<img class='img-fluid mt-3 bookimage' src='../resource/img/book cover/" . $result[0]['book_image'] . "' alt=''>"
                   ?>
                </div>
 
@@ -47,6 +50,19 @@
                <div class="card mb-5 mb-lg-0 card-width ">
                   <div class="card-body d-flex flex-column ">
                      <p class="card-title fw-bold mb-0 font-color-primary"></p>
+                     <?php echo " <small class='card-text d-block mb-2 fs-3 fw-bold booknames'>" . $result[0]['book_name'] . " </small>";
+                     ?>
+                     </small>
+
+                     <?php 
+                        if($result[0]['author_name'] != 'None'){
+                           echo " <small class='card-text d-block mb-2 font-color-secondary authors'>" . $result[0]['author_name'] . " </small>";
+                        }else{
+                           echo " <small class='card-text d-block mb-2 font-color-secondary authors'> Anonymous </small>";
+                        }
+                  
+                      ?>
+                     </small>
                      <small>
                         <i class="fa-solid fa-star text-warning"></i>
                         <i class="fa-solid fa-star text-warning"></i>
@@ -55,11 +71,11 @@
                         <i class="fa-solid fa-star"></i>
                      </small>
 
-                     <?php echo " <small class='card-text d-block mb-3 font-color-secondary'>" . $result[0]['author_name'] . " </small>";
-                     ?>
+
                      </small>
+
                      <div class="d-flex justify-content-between align-items-center">
-                        <?php echo " <p class='fw-bold mb-0 font-color-primary'>" . number_format($result[0]['book_price']) . " MMK</p>"; ?>
+                        <?php echo " <p class='fw-bold mb-0 font-color-primary bookprices'>" . number_format($result[0]['book_price']) . " MMK</p>"; ?>
                      </div>
 
                      <div class="details-text  mt-2">
@@ -91,35 +107,10 @@
    </section>
 
    <section class="container">
-      <div class="row mt-2">
-         <div class="col-md-7 ">
+      <div class="row mt-2 reviews">
+          
 
-            <div class="col-md-12">
-               <p class="titles commom-bg">Review</p>
-            </div>
-            <div class="col-md-12">
-               <div class="commentbox">
-                  <div class="commentboxheader">
-                     <p class="QuestionHeader">Review About This Product</p>
-                  </div>
-                  <div class="commentbody">
-
-                  </div>
-                  <div class="commentinput mt-4">
-
-                     <input type="text" class="inputtextbox" id="inputtextbox" placeholder="Please Type here..." />
-                     <button class="sendbutton">
-                        Post Your Review
-                     </button>
-                  </div>
-
-               </div>
-
-
-            </div>
-         </div>
-
-         <div class="col-md-4">
+         <div class="col-md-4 desc">
             <div class="col-md-12">
                <p class="titles commom-bg">Description</p>
             </div>
@@ -162,7 +153,7 @@
    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
    <script src="../resource/UI Library/fontawesome-free/js/all.min.js"></script>
-   <script src="../resource//js/bookDetails.js"></script>
+   <script src="../resource/js/bookDetails.js"></script>
 
    <script type="text/javascript">
 

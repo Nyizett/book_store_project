@@ -1,3 +1,9 @@
+<?php
+session_start();
+if(!isset($_SESSION['username'])){
+  header("Location: ../View/adminLogin.php");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,9 +28,9 @@
         <div class="row">
         <div id="navbar" class="my-nav"></div>
             <!-- Author List-->
-            <div class="col-8 offset-3">
+            <div class="col-10 offset-2">
                 <p class="h3 mt-5">Book List</p>
-                <button class="custombutton btn-sm offset-10  bg-warning  col-2 mb-4"><a href="./addBook.php" class="text-dec fw-bold text-dark">ADD BOOK</a></button>
+                <a href="../View/addBook.php" class="text-dec text-dark "><button class=" text-dec btn fw-bold custombutton btn-sm offset-10 col-2 mb-4">ADD BOOK</button></a>
                 <table class="table table-striped table-sm mt-4">
                     <tr class="tb-text">
                         <th class="col-1">No</th>
@@ -54,7 +60,7 @@
                     }
                     ?>
                 </table>
-                <button class="custombutton btn-sm offset-10  bg-warning  col-2 mb-4"><a href="./addBook.php" class="text-dec fw-bold text-dark">ADD BOOK</a></button>
+                <a href="../View/addBook.php" class="text-dec  text-dark "><button class=" text-dec btn fw-bold custombutton btn-sm offset-10 col-2 mb-4">ADD BOOK</button></a>
             </div>
         </div>
     </div>
