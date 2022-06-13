@@ -1,3 +1,9 @@
+<?php
+session_start();
+if(!isset($_SESSION['username'])){
+  header("Location: ../View/adminLogin.php");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,7 +29,7 @@
             <div id="navbar" class="my-nav"></div>
             <!--Add Shop-->
             <div class="col-8 offset-3">
-                <button class="custombutton btn mt-4 col-1 ms-4"><a href="../View/shopInfo.php" class="text-dec col-1 text-dark fw-bold">Back</a></button>
+            <a href="./shopInfo.php" class="custombutton text-dec text-dark btn btn-sm-2 fw-bold ms-4 mt-4">BACK</a>
                 <p class="h4 mt-4 ms-4">Insert Shop</p>
                 <form action="../Controller/addShopController.php" method="POST">
                     <div class="row container col-md-8 mt-3 ">

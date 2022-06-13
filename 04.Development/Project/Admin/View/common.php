@@ -53,6 +53,6 @@
             <span class="Dsnon col-5 ">Setting</span>
             </div>
         </button></a>
-        <button type="button" class="logout btn btn-light text-break mt-3">Logout</button>
+        <a href="../Controller/logOutController.php" class="text-dec text-dark"><button type="button" class=" logout btn btn-light text-break mt-3">Logout</button></a>
     </div>
 </div>

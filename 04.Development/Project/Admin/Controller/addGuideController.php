@@ -1,9 +1,12 @@
 <?php
 require_once "../Model/DBConnection.php";
+session_start();
+
 // Get Data from Add Book From
 if(isset($_POST)){
     $Guideimg = $_POST['guideImg'];
     $Guidepargh = $_POST['guideParagraph'];
+    $UserName=$_SESSION['username'];
 
 
     //Call DB Connection
@@ -14,16 +17,22 @@ if(isset($_POST)){
         "INSERT INTO m_guide
         (
             guide_text,
-            guide_image
+            guide_image,
+            create_date,
+            create_by
         )
         VALUES (
             :gtext,
             :gimage
+            :todayDate,
+            :adminName
         )"
     );
     $sql->bindValue(":gtext", $Guidepargh  );
     $sql->bindValue(":gimage",  $Guideimg);
+    $sql->bindValue(":todayDate", date("d/m/Y"));
+    $sql->bindValue(":adminName", $UserName);
 
     $sql->execute();
-    header("location: ../view/setting.php");
+    header ("Location: ../View/setting.php");
 }

@@ -1,5 +1,7 @@
 <?php
 require_once "../Model/DBConnection.php";
+session_start();
+
 // Get Data from Addshop From
 if(isset($_POST)){
     $shopCity   = $_POST['shopCity'];
@@ -8,6 +10,7 @@ if(isset($_POST)){
     $shopWebsite= $_POST['shopWeb'];
     $shopImage  = $_POST['shopImage'];
     $shopAddress= $_POST['shopAddress'];
+    $UserName=$_SESSION['username'];
 
     //Call DB Connection
     $db =  new DBConnect();
@@ -23,7 +26,7 @@ if(isset($_POST)){
             shop_phone_no,
             shop_website,
             create_date,
-            create_by,
+            create_by
         )
         VALUES (
             :shname,
@@ -32,7 +35,8 @@ if(isset($_POST)){
             :shaddress,
             :shphone,
             :shweb,
-            :createDate)"
+            :todayDate,
+            :adminName)"
     );
     $sql->bindValue(":shname", $shopName );
     $sql->bindValue(":shimage", $shopImage);
@@ -40,7 +44,8 @@ if(isset($_POST)){
     $sql->bindValue(":shaddress", $shopAddress);
     $sql->bindValue(":shphone", $shopPhone );
     $sql->bindValue(":shweb", $shopWebsite);
-    $sql->bindValue(":createDate",date("d/m/Y"));
+    $sql->bindValue(":todayDate", date("d/m/Y"));
+    $sql->bindValue(":adminName", $UserName);
 
     $sql->execute();
     header ("Location: ../View/shopInfo.php");

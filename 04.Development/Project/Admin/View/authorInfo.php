@@ -1,3 +1,9 @@
+<?php
+session_start();
+if(!isset($_SESSION['username'])){
+  header("Location: ../View/adminLogin.php");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -52,7 +58,7 @@
                     }
                     ?>
                 </table>
-                <button class="text-dec custombutton btn-sm offset-10 col-2 mb-4"><a href="../View/addAuthor.php" class="text-dec fw-bold text-dark ">ADD AUTHOR</a></button>
+                <a href="../View/addAuthor.php" class="text-dec  text-dark "><button class=" text-dec btn fw-bold custombutton btn-sm offset-10 col-2 mb-4">ADD AUTHOR</button></a>
             </div>
         </div>
     </div>
