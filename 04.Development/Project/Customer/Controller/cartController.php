@@ -1,10 +1,10 @@
-<?php
 
+<?php
     if(isset($_POST["send"])){
         $data=json_decode($_POST["send"], true);
     
         
-
+        
     
         require "../../Admin/Model/DBConnection.php";
       

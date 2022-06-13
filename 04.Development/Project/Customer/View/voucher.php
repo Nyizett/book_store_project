@@ -81,7 +81,7 @@
                     </div>
                     <button class="btn btn-primary order" data-bs-toggle="modal" data-bs-target="#modal">Place Order</button>
                 </div>
-                <button class="btn btn-primary order" data-bs-toggle="modal" data-bs-target="#modal">Place Order</button>
+              
             </div>
 
 
@@ -105,15 +105,12 @@
                 </div>
 
                 <div class="d-flex justify-content-center m-3">
-                    <a href="./homepage.php"> <button type="button" id="backSite" class="btn btn-primary cancelbutton" data-bs-dismiss="modal">Back to site</button></a>
+                    <a href="../View/homepage.php"> <button type="button" id="backSite" class="btn btn-primary cancelbutton" data-bs-dismiss="modal">Back to site</button></a>
 
                 </div>
             </div>
            
-            <div class="d-flex justify-content-center m-3">
-           <a href="../View/homepage.php"> <button type="button" id="backSite" class="btn btn-primary cancelbutton" data-bs-dismiss="modal" >Back to site</button></a>
-              
-            </div>
+        
           </div>
         </div>
     </div>
