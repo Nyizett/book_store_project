@@ -55,10 +55,10 @@
                echo "</div>";
             }
             for ($i = 0; $i < count($result); $i++) {
-               echo "<div class='col-lg-3 col-md-6 col-sm-10 text-light  d-flex justify-content-between align-items-center mx-3 my-2'>";
+               echo "<div class='col-lg-3 col-md-6 col-sm-10 text-light  d-flex justify-content-between align-items-center mx-5 my-2'>";
                echo "<div class='my-card' >";
                echo " <div class='my-card-img'>";
-               echo  "<img src='../../Admin/resource/img/book cover/" . $result[$i]["book_image"] . "' 
+               echo  "<img src='../../Images/" . $result[$i]["book_image"] . "' 
                     alt=''/>";
                echo "</div>";
                echo "<div class='my-card-info'>";
