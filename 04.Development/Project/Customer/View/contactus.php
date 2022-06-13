@@ -26,8 +26,8 @@
    <!-- Header -->
 
    <div class="container-fluid header d-flex justify-content-between align-items-center p-4 box">
-      <h3 class="ms-5">Contact Us</h3>
-      <div class="me-5"><b>Home</b> -> Contact Us</div>
+      <h3 class="ms-5">Contact us</h3>
+      <div class="me-5"><b>Home</b> -> Contact us</div>
    </div>
 
    <section class="container-fluid">
