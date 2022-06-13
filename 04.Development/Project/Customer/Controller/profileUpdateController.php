@@ -1,56 +1,44 @@
 <?php
 
+
+if (isset($_POST['send'])) {
+
+    $data = json_decode($_POST['send'], true);
+    $id = $data['userid'];
+    $username = $data['username'];
+    $phone = $data['userphone'];
+    $address = $data['useraddress'];
+    $customerinfor = [];
+}
 require "../../Admin/Model/DBConnection.php";
 
-if (isset($_POST['name']) ||   isset($_POST['phone']) || isset($_POST['address'])) {
 
-    $username = $_POST['name'];
-    $phone = $_POST['phone'];
-    $address = $_POST['address'];
-    // $array = [$username,$passowrd,$email,$phone,$address];
+// $array = [$username,$passowrd,$email,$phone,$address];
+// echo $username, $phone, $address;
+$db = new DBConnect();
+$dbconnect = $db->connect();
+$sql = $dbconnect->prepare(
+    "UPDATE m_user_list
+    SET user_name= :name,
+    user_phone= :phone,
+    user_address= :address
 
-    $db = new DBConnect();
-    $dbconnect = $db->connect();
+    WHERE id=:id;"
+);
+$sql->bindValue(":name", $username);
+$sql->bindValue(":phone", $phone);
+$sql->bindValue(":address", $address);
+$sql->bindValue(":id", $id);
+$sql->execute();
 
-    // $sql = $dbconnect->prepare("
-    //         SELECT id FROM m_user_list
-    //         WHERE user_email = :email;
-    //     ");
-    // $sql->bindValue(":email", $email);
-    // $sql->execute();
-    // $id = $sql->fetchAll(PDO::FETCH_ASSOC);
+$sql2 = $dbconnect->prepare(
+    "SELECT * FROM m_user_list WHERE del_flg=0 AND id=$id"
+);
 
-    // print_r(count($id));
-
-
-    // if (count($id) != 1) {
-    //    insert customer_lists table
-    $sql = $dbconnect->prepare("
-                INSERT INTO m_user_list(
-                    user_name,
-                    user_phone,
-                    user_address,
-                    user_valid,
-                    del_flg,
-                    create_date
-                )
-                VALUES(
-                    :name,
-                    :phone,
-                    :address,
-                    :valid,
-                    :d_flag,
-                    :create_date
-                );
-            ");
-    $sql->bindValue(":name", $username);
-    $sql->bindValue(":phone", $phone);
-    $sql->bindValue(":address", $address);
-    $sql->bindValue(":valid", 1);
-    $sql->bindValue(":d_flag", 0);
-    $sql->bindValue(":create_date", date("Y/m/d"));
-    $sql->execute();
-}
+$sql2->execute();
+$result = $sql2->fetchAll(PDO::FETCH_ASSOC);
+array_push($customerinfor, $result);
+print_r(json_encode($customerinfor));
 // } else {
 //     echo "no";
 // }

@@ -3,12 +3,13 @@ $(document).ready(function () {
     type: "post",
     url: "../Controller/newBooksFindController.php",
     success: function (data) {
+      console.log(data);
       let json = JSON.parse(data);
 
       for (const book of json) {
         $("#newsBookAppend").append(
           `
-        <div class="col-6 col-lg-3 col-xl-2   content">
+        <div class="col-6 col-lg-3 col-xl-2 content goBookDetail" id="${book.id}">
             <div class="card mb-5 mb-lg-0 card-width" style="min-height:65vh">
                <img src="../../Images/${book.book_image}" class="img-fluid  mx-auto mt-3 " alt="" width="80%" />
                <div class="card-body d-flex flex-column justify-content-center align-items-center">
@@ -41,6 +42,13 @@ $(document).ready(function () {
           // console.log("#star" + index);
         }
       }
+      $bookId = "";
+      $(".goBookDetail").click(function () {
+        $bookId = $(this).attr("id");
+
+        window.location.href =
+          "../../Customer/View/bookDetails.php?id=" + $bookId;
+      });
     },
   });
   //TOTAL BOOK SHOW
