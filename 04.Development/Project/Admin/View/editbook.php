@@ -64,7 +64,12 @@ if(!isset($_SESSION['username'])){
                                 <?php
                                     
                                     foreach ($authorList as $key => $val) {
-                                        echo "<option value='".$val['id']."' >" . $val['author_name'] . '</option>';
+                                        if ($val['author_name']==$result[0]['author_name']) {
+                                            echo "<option selected value='".$val['id']."' >" . $val['author_name'] . '</option>';
+                                        }else{
+                                            echo "<option value='".$val['id']."' >" . $val['author_name'] . '</option>';
+                                        }
+                                        
                                     }
                                     ?>
                                 </select>
