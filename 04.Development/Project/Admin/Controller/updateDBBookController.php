@@ -1,5 +1,7 @@
 <?php
 require_once "../Model/DBConnection.php";
+session_start();
+
 // Get Data from Add Book From
 if(isset($_POST)){
     $id = $_POST['id'];
@@ -12,6 +14,7 @@ if(isset($_POST)){
     $bookEstablished = $_POST['bookEsta'];
     $bookFile = $_POST['bookFile'];
     $bookDescription = $_POST['bookDes'];
+    $UserName=$_SESSION['username'];
 
     //Call DB Connection
     $db =  new DBConnect();
@@ -28,7 +31,8 @@ if(isset($_POST)){
             book_established = :est,
             book_description = :des,
             book_image = :bimage,
-            update_date =:updateDate
+            update_date =:updateDate,
+            update_by=:adminName
             WHERE id = :id"
     );
         $sql->bindValue(":name", $bookName);
@@ -42,6 +46,7 @@ if(isset($_POST)){
         $sql->bindValue(":bimage", $bookFile);
         $sql->bindValue(":updateDate", date("d/m/Y"));
         $sql->bindValue(":id", $id);
+        $sql->bindValue(":adminName", $UserName);
         $sql->execute();
     header ("Location: ../View/bookInfo.php");
 }

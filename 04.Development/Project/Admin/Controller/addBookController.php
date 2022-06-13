@@ -1,6 +1,8 @@
 <?php
 
 require_once "../Model/DBConnection.php";
+session_start();
+
 
 // Get Data from Insert Book From
 if (isset($_POST)) {
@@ -13,6 +15,7 @@ if (isset($_POST)) {
     $bookEstablished = $_POST['bookEsta'];
     // $bookimage = $_POST['bookImg'];
     $bookDescription = $_POST['bookDes'];
+    $UserName=$_SESSION['username'];
 
 
 
@@ -36,7 +39,8 @@ if (isset($_POST)) {
             book_established,
             book_description,
             book_image,
-            create_date
+            create_date,
+            create_by
             
         )
         VALUES (
@@ -49,7 +53,8 @@ if (isset($_POST)) {
             :best,
             :bdes,
             :path,
-            :create_date
+            :create_date,
+            :adminName
             )"
         );
 
@@ -63,6 +68,7 @@ if (isset($_POST)) {
         $sql->bindValue(":bdes", $bookDescription);
         $sql->bindValue(":path", $file);
         $sql->bindValue(":create_date", date("d/m/Y"));
+        $sql->bindValue(":adminName", $UserName);
 
         $sql->execute();
 

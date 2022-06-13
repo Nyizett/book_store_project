@@ -2,9 +2,10 @@
 session_start();
 if(!isset($_SESSION['username'])){
   header("Location: ../View/adminLogin.php");
-}else{
-    echo $_SESSION['username'];
 }
+// else{
+//     echo $_SESSION['username'];
+// }
 ?>
 <!DOCTYPE html>
 <html lang="en">

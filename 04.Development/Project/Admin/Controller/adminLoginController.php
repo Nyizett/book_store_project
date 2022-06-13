@@ -29,15 +29,15 @@ if(isset($_POST)){
 
     if(count($result) > 0){
 
-        $_SESSION["username"] = 2;
+        $_SESSION["username"] = $result[0]["admin_username"];
         // echo '<script>localStorage.setItem("name1", 1);</script>';
-        header("Location: ../View/dashboard.php?adname='".$dbname."'");
+        header("Location: ../View/dashboard.php");
 
     }else{
         // header("Location: ../View/adminLogin.php ");
-        if(isset($_SESSION['username'])){
-            unset($_SESSION['username']);
-        }
+        // if(isset($_SESSION['username'])){
+        //     unset($_SESSION['username']);
+        // }
         
         require "../View/adminLogin.php ";
         echo '<div class="text-center mt-2 text-danger fs-4">Wrong Username or Password.Login Again!</div>';
