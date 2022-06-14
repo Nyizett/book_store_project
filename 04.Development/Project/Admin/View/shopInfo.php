@@ -33,7 +33,7 @@ if(!isset($_SESSION['username'])){
             <div class="col-8 offset-3">
                 <!-- Yangon Shop List -->
                 <p class="h3 mt-4 ">Yangon Shop List</p>
-                <table class="table table-striped mt-3">
+                <table class="table table-striped table-sm mt-3">
                     <tr class="bg-danger">
                         <th>No</th>
                         <th class="col-1">Image</th>
@@ -94,7 +94,7 @@ if(!isset($_SESSION['username'])){
                         }
                         ?>
                     </table>
-                    <a href="../View/addShop.php" class="text-dec text-dark "><button class=" text-dec btn fw-bold custombutton btn-sm offset-10 col-2 mb-4">ADD SHOP</button></a>
+                    <a href="../View/addShop.php" class="text-dec text-dark ms-4"><button class="text-dec btn fw-bold custombutton btn-sm offset-10 col-2 mb-4 ">ADD SHOP</button></a>
                 </div>
 
                 <!-- Nay Pyi Taw Shop List -->
@@ -129,7 +129,7 @@ if(!isset($_SESSION['username'])){
                         ?>
 
                     </table>
-                    <a href="../View/addShop.php" class="text-dec text-dark "><button class=" text-dec btn fw-bold custombutton btn-sm offset-10 col-2 mb-4">ADD SHOP</button></a>
+                    <a href="../View/addShop.php" class="text-dec text-dark ms-5"><button class=" text-dec btn fw-bold custombutton btn-sm offset-10 col-2 mb-4">ADD SHOP</button></a>
                 </div>
             </div>
         </div>
