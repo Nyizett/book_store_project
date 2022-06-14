@@ -41,7 +41,7 @@ if (isset($_POST)) {
             book_image,
             create_date,
             create_by,
-            create_by_month
+            
             
         )
         VALUES (
