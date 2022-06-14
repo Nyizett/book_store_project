@@ -76,3 +76,10 @@
 .authorViewAll {
   background-color: var(--primary-darkblue) !important;
 }
+.asdf {
+  color: aqua !important;
+}
+.goBookDetail,
+.showAuthorsBooks {
+  cursor: pointer;
+}
