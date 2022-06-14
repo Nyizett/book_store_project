@@ -59,7 +59,7 @@
         <span id="cartCount2" class="badge rounded-pill bg-danger cartcount"></span>
       </div>
       <li class="nav-item dropdown mb-3 me-4">
-        <a class="text-white nav-link text-decoration-none" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <a class="text-white nav-link text-decoration-none mt-4" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           <ion-icon class="text-white  fs-4 person-hover" name="person-outline"></ion-icon>
         </a>
         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown" id="userLoginSignup">
