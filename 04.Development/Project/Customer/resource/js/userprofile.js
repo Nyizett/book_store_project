@@ -9,6 +9,9 @@ $(document).ready(function () {
     $("#phoneInput").val(arrayName.user_phone);
     $("#addressInput").val(arrayName.user_address);
     userid = arrayName.id;
+  } else {
+    alert("Login First");
+    window.location.href = "../../Customer/View/homepage.php";
   }
 
   $("#signUpForm").on("submit", function (e) {
