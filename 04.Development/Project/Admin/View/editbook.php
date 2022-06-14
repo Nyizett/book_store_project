@@ -11,7 +11,8 @@ if(!isset($_SESSION['username'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Book</title>
+    <title>Edit Book</title>
+    <link rel="shortcut icon" href="../../Images/<?php require_once "../Controller/changeWebfavIconController.php";echo $result[0]['fav_icon']; ?>" type="image/x-icon" width="100vw" />
     <link rel="stylesheet" href="../resource/UI Library/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../resource/css/style.css" />
     <link rel="stylesheet" href="../resource/css/common.css">
@@ -46,7 +47,12 @@ if(!isset($_SESSION['username'])){
                                     require "../Controller/bookIDController.php";
 
                                     foreach ($categoryList as $key => $val) {
-                                        echo "<option value='" . $val['id'] . "' >" . $val['category_name'] . '</option>';
+                                        if ($val['category_name']==$result[0]['category_name']) {
+                                            echo "<option selected value='".$val['id']."' >" . $val['category_name'] . '</option>';
+                                        }else{
+                                            echo "<option value='".$val['id']."' >" . $val['category_name'] . '</option>';
+                                        }
+                                        
                                     }
                                     ?>
 
@@ -64,7 +70,12 @@ if(!isset($_SESSION['username'])){
                                 <?php
                                     
                                     foreach ($authorList as $key => $val) {
-                                        echo "<option value='".$val['id']."' >" . $val['author_name'] . '</option>';
+                                        if ($val['author_name']==$result[0]['author_name']) {
+                                            echo "<option selected value='".$val['id']."' >" . $val['author_name'] . '</option>';
+                                        }else{
+                                            echo "<option value='".$val['id']."' >" . $val['author_name'] . '</option>';
+                                        }
+                                        
                                     }
                                     ?>
                                 </select>

@@ -1,45 +1,44 @@
 $(document).ready(function () {
   var getJson = localStorage.getItem("user");
+  var userid;
   if (getJson) {
     arrayName = JSON.parse(getJson);
     $("#usernameInput").val(arrayName.user_name);
-    $("#emailInput").val(arrayName.user_email);
+
     // $("#passwordInput").val(arrayName.user_name);
     $("#phoneInput").val(arrayName.user_phone);
     $("#addressInput").val(arrayName.user_address);
+    userid = arrayName.id;
+  } else {
+    alert("Login First");
+    window.location.href = "../../Customer/View/homepage.php";
   }
 
   $("#signUpForm").on("submit", function (e) {
     e.preventDefault();
-
+    var userName = $("#usernameInput").val();
+    var userPhone = $("#phoneInput").val();
+    var userAddress = $("#addressInput").val();
+    let idData = {
+      userid: userid,
+      username: userName,
+      userphone: userPhone,
+      useraddress: userAddress,
+    };
     $.ajax({
-      type: "POST",
+      type: "post",
       url: "../Controller/profileUpdateController.php",
-      data: new FormData(this),
-      contentType: false,
-      cache: false,
-      processData: false,
+      data: { send: JSON.stringify(idData) },
       success: function (res) {
+        let responData = JSON.parse(res);
         console.log(res);
-        // if (res != 1) {
-        //   Swal.fire({
-        //     position: "center",
-        //     icon: "success",
-        //     title: "Updated",
-        //     timer: 5000,
-        //   });
-        // } else {
-        //   Swal.fire({
-        //     icon: "error",
-        //     title: "Oops...",
-        //     text: "Your email already has been created!",
-        //   });
-        //   $("#emailInput").css("border-color", "red");
-        // }
+        localStorage.setItem("user", JSON.stringify(responData[0][0]));
       },
       error: function (err) {
         console.log(err);
       },
     });
+    location.reload();
+    // window.location.href = "../../Customer/View/homepage.php";
   });
 });

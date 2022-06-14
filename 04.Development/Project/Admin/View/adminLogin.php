@@ -6,6 +6,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Admin Login</title>
+   <link rel="shortcut icon" href="../../Images/<?php require_once "../Controller/changeWebfavIconController.php";echo $result[0]['fav_icon']; ?>" type="image/x-icon" width="100vw" />
    <link rel="stylesheet" href="../resource/UI Library/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
    <link rel="stylesheet" href="../resource/css/style.css" />
    <link rel="stylesheet" href="../resource/css/adminLogin.css" />
@@ -31,7 +32,7 @@
             <span class="input-group-text" id="addon-wrapping">
                <ion-icon name="lock-open-outline"></ion-icon>
             </span>
-            <input type="password" class="form-control" id="psd" name="pswd" placeholder="Enter password">
+            <input type="password" class="form-control" id="psd" name="pswd" placeholder="Password">
          </div>
          <div class="d-grid mt-5">
             <button type="submit" class="btn btn-primary btn-block btn-lg fw-bold mt-3" id="lgbtn">Login</button>

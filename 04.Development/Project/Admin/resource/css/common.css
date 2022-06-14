@@ -23,6 +23,10 @@
 .logout:focus {
   background-color: var(--dashboard-items-color);
 }
+.webNameText{
+      font-size:1em;
+      
+}
 .custombutton {
   background-color: var(--btn-color);
   color: var(--color-black);
@@ -36,12 +40,17 @@
 }
 .navBtnGp1{
   width: 145%;
+  align-items: center;
+  justify-content: center;
 }
 .navBtnGp2{
   width: 155%;
 }
 .navBtnGp3{
   width: 143%;
+}
+.dellog{
+  display: none;
 }
 .navBtnGp4{
   width: 154%;
@@ -59,7 +68,7 @@
   width: 178%;
 }
 .logout {
-  width: 272%;
+  width: 218%;
 }
 
 /* Table Text */
@@ -94,7 +103,7 @@
   .my-img {
     width: 100%;
   }
-  .webName{
+  .webNameT,.webNameText,.webNamelg{
     display: none;
   }
   .box1 {
@@ -112,8 +121,15 @@
     font-weight: 800;
   }
   .navBtnGp1,.navBtnGp2,.navBtnGp3,.navBtnGp4,
-  .navBtnGp5,.navBtnGp6,.navBtnGp7,.navBtnGp8{
+  .navBtnGp5,.navBtnGp6,.navBtnGp7,.navBtnGp8,.logout{
     width: 50px;
 
+  }
+  .icons {
+    padding-right: 25px;
+    padding-top: 3px;
+  }
+  .dellog{
+    display: block;
   }
 }

@@ -15,6 +15,7 @@ if(!isset($_SESSION['username'])){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+    <link rel="shortcut icon" href="../../Images/<?php require_once "../Controller/changeWebfavIconController.php";echo $result[0]['fav_icon']; ?>" type="image/x-icon" width="100vw" />
     <link rel="stylesheet" href="../resource/UI Library/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../resource/css/style.css" />
     <link rel="stylesheet" href="../resource/css/dashboard.css" />
@@ -43,7 +44,7 @@ if(!isset($_SESSION['username'])){
                     <!-- <div class="top">
                         <ion-icon name="person" class="fs-2 text-primary"></ion-icon>
                     </div> -->
-                    <div class="top"><a href="../../Customer/View/signup.php" class="me-md-4 text-dec text-dark fs-5">CustomerPage</a></div>
+                    <div class="top"><a href="../../Customer/View/homepage.php" class="me-md-4 text-dec text-dark fs-5">CustomerPage &#8594;</a></div>
                 </div>
                 <div class="box">
                     <div class="box1">
@@ -95,10 +96,10 @@ if(!isset($_SESSION['username'])){
                             echo "<tr class=tb-text>";
                             echo "<td>" . $no++ . "</td>";
                             echo "<td >" . $value['user_name'] . "</td>";
-                            echo "<td >" . date("d/m/Y") . "</td>";
-                            echo "<td >" . $value['total_amount'] . "</td>";
+                            echo "<td >" . $value['create_date'] . "</td>";
+                            echo "<td >" .number_format( $value['total_amount'])." MMK" . "</td>";
                             echo "<td >" . $value['user_address'] . "</td>";
-                            echo "<td >" . $value['delivery_fees'] . "</td>";
+                            echo "<td >" . number_format( $value['delivery_fees'])." MMK" . "</td>";
                         }
                         ?>
 
