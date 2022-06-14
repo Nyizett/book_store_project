@@ -11,8 +11,8 @@ $(document).ready(function () {
           `
         <div class="col-6 col-lg-3 col-xl-2 content goBookDetail" id="${book.id}">
             <div class="card mb-5 mb-lg-0 card-width" style="min-height:65vh">
-               <img src="../../Images/${book.book_image}" class="img-fluid  mx-auto mt-3 " alt="" width="80%" />
-               <div class="card-body d-flex flex-column justify-content-center align-items-center">
+              <img src="../../Images/${book.book_image}" class="img-fluid  mx-auto mt-3 " alt="" width="80%" />
+              <div class="card-body d-flex flex-column justify-content-center align-items-center">
                   <p class="card-title fw-bold  font-color-primary">${book.book_name}</p>
                   <small class="my-2">
                   <i class="fa-solid fa-star star0" ></i>
@@ -22,14 +22,14 @@ $(document).ready(function () {
                   <i class="fa-solid fa-star star4" ></i>
                   </small>
                   <small class="card-text  d-block mb-3 font-color-secondary ">
-                     ${book.author_name}
+                    ${book.author_name}
                   </small>
                   <div class="d-flex d justify-content-between align-items-center">
-                     <p class="fw-bold mb-0 font-color-primary">${book.book_price} MMK</p>
+                    <p class="fw-bold mb-0 font-color-primary">${book.book_price} MMK</p>
                   </div>
-               </div>
+              </div>
             </div>
-         </div>
+        </div>
         `
         );
         for (let index = 0; index < book.rating; index++) {

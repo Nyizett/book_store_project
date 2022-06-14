@@ -12,6 +12,7 @@ if(!isset($_SESSION['username'])){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order Detail</title>
+    <link rel="shortcut icon" href="../../Images/<?php require_once "../Controller/changeWebfavIconController.php";echo $result[0]['fav_icon']; ?>" type="image/x-icon" width="100vw" />
     <link rel="stylesheet" href="../resource/UI Library/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../resource/css/style.css" />
     <link rel="stylesheet" href="../resource/css/common.css">
@@ -48,7 +49,7 @@ if(!isset($_SESSION['username'])){
                         $dbconnect = $db->connect();
 
                         $sql = $dbconnect->prepare(
-                       "SELECT * FROM `m_order_details` 
+                       "SELECT m_book.book_name,m_book.book_price,m_order_details.order_d_quantity,m_order_details.total_amount FROM `m_order_details` 
                         LEFT JOIN m_book ON m_order_details.book_id =m_book.id 
                         WHERE m_order_details.user_id=:id ; "
                         );

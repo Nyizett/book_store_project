@@ -1,5 +1,7 @@
 <?php
 require_once "../Model/DBConnection.php";
+session_start();
+
 // Get Data from Add Shop From
 if(isset($_POST)){
     $id = $_POST['id'];
@@ -9,7 +11,7 @@ if(isset($_POST)){
     $shopWebsite= $_POST['shopWeb'];
     $shopImage  = $_POST['shopImage'];
     $shopAddress= $_POST['shopAddress'];
-
+    $UserName=$_SESSION['username'];
     //Call DB Connection
     $db =  new DBConnect();
     $dbconnect = $db->connect();
@@ -22,7 +24,8 @@ if(isset($_POST)){
             shop_address= :address,
             shop_phone_no = :phone,
             shop_website = :web,
-            update_date =:updateDate
+            update_date=:todayDate,
+            update_by=:adminName
             WHERE id = :id"
     );
     $sql->bindValue(":city", $shopCity );
@@ -31,7 +34,8 @@ if(isset($_POST)){
     $sql->bindValue(":address", $shopAddress);
     $sql->bindValue(":phone", $shopPhone );
     $sql->bindValue(":web", $shopWebsite);
-    $sql->bindValue(":updateDate", date("d/m/Y"));
+    $sql->bindValue(":todayDate", date("d/m/Y"));
+    $sql->bindValue(":adminName", $UserName);
     $sql->bindValue(":id", $id);
     $sql->execute();
     header ("Location: ../View/shopInfo.php");

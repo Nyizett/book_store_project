@@ -12,6 +12,7 @@ if(!isset($_SESSION['username'])){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Shop</title>
+    <link rel="shortcut icon" href="../../Images/<?php require_once "../Controller/changeWebfavIconController.php";echo $result[0]['fav_icon']; ?>" type="image/x-icon" width="100vw" />
     <link rel="stylesheet" href="../resource/UI Library/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../resource/css/style.css" />
     <link rel="stylesheet" href="../resource/css/common.css">
@@ -36,9 +37,9 @@ if(!isset($_SESSION['username'])){
                             
                                 <label for="email" class="form-label">Shop</label><br>
                                 <select name="shopCity" id="" class="custombutton btn btn-white col-12">
-                                    <option class="custombutton" value="Yangon">Yangon</option>
-                                    <option class="custombutton" value="Mandalay">Mandalay</option>
-                                    <option class="custombutton" value="NayPyiTaw">NayPyiTaw</option>
+                                    <option  class="custombutton" value="Yangon">Yangon</option>
+                                    <option  class="custombutton" value="Mandalay">Mandalay</option>
+                                    <option  class="custombutton" value="NayPyiTaw">NayPyiTaw</option>
                                 </select>
                             </div>
                             <div class="col mb-3 mt-3 ms-4">
