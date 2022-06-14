@@ -1,7 +1,16 @@
 $(document).ready(function() {
 $('.count').prop('disabled', true);
 let total = [];
-   
+let vouchers = $('.vouchers').length;
+if(vouchers == 1){
+    let qty = $('#qty').val(); 
+    let p_price = $('.b_price').text().replaceAll(',','');
+    let sum =  qty * p_price;
+    console.log(sum);
+    $('.total').text(numberWithCommas(sum));
+}
+
+
 totalPrice(total);
 $(document).on('click', '.plus', function() {
 
@@ -126,18 +135,21 @@ $(document).on('click', '.minus', function() {
             // console.log('hello');
             let  items = [];
             let length = $('.vouchers').length;
-            console.log(length);
+            // console.log(length);
             // let length = $('.')
             if(localStorage.getItem('user') != null){
                 if(length > 0){
                     $('.vouchers').each(function(){
-                        // console.log($('.dfee').attr('id'));
+                        // console.log($('.dfee[id]'));
+                let qty = Number($(this).children(".cal").children('.bookquantity').text());
+                let price =  Number($(this).children(".cal").children('.bookprice').text().replaceAll(',',''));
+                let total = qty * price;
                     let item = {
                         "id" : this.id,
                         "delivery_fee_id" : $('.dfee').attr('id'),
                         "book_name" : $(this).children('.bookname').text(),
                         "quantity" : $(this).children(".cal").children('.bookquantity').text(),
-                        "book_price" : $(this).children(".cal").children('.bookprice').text(),
+                        "book_price" : numberWithCommas(total),
                     };
     
                     // console.log(item['id']);

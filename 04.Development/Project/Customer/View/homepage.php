@@ -38,8 +38,8 @@
 
          <div class="col-12 col-lg-5 mt-5 pt-4 ms-5">
             <div class="pt-5 ps-5 content mt-5 ">
-               <h3 class="font-color-primary">CHOOSE YOUR BRAIN FOOD</h3>
-               <h1 class="fw-bold text-primary">BOOK IN STORE</h1>
+               <h3 class="font-color-primary" id="headerFirstText"></h3>
+               <h1 class="fw-bold text-primary" id="headerSecondText"></h1>
                <p class="">Language / Education / Novels / Technology / Cartoons</p>
                <a class="btn commom-bg text-white btn-lg shop-now fs-6" href="#">SHOP NOW</a>
             </div>
@@ -59,7 +59,7 @@
                   </div>
                   <div class="col-9">
                      <p class="text-white m-0 pt-3">24/7 CUSTOMER SUPPORT</p>
-                     <p class="text-white m-0 pb-3">09:9999999999</p>
+                     <p class="text-white m-0 pb-3" id="HeaderPhoneNumber"></p>
                   </div>
                </div>
             </div>
@@ -99,8 +99,8 @@
       </div>
    </section>
    <!-- NEW BOOK -->
-   <section class="container my-5 vh-100" id="newsBooks">
-      <div class="row justify-content-evenly align-items-center" id="newsBookAppend">
+   <section class="container my-5  vh-100" id="newsBooks">
+      <div class="row justify-content-evenly align-items-center " id="newsBookAppend">
          <div class="my-5"></div>
          <hr class=" content">
          <div class="col-12  content">
@@ -111,11 +111,12 @@
             </div>
          </div>
 
+
       </div>
    </section>
    <!-- Best selling books Start -->
-   <section class="container bg-lightBlue my-5 " id="">
-      <div class="row justify-content-evenly h-100 content ">
+   <section class="container bg-lightBlue my-5 mt-3">
+      <div class="row justify-content-evenly h-100 content " id="bestSellingBookAppend">
          <div class="my-5"></div>
          <div class="col-12">
             <div class="my-5 content">
@@ -126,271 +127,20 @@
                </div>
             </div>
          </div>
-         <div class="col-6 col-lg-3 col-xl-2 mb-5 mx-3">
-            <div class="card mb-5 mb-lg-0 card-width bg-lightBlue border-0 content">
-               <img src="../resource/img/book cover/language2.jpg" class="img-fluid mx-auto mt-3" width="90%" alt="" />
-               <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                  <p class="card-title fw-bold mb-0 font-color-primary">
-                     JavaScript
-                  </p>
-                  <small>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                  </small>
-                  <small class="card-text d-block mb-3 font-color-secondary">
-                     Ei Maung
-                  </small>
-                  <div class="d-flex d justify-content-between align-items-center">
-                     <p class="fw-bold mb-0 font-color-primary">5000 MMK</p>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="col-6 col-lg-3 col-xl-2 mb-5 mx-3">
-            <div class="card mb-5 mb-lg-0 card-width bg-lightBlue border-0 content">
-               <img src="../resource/img/book cover/language2.jpg" class="img-fluid mx-auto mt-3" width="90%" alt="" />
-               <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                  <p class="card-title fw-bold mb-0 font-color-primary">
-                     JavaScript
-                  </p>
-                  <small>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                  </small>
-                  <small class="card-text d-block mb-3 font-color-secondary">
-                     Ei Maung
-                  </small>
-                  <div class="d-flex d justify-content-between align-items-center">
-                     <p class="fw-bold mb-0 font-color-primary">5000 MMK</p>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="col-6 col-lg-3 col-xl-2 mb-5 mx-3">
-            <div class="card mb-5 mb-lg-0 card-width bg-lightBlue border-0 content">
-               <img src="../resource/img/book cover/language2.jpg" class="img-fluid mx-auto mt-3" width="90%" alt="" />
-               <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                  <p class="card-title fw-bold mb-0 font-color-primary">
-                     JavaScript
-                  </p>
-                  <small>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                  </small>
-                  <small class="card-text d-block mb-3 font-color-secondary">
-                     Ei Maung
-                  </small>
-                  <div class="d-flex d justify-content-between align-items-center">
-                     <p class="fw-bold mb-0 font-color-primary">5000 MMK</p>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="col-6 col-lg-3 col-xl-2 mb-5 mx-3">
-            <div class="card mb-5 mb-lg-0 card-width bg-lightBlue border-0 content">
-               <img src="../resource/img/book cover/language2.jpg" class="img-fluid mx-auto mt-3" width="90%" alt="" />
-               <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                  <p class="card-title fw-bold mb-0 font-color-primary">
-                     JavaScript
-                  </p>
-                  <small>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                  </small>
-                  <small class="card-text d-block mb-3 font-color-secondary">
-                     Ei Maung
-                  </small>
-                  <div class="d-flex d justify-content-between align-items-center">
-                     <p class="fw-bold mb-0 font-color-primary">5000 MMK</p>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="col-6 col-lg-3 col-xl-2 mb-5 mx-3">
-            <div class="card mb-5 mb-lg-0 card-width bg-lightBlue border-0 content">
-               <img src="../resource/img/book cover/language2.jpg" class="img-fluid mx-auto mt-3" width="90%" alt="" />
-               <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                  <p class="card-title fw-bold mb-0 font-color-primary">
-                     JavaScript
-                  </p>
-                  <small>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                  </small>
-                  <small class="card-text d-block mb-3 font-color-secondary">
-                     Ei Maung
-                  </small>
-                  <div class="d-flex d justify-content-between align-items-center">
-                     <p class="fw-bold mb-0 font-color-primary">5000 MMK</p>
-                  </div>
-               </div>
-            </div>
-         </div>
+      </div>
    </section>
    <!-- Best selling books end -->
    <!-- Popular Books start -->
    <section class="container my-5 ">
       <div class="row">
-         <div class="col-12">
+         <div class="col-12 ">
             <h1 class="font-color-primary ms-5 ">Popular Books</h1>
          </div>
       </div>
-      <div class="row justify-content-evenly content mt-3">
-         <div class="col-6 col-lg-3 col-xl-2 my-3 mx-3">
-            <div class="card mb-5 mb-lg-0 card-width bg-lightBlue border-1 content">
-               <img src="../resource/img/book cover/language2.jpg" class="img-fluid mx-auto mt-3" width="90%" alt="" />
-               <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                  <p class="card-title fw-bold mb-0 font-color-primary">
-                     JavaScript
-                  </p>
-                  <small>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                  </small>
-                  <small class="card-text d-block mb-3 font-color-secondary">
-                     Ei Maung
-                  </small>
-                  <div class="d-flex d justify-content-between align-items-center">
-                     <p class="fw-bold mb-0 font-color-primary">5000 MMK</p>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="col-6 col-lg-3 col-xl-2 my-3 mx-3">
-            <div class="card mb-5 mb-lg-0 card-width bg-lightBlue border-1 content">
-               <img src="../resource/img/book cover/language2.jpg" class="img-fluid mx-auto mt-3" width="90%" alt="" />
-               <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                  <p class="card-title fw-bold mb-0 font-color-primary">
-                     JavaScript
-                  </p>
-                  <small>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                  </small>
-                  <small class="card-text d-block mb-3 font-color-secondary">
-                     Ei Maung
-                  </small>
-                  <div class="d-flex d justify-content-between align-items-center">
-                     <p class="fw-bold mb-0 font-color-primary">5000 MMK</p>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="col-6 col-lg-3 col-xl-2 my-3 mx-3">
-            <div class="card mb-5 mb-lg-0 card-width bg-lightBlue border-1 content">
-               <img src="../resource/img/book cover/language2.jpg" class="img-fluid mx-auto mt-3" width="90%" alt="" />
-               <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                  <p class="card-title fw-bold mb-0 font-color-primary">
-                     JavaScript
-                  </p>
-                  <small>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                  </small>
-                  <small class="card-text d-block mb-3 font-color-secondary">
-                     Ei Maung
-                  </small>
-                  <div class="d-flex d justify-content-between align-items-center">
-                     <p class="fw-bold mb-0 font-color-primary">5000 MMK</p>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="col-6 col-lg-3 col-xl-2 my-3 mx-3">
-            <div class="card mb-5 mb-lg-0 card-width bg-lightBlue border-1 content">
-               <img src="../resource/img/book cover/language2.jpg" class="img-fluid mx-auto mt-3" width="90%" alt="" />
-               <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                  <p class="card-title fw-bold mb-0 font-color-primary">
-                     JavaScript
-                  </p>
-                  <small>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                  </small>
-                  <small class="card-text d-block mb-3 font-color-secondary">
-                     Ei Maung
-                  </small>
-                  <div class="d-flex d justify-content-between align-items-center">
-                     <p class="fw-bold mb-0 font-color-primary">5000 MMK</p>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="col-6 col-lg-3 col-xl-2 my-3 mx-3">
-            <div class="card mb-5 mb-lg-0 card-width bg-lightBlue border-1 content">
-               <img src="../resource/img/book cover/language2.jpg" class="img-fluid mx-auto mt-3" width="90%" alt="" />
-               <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                  <p class="card-title fw-bold mb-0 font-color-primary">
-                     JavaScript
-                  </p>
-                  <small>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star text-warning"></i>
-                     <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                  </small>
-                  <small class="card-text d-block mb-3 font-color-secondary">
-                     Ei Maung
-                  </small>
-                  <div class="d-flex d justify-content-between align-items-center">
-                     <p class="fw-bold mb-0 font-color-primary">5000 MMK</p>
-                  </div>
-               </div>
-            </div>
-         </div>
+      <div class="row justify-content-evenly mt-3" id="popularBookAppend">
+
 
       </div>
-      <!-- <div class="row justify-content-evenly content">
-         <div class="mt-5 mx-2">
-            <img src="../resource/img/book cover/jsEi.png" class="img-fluid  mx-auto mt-3" width="15%" alt="" />
-            <div class="card-body d-flex flex-column justify-content-center align-items-center">
-               <p class="card-title fw-bold mb-0 font-color-primary">
-                  JavaScript
-               </p>
-               <small>
-                  <i class="fa-solid fa-star text-warning"></i>
-                  <i class="fa-solid fa-star text-warning"></i>
-                  <i class="fa-solid fa-star text-warning"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-               </small>
-               <small class="card-text d-block mb-3 font-color-secondary">
-                  Ei Maung
-               </small>
-               <div class="d-flex d justify-content-between align-items-center">
-                  <p class="fw-bold mb-0 font-color-primary">5000 MMK</p>
-               </div>
-            </div>
-         </div>
-      </div> -->
    </section>
    <section class="container py-5">
       <div class="row">
@@ -401,31 +151,8 @@
             <button class="btn authorViewAll"><a href="../View/author.php" class="text-white text-decoration-none"> View All</a></button>
          </div>
       </div>
-      <div class="row mt-5">
-         <div class="col-12 col-lg-2">
-            <img src="../resource/img/author.png" class="img-fluid" alt="">
-            <p class="font-color-primary fw-bold text-center pt-2">Min Thein Kha</p>
-         </div>
-         <div class="col-12 col-lg-2">
-            <img src="../resource/img/author.png" class="img-fluid" alt="">
-            <p class="font-color-primary fw-bold text-center pt-2">Min Thein Kha</p>
-         </div>
-         <div class="col-12 col-lg-2">
-            <img src="../resource/img/author.png" class="img-fluid" alt="">
-            <p class="font-color-primary fw-bold text-center pt-2">Min Thein Kha</p>
-         </div>
-         <div class="col-12 col-lg-2">
-            <img src="../resource/img/author.png" class="img-fluid" alt="">
-            <p class="font-color-primary fw-bold text-center pt-2">Min Thein Kha</p>
-         </div>
-         <div class="col-12 col-lg-2">
-            <img src="../resource/img/author.png" class="img-fluid" alt="">
-            <p class="font-color-primary fw-bold text-center pt-2">Min Thein Kha</p>
-         </div>
-         <div class="col-12 col-lg-2">
-            <img src="../resource/img/author.png" class="img-fluid" alt="">
-            <p class="font-color-primary fw-bold text-center pt-2">Min Thein Kha</p>
-         </div>
+      <div class="row mt-5" id="favouriteAuthorAppend">
+
       </div>
    </section>
    <section id="blueBox" class="container mt-5">
@@ -469,7 +196,7 @@
                      </button>
                   </div>
                   <div class="col-9 ps-4">
-                     <p class=" m-0 pt-3 fw-bold fs-4 counter-one">100</p>
+                     <p class=" m-0 pt-3 fw-bold fs-4 counter-one" id="totalSoldBooksShow"></p>
                      <p class=" m-0 pb-3">Sold Books</p>
                   </div>
                </div>
@@ -504,6 +231,7 @@
    <script src="../resource/UI Library/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
    <script src="../resource/UI Library/fontawesome-free/js/all.min.js"></script>
    <script src="https://unpkg.com/scrollreveal"></script>
    <script src="../resource/UI Library/way_point/noframework.waypoints.js"></script>
@@ -520,7 +248,7 @@
 
       $(".counter-one").counterUp({
          delay: 10,
-         time: 1500
+         time: 2000
       })
 
 
@@ -536,7 +264,7 @@
          duration: 1000,
          reset: true,
       }).reveal('.content', {
-         interval: 200
+         interval: 100
       });
 
 

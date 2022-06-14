@@ -73,7 +73,7 @@ $(document).ready(function() {
     $('.cartbtn').click(function(){
         let books = [];
      let book = [];
-        let image = $('.bookimage').attr('src').substr(-13);
+        let image = $('.bookimage').attr('id');
         
             let data ={
                 "id" : id,
