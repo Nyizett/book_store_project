@@ -23,6 +23,10 @@
 .logout:focus {
   background-color: var(--dashboard-items-color);
 }
+.webNameText{
+      font-size:1em;
+      
+}
 .custombutton {
   background-color: var(--btn-color);
   color: var(--color-black);
@@ -64,7 +68,7 @@
   width: 178%;
 }
 .logout {
-  width: 252%;
+  width: 218%;
 }
 
 /* Table Text */
@@ -99,7 +103,7 @@
   .my-img {
     width: 100%;
   }
-  .webName{
+  .webNameT,.webNameText,.webNamelg{
     display: none;
   }
   .box1 {

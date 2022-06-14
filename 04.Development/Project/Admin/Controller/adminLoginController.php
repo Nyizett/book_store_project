@@ -2,7 +2,7 @@
 require_once "../Model/DBConnection.php";
 session_start();
 $dbname=1;
-// Get Data from Add Book From
+// Get Data from Add Admin From
 if(isset($_POST)){
     $Name = $_POST['username'];
     $Password = $_POST['pswd'];
