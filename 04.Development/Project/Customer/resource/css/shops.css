@@ -14,14 +14,14 @@ img{
 }
 .my-card {
     border: 0.5px solid #ccc;
-    
 }
+
 .my-card-img {
     width: 100%;
     background-color: var(--accent-color);
     padding: 20px 40px;
     text-align: center;
-    
+    height: 500px;
 }
 .my-card-img img {
     width: 100%;
