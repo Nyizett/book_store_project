@@ -1,11 +1,15 @@
 .form-control-borderless {
-   border: none;
+  border: none;
 }
 
 .form-control-borderless:hover,
 .form-control-borderless:active,
 .form-control-borderless:focus {
-   border: none;
-   outline: none;
-   box-shadow: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+.viewBook {
+  background-color: var(--primary-darkblue);
+  color: white;
 }

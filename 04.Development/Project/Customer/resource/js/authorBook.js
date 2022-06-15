@@ -65,6 +65,22 @@ $(document).ready(function () {
 function shopCart() {
   console.log(books);
 
-  let data = JSON.stringify(books);
-  window.location.href = `../../Customer/Controller/cartListController.php?data=${data}`;
+  if (localStorage.getItem("user") != null) {
+    let data = JSON.stringify(books);
+    let user = JSON.parse(localStorage.getItem("user"));
+    let deliver = {
+      address: user["user_address"],
+    };
+    window.location.href = `../../Customer/Controller/cartListController.php?data=${data}&address=${JSON.stringify(
+      deliver
+    )}`;
+  } else {
+    let data = JSON.stringify(books);
+    let deliver = {
+      address: "Default",
+    };
+    window.location.href = `../../Customer/Controller/cartListController.php?data=${data}&address=${JSON.stringify(
+      deliver
+    )}`;
+  }
 }
