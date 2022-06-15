@@ -16,9 +16,11 @@ if(!isset($_SESSION['username'])){
   <link rel="stylesheet" href="../resource/UI Library/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="../resource/css/style.css" />
   <link rel="stylesheet" href="../resource/css/addFaqs.css" />
+  <link rel="stylesheet" href="../resource/css/common.css" />
   <script src="../resource/UI Library/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
   <script src="../resource/js/setting.js"></script>
   <script src="../resource/UI Library/jquery-3.3.1.min.js"></script>
+  <script src="../resource/js/common.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
@@ -44,7 +46,7 @@ if(!isset($_SESSION['username'])){
             <input type="text" value="<?php echo $result[0]['delivery_fees'] . ",000"; ?>" class="customstyle form-control" id="exampleFormControlInput1" name="dprice">
           </div>
 
-          <button class="custombutton btn btn-sm offset-10 mt-3 fw-bold">SAVE</button>
+          <button class="custombutton btn btn-sm offset-10 col-2 mt-3 fw-bold ">SAVE</button>
 
         </div>
       </form>

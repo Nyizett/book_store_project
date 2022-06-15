@@ -45,7 +45,7 @@ if(!isset($_SESSION['username'])){
               <textarea class="customstyle form-control" id="exampleFormControlTextarea1" rows="3" name="serviceparg"></textarea>
             </div>
 
-            <button class="custombutton btn btn-sm offset-10 mt-3 fw-bold">ADD SERVICES</button>
+            <button class="custombutton btn btn-sm offset-10 col-2 mt-3 fw-bold">ADD SERVICE</button>
 
           </div>
         </form>

@@ -46,7 +46,7 @@ if(!isset($_SESSION['username'])){
               <input type="type" class="customstyle form-control" id="exampleFormControlInput1" name="deliprice">
             </div>
 
-            <button type="submit" class="custombutton btn btn-sm offset-9 mt-3 fw-bold col-3">ADD DELIVERY FEE</button>
+            <button type="submit" class="custombutton btn btn-sm-2  mt-3 fw-bold col-12">ADD DELIVERY FEE</button>
 
           </div>
         </form>

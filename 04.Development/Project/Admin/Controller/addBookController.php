@@ -40,9 +40,7 @@ if (isset($_POST)) {
             book_description,
             book_image,
             create_date,
-            create_by,
-            
-            
+            create_by
         )
         VALUES (
             :bname,

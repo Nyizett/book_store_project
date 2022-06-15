@@ -1,7 +1,7 @@
 <?php
 session_start();
-if(!isset($_SESSION['username'])){
-  header("Location: ../View/adminLogin.php");
+if (!isset($_SESSION['username'])) {
+    header("Location: ../View/adminLogin.php");
 }
 ?>
 <!DOCTYPE html>
@@ -12,7 +12,8 @@ if(!isset($_SESSION['username'])){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Community</title>
-    <link rel="shortcut icon" href="../../Images/<?php require_once "../Controller/changeWebfavIconController.php";echo $result[0]['fav_icon']; ?>" type="image/x-icon" width="100vw" />
+    <link rel="shortcut icon" href="../../Images/<?php require_once "../Controller/changeWebfavIconController.php";
+                                                    echo $result[0]['fav_icon']; ?>" type="image/x-icon" width="100vw" />
     <link rel="stylesheet" href="../resource/UI Library/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../resource/css/style.css" />
     <link rel="stylesheet" href="../resource/css/shopInfo.css" />
@@ -38,7 +39,7 @@ if(!isset($_SESSION['username'])){
                             <th class="col-1">No</th>
                             <th class="col-2">Name</th>
                             <th class="col-3 ">Email</th>
-                            <th class="col-6">message</th>
+                            <th class="col-6">Message</th>
                         </tr>
                         <?php
                         $count = 1;
@@ -62,10 +63,10 @@ if(!isset($_SESSION['username'])){
                         <tr class="tb-text bg-danger">
                             <th class="col-1">No</th>
                             <th class="col-1">Name</th>
-                            <th class="col-1">Book</th>
+                            <th class="col-2">Book</th>
                             <th class="col-2">Category</th>
                             <th class="col-1">Rating</th>
-                            <th class="col-6">Comment</th>
+                            <th class="col-4">Comment</th>
                         </tr>
                         <?php
                         $count = 1;
