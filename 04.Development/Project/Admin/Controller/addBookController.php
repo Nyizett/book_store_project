@@ -67,7 +67,7 @@ if (isset($_POST)) {
         $sql->bindValue(":bdes", $bookDescription);
         $sql->bindValue(":path", $file);
         $sql->bindValue(":create_date", date("d/m/Y"));
-        $sql->bindValue(":create_by_month", date("m/Y"));
+        
         $sql->bindValue(":adminName", $UserName);
 
         $sql->execute();

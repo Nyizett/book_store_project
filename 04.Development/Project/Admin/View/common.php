@@ -6,7 +6,7 @@
     <div class="webNameT fs-4 text-light text-center fw-bold "><?php echo $result[0]['web_name']; ?></div>
     <div class="webNameText text-light text-center">Book Store</div>
     <div class="pacustom btn-group-vertical container-fluid  align-self-center">
-        <a href="dashboard.php" class=" text-dec text-dark"><button type="button" class="navBtnGp1 col-12 btn btn-light   mt-3 overflow-hidden ">
+        <a href="dashboard.php" class="text-dec text-dark"><button type="button" class="navBtnGp1 col-12 btn btn-light   mt-3 overflow-hidden ">
                 <div class="row justify-content-center">
                     <div class="icons col-1">
                         <ion-icon name="apps-outline"></ion-icon>

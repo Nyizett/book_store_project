@@ -118,19 +118,14 @@
     display: none;
   }
   .my-img {
-    width: 120%;
+    width: 100%;
+    
   }
   .webNameT,.webNameText,.webNamelg{
     display: none;
   }
-  .box1 {
-    height: 12vh;
-  }
+  
   .Dsnon{
-    display: none;
-  }
-  .number,
-  .quantity {
     display: none;
   }
   .logout {
@@ -148,5 +143,8 @@
   }
   .dellog{
     display: block;
+  }
+  .buttonbox{
+    width: 20%;
   }
 }
