@@ -28,6 +28,11 @@ if (isset($_GET['data'])) {
             $result = $data;
 
             require '../../Customer/View/addtoCart.php';
+        }else{
+            $delivery = 1000;
+            $result = $data;
+
+            require '../../Customer/View/addtoCart.php';
         }
     }
 

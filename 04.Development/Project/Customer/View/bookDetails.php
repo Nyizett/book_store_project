@@ -35,7 +35,7 @@
             <div class="slider slide-bg d-flex">
                <div class="detail">
                   <?php
-                  echo "<img class='img-fluid mt-3 bookimage' src='../resource/img/book cover/" . $result[0]['book_image'] . "' alt=''>"
+                  echo "<img  id='".$result[0]['book_image']."'class='img-fluid mt-3 bookimage' src='../resource/img/book cover/" . $result[0]['book_image'] . "' alt=''>"
                   ?>
                </div>
 

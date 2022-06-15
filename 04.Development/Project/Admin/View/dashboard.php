@@ -37,9 +37,9 @@ if(!isset($_SESSION['username'])){
     <div class="container-fluid">
         <div class="row">
             <!-- Navbar Start -->
-            <div id="navbar" class="my-nav"></div>
+            <div id="navbar" class="my-nav col-4 justify-content-center"></div>
             <!-- Dashboard -->
-            <div class="col-8 offset-3">
+            <div class="col-sm-8 col-7 offset-3">
                 <div class="top-box offset-8">
                     <!-- <div class="top">
                         <ion-icon name="person" class="fs-2 text-primary"></ion-icon>

@@ -3,7 +3,7 @@ $(document).ready(function(){
     let userinfo;
     let prices = [];
 
-  
+    
     let itemLength =  $('.count').length;
         console.log(itemLength);
         $('.price').each(function(){

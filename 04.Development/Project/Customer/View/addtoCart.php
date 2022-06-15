@@ -56,12 +56,18 @@
             } else {
                echo "<br><i>" . $value['0']['author_name'] . " </i></td>";
             }
-            echo "<td>" . number_format($value['0']['book_price']) . "</td>";
+            echo "<td class='b_price'>" . number_format($value['0']['book_price']) . "</td>";
             echo "<td  colspan='2' class='quantity'>
                   <div class='d-flex justify-content-start rounded qty '>
-                  <span class='minus'>-</span>
-                  <input type='number' class='counts' id='qty' name='qty' value='1'>
-                  <span class='plus'>+</span>
+                  <span class='minus'>-</span>";
+            if(isset($value['0']['qty'])){
+                  echo  " <input type='number' class='counts' id='qty' name='qty' value='".$value['0']['qty']."'>";
+            }else{
+
+                  echo  " <input type='number' class='counts' id='qty' name='qty' value='1'>";
+            }
+           
+           echo      "       <span class='plus'>+</span>
                </div></td>";
             echo "<td class='total' colspan='1'>" . number_format($value['0']['book_price']) . "</td>";
             echo "<td >
@@ -96,7 +102,12 @@
 
                   echo "<tr id=".$value['0']['id']." class='vouchers'>";
                   echo "<th scope='row' class='bookname'>"  . $value['0']['book_name'] .  "</th>";
-                  echo "<td class='cal'><span class='bookquantity'>1</span>*<span class='bookprice'>" . number_format($value['0']['book_price']) . "</span></td>";
+
+                  if(isset($value['0']['qty'])){
+                  echo "<td class='cal'><span class='bookquantity'>".$value['0']['qty']."</span>*<span class='bookprice'>" . number_format($value['0']['book_price']) . "</span></td>";
+                  }else{
+                     echo "<td class='cal'><span class='bookquantity'>1</span>*<span class='bookprice'>" . number_format($value['0']['book_price']) . "</span></td>";
+                  }
                   echo "</tr>";
               
                }
@@ -108,6 +119,8 @@
                if(isset($delivery['0']['delivery_fees'])){
                   echo "<td id=".$delivery['0']['id']." class='dfee'>".number_format($delivery['0']['delivery_fees'])."</td>";
                  
+               }else{
+                  echo "<td id='12'  class='dfee'>".number_format($delivery)."</td>";
                }
              
 
