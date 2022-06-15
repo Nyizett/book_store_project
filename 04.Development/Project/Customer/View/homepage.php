@@ -9,23 +9,25 @@
    <link rel="shortcut icon" href="../../Images/latestLogo.png" type="image/x-icon" width="100vw" />
    <link rel="stylesheet" href="../resource/css/style.css" />
    <link rel="stylesheet" href="../resource/css/homepage.css" />
+   <link rel="stylesheet" href="../resource/css/footer.css" />
    <link rel="stylesheet" href="../resource/UI Library/slick/slick.css">
    <link rel="stylesheet" href="../resource/UI Library/slick/slick-theme.css">
    <link rel="stylesheet" href="../resource/UI Library/fontawesome-free/css/all.min.css">
    <link rel="stylesheet" href="../resource/UI Library/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
    <link rel="stylesheet" href="../resource/css/common.css">
+   
 </head>
 
 <body>
 
    <!-- Header -->
-   <nav class="navbar navbar-expand-lg  position-fixed top-0 w-100 header" id="cum_navbar">
+   <nav class="navbar navbar-expand-lg position-fixed top-0 w-100 header" id="cum_navbar">
       <?php require "../View/common.php" ?>
    </nav>
    <!-- Slider -->
-   <section id="welcome-section" class="container w-100">
-      <div class="row pt-5 ">
-         <div class="col-12 col-lg-6 mt-5">
+   <section id="welcome-section" class="container">
+      <div class="mydiv row pt-5 ">
+         <div class="slider-div col-12 col-lg-6 mt-5">
             <div class="slider secondary-bg content">
                <div class="ms-4">
                   <img class="img-slide1" src="../resource/img/main slider_1.png" alt="">
@@ -36,25 +38,25 @@
             </div>
          </div>
 
-         <div class="col-12 col-lg-5 mt-5 pt-4 ms-5">
-            <div class="pt-5 ps-5 content mt-5 ">
-               <h3 class="font-color-primary" id="headerFirstText"></h3>
-               <h1 class="fw-bold text-primary" id="headerSecondText"></h1>
-               <p class="">Language / Education / Novels / Technology / Cartoons</p>
+         <div class="mydivtext col-lg-5 ">
+            <div class="stext pt-5 ps-5 ">
+               <h3 class="stext1 font-color-primary" id="headerFirstText"></h3>
+               <h1 class="stext2 fw-bold text-primary" id="headerSecondText"></h1>
+               <p class="cat">Language / Education / Novels / Technology / Cartoons</p>
                <a class="btn commom-bg text-white btn-lg shop-now fs-6" href="#">SHOP NOW</a>
             </div>
          </div>
       </div>
    </section>
 
-   <section id="blueBox" class="container my-5">
-      <div class="row pt-3">
-         <div class="col-12 col-lg-4 content">
+   <section id="blueBox" class="container">
+      <div class=" row pt-3">
+         <div class="web-box col-12 col-lg-4 content">
             <div class=" container commom-bg rounded">
                <div class="row align-items-center justify-content-center  ">
                   <div class="col-3">
                      <button class="btn btn-primary rounded-circle">
-                        <i class="fas fa-phone-alt"></i>
+                        <i class="phicon fas fa-phone-alt"></i>
                      </button>
                   </div>
                   <div class="col-9">
@@ -254,7 +256,12 @@
 
 
       // Slider
-      $(".slider").slick({});
+      $(".slider").slick({
+         arrows:false,
+         autoplay:true,
+         autoplaySpeed:1000,
+         
+      });
 
 
       // Scroll Effect
