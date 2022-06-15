@@ -4,24 +4,7 @@ $(document).ready(function(){
     let prices = [];
 
     
-    let itemLength =  $('.count').length;
-        console.log(itemLength);
-        $('.price').each(function(){
-            let price = $(this).text().replaceAll(',','');
-            // console.log();
-            prices.push(price.replaceAll('MMK',''));
-        })
-
-        let sum = 0;
-    for(let i = 0 ; i < prices.length; i++){
-             sum += parseInt(prices[i]);
-    }
-
-    let text = ' MMK';
-    
-    let total = sum.toString().concat(text);
-    // console.log(total);
-    $('.totalall').text(numberWithCommas(total));
+ 
 
     if(localStorage.getItem('user') != null){
          userinfo = JSON.parse(localStorage.getItem('user'));
@@ -46,7 +29,7 @@ $(document).ready(function(){
             let data2 = {
                 "id" : userinfo['id'],
                 "delivery_fees_id" : $('.address').attr('id'),
-                "total" : sum,
+                "total" : $('.totalall').text().replaceAll(',','').replaceAll(' MMK + (Delivery Fee)',''),
                 "book_id" : this.id,
                 "order_d_quantity" : $(this).children('.qty').text(),
                 "book_price" : total_amount
@@ -74,7 +57,7 @@ $(document).ready(function(){
             url: "../Controller/orderDetailController.php",
             data: { orderdetail: JSON.stringify(datadetail) },
             success: function (res) {
-            
+                
               
     
               

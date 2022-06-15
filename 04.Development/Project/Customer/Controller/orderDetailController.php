@@ -8,7 +8,9 @@ require_once "../../Admin/Model/DBConnection.php";
         $id = $orderDetail['0']['id'];
         $delivery_fees_id = $orderDetail['0']['delivery_fees_id'];
         $total = $orderDetail['0']['total'];
-        // echo $id,$delivery_fees_id,$total;
+        echo $id;
+        echo $delivery_fees_id;
+        echo $total;
 
         $db =  new DBConnect();
         $dbconnect = $db->connect();

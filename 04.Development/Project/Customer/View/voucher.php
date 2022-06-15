@@ -65,7 +65,7 @@
                         ?>
                             <tr class="table-active">
                                 <td colspan="3"> <b>Total Amount :</b> </td>
-                                <td class="totalall"> <span>MMK</span></td>
+                              <?php echo "  <td class='totalall'>".$result[0]['total']." MMK + (Delivery Fee)</td>"  ?>
                             </tr>
                         </tbody>
                     </table>

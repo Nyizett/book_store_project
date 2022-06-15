@@ -65,7 +65,7 @@
                echo "<h5>" . $result[$i]['book_name'] . "</h5>";
                echo "<div class='mb-2'>";
                echo "<span style='font-size:x-small'>";
-               $star = 3;
+               $star = $result[$i]['rating'];
                for ($s = 0; $s < 5; $s++) {
                   if ($star > $s) {
                      echo "  <i class='fa-solid fa-star'></i>";
