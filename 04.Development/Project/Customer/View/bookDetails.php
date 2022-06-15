@@ -33,9 +33,9 @@
       <div class="row align-items-center justify-content-center min-vh-100">
          <div class="col-12 col-lg-4 ps-5 ms-3">
             <div class="slider slide-bg d-flex">
-               <div class="detail">
+               <div class="detail mb-5">
                   <?php
-                  echo "<img class='img-fluid mt-3 bookimage' src='../resource/img/book cover/" . $result[0]['book_image'] . "' alt=''>"
+                  echo "<img  id='" . $result[0]['book_image'] . "'class='img-fluid mt-3 bookimage' src='../../Images/" . $result[0]['book_image'] . "' alt=''>"
                   ?>
                </div>
 
@@ -50,29 +50,37 @@
                <div class="card mb-5 mb-lg-0 card-width ">
                   <div class="card-body d-flex flex-column ">
                      <p class="card-title fw-bold mb-0 font-color-primary"></p>
-                     <?php echo " <small class='card-text d-block mb-2 fs-3 fw-bold booknames'>" . $result[0]['book_name'] . " </small>";
+                     <?php echo " <small  class='card-text d-block mb-2 fs-3 fw-bold booknames'>" . $result[0]['book_name'] . " </small>";
+                     ?>
+                    
+
+
+                     <?php
+                     if ($result[0]['author_name'] != 'None') {
+                        echo " <small class='card-text d-block mb-2 font-color-secondary authors'>" . $result[0]['author_name'] . " </small>";
+                     } else {
+                        echo " <small class='card-text d-block mb-2 font-color-secondary authors'> Anonymous </small>";
+                     }
+
+                     ?>
+                     <small>
+                     <?php
+                      $stars = $result[0]['rating'];
+                     for ($i = 0; $i < 5; $i++) {
+                        if ($i < $stars) {
+                           echo  " 
+                              <i class='fa-solid fa-star text-warning'></i>";
+                        } else {
+                           echo "
+                              <i class='fa-solid fa-star'></i>
+                              ";
+                        }
+                     }
                      ?>
                      </small>
 
-                     <?php 
-                        if($result[0]['author_name'] != 'None'){
-                           echo " <small class='card-text d-block mb-2 font-color-secondary authors'>" . $result[0]['author_name'] . " </small>";
-                        }else{
-                           echo " <small class='card-text d-block mb-2 font-color-secondary authors'> Anonymous </small>";
-                        }
-                  
-                      ?>
-                     </small>
-                     <small>
-                        <i class="fa-solid fa-star text-warning"></i>
-                        <i class="fa-solid fa-star text-warning"></i>
-                        <i class="fa-solid fa-star text-warning"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                     </small>
 
 
-                     </small>
 
                      <div class="d-flex justify-content-between align-items-center">
                         <?php echo " <p class='fw-bold mb-0 font-color-primary bookprices'>" . number_format($result[0]['book_price']) . " MMK</p>"; ?>
@@ -107,34 +115,34 @@
    </section>
 
    <section class="container">
-      <div class="row mt-2 reviews">
-          
 
-         <div class="col-md-4 desc">
-            <div class="col-md-12">
-               <p class="titles commom-bg">Description</p>
-            </div>
-            <div class="col-md-12">
-               <div class="descbox">
-                  <div class="desctable ">
-                     <table class="table table-bordered m-5">
-                        <tr>
-                           <td>Pages</td>
-                           <?php echo "<td>" . $result[0]['book_pages'] . "</td>" ?>
-                        </tr>
-                        <tr>
-                           <td>Release Date</td>
-                           <?php echo "<td>" . $result[0]['book_established'] . "</td>" ?>
-                        </tr>
-                        <tr>
-                           <td>Size of Book</td>
-                           <?php echo "<td>" . $result[0]['book_size'] . "</td>" ?>
-                        </tr>
-                     </table>
-                  </div>
+      <?php echo "<div id='" . $result[0]['category_id'] . "'  class='row mt-5 reviews'>";  ?>
+
+      <div class="col-md-4 desc">
+         <div class="col-md-12">
+            <p class="titles commom-bg">Description</p>
+         </div>
+         <div class="col-md-12">
+            <div class="descbox">
+               <div class="desctable ">
+                  <table class="table table-bordered m-5">
+                     <tr>
+                        <td>Pages</td>
+                        <?php echo "<td>" . $result[0]['book_pages'] . "</td>" ?>
+                     </tr>
+                     <tr>
+                        <td>Release Date</td>
+                        <?php echo "<td>" . $result[0]['book_established'] . "</td>" ?>
+                     </tr>
+                     <tr>
+                        <td>Size of Book</td>
+                        <?php echo "<td>" . $result[0]['book_size'] . "</td>" ?>
+                     </tr>
+                  </table>
                </div>
             </div>
          </div>
+      </div>
       </div>
       <div class="col-12 col-lg-1"></div>
       <div class="col-12 col-lg-5"></div>
@@ -143,6 +151,7 @@
    <footer id="footer" class="container-fluid commom-bg  mt-5">
       <?php require "../View/footerCommon.php" ?>
    </footer>
+
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
    <script src="../resource/js/common.js"></script>

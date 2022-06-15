@@ -65,7 +65,7 @@
                echo "<h5>" . $result[$i]['book_name'] . "</h5>";
                echo "<div class='mb-2'>";
                echo "<span style='font-size:x-small'>";
-               $star = 3;
+               $star = $result[$i]['rating'];
                for ($s = 0; $s < 5; $s++) {
                   if ($star > $s) {
                      echo "  <i class='fa-solid fa-star'></i>";
@@ -80,7 +80,7 @@
                echo " <button class='btn cart card-button px-1 rounded-1 me-1' id='" . $result[$i]['id'] . "' ><i class='fa-solid fa-cart-shopping me-1'></i>add
                   to
                   cart</button>";
-               echo " <span id='" . $result[$i]['id'] . "' class='btn btn-primary bookdetail card-button'><i class='fa-solid fa-eye'></i> 4</span>";
+               echo " <span id='" . $result[$i]['id'] . "' class='btn btn-primary bookdetail card-button'><i class='fa-solid fa-eye'></i> ".$result[$i]['view_count']."</span>";
                echo "</div>";
                echo "</div>";
                echo "</div>";

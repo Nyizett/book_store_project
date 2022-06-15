@@ -1,8 +1,19 @@
 $(document).ready(function() {
 $('.count').prop('disabled', true);
 let total = [];
-   
-totalPrice(total);
+let text = ' MMK';
+let vouchers = $('.vouchers').length;
+if(vouchers == 1){
+    let qty = $('#qty').val(); 
+    let p_price = $('.b_price').text().replaceAll(',','').replaceAll(' MMK','');
+    let sum =  qty * p_price;
+  
+    console.log(sum);
+    $('.total').text(numberWithCommas(sum.toString().concat(text)));
+}
+
+
+totalPrice(total,text);
 $(document).on('click', '.plus', function() {
 
     total = [];
@@ -14,12 +25,12 @@ $(document).on('click', '.plus', function() {
     if ($(this).prev().val() < 9) {
         
         $(this).prev().val(parseInt($(this).prev().val()) + 1);
-        let price = $(this).parent().parent().prev().text().replaceAll(',','');
+        let price = $(this).parent().parent().prev().text().replaceAll(',','').replaceAll(' MMK','');
         let quantity = Number($(this).prev().val()) ;
          let answer = price * quantity;
          console.log(answer);
        
-        $(this).parent().parent().next().text(numberWithCommas(answer));
+        $(this).parent().parent().next().text(numberWithCommas(answer.toString().concat(text)));
         
 
          $('.bookname').each(function(index){
@@ -40,7 +51,7 @@ $(document).on('click', '.plus', function() {
        
     }
 
-    totalPrice(total);
+    totalPrice(total,text);
 
    
 });
@@ -51,10 +62,10 @@ $(document).on('click', '.minus', function() {
     
 
     $(this).next().val(parseInt($(this).next().val())- 1);
-    let price = $(this).parent().parent().prev().text().replaceAll(',','');
+    let price = $(this).parent().parent().prev().text().replaceAll(',','').replaceAll(' MMK','');
     let quantity = Number($(this).next().val()) ;
     let answer = price * quantity;
-    $(this).parent().parent().next().text(numberWithCommas(answer));
+    $(this).parent().parent().next().text(numberWithCommas(answer.toString().concat(text)));
 
 
     $('.bookname').each(function(index){
@@ -75,7 +86,7 @@ $(document).on('click', '.minus', function() {
 
     if ($(this).next().val() == 0) {
         $(this).next().val(1);
-        $(this).parent().parent().next().text(numberWithCommas(price));
+        $(this).parent().parent().next().text(numberWithCommas(price).concat(text));
 
         $('.bookname').each(function(index){
             // console.log(  index+ '' +$(this).text());
@@ -93,7 +104,7 @@ $(document).on('click', '.minus', function() {
                }
            });
     }
-    totalPrice(total);
+    totalPrice(total,text);
 });
 
 
@@ -117,7 +128,7 @@ $(document).on('click', '.minus', function() {
                      })
                }
            });
-        totalPrice(total);
+        totalPrice(total,text);
     });
 
 
@@ -126,18 +137,23 @@ $(document).on('click', '.minus', function() {
             // console.log('hello');
             let  items = [];
             let length = $('.vouchers').length;
-            console.log(length);
+            // console.log(length);
             // let length = $('.')
             if(localStorage.getItem('user') != null){
                 if(length > 0){
                     $('.vouchers').each(function(){
-                        // console.log($('.dfee').attr('id'));
+                        // console.log($('.dfee[id]'));
+                let qty = Number($(this).children(".cal").children('.bookquantity').text());
+                let price =  Number($(this).children(".cal").children('.bookprice').text().replaceAll(',','').replaceAll(' MMK',''));
+                
+                let total = qty * price;
                     let item = {
                         "id" : this.id,
                         "delivery_fee_id" : $('.dfee').attr('id'),
                         "book_name" : $(this).children('.bookname').text(),
                         "quantity" : $(this).children(".cal").children('.bookquantity').text(),
-                        "book_price" : $(this).children(".cal").children('.bookprice').text(),
+                        "book_price" : numberWithCommas(total),
+                        "total" : numberWithCommas($('.all').text().replaceAll(' MMK',''))
                     };
     
                     // console.log(item['id']);
@@ -164,7 +180,8 @@ $(document).on('click', '.minus', function() {
 
 
 
-function totalPrice(total){
+function totalPrice(total,text){
+
     $('.total').each(function(){
        
         let prices = parseInt((($(this).text().replaceAll(',',''))));
@@ -179,8 +196,9 @@ function totalPrice(total){
         //  b_price =+ Number(total[index]);
             
     }   
-    console.log();
-    $('.all').text(numberWithCommas(b_price));
+    b_price += Number($('.dfee').text().replaceAll(',','').replaceAll(' MMK',''));
+    
+    $('.all').text(numberWithCommas(b_price.toString().concat(text)));
 }
 function numberWithCommas(x) {
     return x.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");

@@ -1,7 +1,7 @@
 <?php
 session_start();
-if(!isset($_SESSION['username'])){
-  header("Location: ../View/adminLogin.php");
+if (!isset($_SESSION['username'])) {
+    header("Location: ../View/adminLogin.php");
 }
 ?>
 <!DOCTYPE html>
@@ -12,7 +12,8 @@ if(!isset($_SESSION['username'])){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Author Info</title>
-    <link rel="shortcut icon" href="../../Images/<?php require_once "../Controller/changeWebfavIconController.php";echo $result[0]['fav_icon']; ?>" type="image/x-icon" width="100vw" />
+    <link rel="shortcut icon" href="../../Images/<?php require_once "../Controller/changeWebfavIconController.php";
+                                                    echo $result[0]['fav_icon']; ?>" type="image/x-icon" width="100vw" />
     <link rel="stylesheet" href="../resource/UI Library/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../resource/css/style.css" />
     <link rel="stylesheet" href="../resource/css/authorInfo.css" />
@@ -21,7 +22,6 @@ if(!isset($_SESSION['username'])){
     <script src="../resource/UI Library/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
     <script src="../resource/UI Library/jquery-3.3.1.min.js"></script>
     <script src="../resource/js/common.js"></script>
-
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
@@ -40,7 +40,7 @@ if(!isset($_SESSION['username'])){
                         <th class="col-1">Name</th>
                         <th class="col-1">Image</th>
                         <th>Biography</th>
-                        <th colspan="2">Action</th>
+                        <th colspan="2">Actions</th>
                     </tr>
                     <?php
                     $count = 1;
@@ -55,7 +55,6 @@ if(!isset($_SESSION['username'])){
                         echo "<td><a href='../Controller/deleteAuthorController.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-danger'><ion-icon name='trash-outline'></ion-icon></button></a></td>";
                         echo "</tr>";
                         $count++;
-                        
                     }
                     ?>
                 </table>
@@ -64,4 +63,5 @@ if(!isset($_SESSION['username'])){
         </div>
     </div>
 </body>
+
 </html>
