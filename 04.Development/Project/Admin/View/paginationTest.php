@@ -1,9 +1,3 @@
-<?php
-session_start();
-if(!isset($_SESSION['username'])){
-  header("Location: ../View/adminLogin.php");
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,7 +14,6 @@ if(!isset($_SESSION['username'])){
     <link rel="stylesheet" href="../resource/css/dashboard.css">
     <script src="../resource/UI Library/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
     <script src="../resource/UI Library/jquery-3.3.1.min.js"></script>
-    <script src="../resource/js/bookList.js"></script>
     <script src="../resource/js/common.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -44,13 +37,15 @@ if(!isset($_SESSION['username'])){
                         <th colspan=2>Actions</th>
                     </tr>
                     <tbody id="bookData"></tbody>
+                    
                 </table>
                 <a href="../View/addBook.php" class="text-dec  text-dark "><button class=" text-dec btn fw-bold custombutton btn-sm offset-10 col-2 mb-4">ADD BOOK</button></a>
+                
             </div>
             <div class="btn-group col-8 offset-3 mb-3" role="group" aria-label="Basic outlined example" id="pagbtn"></div>
         </div>
     </div>
-    
+    <script src="../resource/js/paginationTest.js"></script>    
 </body>
 
 </html>

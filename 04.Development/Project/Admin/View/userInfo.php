@@ -19,6 +19,7 @@ if(!isset($_SESSION['username'])){
     <link rel="stylesheet" href="../resource/css/common.css">
     <script src="../resource/UI Library/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
     <script src="../resource/UI Library/jquery-3.3.1.min.js"></script>
+    <script src="../resource/js/userInfo.js"></script>
     <script src="../resource/js/common.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -42,9 +43,10 @@ if(!isset($_SESSION['username'])){
                         <th class="col-4">Address</th>
                         <th>Ban</th>
                     </tr>
+                    <tbody id="bookData"></tbody>
 
-                    <?php
-                    require "../Controller/showUserInfoController.php";
+
+                    <!-- require "../Controller/showUserInfoController.php";
                     $no = 1;
 
                     foreach ($result as $key => $value) {
@@ -56,11 +58,13 @@ if(!isset($_SESSION['username'])){
                         echo "<td >" . $value['user_phone'] . "</td>";
                         echo "<td >" . $value['user_address'] . "</td>";
                         echo "<td><a href='../Controller/banUserController.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-danger'><ion-icon name='remove-circle-outline' class='fs-4'></ion-icon></button></a></td>";
-                    }
-                    ?>
+                    } -->
+
                 </table>
 
             </div>
+            <div class="btn-group col-8 offset-3 mb-3" role="group" aria-label="Basic outlined example" id="pagbtn"></div>
+
         </div>
     </div>
 </body>

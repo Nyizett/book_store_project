@@ -9,6 +9,7 @@ $sql = $dbconnect -> prepare("SELECT * From m_user_list WHERE del_flg = 0 AND us
 $sql->execute();
 
 $result = $sql->fetchAll(PDO::FETCH_ASSOC);
+echo json_encode($result);
 
 // echo "<pre>";
 // print_r($result);
