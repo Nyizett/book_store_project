@@ -29,11 +29,17 @@
       <div class="mydiv row pt-5 ">
          <div class="slider-div col-12 col-lg-6 mt-5">
             <div class="slider secondary-bg content">
-               <div class="ms-4">
-                  <img class="img-slide1" src="../resource/img/main slider_1.png" alt="">
+               <div class="ms-4" id="headerSlider1">
+                  <!-- <img class="img-slide1" src="../resource/img/main slider_1.png" alt=""> -->
                </div>
-               <div class="ms-4">
-                  <img class="img-slide2" src="../resource/img/main slider_2.png" alt="">
+               <div class="ms-4" id="headerSlider2">
+                  <!-- <img class="img-slide2" src="../resource/img/main slider_2.png" alt=""> -->
+               </div>
+               <div class="ms-4" id="headerSlider3">
+                  <!-- <img class="img-slide2" src="../resource/img/main slider_2.png" alt=""> -->
+               </div>
+               <div class="ms-4" id="headerSlider4">
+                  <!-- <img class="img-slide2" src="../resource/img/main slider_2.png" alt=""> -->
                </div>
             </div>
          </div>
@@ -248,10 +254,11 @@
 
       $("#CommonHomePage").addClass('border-bottom');
 
-      $(".counter-one").counterUp({
-         delay: 10,
-         time: 2000
-      })
+      // $(".counter-one").counterUp({
+      //    delay: 10,
+      //    time: 1000
+
+      // })
 
 
 

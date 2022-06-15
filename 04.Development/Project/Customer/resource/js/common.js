@@ -1,3 +1,4 @@
+let cartBooks = [];
 $(document).ready(function () {
   $("#cum_navbar").load("./common.html");
   $("#cum_navbar").load("/Project/Customer/View/common.html");
@@ -43,4 +44,26 @@ $(document).ready(function () {
     localStorage.removeItem("user");
     window.location.href = `../../Customer/View/homepage.php`;
   });
+
+  $(".dropdown-toggle").dropdown();
 });
+function shopCart() {
+  if (localStorage.getItem("user") != null) {
+    let data = JSON.stringify(cartBooks);
+    let user = JSON.parse(localStorage.getItem("user"));
+    let deliver = {
+      address: user["user_address"],
+    };
+    window.location.href = `../../Customer/Controller/cartListController.php?data=${data}&address=${JSON.stringify(
+      deliver
+    )}`;
+  } else {
+    let data = JSON.stringify(cartBooks);
+    let deliver = {
+      address: "Default",
+    };
+    window.location.href = `../../Customer/Controller/cartListController.php?data=${data}&address=${JSON.stringify(
+      deliver
+    )}`;
+  }
+}

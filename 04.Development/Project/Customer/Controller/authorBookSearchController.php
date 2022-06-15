@@ -1,6 +1,6 @@
 <?php
 
-
+echo "<script src='//cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
 require "../../Admin/Model/DBConnection.php";
 $db =  new DBConnect();
 $dbconnect = $db->connect();
@@ -9,4 +9,19 @@ INNER JOIN m_category ON m_book.category_id = m_category.id WHERE m_book.del_flg
 $sql->execute();
 $result = $sql->fetchAll(PDO::FETCH_ASSOC);
 
-// echo json_encode($result);
+// 
+if (count($result) == null) {
+
+    echo "<script>Swal.fire({
+        position: 'center',
+        icon: 'error',
+        title: 'There is no Author with the id of '+ authorId ,
+        showConfirmButton: false,
+        timer: 2000
+      })</script>";
+    echo "<script>
+    setTimeout(function()
+    {window.location='../../Customer/View/author.php';  },
+    2000);
+    </script>";
+}

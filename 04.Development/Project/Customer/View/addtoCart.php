@@ -5,6 +5,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="../../Images/latestLogo.png" type="image/x-icon" width="100vw" />
    <title>Cart List</title>
    <link rel="stylesheet" href="../resource/UI Library/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
    <link rel="stylesheet" href="../resource/css/style.css" />
@@ -49,8 +50,8 @@
            <tbody class='itembody'>";
          foreach ($result as $key => $value) {
             echo "<tr  class='items'>";
-            echo " <th scope='row'><img src='../../Images/" .$value['0']['book_image']. "' alt=''></th>";
-            echo "<td><span class='name'>" .$value['0']['book_name']. "</span></b>";
+            echo " <th scope='row'><img src='../../Images/" . $value['0']['book_image'] . "' alt=''></th>";
+            echo "<td><span class='name'>" . $value['0']['book_name'] . "</span></b>";
             if ($value['0']['author_name'] == 'None') {
                echo "<br><i>Anonymous</i></td>";
             } else {
@@ -60,14 +61,14 @@
             echo "<td  colspan='2' class='quantity'>
                   <div class='d-flex justify-content-start rounded qty '>
                   <span class='minus'>-</span>";
-            if(isset($value['0']['qty'])){
-                  echo  " <input type='number' class='counts' id='qty' name='qty' value='".$value['0']['qty']."'>";
-            }else{
+            if (isset($value['0']['qty'])) {
+               echo  " <input type='number' class='counts' id='qty' name='qty' value='" . $value['0']['qty'] . "'>";
+            } else {
 
-                  echo  " <input type='number' class='counts' id='qty' name='qty' value='1'>";
+               echo  " <input type='number' class='counts' id='qty' name='qty' value='1'>";
             }
-           
-           echo      "       <span class='plus'>+</span>
+
+            echo      "       <span class='plus'>+</span>
                </div></td>";
             echo "<td class='total' colspan='1'>" . number_format($value['0']['book_price']) . " MMK</td>";
             echo "<td >
@@ -100,29 +101,27 @@
                <?php
                foreach ($result as $key => $value) {
 
-                  echo "<tr id=".$value['0']['id']." class='vouchers'>";
+                  echo "<tr id=" . $value['0']['id'] . " class='vouchers'>";
                   echo "<th scope='row' class='bookname'>"  . $value['0']['book_name'] .  "</th>";
 
-                  if(isset($value['0']['qty'])){
-                  echo "<td class='cal'><span class='bookquantity'>".$value['0']['qty']."</span>*<span class='bookprice'>" . number_format($value['0']['book_price']) . "</span></td>";
-                  }else{
+                  if (isset($value['0']['qty'])) {
+                     echo "<td class='cal'><span class='bookquantity'>" . $value['0']['qty'] . "</span>*<span class='bookprice'>" . number_format($value['0']['book_price']) . "</span></td>";
+                  } else {
                      echo "<td class='cal'><span class='bookquantity'>1</span>*<span class='bookprice'>" . number_format($value['0']['book_price']) . " MMK</span></td>";
                   }
                   echo "</tr>";
-              
                }
                ?>
                <?php
                echo "<tr>";
                echo "<th scope='row'>Delivery Price</th>";
-               
-               if(isset($delivery['0']['delivery_fees'])){
-                  echo "<td id=".$delivery['0']['id']." class='dfee'>".number_format($delivery['0']['delivery_fees'])." MMK</td>";
-                 
-               }else{
-                  echo "<td id='12'  class='dfee'>".number_format($delivery)." MMK</td>";
+
+               if (isset($delivery['0']['delivery_fees'])) {
+                  echo "<td id=" . $delivery['0']['id'] . " class='dfee'>" . number_format($delivery['0']['delivery_fees']) . " MMK</td>";
+               } else {
+                  echo "<td id='12'  class='dfee'>" . number_format($delivery) . " MMK</td>";
                }
-             
+
 
                ?>
 
@@ -132,13 +131,13 @@
                </tr>
             </tbody>
 
-            
-         </table>
-               <div  class="container d-flex justify-content-between align-items-center px-4 ">
-               <button class="btn btn-primary text-light text-align-center cancel"><b>CANCEL</b></button>
-               <button class="btn btn-primary text-light text-align-center mx-3 buy"><b>BUY NOW</b></button>
 
-            </div>
+         </table>
+         <div class="container d-flex justify-content-between align-items-center px-4 ">
+            <button class="btn btn-primary text-light text-align-center cancel"><b>CANCEL</b></button>
+            <button class="btn btn-primary text-light text-align-center mx-3 buy"><b>BUY NOW</b></button>
+
+         </div>
       </div>
    </div>
    <!-- footer -->
@@ -152,6 +151,7 @@
    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
    <script src="../resource/UI Library/fontawesome-free/js/all.min.js"></script>
    <script src="../resource/js/addtoCart.js" defer></script>
+   <script src="../resource/js/common.js"></script>
    <script type="text/javascript" defer>
 
    </script>
