@@ -47,42 +47,22 @@ $(document).ready(function () {
 });
 
 function shopCart() {
-  console.log(books);
-  
-  
-  if(localStorage.getItem('user') != null){
+  if (localStorage.getItem("user") != null) {
     let data = JSON.stringify(books);
-    let user =  JSON.parse(localStorage.getItem('user'));
-    let deliver ={
-        "address" : user['user_address']
-        
+    let user = JSON.parse(localStorage.getItem("user"));
+    let deliver = {
+      address: user["user_address"],
     };
-    window.location.href = `../../Customer/Controller/cartListController.php?data=${data}&address=${JSON.stringify(deliver)}`;
-  }else{
+    window.location.href = `../../Customer/Controller/cartListController.php?data=${data}&address=${JSON.stringify(
+      deliver
+    )}`;
+  } else {
     let data = JSON.stringify(books);
     let deliver = {
-      "address" : "Default"
-    }
-    window.location.href = `../../Customer/Controller/cartListController.php?data=${data}&address=${JSON.stringify(deliver)}`;
+      address: "Default",
+    };
+    window.location.href = `../../Customer/Controller/cartListController.php?data=${data}&address=${JSON.stringify(
+      deliver
+    )}`;
   }
- 
-  // let address = JSON.stringify(localStorage.getItem('user'))
-  
-  
-  // $.ajax({
-  //     type: "POST",
-  //     url: "../Controller/cartController.php",
-  //     data: { cart : JSON.stringify(books)},
-  //     success : function(res){
-  //         let data = JSON.parse(res);
-  //         console.log(data);
-
-  //         // window.location.href = `../../Customer/Controller/cartListController.php?data=${res}`;
-
-  //         // localStorage.setItem('count',books.length);
-  //     },
-  //     error : function(err){
-  //         console.log(err);
-  //     }
-  // });
 }

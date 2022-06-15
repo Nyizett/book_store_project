@@ -11,7 +11,7 @@
   </button>
   <!-- start dropdown -->
   <div class="dropdown">
-    <a class="categories border-white text-white dropdown-toggle btn commom-bg ms-4" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+    <a class="categories border-white text-white dropdown-toggle btn commom-bg ms-4" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
       <ion-icon class="pe-2 pt-2" name="apps-outline"></ion-icon>
       <span class="fs-5">Categories </span>
     </a>
