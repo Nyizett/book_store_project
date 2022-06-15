@@ -1,19 +1,20 @@
 <div class="container-fluid">
+<button class="navbar-toggler font-color-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <ion-icon class="my-fcolor fs-1 font-color-primary" name="menu-outline"></ion-icon>
+  </button>
   <div class="image-container">
-    <img src="../resource/img/logo.png" alt="main-logo" id="logo" class="main-logo" width="145vw">
+    <img src="../resource/img/logo.png" alt="main-logo" id="logo" class="main-logo" >
   </div>
-  <a class="my-title navbar-brand font-color-primary pt-4" href="#">
-    <span class="my-fcolor fw-bolder fs-4 border-bottom" id="pageName">စာ အုပ် ဆိုင်</span>
+  <a class="my-title navbar-brand font-color-primary pt-4 " href="#">
+    <span class="my-fcolor fw-bolder border-bottom" id="pageName">စာ အုပ် ဆိုင်</span>
     <p class="b-title">Book Store</p>
   </a>
-  <button class="navbar-toggler font-color-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <ion-icon class="my-fcolor font-color-primary fs-2" name="menu-outline"></ion-icon>
-  </button>
+  
   <!-- start dropdown -->
   <div class="dropdown">
     <a class="categories border-white text-white dropdown-toggle btn commom-bg ms-4" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
       <ion-icon class="pe-2 pt-2" name="apps-outline"></ion-icon>
-      <span class="fs-5">Categories </span>
+      <span class="catdrop">Categories </span>
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuLink" class="categoriesShowDropdown" id="categoriesShowDropdown">
     </ul>
@@ -51,7 +52,7 @@
         </ul>
       </li>
     </ul>
-    <div class="d-flex justify-content-center align-items-center font-color-primary">
+    <div class="m-icon d-flex justify-content-center align-items-center font-color-primary">
       <div class="cartdiv">
         <button class="shop" onclick="shopCart()">
           <ion-icon class="text-white fs-3 me-4" name="cart-outline"></ion-icon>

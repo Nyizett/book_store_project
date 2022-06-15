@@ -1,5 +1,14 @@
+:root {
+   --primary-color: #1f4287;
+   --accent-color: #ebf1fd;
+   --navbar-color: #fff;
+   --body-color: white;
+}
 .form-control-borderless {
   border: none;
+}
+.header{
+   background-color: var(--accent-color);
 }
 
 .form-control-borderless:hover,
