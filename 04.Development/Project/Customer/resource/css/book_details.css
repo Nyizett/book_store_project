@@ -148,7 +148,7 @@ td{
    display: flex;
 
    border-bottom: 2px solid darkgray;
-   display: none;
+
    animation-delay: 3s;
 }
 .commentbody{

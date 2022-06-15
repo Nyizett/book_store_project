@@ -66,7 +66,7 @@ $(document).ready(function () {
           data: "id=" + id,
           success: function (data) {
             let jsonBook = JSON.parse(data);
-            console.log(jsonBook[0].book_image);
+            // console.log(jsonBook[0].book_image);
             $("#bestSellingBookAppend").append(
               `
                             <div class="col-6 col-lg-3 col-xl-2 mb-5 me-4 goBookDetail" id="${jsonBook[0].Book_Id}">
