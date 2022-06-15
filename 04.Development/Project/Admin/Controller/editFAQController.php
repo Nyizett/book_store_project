@@ -11,9 +11,8 @@ $dbconnect = $db ->connect();
 
 $sql = $dbconnect->prepare(
     "SELECT * FROM m_faq
-            WHERE id = :id;
-            
-        ");
+    WHERE id = :id;
+    ");
 
 $sql->bindValue(":id", $id);
 

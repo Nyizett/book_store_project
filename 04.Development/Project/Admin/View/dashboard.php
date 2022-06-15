@@ -37,14 +37,14 @@ if(!isset($_SESSION['username'])){
     <div class="container-fluid">
         <div class="row">
             <!-- Navbar Start -->
-            <div id="navbar" class="my-nav"></div>
+            <div id="navbar" class="my-nav col-4 justify-content-center"></div>
             <!-- Dashboard -->
-            <div class="col-8 offset-3">
+            <div class="dasPg col-sm-8 col-7 offset-3">
                 <div class="top-box offset-8">
                     <!-- <div class="top">
                         <ion-icon name="person" class="fs-2 text-primary"></ion-icon>
                     </div> -->
-                    <div class="top"><a href="../../Customer/View/homepage.php" class="me-md-4 text-dec text-dark fs-5">CustomerPage &#8594;</a></div>
+                    <div class="top"><a href="../../Customer/View/homepage.php" class="cusPag me-md-4 text-dec text-dark fw-bold">CustomerPage &#8594;</a></div>
                 </div>
                 <div class="box">
                     <div class="box1">

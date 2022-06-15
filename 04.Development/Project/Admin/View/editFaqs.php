@@ -34,15 +34,16 @@ if(!isset($_SESSION['username'])){
         <div class="col">
           <a href="./setting.php" class="custombutton text-dec text-dark btn btn-sm-2 fw-bold mt-4 md-4">BACK</a>
         </div>
-        <form action="../Controller/addFAQController.php" method="POST">
+        <form action="../Controller/updateFAQController.php" method="POST">
           <div class="col-5 mt-3">
+          <input type="hidden" name="id" value="<?php require_once "../Controller/editFAQController.php";echo $result[0]['id']; ?>">
             <div class="mb-3">
               <label for="exampleFormControlTextarea1" class="form-label">Questions</label>
-              <textarea class="customstyle form-control" id="exampleFormControlTextarea1" rows="3" name="faqQ"></textarea>
+              <textarea class="customstyle form-control" id="exampleFormControlTextarea1" rows="3" name="faqQ"><?php echo $result[0]['faq_q_text']; ?></textarea>
             </div>
             <div class="mb-3">
               <label for="exampleFormControlTextarea1" class="form-label">Answers</label>
-              <textarea class="customstyle form-control" id="exampleFormControlTextarea1" rows="3" name="faqAns"></textarea>
+              <textarea class="customstyle form-control" id="exampleFormControlTextarea1" rows="3" name="faqAns"><?php echo $result[0]['faq_ans_text']; ?></textarea>
             </div>
 
             <button type="submit" class="custombutton btn btn-sm offset-10 mt-3 fw-bold col-2">SAVE</button>
