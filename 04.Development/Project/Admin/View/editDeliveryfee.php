@@ -43,7 +43,7 @@ if(!isset($_SESSION['username'])){
           </div>
           <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Write Delivery Price</label>
-            <input type="text" value="<?php echo $result[0]['delivery_fees'] . ",000"; ?>" class="customstyle form-control" id="exampleFormControlInput1" name="dprice">
+            <input type="text" value="<?php echo $result[0]['delivery_fees']; ?>" class="customstyle form-control" id="exampleFormControlInput1" name="dprice">
           </div>
 
           <button class="custombutton btn btn-sm offset-10 col-2 mt-3 fw-bold ">SAVE</button>

@@ -24,7 +24,7 @@ if(!isset($_SESSION['username'])){
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 
-<body>
+<body class="">
     <div class="container-fluid">
         <div class="row">
             <!-- Navbar Start -->
@@ -33,8 +33,8 @@ if(!isset($_SESSION['username'])){
             <div class="col-8 offset-3">
                 <!-- Yangon Shop List -->
                 <p class="h3 mt-4 ">Yangon Shop List</p>
-                <table class="table table-striped table-sm mt-3">
-                    <tr class="bg-danger">
+                <table class="mcustom2 table table-striped table-sm mt-3">
+                    <tr class="mcustom bg-danger">
                         <th>No</th>
                         <th class="col-1">Image</th>
                         <th class="col-2">Name</th>
@@ -52,10 +52,10 @@ if(!isset($_SESSION['username'])){
                         echo "<td class='shop-img'> <img src='../../Images/" . $value['shop_image'] . "' </td>";
                         echo "<td>" . $value['shop_name'] . "</td>";
                         echo "<td>" . $value['shop_address'] . "</td>";
-                        echo "<td class='aut-bio'>" . $value['shop_phone_no'] . "</td>";
-                        echo "<td>" . $value['shop_website'] . "</td>";
-                        echo "<td><a href='../View/editShop.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-primary'><ion-icon name='create-outline'></ion-icon></button></a></td>";
-                        echo "<td><a href='../Controller/deleteShopController.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-danger'><ion-icon name='trash-outline'></ion-icon></button></a></td>";
+                        echo "<td class='aut-bio text-break'>" . $value['shop_phone_no'] . "</td>";
+                        echo "<td class='text-break'>" . $value['shop_website'] . "</td>";
+                        echo "<td><a href='../View/editShop.php?id=" . $value['id'] . "'><button type='button' class='smallbtnn btn btn-outline-primary'><ion-icon name='create-outline'></ion-icon></button></a></td>";
+                        echo "<td><a href='../Controller/deleteShopController.php?id=" . $value['id'] . "'><button type='button' class='smallbtnn btn btn-outline-danger'><ion-icon name='trash-outline'></ion-icon></button></a></td>";
                         echo "</tr>";
                         $count++;
                     }
@@ -66,8 +66,8 @@ if(!isset($_SESSION['username'])){
                 <!-- Mandalay Shop List -->
                 <div class="row">
                     <p class="h3 mt-4">Mandalay Shop List</p>
-                    <table class="table table-striped mt-3 ms-2">
-                        <tr class="tb-text bg-danger">
+                    <table class="mcustom1 table table-striped mt-3 ms-2">
+                        <tr class="mcustom tb-text bg-danger">
                             <th>No</th>
                             <th class="col-1">Image</th>
                             <th class="col-1">Name</th>
@@ -80,15 +80,15 @@ if(!isset($_SESSION['username'])){
                         $count = 1;
                         require "../Controller/mdyshopListController.php";
                         foreach ($result as $key => $value) {
-                            echo "<tr class='tb-text'>";
+                            echo "<tr class=' tb-text'>";
                             echo "<td>" . $count . "</td>";
                             echo "<td class='shop-img'> <img src='../../Images/" . $value['shop_image'] . "' </td>";
                             echo "<td>" . $value['shop_name'] . "</td>";
-                            echo "<td>" . $value['shop_address'] . "</td>";
-                            echo "<td class='aut-bio'>" . $value['shop_phone_no'] . "</td>";
-                            echo "<td>" . $value['shop_website'] . "</td>";
-                            echo "<td><a href='../View/editShop.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-primary'><ion-icon name='create-outline'></ion-icon></button></a></td>";
-                            echo "<td><a href='../Controller/deleteShopController.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-danger'><ion-icon name='trash-outline'></ion-icon></button></a></td>";
+                            echo "<td class='mcustom text-break'>>" . $value['shop_address'] . "</td>";
+                            echo "<td class='aut-bio text-break'>" . $value['shop_phone_no'] . "</td>";
+                            echo "<td class='mcustom text-break'>" . $value['shop_website'] . "</td>";
+                            echo "<td><a href='../View/editShop.php?id=" . $value['id'] . "'><button type='button' class='smallbtnn btn btn-outline-primary'><ion-icon name='create-outline'></ion-icon></button></a></td>";
+                            echo "<td><a href='../Controller/deleteShopController.php?id=" . $value['id'] . "'><button type='button' class='smallbtnn btn btn-outline-danger'><ion-icon name='trash-outline'></ion-icon></button></a></td>";
                             echo "</tr>";
                             $count++;
                         }
@@ -100,8 +100,8 @@ if(!isset($_SESSION['username'])){
                 <!-- Nay Pyi Taw Shop List -->
                 <div class="row">
                     <p class="h3 mt-4">Nay Pyi Taw Shop List</p>
-                    <table class="table table-striped mt-3 ms-2">
-                        <tr class="tb-text bg-danger">
+                    <table class="mcustom1 table table-striped mt-3 ms-2">
+                        <tr class="mcustom tb-text bg-danger">
                             <th>No</th>
                             <th class="col-1">Image</th>
                             <th class="col-1">Name</th>
@@ -114,22 +114,22 @@ if(!isset($_SESSION['username'])){
                         $count = 1;
                         require "../Controller/nptshopListController.php";
                         foreach ($result as $key => $value) {
-                            echo "<tr class='tb-text'>";
+                            echo "<tr class=' tb-text'>";
                             echo "<td>" . $count . "</td>";
                             echo "<td class='shop-img'> <img src='../../Images/" . $value['shop_image'] . "' </td>";
                             echo "<td>" . $value['shop_name'] . "</td>";
-                            echo "<td>" . $value['shop_address'] . "</td>";
-                            echo "<td>" . $value['shop_phone_no'] . "</td>";
-                            echo "<td>" . $value['shop_website'] . "</td>";
-                            echo "<td><a href='../View/editShop.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-primary'><ion-icon name='create-outline'></ion-icon></button></a></td>";
-                            echo "<td><a href='../Controller/deleteShopController.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-danger'><ion-icon name='trash-outline'></ion-icon></button></a></td>";
+                            echo "<td class='mcustom text-break'>" . $value['shop_address'] . "</td>";
+                            echo "<td class='text-break'>" . $value['shop_phone_no'] . "</td>";
+                            echo "<td class='mcustom text-break'>" . $value['shop_website'] . "</td>";
+                            echo "<td><a href='../View/editShop.php?id=" . $value['id'] . "'><button type='button' class='smallbtnn btn btn-outline-primary'><ion-icon name='create-outline'></ion-icon></button></a></td>";
+                            echo "<td><a href='../Controller/deleteShopController.php?id=" . $value['id'] . "'><button type='button' class='smallbtnn btn btn-outline-danger'><ion-icon name='trash-outline'></ion-icon></button></a></td>";
                             echo "</tr>";
                             $count++;
                         }
                         ?>
 
                     </table>
-                    <a href="../View/addShop.php" class="text-dec text-dark ms-5"><button class=" text-dec btn fw-bold custombutton btn-sm offset-10 col-2 mb-4">ADD SHOP</button></a>
+                    <a href="../View/addShop.php" class="text-dec text-dark ms-4"><button class=" text-dec btn fw-bold custombutton btn-sm offset-10 col-2 mb-4">ADD SHOP</button></a>
                 </div>
             </div>
         </div>

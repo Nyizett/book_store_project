@@ -44,23 +44,23 @@ if(!isset($_SESSION['username'])){
                     <!-- <div class="top">
                         <ion-icon name="person" class="fs-2 text-primary"></ion-icon>
                     </div> -->
-                    <div class="top"><a href="../../Customer/View/homepage.php" class="cusPag me-md-4 text-dec text-dark fw-bold">CustomerPage &#8594;</a></div>
+                    <div class="top"><a href="../../Customer/View/homepage.php" class="cusPag me-md-4 text-dec text-dark fw-bold text-nowrap">CustomerPage &#8594;</a></div>
                 </div>
                 <div class="box">
-                    <div class="box1">
-                        <ion-icon name="person-circle-outline" class="iconic"></ion-icon>
+                    <div class="box1 box2">
+                        <span class="removeicon"><ion-icon name="person-circle-outline" class="iconic"></ion-icon></span>
                         <p class="number">User</p>
                         <p class="quantity fs-4 mt-1"><?php require "../Controller/dashboardController.php";
                                                         echo $userQty[0]['userQty']; ?></p>
                     </div>
                     <div class="box1">
-                        <ion-icon name="cart-outline" class="iconic  "></ion-icon>
+                        <span class="removeicon"><ion-icon name="cart-outline" class="iconic"></ion-icon></span>
                         <p class="number">Sale</p>
                         <p class="quantity"><?php require "../Controller/dashboardController.php";
                                             echo number_format($totalPrice[0]['totalPrice']) . " MMK"; ?></p>
                     </div>
                     <div class="box1">
-                        <ion-icon name="document-outline" class="iconic "></ion-icon>
+                        <span class="removeicon"><ion-icon name="document-outline" class="iconic"></ion-icon></span>
                         <p class="number">Order</p>
                         <p class="quantity"><?php require "../Controller/dashboardController.php";
                                             echo number_format($totalOrder[0]['totalOrder']); ?></p>
@@ -68,16 +68,16 @@ if(!isset($_SESSION['username'])){
                 </div>
 
                 <!-- Monthly Order Chart -->
-                <div>
+                <div class="chart mt-3">
                     <canvas id="myChart"></canvas>
                 </div>
 
 
 
 
-                <div class="row mt-4 ms-4">
+                <div class="ordertable row mt-4 ms-1">
                     <p class="h4 mt-1">Daily Order</p>
-                    <table class="table table-striped mt-4 mb-4 ms-2 ">
+                    <table class="table table-striped mt-4 mb-4 ms-2">
                         <tr class="tb-text bg-warning">
                             <th class="col-1">No</th>
                             <th class="col-2">Customer</th>
