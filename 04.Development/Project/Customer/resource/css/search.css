@@ -21,4 +21,22 @@
 .viewBook {
   background-color: var(--primary-darkblue);
   color: white;
+  margin-top: 1em;
+}
+@media screen and (max-width:720px){
+  
+  .searchbox{
+    width: 50%;
+    margin-left: 47%;
+    margin-top: 12%;
+  }
+  #searchInpt{
+    font-size: 1em;
+  }
+  
+  .Bookitems {
+    width: 11em;
+    padding-top: 5em;
+  }
+  
 }

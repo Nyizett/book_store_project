@@ -8,10 +8,10 @@ $(document).ready(function () {
       for (const book of json) {
         $("#newsBookAppend").append(
           `
-        <div class="col-6 col-lg-3 col-xl-2 content goBookDetail mb-5" id="${
+        <div class="col-6 col-lg-3 col-xl-2 col-md-4 content goBookDetail mb-5" id="${
           book.id
         }">
-            <div class="card mb-5 mb-lg-0 card-width" style="min-height:70vh">
+            <div class="card  mb-lg-0 card-width" >
               <img src="../../Images/${
                 book.book_image
               }" class="img-fluid  mx-auto mt-3 " alt="" width="80%" />
@@ -77,10 +77,10 @@ $(document).ready(function () {
             // console.log(jsonBook[0].book_image);
             $("#bestSellingBookAppend").append(
               `
-                            <div class="col-6 col-lg-3 col-xl-2 mb-5 me-4 goBookDetail" id="${
+                            <div class="col-6 col-lg-3  col-xl-2 mb-5 me-4 goBookDetail" id="${
                               jsonBook[0].Book_Id
                             }">
-                                      <div class="card mb-5 mb-lg-0 card-width bg-lightBlue border-0 content" style="min-height:70vh">
+                                      <div class="card mb-5 mb-lg-0 card-width bg-lightBlue border-0 content nb-card" style="min-height:70vh">
                                         <img src="../../Images/${
                                           jsonBook[0].book_image
                                         }" class="img-fluid mx-auto mt-3" width="90%" alt="" />
