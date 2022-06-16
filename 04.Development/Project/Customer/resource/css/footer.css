@@ -20,6 +20,8 @@
    .cs-width{
       margin-left: 1.2em;
    }
-   
+   .fdiv{
+      display: none;
+   }
    
 }

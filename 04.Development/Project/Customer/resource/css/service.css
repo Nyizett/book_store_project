@@ -1,0 +1,23 @@
+:root {
+    --primary-color: #1f4287;
+    --accent-color: #ebf1fd;
+    --navbar-color: #fff;
+    --body-color: white;
+}
+.header{
+    background-color: var(--accent-color);
+}
+.service{
+    color: var(--primary-darkblue);
+}
+.homeService{
+    color: var(--font-color3);
+}
+@media screen and (max-width:720px) {
+    .header{
+        margin-top: 2em;
+    }
+    .pag{
+        font-size: 0.8em;
+    }
+}

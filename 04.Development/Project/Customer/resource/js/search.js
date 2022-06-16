@@ -1,20 +1,16 @@
 let books = [];
 let ids = [];
 $(document).ready(function () {
-
-   // cart local storage
-   if(localStorage.getItem('cart') != null){
-    let cart = JSON.parse(localStorage.getItem('cart'));
+  // cart local storage
+  if (localStorage.getItem("cart") != null) {
+    let cart = JSON.parse(localStorage.getItem("cart"));
     console.log(cart);
     for (let index = 0; index < cart.length; index++) {
-        books.push(cart[index]);
-      
+      books.push(cart[index]);
     }
     console.log(books);
-    
-    $("#cartCount2").text(`${JSON.parse(localStorage.getItem('cart')).length}`);
-    
-    
+
+    $("#cartCount2").text(`${JSON.parse(localStorage.getItem("cart")).length}`);
   }
   $("#searchBtn").click(function () {
     $bookName = $("#searchInpt").val();
@@ -61,7 +57,7 @@ $(document).ready(function () {
                                       <div class="d-flex d justify-content-between align-items-center">
                                          <p class="fw-bold mb-0 font-color-primary"> ${book.book_price} MMK</p>
                                       </div>
-                                      <button class="btn cart card-button px-1 rounded-1 me-1 viewBook"  id="${book.Book_Id}">View Book</button>
+                                      <button class="btn cart card-button px-1 rounded-1 me-1 viewBook"  id="${book.Book_Id}">Add To Cart</button>
                                    </div>
                                 </div>
                              </div>`
@@ -92,8 +88,10 @@ $(document).ready(function () {
                   console.log(res);
                   books.push(JSON.parse(res));
 
-                  localStorage.setItem('cart',JSON.stringify(books));
-                   $("#cartCount2").text(`${JSON.parse(localStorage.getItem('cart')).length}`);
+                  localStorage.setItem("cart", JSON.stringify(books));
+                  $("#cartCount2").text(
+                    `${JSON.parse(localStorage.getItem("cart")).length}`
+                  );
                 },
                 error: function (err) {},
               });

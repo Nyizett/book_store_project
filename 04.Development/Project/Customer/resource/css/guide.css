@@ -1,6 +1,29 @@
+:root {
+    --primary-color: #1f4287;
+    --accent-color: #ebf1fd;
+    --navbar-color: #fff;
+    --body-color: white;
+}
 .customgimage{
     width: 50vh;
 }
 body{
     width: 213vh;
+}
+.header{
+    background-color: var(--accent-color);
+}
+.guide{
+    color: var(--primary-darkblue);
+}
+.homeGuide{
+    color: var(--font-color3);
+}
+.guideDiv img{
+    width: 30%;
+}
+@media screen and (max-width:720px) {
+    .guideDiv img{
+        width: 30%;
+    }
 }

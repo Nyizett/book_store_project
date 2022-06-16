@@ -3,23 +3,19 @@ $(document).ready(function () {
   $("#cum_navbar").load("./common.html");
   $("#cum_navbar").load("/Project/Customer/View/common.html");
 
-
   getCategories();
   checkLoggedIn();
 
-   // cart local storage
-   if(localStorage.getItem('cart') != null){
-    let cart = JSON.parse(localStorage.getItem('cart'));
+  // cart local storage
+  if (localStorage.getItem("cart") != null) {
+    let cart = JSON.parse(localStorage.getItem("cart"));
     console.log(cart);
     for (let index = 0; index < cart.length; index++) {
-        cartBooks.push(cart[index]);
-      
+      cartBooks.push(cart[index]);
     }
     console.log(cartBooks);
-    
-    $("#cartCount2").text(`${JSON.parse(localStorage.getItem('cart')).length}`);
-    
-    
+
+    $("#cartCount2").text(`${JSON.parse(localStorage.getItem("cart")).length}`);
   }
   function getCategories() {
     $.ajax({
@@ -52,6 +48,7 @@ $(document).ready(function () {
       $("#userLoginSignup").append(
         `
         <li><a class="text-dark dropdown-item" href="./userProfile.php">User Profile</a></li>
+        <li><a class="text-dark dropdown-item" href="./orderHistory.php">Order History</a></li>
         <li><a class="text-dark dropdown-item" id="logout">Logout</a></li>
         `
       );
@@ -59,12 +56,12 @@ $(document).ready(function () {
   }
   $("#logout").click(function () {
     localStorage.removeItem("user");
+    localStorage.removeItem("cart");
     window.location.href = `../../Customer/View/homepage.php`;
   });
 
   $(".dropdown-toggle").dropdown();
 });
-
 
 function shopCart() {
   if (localStorage.getItem("user") != null) {

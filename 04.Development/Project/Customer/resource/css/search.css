@@ -35,14 +35,12 @@
 /* .footer-class{
   margin-top: 30%;
 } */
-@media screen and (max-width:720px) {
-
+@media screen and (max-width: 720px) {
   .searchbox {
     width: 50%;
     margin-left: 47%;
     margin-top: 12%;
   }
-
   #searchInpt {
     font-size: 1em;
   }
@@ -51,5 +49,4 @@
     width: 11em;
     padding-top: 5em;
   }
-
 }

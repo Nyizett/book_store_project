@@ -7,15 +7,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Order History</title>
   <link rel="shortcut icon" href="../../Images/latestLogo.png" type="image/x-icon" width="100vw" />
-  <link rel="stylesheet" href="../resource/UI Library/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+
   <link rel="stylesheet" href="../resource/css/style.css" />
   <link rel="stylesheet" href="../resource/css/homepage.css" />
-  <link rel="stylesheet" href="../resource/css/order_History.css">
+  <link rel="stylesheet" href="../resource/css/orderHistory.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
   <link rel="stylesheet" href="../resource/UI Library/fontawesome-free/css/all.min.css">
-  <link rel="stylesheet" href="../resource/css/common.css">
+  <link rel="stylesheet" href="../resource/UI Library/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="../resource/css/footer.css">
+  <link rel="stylesheet" href="../resource/css/common.css">
 </head>
+
 <body>
   <!-- Header -->
   <nav class="navbar navbar-expand-lg   top-0 w-100 " id="cum_navbar">
@@ -31,16 +33,16 @@
   <h5 class="fw-bolder text-primary">Order History</h5>
   <div>
     <table class="table">
-        <tr class="text-center">
-          <th >Items</th>
-          <th >Name</th>
-          <th >Price</th>
-          <th >Quatity</th>
-          <th >Total</th>
-        </tr>
+      <tr class="text-center">
+        <th>Items</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Quatity</th>
+        <th>Total</th>
+      </tr>
       <tbody id="orderData">
 
-        
+
 
         <!-- <tr>
           <th scope="row"><img src="./education.jpg" alt="" class="images"></th>
@@ -69,7 +71,9 @@
   <footer id="footer" class="container-fluid commom-bg  mt-5">
     <?php require "../View/footerCommon.php" ?>
   </footer>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
+  <script src="../resource/UI Library/jquery-3.3.1.min.js"></script>
+  <script src="../resource/UI Library/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
   <script src="../resource/js/common.js"></script>
   <script src="../resource/js/footerCommon.js"></script>
   <script src="../resource/js/orderDetail.js"></script>
