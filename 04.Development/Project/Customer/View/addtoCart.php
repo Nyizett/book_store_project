@@ -105,7 +105,7 @@
                   echo "<th scope='row' class='bookname'>"  . $value['0']['book_name'] .  "</th>";
 
                   if (isset($value['0']['qty'])) {
-                     echo "<td class='cal'><span class='bookquantity'>" . $value['0']['qty'] . "</span>*<span class='bookprice'>" . number_format($value['0']['book_price']) . "</span></td>";
+                     echo "<td class='cal'><span class='bookquantity'>" . $value['0']['qty'] . "</span>*<span class='bookprice'>" . number_format($value['0']['book_price']) . " MMK</span></td>";
                   } else {
                      echo "<td class='cal'><span class='bookquantity'>1</span>*<span class='bookprice'>" . number_format($value['0']['book_price']) . " MMK</span></td>";
                   }
@@ -134,7 +134,7 @@
 
          </table>
          <div class="container d-flex justify-content-between align-items-center px-4 ">
-            <button class="btn btn-primary text-light text-align-center cancel"><b>CANCEL</b></button>
+          <a href="../../Customer/View/homepage.php">  <button class="btn btn-primary text-light text-align-center cancel"><b>CANCEL</b></button></a>
             <button class="btn btn-primary text-light text-align-center mx-3 buy"><b>BUY NOW</b></button>
 
          </div>
@@ -150,8 +150,10 @@
    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
    <script src="../resource/UI Library/fontawesome-free/js/all.min.js"></script>
-   <script src="../resource/js/addtoCart.js" defer></script>
+   
    <script src="../resource/js/common.js"></script>
+   <script src="../resource/js/addtoCart.js" defer></script>
+   
    <script type="text/javascript" defer>
 
    </script>

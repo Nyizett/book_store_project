@@ -1,6 +1,21 @@
 let books = [];
 let ids = [];
 $(document).ready(function () {
+
+   // cart local storage
+   if(localStorage.getItem('cart') != null){
+    let cart = JSON.parse(localStorage.getItem('cart'));
+    console.log(cart);
+    for (let index = 0; index < cart.length; index++) {
+        books.push(cart[index]);
+      
+    }
+    console.log(books);
+    
+    $("#cartCount2").text(`${JSON.parse(localStorage.getItem('cart')).length}`);
+    
+    
+  }
   $("#searchBtn").click(function () {
     $bookName = $("#searchInpt").val();
     showBooks($bookName);
@@ -77,7 +92,8 @@ $(document).ready(function () {
                   console.log(res);
                   books.push(JSON.parse(res));
 
-                  $("#cartCount2").text(`${books.length}`);
+                  localStorage.setItem('cart',JSON.stringify(books));
+                   $("#cartCount2").text(`${JSON.parse(localStorage.getItem('cart')).length}`);
                 },
                 error: function (err) {},
               });

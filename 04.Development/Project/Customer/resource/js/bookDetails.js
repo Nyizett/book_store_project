@@ -1,6 +1,19 @@
+let books = [];
+let book = [];
 $(document).ready(function () {
   $(".count").prop("disabled", true);
 
+  if(localStorage.getItem('cart') != null){
+    let cart = JSON.parse(localStorage.getItem('cart'));
+    console.log(cart);
+    for (let index = 0; index < cart.length; index++) {
+        books.push(cart[index]);
+      
+    }
+    console.log(books);
+    
+    $("#cartCount2").text(`${JSON.parse(localStorage.getItem('cart')).length}`);
+  }
   let userinfo;
   if (localStorage.getItem("user") != null) {
     userinfo = JSON.parse(localStorage.getItem("user"));
@@ -123,8 +136,7 @@ $(document).ready(function () {
   });
 
   $(".cartbtn").click(function () {
-    let books = [];
-    let book = [];
+   
     let image = $(".bookimage").attr("id");
 
     let data = {
@@ -141,6 +153,8 @@ $(document).ready(function () {
 
     book.push(data);
     books.push(book);
+    localStorage.setItem('cart',JSON.stringify(books));
+
     if (localStorage.getItem("user") != null) {
       let user = JSON.parse(localStorage.getItem("user"));
       let deliver = {
