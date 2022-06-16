@@ -1,14 +1,14 @@
 :root {
-   --primary-color: #1f4287;
-   --accent-color: #ebf1fd;
-   --navbar-color: #fff;
-   --body-color: white;
+  --primary-color: #1f4287;
+  --accent-color: #ebf1fd;
+  --navbar-color: #fff;
+  --body-color: white;
 }
 .form-control-borderless {
   border: none;
 }
-.header{
-   background-color: var(--accent-color);
+.header {
+  background-color: var(--accent-color);
 }
 
 .form-control-borderless:hover,
@@ -23,20 +23,19 @@
   color: white;
   margin-top: 1em;
 }
-@media screen and (max-width:720px){
-  
-  .searchbox{
+
+@media screen and (max-width: 720px) {
+  .searchbox {
     width: 50%;
     margin-left: 47%;
     margin-top: 12%;
   }
-  #searchInpt{
+  #searchInpt {
     font-size: 1em;
   }
-  
+
   .Bookitems {
     width: 11em;
     padding-top: 5em;
   }
-  
 }
