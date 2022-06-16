@@ -24,8 +24,8 @@
    </nav>
    <!-- Header -->
    <div class="container-fluid header d-flex justify-content-between align-items-center p-4 bg-light">
-      <h3 class="ms-5">SERVICES</h3>
-      <div class="me-5">
+      <h3 class="service ms-5">Services</h3>
+      <div class="homeService me-5">
          <b>Home</b> -> Services
       </div>
    </div>
@@ -49,7 +49,7 @@
 
             foreach ($result as $key => $value) {
                echo '<h4 class="font-color-primary mt-4">'. $value['service_tilte'] ."</h4>";
-               echo '<p class="mt-1">' . $value['service_paragraph'] . "</p>";
+               echo '<p class="pag mt-1">' . $value['service_paragraph'] . "</p>";
             }
             ?>
 

@@ -21,9 +21,9 @@ function showShops(CityName){
                             <div class="my-card-img">
                                 <img src="../../Images/${shop.shop_image}" alt="">
                                 <h6 class="text-primary mt-4"><b>${shop.shop_name} </b></h6>
-                                <div class="text-primary m-2 shop_info">${shop.shop_address}</div>
-                                <div class="text-primary m-2 shop_info">${shop.shop_phone_no}</div>
-                                <div class="text-primary m-2 shop_infoWeb">${shop.shop_website}</div>
+                                <div class="text-primary m-2 shop-info">${shop.shop_address}</div>
+                                <div class="text-primary m-2 shop-info">${shop.shop_phone_no}</div>
+                                <div class="text-primary m-2 shop-info text-break">${shop.shop_website}</div>
                             </div>
                         </div>
                     </div>`

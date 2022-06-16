@@ -1,5 +1,5 @@
 <div class="container-fluid">
-<button class="navbar-toggler font-color-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler font-color-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <ion-icon class="my-fcolor fs-1 font-color-primary" name="menu-outline"></ion-icon>
   </button>
   <div class="image-container">
@@ -37,13 +37,13 @@
 
       <li class="nav-item dropdown me-4">
         <a class="text-white nav-link text-decoration-none fw-bold fs-6 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Contact us
+          Communities
         </a>
         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 
 
           <li><a class="text-dark dropdown-item" href="../View/guide.php">Guide</a></li>
-          <li><a class="text-dark dropdown-item" href="../View/service.php">Servies</a></li>
+          <li><a class="text-dark dropdown-item" href="../View/service.php">Services</a></li>
           <li>
             <a class="text-dark dropdown-item" href="./privacyPolicy.php">Privacy and Policy</a>
           </li>
