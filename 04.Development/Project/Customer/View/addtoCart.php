@@ -40,9 +40,9 @@
          echo " <thead class='text-light bg-primary'>";
          echo "<tr>
             <th scope='col'>Items</th>
-            <th scope='col'></th>
+            <th scope='col'>Name</th>
             <th scope='col'>Price</th>
-            <th scope='col' colspan='2'>Quatity</th>
+            <th scope='col' colspan='2'>Quantity</th>
             <th scope='col'>Total</th>
             <th></th>
            </tr>
