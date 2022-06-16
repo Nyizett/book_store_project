@@ -4,11 +4,19 @@
   --navbar-color: #fff;
   --body-color: white;
 }
+
 .form-control-borderless {
   border: none;
 }
+
 .header {
   background-color: var(--accent-color);
+}
+.search {
+  color: var(--primary-darkblue);
+}
+.hometextColor {
+  color: var(--font-color3);
 }
 
 .form-control-borderless:hover,
@@ -18,12 +26,15 @@
   outline: none;
   box-shadow: none;
 }
+
 .viewBook {
   background-color: var(--primary-darkblue);
   color: white;
   margin-top: 1em;
 }
-
+/* .footer-class{
+  margin-top: 30%;
+} */
 @media screen and (max-width: 720px) {
   .searchbox {
     width: 50%;

@@ -25,12 +25,14 @@
       <?php require "../View/common.php" ?>
    </nav>
    <!-- nav -->
-   <div class="d-flex justify-content-between align-items-center p-4 authorHeader">
-      <h2 class="author ms-5 mt-5">Authors</h2>
+   <div class="d-flex justify-content-between align-items-center  authorHeader">
+      <h3 class="author ms-5 ">Authors</h3>
       <div class="me-5 mt-5">
          <b class="homeTextColor">Home</b> -> <span class="author">Authors</span>
       </div>
    </div>
+
+   
    <div class="fw-bolder text-primary d-flex justify-content-center align-items-center mt-4 startName">
       <span class="mx-3 selectedName" id="allAuthor">ALL</span>
       <span class="mx-3 showByLetterIncluding">A</span>

@@ -29,8 +29,8 @@
       <?php require "./common.php" ?>
    </nav>
    <!-- Header -->
-   <div class="container-fluid bg p-4">
-      <div class="container d-flex justify-content-between align-items-center">
+   <div class="container-fluid bg p-4 ">
+      <div class="container d-flex justify-content-between align-items-center cat-header">
          <h3 class="text-primary categoryName"></h3>
          <div class="text-primary">
             <b>Home</b> -> <span class="categoryName"></span>
@@ -38,8 +38,8 @@
       </div>
    </div>
    </div>
-   <div class="container-fluid d-flex justify-content-between align-items-center my-4">
-      <div class="container">
+   <div class="container-fluid d-flex justify-content-between align-items-center my-4 bg-white">
+      <div class="container ">
          <div class="row g-0">
 
             <?php
@@ -62,7 +62,7 @@
                      alt=''/>";
                echo "</div>";
                echo "<div class='my-card-info'>";
-               echo "<h5>" . $result[$i]['book_name'] . "</h5>";
+               echo "<h5 class='catTitle'>" . $result[$i]['book_name'] . "</h5>";
                echo "<div class='mb-2'>";
                echo "<span style='font-size:x-small'>";
                $star = $result[$i]['rating'];
@@ -76,11 +76,11 @@
                echo "</span><br>";
                echo "  <span style='font-size:x-small'>" . $result[$i]['author_name'] . "</span> ";
                echo "</div>";
-               echo " <p style='font-weight:500 ;'>" . number_format($result[$i]['book_price']) . " MMK</p>";
+               echo " <p class='catPrice' style='font-weight:500 ;'>" . number_format($result[$i]['book_price']) . " MMK</p>";
                echo " <button class='btn cart card-button px-1 rounded-1 me-1' id='" . $result[$i]['id'] . "' ><i class='fa-solid fa-cart-shopping me-1'></i>add
                   to
                   cart</button>";
-               echo " <span id='" . $result[$i]['id'] . "' class='btn btn-primary bookdetail card-button'><i class='fa-solid fa-eye'></i> ".$result[$i]['view_count']."</span>";
+               echo " <span id='" . $result[$i]['id'] . "' class='btn btn-primary bookdetail card-button view-btn'><i class='fa-solid fa-eye'></i> ".$result[$i]['view_count']."</span>";
                echo "</div>";
                echo "</div>";
                echo "</div>";
