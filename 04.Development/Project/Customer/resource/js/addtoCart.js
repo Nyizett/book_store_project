@@ -3,14 +3,27 @@ $('.count').prop('disabled', true);
 let total = [];
 let text = ' MMK';
 let vouchers = $('.vouchers').length;
-if(vouchers == 1){
-    let qty = $('#qty').val(); 
-    let p_price = $('.b_price').text().replaceAll(',','').replaceAll(' MMK','');
-    let sum =  qty * p_price;
+let p_price;
+let qty;
+let sum;
+$('.b_price').each(function(index){
+    if( index == vouchers-1){
+        p_price =$(this).text().replaceAll(',','').replaceAll(' MMK','');
+        qty = $(this).next().children().find('#qty').val();
+        sum = qty * p_price;
+        console.log(sum);
+    $(this).next().next().text(numberWithCommas(sum.toString().concat(text)));
+        
+    }
+})
+
+    // let qty = $('#qty').val(); 
+    
+    // let sum =  qty * p_price;
   
-    console.log(sum);
-    $('.total').text(numberWithCommas(sum.toString().concat(text)));
-}
+    // console.log(sum);
+    // $('.total').text(numberWithCommas(sum.toString().concat(text)));
+
 
 
 totalPrice(total,text);
@@ -131,7 +144,9 @@ $(document).on('click', '.minus', function() {
         totalPrice(total,text);
     });
 
-
+    $('.cancel').click(function(e){
+        localStorage.removeItem('cart');
+    });
     $('.buy').click(function(e){
             e.preventDefault();
             // console.log('hello');
@@ -165,7 +180,7 @@ $(document).on('click', '.minus', function() {
                 });
     
                 
-                
+                localStorage.removeItem('cart');
                 window.location.href = `../../Customer/Controller/orderController.php?data=${JSON.stringify(items)}`;
                 // console.log(items);
                 }

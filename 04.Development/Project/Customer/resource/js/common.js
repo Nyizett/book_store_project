@@ -2,8 +2,25 @@ let cartBooks = [];
 $(document).ready(function () {
   $("#cum_navbar").load("./common.html");
   $("#cum_navbar").load("/Project/Customer/View/common.html");
+
+
   getCategories();
   checkLoggedIn();
+
+   // cart local storage
+   if(localStorage.getItem('cart') != null){
+    let cart = JSON.parse(localStorage.getItem('cart'));
+    console.log(cart);
+    for (let index = 0; index < cart.length; index++) {
+        cartBooks.push(cart[index]);
+      
+    }
+    console.log(cartBooks);
+    
+    $("#cartCount2").text(`${JSON.parse(localStorage.getItem('cart')).length}`);
+    
+    
+  }
   function getCategories() {
     $.ajax({
       type: "post",
@@ -47,6 +64,8 @@ $(document).ready(function () {
 
   $(".dropdown-toggle").dropdown();
 });
+
+
 function shopCart() {
   if (localStorage.getItem("user") != null) {
     let data = JSON.stringify(cartBooks);

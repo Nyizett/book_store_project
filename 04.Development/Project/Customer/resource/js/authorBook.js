@@ -22,6 +22,20 @@ $(document).ready(function () {
     }
   }
 
+  if(localStorage.getItem('cart') != null){
+    let cart = JSON.parse(localStorage.getItem('cart'));
+    console.log(cart);
+    for (let index = 0; index < cart.length; index++) {
+        books.push(cart[index]);
+      
+    }
+    console.log(books);
+    
+    $("#cartCount2").text(`${JSON.parse(localStorage.getItem('cart')).length}`);
+    
+    
+  }
+
   $.ajax({
     type: "post",
     url: "../Controller/authorNameGetController.php",
@@ -55,7 +69,8 @@ $(document).ready(function () {
           console.log(res);
           books.push(JSON.parse(res));
 
-          $("#cartCount2").text(`${books.length}`);
+          localStorage.setItem('cart',JSON.stringify(books));
+          $("#cartCount2").text(`${JSON.parse(localStorage.getItem('cart')).length}`);
         },
         error: function (err) {},
       });
