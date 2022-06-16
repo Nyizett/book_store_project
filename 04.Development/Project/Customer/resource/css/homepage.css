@@ -12,17 +12,18 @@
 .slider {
   margin-top: 5%;
 }
-.img-slide1 {
+/* .{
   width: 540px;
   height: 300px;
-}
-.img-slide2 {
+} */
+.img-slide1 {
   width: 500px;
   height: 300px;
 }
+ 
 .card-width {
   width: 200px;
-}
+} 
 .cardLg {
   width: 300px;
 }
@@ -91,25 +92,18 @@
 .showAuthorsBooks {
   cursor: pointer;
 }
-@media screen and (max-width:500px){
+@media screen and (max-width:720px){
  
-  .img-slide1,.img-slide2,.secondary-bg {
-    width: 10em;
-    height: 6em;
+  .secondary-bg {
+    width: 50%;
+    height: 20%;
+  } 
+  .img-slide1 {
+    width: 11em;
+    height: 7em;
   }
-  
-  /* .mydivtext{
-    background-color: black;
-    float: right;
-    width: 100px;
-  } */
-  /* .mycon{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-   */
   .stext1{
+    
     font-size:0.4em ;
   }
   .stext2,.cat{
@@ -118,17 +112,77 @@
   .stext{
     position: absolute;
     left: 35%;
-    bottom:60%;
+    bottom:59%;
     width: 55%;
   }
   #blueBox{
     margin-top: 5em;
     width: 50%;
-    display: flex;
-    flex-direction: column;
+    display: block;
+    font-size: 0.5em;
+    margin-left:17em;
   }
-  .phicon{
-    font-size: 1em;
-}
+  .web-box1,.web-box2,.web-box3{
+    /* margin-top: 2em; */
+    display: none;
+  }
+  .rounded-circle{
+    width: 2em;
+    height: 2em;
+  }
+  .icon{
+    font-size: 0.7em;
+    padding-bottom: 0.4em;
+  }
+  .newhr{
+    display: none;
+  }
+  .newsBook{
+    position: absolute;
+    top: 37%;
+  }
+  .nb{
+    font-size: 1.2em;
+  }
+  .goBookDetail{
+    background-color: black;
+    /* width: 11em; */
+    
+    
+  }
+  #newBooks{
+    width: 11em;
+  }
+  /* .card-width{
+    width: 11em;
+    height: 6em;
+  } */
+  .resp{
+    width: 100px;
+    height: 50px;
+    background-color: aquamarine;
+  }
+  .img-fluid{
+    width: 5em;
+  }
+  .card-body{
+    height: 10em;
+  }
+  .card-title{
+    font-size: 0.8em;
+  }
+  .my-2{
+    font-size: 0.5em;
+  }
   
+  .bsbCon{
+    height: 30%;
+    background-color: aqua;
+    display: none;
+  }
+  .bsb{
+    margin-top:40%;
+
+  }
+
 }

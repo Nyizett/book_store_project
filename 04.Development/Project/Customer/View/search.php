@@ -24,7 +24,7 @@
    </nav>
    <!-- Header -->
 
-   <div class="container-fluid header d-flex justify-content-between align-items-center p-4">
+   <div class="resp header container-fluid d-flex justify-content-between align-items-center p-4">
       <h3 class="ms-5 text-primary">Search</h3>
       <div class="me-5 text-primary">
          <b>Home</b> -> Search
@@ -32,17 +32,17 @@
    </div>
 
 
-   <section class="container">
+   <section class="searchbox container">
       <br />
       <div class="row justify-content-center">
          <div class="col-12 col-md-10 col-lg-8">
             <form class="card card-sm">
                <div class="card-body row no-gutters align-items-center">
-                  <div class="col">
+                  <div class="search-div col">
                      <input class="form-control form-control-lg form-control-borderless" id="searchInpt" type="text" placeholder="Search Books here...">
                   </div>
                   <div class="col-auto">
-                     <button class="btn btn-lg commom-bg   text-white" id="searchBtn" type="button">Search</button>
+                     <button class="btn btn-lg btn-sm  commom-bg   text-white" id="searchBtn" type="button">Search</button>
                   </div>
                </div>
             </form>

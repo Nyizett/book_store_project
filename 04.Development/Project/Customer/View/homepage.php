@@ -57,12 +57,12 @@
 
    <section id="blueBox" class="container">
       <div class=" row pt-3">
-         <div class="web-box col-12 col-lg-4 content">
-            <div class=" container commom-bg rounded">
+         <div class="col-12 col-lg-4 content">
+            <div class="web-box1  container commom-bg rounded">
                <div class="row align-items-center justify-content-center  ">
-                  <div class="col-3">
+                  <div class=" col-3">
                      <button class="btn btn-primary rounded-circle">
-                        <i class="phicon fas fa-phone-alt"></i>
+                        <i class="icon fas fa-phone-alt"></i>
                      </button>
                   </div>
                   <div class="col-9">
@@ -74,11 +74,11 @@
          </div>
 
          <div class="col-12 col-lg-4  content">
-            <div class="container commom-bg rounded">
+            <div class="web-box2 container commom-bg rounded">
                <div class="row align-items-center justify-content-center">
                   <div class="col-3">
                      <button class="btn btn-primary rounded-circle">
-                        <i class="fas fa-globe-africa"></i>
+                        <i class="icon fas fa-globe-africa"></i>
                      </button>
                   </div>
                   <div class="col-9">
@@ -90,11 +90,11 @@
          </div>
 
          <div class="col-12 col-lg-4   content col-sm-12   ">
-            <div class="container commom-bg rounded">
+            <div class="web-box3 container commom-bg rounded">
                <div class="row align-items-center justify-content-center">
                   <div class="col-3">
                      <button class="btn btn-primary rounded-circle">
-                        <i class="fas fa-book"></i>
+                        <i class="icon fas fa-book"></i>
                      </button>
                   </div>
                   <div class="col-9">
@@ -108,13 +108,13 @@
    </section>
    <!-- NEW BOOK -->
    <section class="container my-5  vh-100" id="newsBooks">
-      <div class="row justify-content-evenly align-items-center " id="newsBookAppend">
-         <div class="my-5"></div>
-         <hr class=" content">
-         <div class="col-12  content">
+      <div class=" row justify-content-evenly align-items-center " id="newsBookAppend">
+         <div class=""></div>
+         <hr class="newhr content">
+         <div class="newsBook col-12  content">
             <div class="my-5">
                <div class="text-center">
-                  <h2 class="fw-bold">NEW BOOKS </h2>
+                  <h2 class="nb fw-bold">NEW BOOKS </h2>
                </div>
             </div>
          </div>
@@ -123,11 +123,11 @@
       </div>
    </section>
    <!-- Best selling books Start -->
-   <section class="container bg-lightBlue my-5 mt-3">
+   <section class="bsbCon container bg-lightBlue my-5 mt-3">
       <div class="row justify-content-evenly h-100 content " id="bestSellingBookAppend">
          <div class="my-5"></div>
          <div class="col-12">
-            <div class="my-5 content">
+            <div class="bsb my-5 content">
                <div class="text-left ms-5 d-flex flex-row content">
                   <h2 class="fw-bold font-color-primary">
                      Best Selling Books
