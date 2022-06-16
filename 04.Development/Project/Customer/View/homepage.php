@@ -15,7 +15,7 @@
    <link rel="stylesheet" href="../resource/UI Library/fontawesome-free/css/all.min.css">
    <link rel="stylesheet" href="../resource/UI Library/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
    <link rel="stylesheet" href="../resource/css/common.css">
-   
+
 </head>
 
 <body>
@@ -107,7 +107,7 @@
       </div>
    </section>
    <!-- NEW BOOK -->
-   <section class="container my-5  vh-100" id="newsBooks">
+   <section class="container my-5  " id="newsBooks">
       <div class=" row justify-content-evenly align-items-center " id="newsBookAppend">
          <div class=""></div>
          <hr class="newhr content">
@@ -150,6 +150,8 @@
 
       </div>
    </section>
+   <!-- Popular Books End -->
+   <!-- Favourite Author Start -->
    <section class="container py-5">
       <div class="row">
          <div class="col-12 col-lg-6">
@@ -159,10 +161,11 @@
             <button class="btn authorViewAll"><a href="../View/author.php" class="text-white text-decoration-none"> View All</a></button>
          </div>
       </div>
-      <div class="row mt-5" id="favouriteAuthorAppend">
+      <div class="row  justify-content-evenly mt-5" id="favouriteAuthorAppend">
 
       </div>
    </section>
+   <!-- Favourite Author End -->
    <section id="blueBox" class="container mt-5">
       <div class="row pt-3">
          <div class="col-12 col-lg-3  col-sm-12   ">
@@ -264,10 +267,10 @@
 
       // Slider
       $(".slider").slick({
-         arrows:false,
-         autoplay:true,
-         autoplaySpeed:1000,
-         
+         arrows: false,
+         autoplay: true,
+         autoplaySpeed: 1000,
+
       });
 
 

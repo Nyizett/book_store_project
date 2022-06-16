@@ -11,7 +11,7 @@ $(document).ready(function () {
         <div class="col-6 col-lg-3 col-xl-2 col-md-4 content goBookDetail mb-5" id="${
           book.id
         }">
-            <div class="card  mb-lg-0 card-width" >
+            <div class="card  mb-lg-0 " >
               <img src="../../Images/${
                 book.book_image
               }" class="img-fluid  mx-auto mt-3 " alt="" width="80%" />
@@ -77,10 +77,10 @@ $(document).ready(function () {
             // console.log(jsonBook[0].book_image);
             $("#bestSellingBookAppend").append(
               `
-                            <div class="col-6 col-lg-3  col-xl-2 mb-5 me-4 goBookDetail" id="${
+                            <div class="col-6 col-lg-3  col-xl-2 mb-5 goBookDetail" id="${
                               jsonBook[0].Book_Id
                             }">
-                                      <div class="card mb-5 mb-lg-0 card-width bg-lightBlue border-0 content nb-card" style="min-height:70vh">
+                                      <div class="card mb-5 mb-lg-0 card-width bg-lightBlue border-0 content nb-card" >
                                         <img src="../../Images/${
                                           jsonBook[0].book_image
                                         }" class="img-fluid mx-auto mt-3" width="90%" alt="" />
@@ -152,7 +152,7 @@ $(document).ready(function () {
             <div class="col-6 col-lg-3 col-xl-2 my-3 mx-3 goBookDetail" id="${
               jsonBook[0].Book_Id
             }">
-            <div class="card mb-5 mb-lg-0 card-width bg-lightBlue border-1 content" style="min-height:70vh">
+            <div class="card mb-5 mb-lg-0 card-width bg-lightBlue border-1 content" >
                <img src="../../Images/${
                  jsonBook[0].book_image
                }" class="img-fluid mx-auto mt-3" width="90%" alt="" />
@@ -219,7 +219,7 @@ $(document).ready(function () {
         $("#favouriteAuthorAppend").append(
           `
             <div class="col-12 col-lg-2 showAuthorsBooks" id="${author.author_id}">
-            <img src="../../Admin/resource/img/authors/${author.author_image}" class="img-fluid"  alt="${author.author_name}'s Photo">
+            <img src="../../Admin/resource/img/authors/${author.author_image}" class="img-fluid mt-2"  alt="${author.author_name}'s Photo" >
             <p class="font-color-primary fw-bold text-center pt-2">${author.author_name}</p>
             </div>
             `
