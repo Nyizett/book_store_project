@@ -31,11 +31,11 @@ function ShowItem(data,row,page){
             <td>${count++}</td>
             <td>${book.book_name}</td>
             <td class='tb-img'> <img src="../../Images/${book.book_image}"</td>
-            <td>${book.category_name}</td>
+            <td >${book.category_name}</td>
             <td>${book.author_name}</td>
             <td>${book.book_price.toLocaleString('en-US')} MMK</td>
-            <td><a href='../View/editBook.php?id= ${book.id}'><button type='button' class='btn btn-outline-primary'><ion-icon name='create-outline'></ion-icon></button></a></td>
-            <td><a href='../Controller/deleteBookController.php?id= ${book.id}'><button type='button' class='btn btn-outline-danger'><ion-icon name='trash-outline'></ion-icon></button></a></td>
+            <td ><a href='../View/editBook.php?id= ${book.id}'><button type='button' class='smBtnn btn btn-sm btn-outline-primary'><ion-icon name='create-outline'></ion-icon></button></a></td>
+            <td ><a href='../Controller/deleteBookController.php?id= ${book.id}'><button type='button' class='smBtnn btn btn-sm btn-outline-danger'><ion-icon name='trash-outline'></ion-icon></button></a></td>
             </tr>`
         )
         }

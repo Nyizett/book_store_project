@@ -36,7 +36,7 @@ require_once "../../Admin/Model/DBConnection.php";
             $uid = $orderDetail[$i]['id'];
             $bookid = $orderDetail[$i]['book_id'];
             $qty = $orderDetail[$i]['order_d_quantity'];
-            $total = $orderDetail[$i]['total'];
+            $total = $orderDetail[$i]['book_price'];
            
                 $sql = $dbconnect->prepare(
                 "INSERT INTO m_order_details

@@ -1,0 +1,17 @@
+@media screen and (max-width:720px){
+ .tb-text{
+    font-size: 0.7em;
+ }
+ .allitems{
+    font-size: 0.3em;
+}
+.smBtnn{
+    border: none;
+}
+.tttt{
+    margin-left: 5%;
+}
+#bookData{
+    font-size: 0.6em;
+}
+}
