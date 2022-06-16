@@ -25,8 +25,8 @@
    <!-- Header -->
 
    <div class="resp header container-fluid d-flex justify-content-between align-items-center p-4">
-      <h3 class="ms-5 text-primary">Search</h3>
-      <div class="me-5 text-primary">
+      <h3 class="search ms-5 ">Search</h3>
+      <div class="hometextColor me-5 ">
          <b>Home</b> -> Search
       </div>
    </div>

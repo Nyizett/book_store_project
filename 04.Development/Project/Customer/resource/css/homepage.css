@@ -99,6 +99,7 @@
 .showAuthorsBooks img {
   border-radius: 2rem;
 }
+
 @media screen and (max-width: 720px) {
   .secondary-bg {
     width: 50%;

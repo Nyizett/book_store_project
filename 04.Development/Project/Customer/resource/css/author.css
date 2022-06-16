@@ -1,12 +1,14 @@
 .authorHeader {
-  height: 30vh;
+  height: 23vh;
   width: 100%;
   background-color: rgba(199, 225, 250, 0.452);
 }
 .author {
+  margin-top: 3em;
   color: var(--primary-darkblue);
 }
 .homeTextColor {
+  
   color: var(--font-color3);
 }
 .startName span {
