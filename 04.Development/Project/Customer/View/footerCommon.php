@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row my-footer">
     <div class="col col-lg-3 ps-5 pt-4">
         <div class="">
             <h2 class="ftitle text-white align-top">စာ အုပ် ဆိုင်</h2>

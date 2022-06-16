@@ -82,7 +82,7 @@
       </div>
    </section>
 
-   <footer id="footer" class="footer-class container-fluid commom-bg  mt-5">
+   <footer id="footer" class="footer-class container-fluid commom-bg">
       <?php require "../View/footerCommon.php" ?>
    </footer>
 

@@ -26,7 +26,9 @@
   color: white;
   margin-top: 1em;
 }
-
+/* .footer-class{
+  margin-top: 30%;
+} */
 @media screen and (max-width:720px) {
 
   .searchbox {
