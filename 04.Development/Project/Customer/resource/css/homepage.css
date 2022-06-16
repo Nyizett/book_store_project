@@ -35,7 +35,7 @@
   height: 180px;
 }
 .stext {
-  margin-top: 5em;
+  margin-top: 15vh;
   margin-left: 2em;
 }
 #blueBox {
@@ -70,7 +70,9 @@
 .bd-new-color {
   border-color: #514e4e;
 }
-
+.mydiv {
+  margin-top: 30vh !important;
+}
 #myBtn {
   display: none;
   position: fixed;
@@ -92,14 +94,28 @@
 .showAuthorsBooks {
   cursor: pointer;
 }
-.showAuthorsBooks {
-  border: 0.5px solid black !important;
-  border-radius: 1rem;
+
+.bookCards {
+  min-height: 60vh !important;
 }
-.showAuthorsBooks img {
+.authorCards {
+  min-height: 30vh !important;
+}
+.authorCards img {
   border-radius: 2rem;
 }
+.bottomRow {
+  width: 70% !important;
+  margin: auto !important;
+}
+.bottomMinHeight {
+  min-height: 17vh !important;
+  min-width: 15vw !important;
+}
 
+.bottomCardText {
+  padding-left: 30px !important;
+}
 @media screen and (max-width: 720px) {
   .secondary-bg {
     width: 50%;
@@ -110,11 +126,11 @@
     height: 7em;
   }
   .stext1 {
-    font-size: 0.4em;
+    font-size: 0.9em;
   }
   .stext2,
   .cat {
-    font-size: 0.6em;
+    font-size: 1.1em;
   }
   .stext {
     position: absolute;
@@ -189,8 +205,26 @@
   .bsb {
     margin-top: 40%;
   }
-  .showAuthorsBooks {
+
+  .bookCards {
+    min-height: 10vh !important;
+  }
+  .authorCards {
+    min-height: 20vh !important;
     width: fit-content !important;
+  }
+  .bottomInfo {
+    width: 20% !important;
+  }
+  .bottomRow {
+    width: 100% !important;
+    margin-left: 10vw !important;
+  }
+  .bottomCardText p {
+    font-size: 0.9rem !important;
+  }
+  .bottomCardText {
+    padding-left: 10px !important;
   }
   /* .card {
     min-height: 2vh !important;

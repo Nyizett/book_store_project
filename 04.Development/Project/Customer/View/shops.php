@@ -13,9 +13,10 @@
     <link rel="stylesheet" href="../resource/css/shops.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
     <link rel="stylesheet" href="../resource/UI Library/fontawesome-free/css/all.min.css">
-    <link rel="stylesheet" href="../resource/css/common.css">
+
     <link rel="stylesheet" href="../resource/css/footer.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../resource/css/common.css">
 </head>
 
 <body>
@@ -34,7 +35,7 @@
         <button class="cityBtn btn  text-primary border border-primary">Yangon</button>
         <button class="cityBtn btn text-primary border border-primary">Mandalay</button>
         <button class="cityBtn btn text-primary border border-primary">NayPyiTaw</button>
-        
+
     </div>
     </div>
     <div class="container-fluid bg-white">
