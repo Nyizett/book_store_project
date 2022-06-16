@@ -2,6 +2,21 @@ let books = [];
 let ids = [];
 
 $(document).ready(function () {
+  // cart local storage
+  if(localStorage.getItem('cart') != null){
+    let cart = JSON.parse(localStorage.getItem('cart'));
+    console.log(cart);
+    for (let index = 0; index < cart.length; index++) {
+        books.push(cart[index]);
+      
+    }
+    console.log(books);
+    
+    $("#cartCount2").text(`${JSON.parse(localStorage.getItem('cart')).length}`);
+    
+    
+  }
+  
   $("#CommonHomePage").addClass("border-bottom");
   console.log(categoryId);
   $.ajax({
@@ -37,8 +52,9 @@ $(document).ready(function () {
         success: function (res) {
           console.log(res);
           books.push(JSON.parse(res));
-
-          $("#cartCount2").text(`${books.length}`);
+          
+          localStorage.setItem('cart',JSON.stringify(books));
+          $("#cartCount2").text(`${JSON.parse(localStorage.getItem('cart')).length}`);
         },
         error: function (err) {},
       });
