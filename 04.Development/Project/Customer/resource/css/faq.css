@@ -1,3 +1,32 @@
-.faq-item-body {
-   display: none;
+:root {
+   --primary-color: #1f4287;
+   --accent-color: #ebf1fd;
+   --navbar-color: #fff;
+   --body-color: white;
+}
+.header{
+   background-color: var(--accent-color);
+}
+.faq{
+   color: var(--primary-darkblue);
+   
+}
+.faqHome{
+   color: var(--font-color3);
+}
+
+@media screen and (max-width:720px) {
+   
+   .faq,.faqHome{
+      color: white;
+      
+   }
+   .faq-title{
+      font-size: 1em;
+      margin-left: 1em;
+   }
+   .faq-pag{
+       font-size: 0.8em;
+       margin-left: 1.3em;
+   }
 }

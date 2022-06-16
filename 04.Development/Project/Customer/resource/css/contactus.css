@@ -1,5 +1,17 @@
-.box {
-   background-color: #4d82ed;
+:root {
+   --primary-color: #1f4287;
+   --accent-color: #ebf1fd;
+   --navbar-color: #fff;
+   --body-color: white;
+}
+.header{
+   background-color: var(--accent-color);
+}
+.ctUs{
+   color: var(--primary-darkblue);
+}
+.ctUs-home{
+   color: var(--font-color3);
 }
 
 .details-text {
@@ -21,4 +33,31 @@
    font-size: 1.5em;
    color: white;
    background-color: #4d82ed;
+}
+@media screen and (max-width:720px) {
+   
+   .ctUs,.ctUs-home{
+      color: white;
+      
+   }
+   .faq-title{
+      font-size: 1em;
+      margin-left: 1em;
+   }
+   .faq-pag{
+       font-size: 0.8em;
+       margin-left: 1.3em;
+   }
+   .gt{
+      font-size: 1em;
+   }
+   .gt-text{
+      font-size: 0.8em;
+   }
+   /* .web-box{
+      height: 30vh;
+   } */
+.msg-box{
+   width: 100%;
+}
 }

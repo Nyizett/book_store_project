@@ -13,6 +13,8 @@ img{
 
 .my-card {
     border: 0.5px solid #ccc;
+    height: 80vh;
+    overflow: hidden;
 }
 
 .my-card-img {
@@ -20,7 +22,8 @@ img{
     background-color: var(--accent-color);
     padding: 20px 40px;
     text-align: center;
-    height: 500px;
+    height: 80vh;
+    
 }
 .my-card-img img {
     width: 100%;
@@ -50,23 +53,19 @@ img{
 }
 @media screen and (max-width:720px) {
     .my-card {
-        
         width: 70%;
-        
-        
-      }
-      
-      .my-card-img img {
+        height: 50vh;
+    }
+    .my-card-img img {
         width: 100%;
         height: 20vh;
-        object-fit: cover;
+        /* object-fit: cover; */
         
       }
 }
 
 @media screen and (max-width:500px) {
     .my-card {
-        
-        height: 75vh;
+        height: 60vh;
     }
 }

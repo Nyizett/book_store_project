@@ -1,0 +1,32 @@
+:root {
+    --primary-color: #1f4287;
+    --accent-color: #ebf1fd;
+    --navbar-color: #fff;
+    --body-color: white;
+}
+.header{
+    background-color: var(--accent-color);
+}
+.prav{
+    color: var(--primary-darkblue);
+    /* display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; */
+}
+.pravHome{
+    color: var(--font-color3);
+}
+@media screen and (max-width:720px) {
+    .header{
+        margin-top: 1em;
+    }
+    .prav{
+        width: 20%;
+    }
+    .pp-title{
+        font-size: 1em;
+    }
+    .pp-pag{
+        font-size: 0.8em;
+    }
+}

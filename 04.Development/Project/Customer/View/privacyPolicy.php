@@ -9,11 +9,11 @@
    <link rel="shortcut icon" href="../../Images/latestLogo.png" type="image/x-icon" width="100vw" />
    <link rel="stylesheet" href="../resource/UI Library/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
    <link rel="stylesheet" href="../resource/css/style.css" />
-   <link rel="stylesheet" href="../resource/css/contactus.css" />
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
    <link rel="stylesheet" href="../resource/UI Library/fontawesome-free/css/all.min.css">
    <link rel="stylesheet" href="../resource/css/common.css">
    <link rel="stylesheet" href="../resource/css/footer.css">
+   <link rel="stylesheet" href="../resource/css/privacypolicy.css">
 </head>
 
 <body>
@@ -24,8 +24,8 @@
    </nav>
    <!-- Header -->
    <div class="container-fluid header d-flex justify-content-between align-items-center p-4 box ">
-      <h3 class="ms-5">Privacy & Policy</h3>
-      <div class="me-5">
+      <h3 class="prav ms-5 text-break ">Privacy & Policy</h3>
+      <div class="pravHome me-5">
          <b>Home</b> -> Privacy & Policy
       </div>
    </div>
@@ -43,8 +43,8 @@
             $no = 1;
 
             foreach ($result as $key => $value) {
-               echo '<h4 class="font-color-primary mt-4">' . $value['pp_title'] . "</h4>";
-               echo '<p class="mt-1">' . $value['pp_paragraph'] . "</p>";
+               echo '<h4 class="pp-title font-color-primary mt-4">' . $value['pp_title'] . "</h4>";
+               echo '<p class="pp-pag mt-1">' . $value['pp_paragraph'] . "</p>";
             }
             ?>
 
