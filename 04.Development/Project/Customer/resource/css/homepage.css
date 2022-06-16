@@ -20,10 +20,10 @@
   width: 500px;
   height: 300px;
 }
- 
+
 .card-width {
   width: 200px;
-} 
+}
 .cardLg {
   width: 300px;
 }
@@ -34,11 +34,11 @@
   width: 700px;
   height: 180px;
 }
-.stext{
-  margin-top: 5em;
+.stext {
+  margin-top: 15vh;
   margin-left: 2em;
 }
-#blueBox{
+#blueBox {
   margin-top: 6em;
 }
 
@@ -70,7 +70,9 @@
 .bd-new-color {
   border-color: #514e4e;
 }
-
+.mydiv {
+  margin-top: 30vh !important;
+}
 #myBtn {
   display: none;
   position: fixed;
@@ -92,97 +94,156 @@
 .showAuthorsBooks {
   cursor: pointer;
 }
-@media screen and (max-width:720px){
- 
+
+.bookCards {
+  min-height: 60vh !important;
+}
+.authorCards {
+  min-height: 30vh !important;
+}
+.authorCards img {
+  border-radius: 2rem;
+}
+.bottomRow {
+  width: 70% !important;
+  margin: auto !important;
+}
+.bottomMinHeight {
+  min-height: 17vh !important;
+  min-width: 15vw !important;
+}
+
+.bottomCardText {
+  padding-left: 30px !important;
+}
+@media screen and (max-width: 720px) {
   .secondary-bg {
     width: 50%;
     height: 20%;
-  } 
+  }
   .img-slide1 {
     width: 11em;
     height: 7em;
   }
-  .stext1{
-    
-    font-size:0.4em ;
+  .stext1 {
+    font-size: 0.9em;
   }
-  .stext2,.cat{
-    font-size:0.6em ;
+  .stext2,
+  .cat {
+    font-size: 1.1em;
   }
-  .stext{
+  .stext {
     position: absolute;
     left: 35%;
-    bottom:59%;
+    bottom: 59%;
     width: 55%;
   }
-  #blueBox{
+  #blueBox {
     margin-top: 5em;
     width: 50%;
     display: block;
     font-size: 0.5em;
-    margin-left:17em;
+    margin-left: 17em;
   }
-  .web-box1,.web-box2,.web-box3{
+  .web-box1,
+  .web-box2,
+  .web-box3 {
     /* margin-top: 2em; */
     display: none;
   }
-  .rounded-circle{
+  .rounded-circle {
     width: 2em;
     height: 2em;
   }
-  .icon{
+  .icon {
     font-size: 0.7em;
     padding-bottom: 0.4em;
   }
-  .newhr{
+  .newhr {
     display: none;
   }
-  .newsBook{
+  .newsBook {
     position: absolute;
     top: 37%;
   }
-  .nb{
+  .nb {
     font-size: 1.2em;
   }
-  .goBookDetail{
-    background-color: black;
-    /* width: 11em; */
-    
-    
+  .goBookDetail {
+    width: 40% !important;
   }
-  #newBooks{
-    width: 11em;
+  #newsBookAppend {
+    width: fit-content !important;
   }
   /* .card-width{
     width: 11em;
     height: 6em;
   } */
-  .resp{
+  .resp {
     width: 100px;
     height: 50px;
     background-color: aquamarine;
   }
-  .img-fluid{
+  .img-fluid {
     width: 5em;
   }
-  .card-body{
+  .card-body {
     height: 10em;
   }
-  .card-title{
+  .card-title {
     font-size: 0.8em;
   }
-  .my-2{
+  .my-2 {
     font-size: 0.5em;
   }
-  
-  .bsbCon{
+
+  .bsbCon {
     height: 30%;
-    background-color: aqua;
-    display: none;
+    /* background-color: aqua; */
+    /* display: none; */
   }
-  .bsb{
-    margin-top:40%;
-
+  .bsb {
+    margin-top: 40%;
   }
 
+  .bookCards {
+    min-height: 10vh !important;
+  }
+  .authorCards {
+    min-height: 20vh !important;
+    width: fit-content !important;
+  }
+  .bottomInfo {
+    width: 20% !important;
+  }
+  .bottomRow {
+    width: 100% !important;
+    margin-left: 10vw !important;
+  }
+  .bottomCardText p {
+    font-size: 0.9rem !important;
+  }
+  .bottomCardText {
+    padding-left: 10px !important;
+  }
+  /* .card {
+    min-height: 2vh !important;
+    min-width: 10% !important;
+  } */
+}
+@media screen and (max-width: 500px) {
+  .stext {
+    position: absolute;
+    left: 35%;
+    bottom: 70%;
+    width: 55%;
+  }
+}
+@media screen and (max-width: 380px) {
+  .stext {
+    position: absolute;
+    left: 35%;
+    bottom: 60%;
+    width: 55%;
+  }
 }

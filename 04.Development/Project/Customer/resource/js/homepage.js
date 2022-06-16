@@ -11,10 +11,12 @@ $(document).ready(function () {
         <div class="col-6 col-lg-3 col-xl-2 col-md-4 content goBookDetail mb-5" id="${
           book.id
         }">
-            <div class="card  mb-lg-0 card-width" >
+            <div class="card card-width mb-lg-0 bookCards" >
               <img src="../../Images/${
                 book.book_image
-              }" class="img-fluid  mx-auto mt-3 " alt="" width="80%" />
+              }" class="img-fluid  mx-auto mt-3 " alt="${
+            book.book_name
+          }' Photo" width="60%" />
               <div class="card-body d-flex flex-column justify-content-center align-items-center">
                   <p class="card-title fw-bold  font-color-primary">${
                     book.book_name
@@ -77,13 +79,15 @@ $(document).ready(function () {
             // console.log(jsonBook[0].book_image);
             $("#bestSellingBookAppend").append(
               `
-                            <div class="col-6 col-lg-3  col-xl-2 mb-5 me-4 goBookDetail" id="${
+                            <div class="col-6 col-lg-3  col-xl-2 mb-5  goBookDetail" id="${
                               jsonBook[0].Book_Id
                             }">
-                                      <div class="card mb-5 mb-lg-0 card-width bg-lightBlue border-0 content nb-card" style="min-height:70vh">
+                                      <div class="card mb-5 mb-lg-0 card-width bg-lightBlue border-0  nb-card bookCards" >
                                         <img src="../../Images/${
                                           jsonBook[0].book_image
-                                        }" class="img-fluid mx-auto mt-3" width="90%" alt="" />
+                                        }" class="img-fluid mx-auto mt-3" width="60%" alt="${
+                jsonBook[0].book_name
+              }' Photo" />
                                         <div class="card-body d-flex flex-column justify-content-center align-items-center">
                                             <p class="card-title fw-bold mb-0 font-color-primary">
                                             ${jsonBook[0].book_name}
@@ -152,10 +156,12 @@ $(document).ready(function () {
             <div class="col-6 col-lg-3 col-xl-2 my-3 mx-3 goBookDetail" id="${
               jsonBook[0].Book_Id
             }">
-            <div class="card mb-5 mb-lg-0 card-width bg-lightBlue border-1 content" style="min-height:70vh">
+            <div class="card mb-5 mb-lg-0 card-width bg-lightBlue border-1 bookCards" >
                <img src="../../Images/${
                  jsonBook[0].book_image
-               }" class="img-fluid mx-auto mt-3" width="90%" alt="" />
+               }" class="img-fluid mx-auto mt-3" width="60%" alt="${
+              jsonBook[0].book_name
+            }' Photo" />
                <div class="card-body d-flex flex-column justify-content-center align-items-center">
                   <p class="card-title fw-bold mb-0 font-color-primary">
                   ${jsonBook[0].book_name}
@@ -218,8 +224,8 @@ $(document).ready(function () {
       for (const author of json) {
         $("#favouriteAuthorAppend").append(
           `
-            <div class="col-12 col-lg-2 showAuthorsBooks" id="${author.author_id}">
-            <img src="../../Admin/resource/img/authors/${author.author_image}" class="img-fluid"  alt="${author.author_name}'s Photo">
+            <div class="col-12 col-lg-2 card card-width authorCards showAuthorsBooks" id="${author.author_id}">
+            <img src="../../Admin/resource/img/authors/${author.author_image}" class="img-fluid mt-2"  alt="${author.author_name}'s Photo" >
             <p class="font-color-primary fw-bold text-center pt-2">${author.author_name}</p>
             </div>
             `
