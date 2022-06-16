@@ -12,6 +12,12 @@
 .header {
   background-color: var(--accent-color);
 }
+.search {
+  color: var(--primary-darkblue);
+}
+.hometextColor {
+  color: var(--font-color3);
+}
 
 .form-control-borderless:hover,
 .form-control-borderless:active,
