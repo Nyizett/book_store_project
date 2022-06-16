@@ -8,11 +8,17 @@ $(document).ready(function () {
       for (const book of json) {
         $("#newsBookAppend").append(
           `
-        <div class="col-6 col-lg-3 col-xl-2 content goBookDetail mb-5" id="${book.id}">
+        <div class="col-6 col-lg-3 col-xl-2 content goBookDetail mb-5" id="${
+          book.id
+        }">
             <div class="card mb-5 mb-lg-0 card-width" style="min-height:70vh">
-              <img src="../../Images/${book.book_image}" class="img-fluid  mx-auto mt-3 " alt="" width="80%" />
+              <img src="../../Images/${
+                book.book_image
+              }" class="img-fluid  mx-auto mt-3 " alt="" width="80%" />
               <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                  <p class="card-title fw-bold  font-color-primary">${book.book_name}</p>
+                  <p class="card-title fw-bold  font-color-primary">${
+                    book.book_name
+                  }</p>
                   <small class="my-2">
                   <i class="fa-solid fa-star star0 " ></i>
                   <i class="fa-solid fa-star star1" ></i>
@@ -24,7 +30,9 @@ $(document).ready(function () {
                     ${book.author_name}
                   </small>
                   <div class="d-flex d justify-content-between align-items-center">
-                    <p class="fw-bold mb-0 font-color-primary">${book.book_price} MMK</p>
+                    <p class="fw-bold mb-0 font-color-primary">${book.book_price
+                      .toString()
+                      .replace(/\B(?=(\d{3})+(?!\d))/g, ",")} MMK</p>
                   </div>
               </div>
             </div>
@@ -46,7 +54,7 @@ $(document).ready(function () {
         $bookId = $(this).attr("id");
 
         window.location.href =
-          "../../Customer/View/bookDetails.php?id=" + $bookId;
+          "../../Customer/Controller/bookDetailController.php?id=" + $bookId;
       });
     },
   });
@@ -69,9 +77,13 @@ $(document).ready(function () {
             // console.log(jsonBook[0].book_image);
             $("#bestSellingBookAppend").append(
               `
-                            <div class="col-6 col-lg-3 col-xl-2 mb-5 me-4 goBookDetail" id="${jsonBook[0].Book_Id}">
+                            <div class="col-6 col-lg-3 col-xl-2 mb-5 me-4 goBookDetail" id="${
+                              jsonBook[0].Book_Id
+                            }">
                                       <div class="card mb-5 mb-lg-0 card-width bg-lightBlue border-0 content" style="min-height:70vh">
-                                        <img src="../../Images/${jsonBook[0].book_image}" class="img-fluid mx-auto mt-3" width="90%" alt="" />
+                                        <img src="../../Images/${
+                                          jsonBook[0].book_image
+                                        }" class="img-fluid mx-auto mt-3" width="90%" alt="" />
                                         <div class="card-body d-flex flex-column justify-content-center align-items-center">
                                             <p class="card-title fw-bold mb-0 font-color-primary">
                                             ${jsonBook[0].book_name}
@@ -87,7 +99,12 @@ $(document).ready(function () {
                                             ${jsonBook[0].author_name}
                                             </small>
                                             <div class="d-flex d justify-content-between align-items-center">
-                                              <p class="fw-bold mb-0 font-color-primary">${jsonBook[0].book_price} MMK</p>
+                                              <p class="fw-bold mb-0 font-color-primary">${jsonBook[0].book_price
+                                                .toString()
+                                                .replace(
+                                                  /\B(?=(\d{3})+(?!\d))/g,
+                                                  ","
+                                                )} MMK</p>
                                             </div>
                                         </div>
                                       </div>
@@ -108,7 +125,8 @@ $(document).ready(function () {
               $bookId = $(this).attr("id");
 
               window.location.href =
-                "../../Customer/View/bookDetails.php?id=" + $bookId;
+                "../../Customer/Controller/bookDetailController.php?id=" +
+                $bookId;
             });
           },
         });
@@ -131,9 +149,13 @@ $(document).ready(function () {
             let jsonBook = JSON.parse(data);
 
             $("#popularBookAppend").append(`
-            <div class="col-6 col-lg-3 col-xl-2 my-3 mx-3 goBookDetail" id="${jsonBook[0].Book_Id}">
+            <div class="col-6 col-lg-3 col-xl-2 my-3 mx-3 goBookDetail" id="${
+              jsonBook[0].Book_Id
+            }">
             <div class="card mb-5 mb-lg-0 card-width bg-lightBlue border-1 content" style="min-height:70vh">
-               <img src="../../Images/${jsonBook[0].book_image}" class="img-fluid mx-auto mt-3" width="90%" alt="" />
+               <img src="../../Images/${
+                 jsonBook[0].book_image
+               }" class="img-fluid mx-auto mt-3" width="90%" alt="" />
                <div class="card-body d-flex flex-column justify-content-center align-items-center">
                   <p class="card-title fw-bold mb-0 font-color-primary">
                   ${jsonBook[0].book_name}
@@ -151,7 +173,9 @@ $(document).ready(function () {
                   ${jsonBook[0].author_name}
                   </small>
                   <div class="d-flex d justify-content-between align-items-center">
-                     <p class="fw-bold mb-0 font-color-primary"> ${jsonBook[0].book_price} MMK</p>
+                     <p class="fw-bold mb-0 font-color-primary"> ${jsonBook[0].book_price
+                       .toString()
+                       .replace(/\B(?=(\d{3})+(?!\d))/g, ",")} MMK</p>
                   </div>
                </div>
             </div>
@@ -170,8 +194,16 @@ $(document).ready(function () {
             $(".goBookDetail").click(function () {
               $bookId = $(this).attr("id");
               window.location.href =
-                "../../Customer/View/bookDetails.php?id=" + $bookId;
+                "../../Customer/Controller/bookDetailController.php?id=" +
+                $bookId;
             });
+            // $(".bookdetail").click(function (e) {
+            //   console.log("hello");
+
+            //   let id = this.id;
+
+            //   window.location.href = `../../Customer/Controller/bookDetailController.php?id=${id}`;
+            // });
           },
         });
       }
@@ -201,6 +233,27 @@ $(document).ready(function () {
       }
       console.log(json);
       // $("#totalBookShow").text(json.length);
+    },
+  });
+  //Slider Image SHOW
+  $.ajax({
+    type: "post",
+    url: "../Controller/sliderImageGetController.php",
+    success: function (data) {
+      let json = JSON.parse(data);
+      console.log(json[0].total_Sold_Book);
+      $("#headerSlider1").append(
+        `<img class="img-slide1" src="../../Images/${json[0].slider_image_1}" alt=""></img>`
+      );
+      $("#headerSlider2").append(
+        `<img class="img-slide1" src="../../Images/${json[0].slider_image_2}" alt=""></img>`
+      );
+      $("#headerSlider3").append(
+        `<img class="img-slide1" src="../../Images/${json[0].slider_image_3}" alt=""></img>`
+      );
+      $("#headerSlider4").append(
+        `<img class="img-slide1" src="../../Images/${json[0].slider_image_4}" alt=""></img>`
+      );
     },
   });
   //TOTAL Sold BOOK SHOW
@@ -253,3 +306,6 @@ $(document).ready(function () {
     },
   });
 });
+function numberWithCommas(x) {
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}

@@ -24,6 +24,9 @@
 .image-container{
     width: 2rem;
 }
+.catdrop{
+    font-size: 1.3em;
+}
 
 .my-title {
     padding-left: 9%;
@@ -52,4 +55,50 @@
     position: absolute;
     left: 20px;
     bottom: 20px;
+}
+@media screen and (max-width:720px){
+    .navbar {
+        height: 5em;
+        
+    }
+    .container-fluid{
+        background-color: #1f4287;
+    }
+    
+    .image-container img{
+        display: none;
+    }
+    .my-fcolor{
+        font-size: 1em;
+    }
+    .b-title{
+        font-size: 0.7em;
+    }
+    .my-title{
+        padding-left: 1%;
+        padding-right: 5%;
+        
+    }
+    .categories{
+        width: 85%;
+    }
+    .pe-2{
+        font-size: 1em;
+    }
+    .catdrop{
+        font-size: 1.2em;
+    }
+    .my-tog{
+        font-size: 1em;
+    }
+    /* .cartdiv{
+        margin-right: 73%;
+    }
+    #cartCount2{
+        margin-right: 60%
+    } */
+    .m-icon{
+        margin-right: 73%;
+    }
+    
 }

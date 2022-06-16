@@ -16,6 +16,9 @@ if(isset($_POST)){
     $bookDescription = $_POST['bookDes'];
     $UserName=$_SESSION['username'];
 
+    // echo "$bookCategory";
+
+    echo "$id";
     //Call DB Connection
     $db =  new DBConnect();
     $dbconnect = $db->connect();
@@ -49,4 +52,5 @@ if(isset($_POST)){
         $sql->bindValue(":adminName", $UserName);
         $sql->execute();
     header ("Location: ../View/bookInfo.php");
+
 }

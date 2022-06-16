@@ -1,11 +1,24 @@
+:root {
+   --primary-color: #1f4287;
+   --accent-color: #ebf1fd;
+   --navbar-color: #fff;
+   --body-color: white;
+}
 .form-control-borderless {
-   border: none;
+  border: none;
+}
+.header{
+   background-color: var(--accent-color);
 }
 
 .form-control-borderless:hover,
 .form-control-borderless:active,
 .form-control-borderless:focus {
-   border: none;
-   outline: none;
-   box-shadow: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+.viewBook {
+  background-color: var(--primary-darkblue);
+  color: white;
 }

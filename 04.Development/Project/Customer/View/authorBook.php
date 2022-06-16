@@ -103,7 +103,9 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="../resource/UI Library/fontawesome-free/js/all.min.js"></script>
     <script src="../resource/js/authorBook.js" defer></script>
-    <script type="text/javascript"></script>
+    <script type="text/javascript">
+
+    </script>
 
 </body>
 

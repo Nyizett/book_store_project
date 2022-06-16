@@ -16,6 +16,7 @@
    <link rel="stylesheet" href="../resource/css/common.css">
    <link rel="stylesheet" href="../resource/css/footer.css">
 
+
 </head>
 
 <body>
@@ -23,6 +24,7 @@
    <script>
       let id = <?php echo $_GET['id'] ?>
    </script>
+
    <!-- Header -->
    <nav class="navbar navbar-expand-lg   top-0 w-100 " id="cum_navbar">
       <?php require "../View/common.php" ?>
@@ -52,7 +54,7 @@
                      <p class="card-title fw-bold mb-0 font-color-primary"></p>
                      <?php echo " <small  class='card-text d-block mb-2 fs-3 fw-bold booknames'>" . $result[0]['book_name'] . " </small>";
                      ?>
-                    
+
 
 
                      <?php
@@ -64,19 +66,19 @@
 
                      ?>
                      <small>
-                     <?php
-                      $stars = $result[0]['rating'];
-                     for ($i = 0; $i < 5; $i++) {
-                        if ($i < $stars) {
-                           echo  " 
+                        <?php
+                        $stars = $result[0]['rating'];
+                        for ($i = 0; $i < 5; $i++) {
+                           if ($i < $stars) {
+                              echo  " 
                               <i class='fa-solid fa-star text-warning'></i>";
-                        } else {
-                           echo "
+                           } else {
+                              echo "
                               <i class='fa-solid fa-star'></i>
                               ";
+                           }
                         }
-                     }
-                     ?>
+                        ?>
                      </small>
 
 
@@ -152,13 +154,15 @@
       <?php require "../View/footerCommon.php" ?>
    </footer>
 
+
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
    <script src="../resource/js/common.js"></script>
    <script src="../resource/js/footerCommon.js"></script>
    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
    <script src="../resource/js/homepage.js"></script>
-   <script src="../resource/UI Library/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+
+   <!-- <script src="../resource/UI Library/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script> -->
    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
    <script src="../resource/UI Library/fontawesome-free/js/all.min.js"></script>

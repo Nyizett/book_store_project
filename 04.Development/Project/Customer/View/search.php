@@ -10,6 +10,7 @@
    <link rel="stylesheet" href="../resource/UI Library/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
    <link rel="stylesheet" href="../resource/css/style.css" />
    <link rel="stylesheet" href="../resource/css/search.css" />
+   <link rel="stylesheet" href="../resource/css/common.css" />
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
    <link rel="stylesheet" href="../resource/UI Library/fontawesome-free/css/all.min.css">
    <link rel="stylesheet" href="../resource/css/common.css">
@@ -18,14 +19,14 @@
 
 <body>
    <!-- Header -->
-   <nav class="navbar navbar-expand-lg   top-0 w-100 " id="cum_navbar">
+   <nav class="navbar navbar-expand-lg top-0 w-100 " id="cum_navbar">
       <?php require "../View/common.php" ?>
    </nav>
    <!-- Header -->
 
-   <div class="container-fluid header d-flex justify-content-between align-items-center p-4 bg-light">
-      <h3 class="ms-5">Search</h3>
-      <div class="me-5">
+   <div class="container-fluid header d-flex justify-content-between align-items-center p-4">
+      <h3 class="ms-5 text-primary">Search</h3>
+      <div class="me-5 text-primary">
          <b>Home</b> -> Search
       </div>
    </div>
@@ -81,7 +82,7 @@
       </div>
    </section>
 
-   <footer id="footer" class="container-fluid commom-bg  mt-5">
+   <footer id="footer" class="footer-class container-fluid commom-bg  mt-5">
       <?php require "../View/footerCommon.php" ?>
    </footer>
 

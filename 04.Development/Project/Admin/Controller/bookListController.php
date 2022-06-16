@@ -10,6 +10,7 @@ INNER JOIN m_author ON m_book.author_id=m_author.id INNER JOIN m_category ON m_b
 $sql->execute();
 
 $result = $sql->fetchAll(PDO::FETCH_ASSOC);
+echo json_encode($result);
 
 // print_r($result);
 

@@ -33,6 +33,14 @@
   width: 700px;
   height: 180px;
 }
+.stext{
+  margin-top: 5em;
+  margin-left: 2em;
+}
+#blueBox{
+  margin-top: 6em;
+}
+
 .bg-lightBlue {
   background-color: #ebf1fd;
 }
@@ -82,4 +90,45 @@
 .goBookDetail,
 .showAuthorsBooks {
   cursor: pointer;
+}
+@media screen and (max-width:500px){
+ 
+  .img-slide1,.img-slide2,.secondary-bg {
+    width: 10em;
+    height: 6em;
+  }
+  
+  /* .mydivtext{
+    background-color: black;
+    float: right;
+    width: 100px;
+  } */
+  /* .mycon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+   */
+  .stext1{
+    font-size:0.4em ;
+  }
+  .stext2,.cat{
+    font-size:0.6em ;
+  }
+  .stext{
+    position: absolute;
+    left: 35%;
+    bottom:60%;
+    width: 55%;
+  }
+  #blueBox{
+    margin-top: 5em;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+  .phicon{
+    font-size: 1em;
+}
+  
 }
