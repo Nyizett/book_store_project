@@ -14,9 +14,9 @@
   background-color: var(--main-color);
   text-align: center;
 }
-.btn:focus {
+/* .btn:focus {
   background-color: var(--btn-active-color);
-}
+} */
 .logout {
   background-color: var(--dashboard-items-color);
 }

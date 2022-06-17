@@ -9,6 +9,9 @@
 .aut-img > img{
     width: 100%;
 }
+.auinfobtn{
+    background-color: var(--btn-color)
+}
 @media screen and (max-width:720px){
    .smBtnn{
        border: none;
