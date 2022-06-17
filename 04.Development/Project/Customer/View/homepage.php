@@ -48,7 +48,7 @@
             <div class="stext pt-5 ps-5 ">
                <h3 class="stext1 font-color-primary" id="headerFirstText"></h3>
                <h1 class="stext2 fw-bold text-primary" id="headerSecondText"></h1>
-               <p class="cat">Language / Education / Novels / Technology / Cartoons</p>
+               <p class="cat">"Some books leave us free and some books make us free."</p>
                <!-- <a class="btn commom-bg text-white btn-lg shop-now fs-6" href="#">SHOP NOW</a> -->
             </div>
          </div>

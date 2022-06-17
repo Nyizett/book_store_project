@@ -107,14 +107,22 @@
 .bottomRow {
   width: 70% !important;
   margin: auto !important;
+  padding-left:15%;
 }
 .bottomMinHeight {
-  min-height: 17vh !important;
+  min-height: 13vh !important;
   min-width: 15vw !important;
 }
 
 .bottomCardText {
   padding-left: 30px !important;
+}
+.bottomInfo {
+  width: 35% !important;
+  
+  padding-top: 1em;
+  
+  
 }
 @media screen and (max-width: 720px) {
   .secondary-bg {
@@ -210,22 +218,27 @@
     min-height: 10vh !important;
   }
   .authorCards {
-    min-height: 20vh !important;
+    min-height: 15vh !important;
     width: fit-content !important;
   }
   .bottomInfo {
-    width: 20% !important;
+    width: 30% !important;
+    padding-top: 1em;
+    
+    
   }
   .bottomRow {
     width: 100% !important;
     margin-left: 10vw !important;
   }
   .bottomCardText p {
-    font-size: 0.9rem !important;
+    font-size: 0.6rem !important;
   }
   .bottomCardText {
     padding-left: 10px !important;
+    
   }
+  
   /* .card {
     min-height: 2vh !important;
     min-width: 10% !important;

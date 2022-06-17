@@ -14,8 +14,10 @@ if (isset($_POST)) {
     $bookSize = $_POST['bookSize'];
     $bookEstablished = $_POST['bookEsta'];
     // $bookimage = $_POST['bookImg'];
+    $bookRating =$_POST['bookRating'];
     $bookDescription = $_POST['bookDes'];
     $UserName=$_SESSION['username'];
+    
 
 
 
@@ -37,6 +39,7 @@ if (isset($_POST)) {
             book_pages,
             book_size,
             book_established,
+            rating,
             book_description,
             book_image,
             create_date,
@@ -50,6 +53,7 @@ if (isset($_POST)) {
             :bpg,
             :bsize,
             :best,
+            :rating,
             :bdes,
             :path,
             :create_date,
@@ -64,6 +68,7 @@ if (isset($_POST)) {
         $sql->bindValue(":bpg", $bookPages );
         $sql->bindValue(":bsize", $bookSize);
         $sql->bindValue(":best", $bookEstablished);
+        $sql->bindValue(":rating", $bookRating);
         $sql->bindValue(":bdes", $bookDescription);
         $sql->bindValue(":path", $file);
         $sql->bindValue(":create_date", date("d/m/Y"));
