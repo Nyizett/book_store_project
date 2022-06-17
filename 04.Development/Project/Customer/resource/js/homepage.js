@@ -311,7 +311,26 @@ $(document).ready(function () {
       $("#HeaderPhoneNumber").text(json[0].web_phno);
     },
   });
+
+  //Recommanded Books
+  if (localStorage.getItem("user") != null) {
+    let user = localStorage.getItem("user");
+    let json = JSON.parse(user);
+    let id = json["id"];
+    $.ajax({
+      type: "post",
+      url: "../Controller/recommendedBooksController.php",
+      data: "id=" + id,
+      success: function (data) {
+        let returns = JSON.parse(data);
+        console.log(returns);
+        for (const books of json) {
+        }
+      },
+    });
+  }
 });
+
 function numberWithCommas(x) {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }

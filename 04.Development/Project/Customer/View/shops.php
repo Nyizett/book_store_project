@@ -20,11 +20,18 @@
 </head>
 
 <body>
+    <script>
+        let cityName = <?php if (isset($_GET["name"])) {
+                            echo $_GET["name"];
+                        } else echo '"' . 'Yangon' . '";'; ?>
+    </script>
+
     <!-- Header -->
     <nav class="navbar navbar-expand-lg   top-0 w-100 " id="cum_navbar">
         <?php require "../View/common.php" ?>
     </nav>
     <!-- Header -->
+
     <div class="text-primary header d-flex justify-content-between align-items-center p-4">
         <h3 class="shop ms-5">Shops</h3>
         <div class="me-5">

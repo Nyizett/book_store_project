@@ -269,8 +269,9 @@
    <script src="../resource/UI Library/way_point/jquery.waypoints.js"></script>
    <script src="../resource/UI Library/counter_up/counter_up.js"></script>
    <script src="../resource/js/common.js"></script>
-   <script src="../resource/js/footerCommon.js"></script>
+
    <script src="../resource/js/homepage.js"></script>
+   <script src="../resource/js/footerCommon.js"></script>
    <script type="text/javascript">
       // Counter_Up
 
