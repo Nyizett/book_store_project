@@ -27,5 +27,5 @@ if(isset($_POST)){
     $sql->bindValue(":mes", $message);
 
     $sql->execute();
-    // header ("Location: ../View/authorInfo.php");
+    header ("Location: ../View/homepage.php");
 }
