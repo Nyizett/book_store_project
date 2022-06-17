@@ -1,4 +1,4 @@
-.header {
+/* .header {
     color: #1F4287;
     background-color: #EBF1FD;
 }
@@ -16,4 +16,19 @@ textarea {
     border: 1px solid #1F4287;
     color: #1F4287;
     background-color: white;
+} */
+:root {
+    --primary-color: #1f4287;
+    --accent-color: #ebf1fd;
+    --navbar-color: #fff;
+    --body-color: white;
+ }
+.header{
+    background-color: var(--accent-color);
+}
+.Coheader{
+    color: var(--primary-darkblue);
+}
+.Cott{
+    color: var(--font-color3);
 }
