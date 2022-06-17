@@ -158,6 +158,13 @@ if(!isset($_SESSION['username'])){
                             }
                             ?>
                         </table>
+                        <div class="ms-2 text-danger fs-5">
+                        <?php
+                        if(isset($_GET['id'])){
+                            echo"!Can't Delete This Category//Delete All The Books In This Category First!";
+                        }
+                        ?>
+                        </div>
                         <a href="./addCategory.php"><button class="btn btn-sm offset-9 custombutton fw-bold col-3">ADD CATEGORY</button></a>
                     </div>
                     <!-- Category Table end -->

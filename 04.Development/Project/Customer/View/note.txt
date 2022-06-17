@@ -2,5 +2,8 @@ hello
 http://localhost/paradise_BookStore/04.Development/Project/Customer/View/homepage.php
 
 
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51811.17969847553!2d139.5869984325165!3d35.74591987572951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018ec305947861b%3A0xb709722ff0442256!2sNerima%20City%2C%20Tokyo%2C%20Japan!5e0!3m2!1sen!2smm!4v1655483117662!5m2!1sen!2smm" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
 
 
