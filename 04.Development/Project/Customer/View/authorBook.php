@@ -46,7 +46,7 @@
 
                 if (count($result) == 0) {
                     echo "<div class='d-flex flex-column justify-content-center align-items-center mt-5 noBook'>";
-                    echo "<h4>There is no book by $result[$i]['author_name'].</h4>";
+                    echo "<h4>There is no book.</h4>";
                     echo "</div>";
                 }
                 for ($i = 0; $i < count($result); $i++) {

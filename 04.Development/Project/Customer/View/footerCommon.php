@@ -16,70 +16,47 @@
     <div class="col col-lg-8 col-xl-6">
         <div class="container-fluid">
             <div class="row mt-5 hello">
-                <div class="col col-6 col-lg-3 text-white">
-                    <div class="cs-width me-5">
+                <div class="col col-6 col-lg-3 text-white me-5">
+                    <div class="cs-width ">
                         <p class="fw-bold">Customer Service</p>
-                        <small>09-123456789</small>
+                        <small id="FooterPhoneNumber"></small>
                         <br />
-                        <small>hello@gmail.com</small>
+                        <small id="FooterEmail"></small>
                     </div>
                 </div>
-                <div class="col col-6 col-lg-3 text-white">
+                <div class="col col-6 col-lg-3 text-white me-5">
                     <div class="fservice">
                         <p class="fw-bold">Our Services</p>
-                        <a href="#" class="btn-link text-white text-decoration-none">
+                        <a href="../View/contactus.php" class="btn-link text-white text-decoration-none">
                             <small>Contact Us </small>
                         </a>
                         <br />
-                        <a href="#" class="btn-link text-white text-decoration-none">
+                        <a href="../View/guide.php" class="btn-link text-white text-decoration-none">
                             <small> Guide </small>
                         </a>
                         <br />
-                        <a href="#" class="btn-link text-white text-decoration-none">
+                        <a href="../View/service.php" class="btn-link text-white text-decoration-none">
                             <small>Service</small>
                         </a>
                         <br />
-                        <a href="#" class="btn-link text-white text-decoration-none">
+                        <a href="../View/faqs.php" class="btn-link text-white text-decoration-none">
                             <small> FAQ</small>
                         </a>
                     </div>
                 </div>
-                <!-- <div class="col-6 col-lg-3">
-                    <div class="">
-                        <p class="fw-bold text-white">Categories</p>
-                        <a href="#" class="btn-link text-white text-decoration-none">
-                            <small>Language</small>
-                        </a>
-                        <br />
-                        <a href="#" class="btn-link text-white text-decoration-none">
-                            <small>Education</small>
-                        </a>
-                        <br />
-                        <a href="#" class="btn-link text-white text-decoration-none">
-                            <small>Novels</small>
-                        </a>
-                        <br />
-                        <a href="#" class="btn-link text-white text-decoration-none">
-                            <small>Technology</small>
-                        </a>
-                        <br />
-                        <a href="#" class="btn-link text-white text-decoration-none">
-                            <small>Cartoons</small>
-                        </a>
-                    </div>
-                </div> -->
-                <div class="col col-6 col-lg-3 ms-5">
+
+                <div class="col col-6 col-lg-3 ">
                     <div class="fdiv">
                         <p class="fw-bold text-white">Shop List</p>
-                        <a href="#" class="btn-link text-white text-decoration-none">
-                            <small>Yagnon</small>
+                        <a href="../View/shops.php?name='Yangon'" class="btn-link text-white text-decoration-none">
+                            <small>Yangon</small>
                         </a>
                         <br />
-                        <a href="#" class="btn-link text-white text-decoration-none">
+                        <a href="../View/shops.php?name='Mandalay'" class="btn-link text-white text-decoration-none">
                             <small>Mandalay </small>
                         </a>
                         <br />
-                        <a href="tel:09250152018" class="btn-link text-white text-decoration-none">
+                        <a href="../View/shops.php?name='NayPyiTaw'" class="btn-link text-white text-decoration-none">
                             <small>NayPyiTaw</small>
                         </a>
                     </div>
