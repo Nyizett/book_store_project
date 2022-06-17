@@ -20,9 +20,9 @@ function Showdata (userid){
                     `<tr class="text-center">
                     <td><img src="../../Images/${data.book_image}"></td>
                     <td>${data.book_name}<br> ${data.author_name}</td>
-                    <td>${data.book_price}</td>
+                    <td>${data.book_price.toLocaleString('en-US')} MMK</td>
                     <td>${data.order_d_quantity}</td>
-                    <td>${data.total_amount}</td>
+                    <td>${data.total_amount.toLocaleString('en-US')} MMK</td>
                   </tr>`
                 )}
             },

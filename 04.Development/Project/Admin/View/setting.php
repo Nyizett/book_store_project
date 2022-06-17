@@ -30,7 +30,7 @@ if(!isset($_SESSION['username'])){
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div id="navbar"></div>
+            <div id="navbar" class="my-nav"></div>
 
             <div class="col-8 offset-3 ">
                 <div class="row mt-4">
