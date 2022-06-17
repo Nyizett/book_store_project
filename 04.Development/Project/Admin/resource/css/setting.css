@@ -27,3 +27,6 @@
     background-color: var(--input-box-color);
     
 }
+.settnbtn{
+    background-color: var(--btn-color)
+}
