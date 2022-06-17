@@ -37,7 +37,7 @@ $(document).ready(function () {
     if (localStorage.getItem("user") === null) {
       $("#userLoginSignup").append(
         `
-        <li><a class="text-dark dropdown-item" href="./signin.php">Signup</a></li>
+        <li><a class="text-dark dropdown-item" href="../View/signin.php">Signup</a></li>
         
         `
       );
@@ -47,8 +47,8 @@ $(document).ready(function () {
       //
       $("#userLoginSignup").append(
         `
-        <li><a class="text-dark dropdown-item" href="./userProfile.php">User Profile</a></li>
-        <li><a class="text-dark dropdown-item" href="./orderHistory.php">Order History</a></li>
+        <li><a class="text-dark dropdown-item" href="../View/userProfile.php">User Profile</a></li>
+        <li><a class="text-dark dropdown-item" href="../View/orderHistory.php">Order History</a></li>
         <li><a class="text-dark dropdown-item" id="logout">Logout</a></li>
         `
       );

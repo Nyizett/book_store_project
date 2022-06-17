@@ -10,11 +10,12 @@
     <link rel="stylesheet" href="../resource/UI Library/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../resource/css/style.css" />
     <link rel="stylesheet" href="../resource/css/homepage.css" />
+    <link rel="stylesheet" href="../resource/css/voucher.css" />
     <link rel="stylesheet" href="../resource/css/signup.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
     <link rel="stylesheet" href="../resource/UI Library/fontawesome-free/css/all.min.css">
-    <link rel="stylesheet" href="../resource/css/common.css">
     <link rel="stylesheet" href="../resource/css/footer.css">
+    <link rel="stylesheet" href="../resource/css/common.css">
 </head>
 
 <body>
@@ -28,9 +29,9 @@
     </nav>
     <!-- Header -->
     <div class="container-fluid header">
-        <div class="container d-flex justify-content-between align-items-center flex-wrap py-5 ">
-            <h1>Checkout your order</h1>
-            <span><b>Home</b> -> Checkout</span>
+        <div class="header d-flex justify-content-between align-items-center flex-wrap py-5 ">
+            <h3 class="Coheader ms-5">Checkout your order</h3>
+            <span class="Cott me-5"><b>Home</b> -> Checkout</span>
         </div>
     </div>
 
@@ -38,14 +39,13 @@
 
         <div class="row">
             <div class="col-md-6">
-                <span class="border-dark border-bottom fs-4 py-2">Voucher</span>
                 <div class="mt-4 p-4 border border-1">
                     <table class="table mb-3">
                         <thead>
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Item</th>
-                                <th scope="col">Qty</th>
+                            <tr class="">
+                                <th scope="col">No</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Quantity</th>
                                 <th scope="col">Price</th>
                             </tr>
                         </thead>
@@ -55,7 +55,7 @@
                         
                            foreach ($result as $key => $value) {
                                
-                               echo "<tr class='count' id=".$value['id'].">";
+                               echo "<tr class=' count ' id=".$value['id'].">";
                                echo "<th scope='row'>".$i."</th>";
                                echo "<td>".$value['book_name']."</td>";
                                echo "<td class='qty'>".$value['quantity']."</td>";

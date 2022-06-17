@@ -21,8 +21,8 @@ $(document).ready(function () {
     $(".reviews").prepend(`
         <div class="col-md-7 ">
 
-        <div class="col-md-12">
-           <p class="titles commom-bg">Review</p>
+        <div class="col-md-12 ">
+           <p class="titles review-box commom-bg">Review</p>
         </div>
         <div class="col-md-12">
            <div class="commentbox">
@@ -136,6 +136,46 @@ $(document).ready(function () {
   });
 
   $(".cartbtn").click(function () {
+   
+    let image = $(".bookimage").attr("id");
+
+    let data = {
+      id: id,
+      book_image: image,
+      book_name: $(".booknames").text(),
+      book_price: $(".bookprices")
+        .text()
+        .replaceAll(",", "")
+        .replaceAll(" MMK", ""),
+      author_name: $(".authors").text(),
+      qty: $("#qty").val(),
+    };
+
+    book.push(data);
+    books.push(book);
+    localStorage.setItem('cart',JSON.stringify(books));
+
+    if (localStorage.getItem("user") != null) {
+      let user = JSON.parse(localStorage.getItem("user"));
+      let deliver = {
+        address: user["user_address"],
+      };
+      window.location.href = `../../Customer/Controller/cartListController.php?data=${JSON.stringify(
+        books
+      )}&address=${JSON.stringify(deliver)}`;
+    } else {
+      let deliver = {
+        address: "Default",
+      };
+      window.location.href = `../../Customer/Controller/cartListController.php?data=${JSON.stringify(
+        books
+      )}&address=${JSON.stringify(deliver)}`;
+    }
+  });
+
+  // For responsive
+
+  $("#addbtn").click(function () {
    
     let image = $(".bookimage").attr("id");
 

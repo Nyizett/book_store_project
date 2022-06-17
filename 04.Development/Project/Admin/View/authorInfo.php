@@ -33,9 +33,9 @@ if (!isset($_SESSION['username'])) {
             <div id="navbar" class="my-nav"></div>
             <!-- Author List-->
             <div class="col-10 offset-2 ">
-                <p class="h3 mt-4">Author List</p>
+                <p class="tttt h3 mt-4">Author List</p>
                 <a href="../View/addAuthor.php" class="text-dec  text-dark "><button class=" text-dec btn fw-bold custombutton btn-sm offset-10 col-2 mb-4">ADD AUTHOR</button></a>
-                <table class="table table-striped table-sm mt-4">
+                <table class=" table table-striped table-sm mt-4">
                     <tr>
                         <th>No</th>
                         <th class="col-1">Name</th>

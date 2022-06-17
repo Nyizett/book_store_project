@@ -31,7 +31,7 @@
    </nav>
    <!-- Header -->
 
-   <section class="container-fluid">
+   <section class="container-fluid bg-white">
       <div class="row align-items-center justify-content-center min-vh-100">
          <div class="col-12 col-lg-4 ps-5 ms-3">
             <div class="slider slide-bg d-flex">
@@ -48,7 +48,7 @@
 
 
          <div class="col-12 col-lg-5">
-            <div class="">
+            <div class="des-box">
                <div class="card mb-5 mb-lg-0 card-width ">
                   <div class="card-body d-flex flex-column ">
                      <p class="card-title fw-bold mb-0 font-color-primary"></p>
@@ -93,8 +93,8 @@
                      </div>
                   </div>
 
-                  <div class="d-flex col-md-12 col-sm-10 ">
-                     <div class="container-fluid col-md-10 col-sm-6 d-flex  mb-3">
+                  <div class="d-flex col-md-12 col-sm-10 detail-box">
+                     <div class="container-fluid col-md-10 col-sm-6 d-flex  mb-3 qty-box">
                         <div class="d-flex justify-content-center  col-md-5 bg-light  rounded mt-3 qty ">
                            <span class="minus">-</span>
                            <input type="number" class="counts" id="qty" name="qty" value="1">
@@ -104,6 +104,7 @@
                         <div class="mt-3">
 
                            <button class="btn cartbtn"><i class="fas fa-shopping-cart mx-1"></i> Add to Cart</button>
+                           <button class="btn addbtn" id="addbtn"><i class="fas fa-shopping-cart mx-1"></i></button>
                         </div>
                      </div>
 
@@ -146,7 +147,7 @@
          </div>
       </div>
       </div>
-      <div class="col-12 col-lg-1"></div>
+      <div class="review col-12 col-lg-1"></div>
       <div class="col-12 col-lg-5"></div>
       </div>
    </section>

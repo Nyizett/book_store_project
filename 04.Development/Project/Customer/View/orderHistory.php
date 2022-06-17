@@ -24,14 +24,13 @@
     <?php require "../View/common.php" ?>
   </nav>
   <!-- Header -->
-  <div class="container header d-flex justify-content-between align-items-center p-4">
-    <h3>Order History</h3>
-    <div>
+  <div class=" header d-flex justify-content-between align-items-center p-4">
+    <h3 class="ordhis ms-5">Order History</h3>
+    <div class="ordhome me-5">
       <b>Home</b> -> order details
     </div>
   </div>
-  <h5 class="fw-bolder text-primary">Order History</h5>
-  <div>
+  <div class="mt-3">
     <table class="table">
       <tr class="text-center">
         <th>Items</th>

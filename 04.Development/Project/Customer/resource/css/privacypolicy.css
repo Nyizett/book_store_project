@@ -4,26 +4,29 @@
     --navbar-color: #fff;
     --body-color: white;
 }
-.customgimage{
-    width: 50vh;
-}
-body{
-    width: 213vh;
-}
-.head{
+.header{
     background-color: var(--accent-color);
 }
-.guide{
+.prav{
     color: var(--primary-darkblue);
+    /* display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; */
 }
-.homeGuide{
+.pravHome{
     color: var(--font-color3);
 }
-.guideDiv{
-    width: 25%;
-}
 @media screen and (max-width:720px) {
-    .guideDiv img{
-        width: 30%;
+    .header{
+        margin-top: 1em;
+    }
+    .prav{
+        width: 20%;
+    }
+    .pp-title{
+        font-size: 1em;
+    }
+    .pp-pag{
+        font-size: 0.8em;
     }
 }

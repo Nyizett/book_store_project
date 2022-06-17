@@ -23,7 +23,7 @@ if(isset($_POST)){
         )
         VALUES (
             :gtext,
-            :gimage
+            :gimage,
             :todayDate,
             :adminName
         )"

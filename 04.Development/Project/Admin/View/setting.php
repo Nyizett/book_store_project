@@ -18,7 +18,9 @@ if(!isset($_SESSION['username'])){
     <link rel="stylesheet" href="../resource/css/setting.css" />
     <link rel="stylesheet" href="../resource/css/common.css">
     <script src="../resource/UI Library/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    
     <script src="../resource/UI Library/jquery-3.3.1.min.js"></script>
+    <script src="../resource/js/deliveryfees.js"></script>
     <script src="../resource/js/setting.js"></script>
     <script src="../resource/js/common.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
@@ -28,7 +30,7 @@ if(!isset($_SESSION['username'])){
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div id="navbar"></div>
+            <div id="navbar" class="my-nav"></div>
 
             <div class="col-8 offset-3 ">
                 <div class="row mt-4">
@@ -178,7 +180,7 @@ if(!isset($_SESSION['username'])){
                                 echo "<tr class=tb-text>";
                                 echo "<td>" . $no++ . "</td>";
                                 echo "<td> <img class=customimagesize src='../../Images/" . $value['guide_image'] . "'</td>";
-                                echo "<td class=overflow-hidden>" . $value['guide_text'] . "</td>";
+                                echo "<td class=text-break>" . $value['guide_text'] . "</td>";
                                 echo "<td><a href='../View/editGuide.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-primary'><ion-icon name='create-outline'></ion-icon></button></a></td>";
                                 echo "<td><a href='../Controller/deleteGuideController.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-danger'><ion-icon name='trash-outline'></ion-icon></button></a></td>";
                             }
@@ -199,25 +201,11 @@ if(!isset($_SESSION['username'])){
                                 <th>Price</th>
                                 <th colspan="2">Actions</th>
                             </tr>
-
-                            <?php
-                            require "../Controller/showDeliveryFeeController.php";
-                            $no = 1;
-
-                            foreach ($result as $key => $value) {
-                                global $no;
-                                echo "<tr class=tb-text>";
-                                echo "<td>" . $no++ . "</td>";
-                                echo "<td>" . $value['delivery_city_name'] . "</td>";
-                                echo "<td>" .number_format($value['delivery_fees'])." MMK" . "</td>";
-                                echo "<td><a href='../View/editDeliveryFee.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-primary'><ion-icon name='create-outline'></ion-icon></button></a></td>";
-                                echo "<td><a href='../Controller/deleteDeliveryFeeController.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-danger'><ion-icon name='trash-outline'></ion-icon></button></a></td>";
-                            }
-                            ?>
-
+                            <tbody id="bookData"></tbody>
                         </table>
                         <a href="./addDeliveryFee.php"><button class="btn btn-sm offset-10 custombutton fw-bold col-2">ADD DELIVERY FEES</button></a>
                     </div>
+                    <div class="btn-group col-8 offset-2 my-3" role="group" aria-label="Basic outlined example" id="pagbtn"></div>
                     <!-- Delivery Fee Table end -->
 
                     <!-- Service Table start -->
@@ -238,8 +226,8 @@ if(!isset($_SESSION['username'])){
                                 global $no;
                                 echo "<tr class=tb-text>";
                                 echo "<td>" . $no++ . "</td>";
-                                echo "<td>" . $value['service_tilte'] . "</td>";
-                                echo "<td>" . $value['service_paragraph'] . "</td>";
+                                echo "<td class=text-break>" . $value['service_tilte'] . "</td>";
+                                echo "<td class=text-break>" . $value['service_paragraph'] . "</td>";
                                 echo "<td><a href='../View/editService.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-primary'><ion-icon name='create-outline'></ion-icon></button></a></td>";
                                 echo "<td><a href='../Controller/deleteServiceController.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-danger'><ion-icon name='trash-outline'></ion-icon></button></a></td>";
                             }
@@ -270,8 +258,8 @@ if(!isset($_SESSION['username'])){
                                 global $no;
                                 echo "<tr class=tb-text>";
                                 echo "<td>" . $no++ . "</td>";
-                                echo "<td>" . $value['pp_title'] . "</td>";
-                                echo "<td class=overflow-hidden>" . $value['pp_paragraph'] . "</td>";
+                                echo "<td class=text-break>" . $value['pp_title'] . "</td>";
+                                echo "<td class=text-break>" . $value['pp_paragraph'] . "</td>";
                                 echo "<td><a href='../View/editPrivacyPolicy.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-primary'><ion-icon name='create-outline'></ion-icon></button></a></td>";
                                 echo "<td><a href='../Controller/deletePrivacyPolicyController.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-danger'><ion-icon name='trash-outline'></ion-icon></button></a></td>";
                             }
@@ -299,8 +287,8 @@ if(!isset($_SESSION['username'])){
                                 global $no;
                                 echo "<tr class=tb-text>";
                                 echo "<td>" . $no++ . "</td>";
-                                echo "<td>" . $value['faq_q_text'] . "</td>";
-                                echo "<td class=overflow-hidden>" . $value['faq_ans_text'] . "</td>";
+                                echo "<td class=text-break>" . $value['faq_q_text'] . "</td>";
+                                echo "<td class=text-break>" . $value['faq_ans_text'] . "</td>";
                                 
                                 echo "<td><a href='../View/editFaqs.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-primary'><ion-icon name='create-outline'></ion-icon></button></a></td>";
                                 echo "<td><a href='../Controller/deleteFAQController.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-danger'><ion-icon name='trash-outline'></ion-icon></button></a></td>";

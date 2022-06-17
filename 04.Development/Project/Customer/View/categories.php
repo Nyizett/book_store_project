@@ -51,7 +51,7 @@
             require "../Controller/bookListController.php";
             if (count($result) == 0) {
                echo "<div class='d-flex flex-column justify-content-center align-items-center mt-5 noBook'>";
-               echo "<h4>There is no book about <span class='categoryName'></span>.</h4>";
+               echo "<h4>There is no book <span class='categoryName'></span>.</h4>";
                echo "</div>";
             }
             for ($i = 0; $i < count($result); $i++) {
@@ -68,9 +68,9 @@
                $star = $result[$i]['rating'];
                for ($s = 0; $s < 5; $s++) {
                   if ($star > $s) {
-                     echo "  <i class='fa-solid fa-star'></i>";
+                     echo "  <i class='fa-solid fa-star text-warning'></i>";
                   } else {
-                     echo " <i class='fa-regular fa-star'></i>";
+                     echo " <i class='fa-solid fa-star text-dark'></i>";
                   }
                }
                echo "</span><br>";
@@ -80,7 +80,7 @@
                echo " <button class='btn cart card-button px-1 rounded-1 me-1' id='" . $result[$i]['id'] . "' ><i class='fa-solid fa-cart-shopping me-1'></i>add
                   to
                   cart</button>";
-               echo " <span id='" . $result[$i]['id'] . "' class='btn btn-primary bookdetail card-button view-btn'><i class='fa-solid fa-eye'></i> ".$result[$i]['view_count']."</span>";
+               echo " <span id='" . $result[$i]['id'] . "' class='btn btn-primary bookdetail card-button view-btn'><i class='fa-solid fa-eye'></i> " . $result[$i]['view_count'] . "</span>";
                echo "</div>";
                echo "</div>";
                echo "</div>";

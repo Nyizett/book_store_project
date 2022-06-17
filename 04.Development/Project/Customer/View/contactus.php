@@ -25,9 +25,9 @@
    </nav>
    <!-- Header -->
 
-   <div class="container-fluid header d-flex justify-content-between align-items-center p-4 box">
-      <h3 class="ms-5">Contact us</h3>
-      <div class="me-5"><b>Home</b> -> Contact us</div>
+   <div class="container-fluid header d-flex justify-content-between align-items-center p-4">
+      <h3 class="ctUs ms-5">Contact us</h3>
+      <div class="ctUs-home me-5"><b>Home</b> -> Contact us</div>
    </div>
 
    <section class="container-fluid">
@@ -42,11 +42,11 @@
       <div class="row justify-content-center">
          <div class="my-5"></div>
          <div class="col-12">
-            <div class="mb-5">
+            <div class="">
                <div class="text-center">
-                  <h2 class="font-color-primary">GET IN TOUCH</h2>
+                  <h2 class="gt font-color-primary">GET IN TOUCH</h2>
                   <hr />
-                  <p class="font-color-primary">
+                  <p class="gt-text font-color-primary">
                      Feel free to contact us anytime.We will get back to you
                      as soon as we can.
                   </p>
@@ -59,12 +59,12 @@
    <section class="container mb-5">
       <div class="row">
          <div class="col-12 col-lg-4 commom-bg">
-            <div class="p-1">
-               <h3 class="text-white text-center p-4">Contact Us</h3>
+            <div class="web-box p-1">
+               <h3 class="text-white text-center p-4">Contact us</h3>
                <div class="d-flex justify-content-evenly flex-column p-2">
                   <div class="d-flex justify-content-between pt-4">
                      <i class="fas fa-map-marker text-white"></i>
-                     <p class="ms-3 text-white">
+                     <p class="shop-address  ms-3 text-white">
                         <?php require "../Controller/webAddressController.php";
                         echo $webAddress[0]['web_address']; ?>
                      </p>
@@ -101,7 +101,7 @@
                         <div class="mb-2 pt-1">
                            <input type="email" class="form-control" name="cEmail" placeholder="Email" />
                         </div>
-                        <textarea id="" class="pt-2" cols="99" rows="8" name="Message" placeholder="Type Your Message"></textarea>
+                        <textarea id="" class="msg-box pt-2" cols="99" rows="8" name="Message" placeholder="Type Your Message"></textarea>
                         <button type="submit" class="send mb-2">Send</button>
                      </form>
                   </div>

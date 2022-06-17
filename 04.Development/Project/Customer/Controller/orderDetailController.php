@@ -19,17 +19,20 @@ require_once "../../Admin/Model/DBConnection.php";
             (
                 customer_id,
                 delivery_fees_id,
-                total_amount
+                total_amount,
+                create_date
             )
             VALUES (
                 :id,
                 :feeid,
-                :total)"
+                :total,
+                :createdate)"
         );
 
         $sql->bindValue(":id", $id);
         $sql->bindValue(":feeid",$delivery_fees_id);
         $sql->bindValue(":total", $total);
+        $sql->bindValue(":createdate", date("Y-m-d"));
         $sql->execute();
 
         for ($i=0; $i < count($orderDetail); $i++) { 
@@ -46,7 +49,8 @@ require_once "../../Admin/Model/DBConnection.php";
                     order_d_quantity,
                     total_amount,
                     del_flg,
-                    create_by_month
+                    create_by_month,
+                    create_date
                 )
                 VALUES(
                     :user,
@@ -54,7 +58,8 @@ require_once "../../Admin/Model/DBConnection.php";
                     :qty,
                     :total,
                     :del_flg,
-                    :cbm)"
+                    :cbm,
+                    :createdate)"
             );
 
             $sql->bindValue(":user", $uid);
@@ -63,6 +68,7 @@ require_once "../../Admin/Model/DBConnection.php";
             $sql->bindValue(":total", $total);
             $sql->bindValue(":del_flg",0);
             $sql->bindValue(":cbm",date("Y-m"));
+            $sql->bindValue(":createdate", date("Y-m-d"));
 
             $sql->execute();
         }

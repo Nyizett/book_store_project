@@ -15,19 +15,19 @@ $sql->execute();
 $result = $sql->fetchAll(PDO::FETCH_ASSOC);
 if (count($result) > 0) {
 } else {
-    // echo '<script type="text/JavaScript"> 
-    // alert("There is no such Category with the id of "+ categoryId);
-    // window.location.href =
-    //         "../../Customer/View/homepage.php" ;
-    // </script>';
-    echo "<script>Swal.fire({
-        position: 'center',
-        icon: 'error',
-        title: 'There is no such Category with the id of '+ categoryId,
-        showConfirmButton: false,
-        timer: 2000
-      })</script>";
-    echo "<script>
+  // echo '<script type="text/JavaScript"> 
+  // alert("There is no such Category with the id of "+ categoryId);
+  // window.location.href =
+  //         "../../Customer/View/homepage.php" ;
+  // </script>';
+  // echo "<script>Swal.fire({
+  //     position: 'center',
+  //     icon: 'error',
+  //     title: 'There is no such Category with the id of '+ categoryId,
+  //     showConfirmButton: false,
+  //     timer: 2000
+  //   })</script>";
+  echo "<script>
     setTimeout(function()
     {window.location='../../Customer/View/homepage.php';  },
     2000);

@@ -3,29 +3,28 @@ let ids = [];
 
 $(document).ready(function () {
   // cart local storage
-  if(localStorage.getItem('cart') != null){
-    let cart = JSON.parse(localStorage.getItem('cart'));
+  if (localStorage.getItem("cart") != null) {
+    let cart = JSON.parse(localStorage.getItem("cart"));
     console.log(cart);
     for (let index = 0; index < cart.length; index++) {
-        books.push(cart[index]);
-      
+      books.push(cart[index]);
     }
     console.log(books);
-    
-    $("#cartCount2").text(`${JSON.parse(localStorage.getItem('cart')).length}`);
-    
-    
+
+    $("#cartCount2").text(`${JSON.parse(localStorage.getItem("cart")).length}`);
   }
-  
+
   $("#CommonHomePage").addClass("border-bottom");
   console.log(categoryId);
+  $text = "";
   $.ajax({
     type: "post",
     url: "../Controller/categoriesNameGetController.php",
     data: "id=" + categoryId,
     success: function (data) {
+      $text = "about " + json[0].category_name;
       let json = JSON.parse(data);
-      $(".categoryName").text(json[0].category_name);
+      $(".categoryName").text($text);
     },
   });
 
@@ -52,9 +51,11 @@ $(document).ready(function () {
         success: function (res) {
           console.log(res);
           books.push(JSON.parse(res));
-          
-          localStorage.setItem('cart',JSON.stringify(books));
-          $("#cartCount2").text(`${JSON.parse(localStorage.getItem('cart')).length}`);
+
+          localStorage.setItem("cart", JSON.stringify(books));
+          $("#cartCount2").text(
+            `${JSON.parse(localStorage.getItem("cart")).length}`
+          );
         },
         error: function (err) {},
       });

@@ -48,7 +48,7 @@
             <div class="stext pt-5 ps-5 ">
                <h3 class="stext1 font-color-primary" id="headerFirstText"></h3>
                <h1 class="stext2 fw-bold text-primary" id="headerSecondText"></h1>
-               <p class="cat">Language / Education / Novels / Technology / Cartoons</p>
+               <p class="cat">"Some books leave us free and some books make us free."</p>
                <!-- <a class="btn commom-bg text-white btn-lg shop-now fs-6" href="#">SHOP NOW</a> -->
             </div>
          </div>
@@ -269,8 +269,9 @@
    <script src="../resource/UI Library/way_point/jquery.waypoints.js"></script>
    <script src="../resource/UI Library/counter_up/counter_up.js"></script>
    <script src="../resource/js/common.js"></script>
-   <script src="../resource/js/footerCommon.js"></script>
+
    <script src="../resource/js/homepage.js"></script>
+   <script src="../resource/js/footerCommon.js"></script>
    <script type="text/javascript">
       // Counter_Up
 
