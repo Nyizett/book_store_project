@@ -32,15 +32,17 @@
    </div>
    <section class="container mt-5">
       <div class="row">
-         <div class="col-12">
+         <!-- <div class="col-5"> -->
 
             <?php
             require "../Controller/faqController.php";
             $no = 1;
 
             foreach ($result as $key => $value) {
+               echo '<div class="col-6">';
                echo '<h4 class="faq-title font-color-primary mt-4">' . $value['faq_q_text'] . "</h4>";
-               echo '<p class="faq-pag mt-1">' . $value['faq_ans_text'] . "</p>";
+               echo '<p class="faq-pag mt-1 ms-2">' . $value['faq_ans_text'] . "</p>";
+               echo '</div>';
             }
             ?>
 
@@ -54,7 +56,7 @@
                consectetur, odio, magnam minus nulla pariatur rem. Quam
                molestiae tempora in earum nam.
             </p> -->
-         </div>
+         <!-- </div> -->
 
 
       </div>
