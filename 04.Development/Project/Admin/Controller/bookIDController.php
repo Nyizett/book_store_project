@@ -5,7 +5,7 @@ require_once "../Model/DBConnection.php";
 $db2 =  new DBConnect();
 $dbconnect = $db2 ->connect();
 
-$sql = $dbconnect -> prepare("SELECT id,author_name From m_author WHERE del_flg = 0");
+$sql = $dbconnect -> prepare("SELECT id,author_name From m_author WHERE del_flg = 0 ORDER BY author_name ASC ");
 $sql->execute();
 
 $authorList = $sql->fetchAll(PDO::FETCH_ASSOC);

@@ -23,14 +23,14 @@
       <?php require "../View/common.php" ?>
    </nav>
    <!-- Header -->
-   <div class="container header d-flex justify-content-between align-items-center p-4 text-primary">
-      <h3 class="fw-bolder">Cart List</h3>
-      <div>
+   <div class=" header d-flex justify-content-between align-items-center p-4 ">
+      <h3 class="cartList fw-bolder ms-5">Cart List</h3>
+      <div class="dbHome me-5">
          <b>Home</b> -> Detail Book -> Book Cart
       </div>
    </div>
    <!-- <h5 class="fw-bolder text-primary">Order History</h5> -->
-   <div>
+   <div class="cart-tb">
       <?php
       // print_r($result);
 
@@ -40,9 +40,9 @@
          echo " <thead class='text-light bg-primary'>";
          echo "<tr>
             <th scope='col'>Items</th>
-            <th scope='col'></th>
+            <th scope='col'>Name</th>
             <th scope='col'>Price</th>
-            <th scope='col' colspan='2'>Quatity</th>
+            <th scope='col' colspan='2'>Quantity</th>
             <th scope='col'>Total</th>
             <th></th>
            </tr>
@@ -79,7 +79,7 @@
          echo "</tbody>
                </table>";
       } else {
-         echo "<div class='container-fluid d-flex justify-content-center '><p class='fs-5 fw-bold'>There is no item in your cart.</p></div>";
+         echo "<div class='container-fluid d-flex justify-content-center '><p class='no-item fs-5 fw-bold text-break mt-2'>There is no item in your cart.</p></div>";
       }
 
       ?>
@@ -88,7 +88,7 @@
 
    </div>
 
-   <div class="container header d-flex justify-content-between align-items-center p-4 text-primary">
+   <div class="header d-flex justify-content-between align-items-center p-4 text-primary ">
       <h3 class="fw-bolder"></h3>
       <div>
          <table class="table table-borderless text px-4">
@@ -114,7 +114,7 @@
                ?>
                <?php
                echo "<tr>";
-               echo "<th scope='row'>Delivery Price</th>";
+               echo "<th scope='row'>Delivery Fee</th>";
 
                if (isset($delivery['0']['delivery_fees'])) {
                   echo "<td id=" . $delivery['0']['id'] . " class='dfee'>" . number_format($delivery['0']['delivery_fees']) . " MMK</td>";

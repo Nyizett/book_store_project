@@ -28,7 +28,7 @@
    <div class="d-flex justify-content-between align-items-center  authorHeader">
       <h3 class="author ms-5 ">Authors</h3>
       <div class="me-5 mt-5">
-         <b class="homeTextColor">Home</b> -> <span class="author">Authors</span>
+         <b class="homeTextColor">Home</b> -> <span class="author me-5">Authors</span>
       </div>
    </div>
 

@@ -231,3 +231,19 @@
     min-width: 10% !important;
   } */
 }
+@media screen and (max-width: 500px) {
+  .stext {
+    position: absolute;
+    left: 35%;
+    bottom: 70%;
+    width: 55%;
+  }
+}
+@media screen and (max-width: 380px) {
+  .stext {
+    position: absolute;
+    left: 35%;
+    bottom: 60%;
+    width: 55%;
+  }
+}

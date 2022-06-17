@@ -30,8 +30,9 @@ if(!isset($_SESSION['username'])){
 
 <body>
   <div class="container-fluid">
+    
+    <div class="row">
     <div id="navbar" class="my-nav"></div>
-    <div class="row offset-4">
       <div class="col">
         <a href="./setting.php" class="custombutton text-dec text-dark btn btn-sm-2 fw-bold mt-4 md-4">BACK</a>
       </div>

@@ -23,13 +23,13 @@
    </nav>
    <!-- Header -->
    <div class="container-fluid header d-flex justify-content-between align-items-center p-4 box bg-light">
-      <h3>Guide</h3>
-      <div class=" me-5">
-         <b>Home</b> -> Guide
+      <h3 class="guide ms-5">Guide</h3>
+      <div class="homeGuide me-5">
+         <b class="">Home</b> -> Guide
       </div>
    </div>
 
-   <section class="container-fluid mt-3 ms-1">
+   <section class="container-fluid mt-3 ms-1 bg-white">
       <div class="row">
 
          <?php
@@ -37,9 +37,9 @@
 
          foreach ($result as $key => $value) {
             global $no;
-            echo '<div class="col-6  mt-4">';
+            echo '<div class="guideDiv col-6  mt-4">';
             echo "<img class=img-thumbnail src='../../Images/" . $value['guide_image']. "'>";
-            echo '<p class="text-center fs-3 fw-bold mt-2">' . $value['guide_text'];
+            echo '<p class="text-center fw-bold mt-2">' . $value['guide_text'];
             echo "</p>";
             echo "</div>";
          }

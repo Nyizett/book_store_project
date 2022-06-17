@@ -25,20 +25,20 @@
         <?php require "../View/common.php" ?>
     </nav>
     <!-- Header -->
-    <div class="container text-primary header d-flex justify-content-between align-items-center p-4">
-        <h3>Shops</h3>
-        <div>
-            <b>Home</b> -> Shop
+    <div class="text-primary header d-flex justify-content-between align-items-center p-4">
+        <h3 class="shop ms-5">Shops</h3>
+        <div class="me-5">
+            <b class="homeShop">Home</b> -> Shop
         </div>
     </div>
-    <div class="container d-flex justify-content-between align-items-center p-4 mx-6 col-12 col-md-12 col-lg-4">
+    <div class="container d-flex justify-content-between align-items-center p-4 mx-6 col-12 col-md-12 col-lg-4 ">
         <button class="cityBtn btn  text-primary border border-primary">Yangon</button>
         <button class="cityBtn btn text-primary border border-primary">Mandalay</button>
         <button class="cityBtn btn text-primary border border-primary">NayPyiTaw</button>
 
     </div>
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid bg-white">
         <div class="container">
             <div class="row g-0" id="shopContainer">
                 <!--

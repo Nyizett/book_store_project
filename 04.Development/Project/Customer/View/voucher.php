@@ -44,6 +44,7 @@
                         <thead>
                             <tr>
                                 <th scope="col">#</th>
+                                <th scope="col">Name</th>
                                 <th scope="col">Item</th>
                                 <th scope="col">Qty</th>
                                 <th scope="col">Price</th>

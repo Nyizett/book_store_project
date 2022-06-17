@@ -9,7 +9,7 @@
    <link rel="shortcut icon" href="../../Images/latestLogo.png" type="image/x-icon" width="100vw" />
    <link rel="stylesheet" href="../resource/UI Library/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
    <link rel="stylesheet" href="../resource/css/style.css" />
-   <link rel="stylesheet" href="../resource/css/book_details.css" />
+   <link rel="stylesheet" href="../resource/css/bookDetails.css" />
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    <link rel="stylesheet" href="../resource/UI Library/fontawesome-free/css/all.min.css">
@@ -31,7 +31,7 @@
    </nav>
    <!-- Header -->
 
-   <section class="container-fluid">
+   <section class="container-fluid bg-white">
       <div class="row align-items-center justify-content-center min-vh-100">
          <div class="col-12 col-lg-4 ps-5 ms-3">
             <div class="slider slide-bg d-flex">
@@ -48,7 +48,7 @@
 
 
          <div class="col-12 col-lg-5">
-            <div class="">
+            <div class="des-box">
                <div class="card mb-5 mb-lg-0 card-width ">
                   <div class="card-body d-flex flex-column ">
                      <p class="card-title fw-bold mb-0 font-color-primary"></p>
@@ -93,8 +93,8 @@
                      </div>
                   </div>
 
-                  <div class="d-flex col-md-12 col-sm-10 ">
-                     <div class="container-fluid col-md-10 col-sm-6 d-flex  mb-3">
+                  <div class="d-flex col-md-12 col-sm-10 detail-box">
+                     <div class="container-fluid col-md-10 col-sm-6 d-flex  mb-3 qty-box">
                         <div class="d-flex justify-content-center  col-md-5 bg-light  rounded mt-3 qty ">
                            <span class="minus">-</span>
                            <input type="number" class="counts" id="qty" name="qty" value="1">
@@ -104,6 +104,7 @@
                         <div class="mt-3">
 
                            <button class="btn cartbtn"><i class="fas fa-shopping-cart mx-1"></i> Add to Cart</button>
+                           <button class="btn addbtn" id="addbtn"><i class="fas fa-shopping-cart mx-1"></i></button>
                         </div>
                      </div>
 
@@ -146,7 +147,7 @@
          </div>
       </div>
       </div>
-      <div class="col-12 col-lg-1"></div>
+      <div class="review col-12 col-lg-1"></div>
       <div class="col-12 col-lg-5"></div>
       </div>
    </section>

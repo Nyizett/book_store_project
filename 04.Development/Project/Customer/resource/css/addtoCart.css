@@ -1,4 +1,19 @@
-
+:root {
+    --primary-color: #1f4287;
+    --accent-color: #ebf1fd;
+    --navbar-color: #fff;
+    --body-color: white;
+}
+.header{
+    width: 100%;
+    background-color: var(--accent-color);
+}
+.cartList{
+    color: var(--primary-darkblue);
+}
+.dbHome{
+    color: var(--font-color3);
+}
 img{
     width: 30%;
     height: 10vh;
@@ -91,4 +106,47 @@ icon{
  
  .qty{
      width: 30%;
+ }
+ .cart-tb{
+    background-color: var(--accent-color);
+ }
+ @media screen and (max-width: 720px) {
+    .cartList{
+        padding-top: 1em;
+    }
+    .dbHome{
+        width: 40%;
+        padding-top: 1em;
+    }
+    .no-item{
+        color: black;
+        background-color: black;
+    }
+    img{
+        width: 60%;
+        
+    }
+    .quantity{
+        width: 50%;
+        
+    }
+    .qty .plus {
+        width: 40%;
+        height: 1.3em;
+        margin-top: 0.3em;
+        
+        margin-right: 0.4rem;
+        
+      
+        }
+     .qty .minus {
+        
+        width: 40%;
+        height: 1.3em;
+        margin-top: 0.3em;
+        
+        margin-right: 0.4rem;
+        
+      
+     }
  }

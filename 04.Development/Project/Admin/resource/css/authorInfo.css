@@ -9,3 +9,14 @@
 .aut-img > img{
     width: 100%;
 }
+@media screen and (max-width:720px){
+   .smBtnn{
+       border: none;
+   }
+   .tttt{
+       margin-left: 5%;
+   }
+   .respontd{
+    font-size: 0.5em;
+   }
+   }

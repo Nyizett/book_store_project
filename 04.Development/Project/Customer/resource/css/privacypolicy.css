@@ -7,17 +7,26 @@
 .header{
     background-color: var(--accent-color);
 }
-.service{
+.prav{
     color: var(--primary-darkblue);
+    /* display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; */
 }
-.homeService{
+.pravHome{
     color: var(--font-color3);
 }
 @media screen and (max-width:720px) {
     .header{
-        margin-top: 2em;
+        margin-top: 1em;
     }
-    .pag{
+    .prav{
+        width: 20%;
+    }
+    .pp-title{
+        font-size: 1em;
+    }
+    .pp-pag{
         font-size: 0.8em;
     }
 }

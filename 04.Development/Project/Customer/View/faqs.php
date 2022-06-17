@@ -9,11 +9,12 @@
    <link rel="shortcut icon" href="../../Images/latestLogo.png" type="image/x-icon" width="100vw" />
    <link rel="stylesheet" href="../resource/UI Library/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
    <link rel="stylesheet" href="../resource/css/style.css" />
-   <link rel="stylesheet" href="../resource/css/contactus.css" />
+   <link rel="stylesheet" href="../resource/css/faq.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
    <link rel="stylesheet" href="../resource/UI Library/fontawesome-free/css/all.min.css">
    <link rel="stylesheet" href="../resource/css/common.css">
    <link rel="stylesheet" href="../resource/css/footer.css">
+   
 </head>
 
 <body>
@@ -24,22 +25,24 @@
    </nav>
    <!-- Header -->
    <div class="container-fluid header d-flex justify-content-between align-items-center p-4 box ">
-      <h3 class="ms-5">FAQs</h3>
-      <div class="me-5">
+      <h3 class="faq ms-5">FAQs</h3>
+      <div class="faqHome me-5">
          <b>Home</b> -> FAQs
       </div>
    </div>
    <section class="container mt-5">
       <div class="row">
-         <div class="col-12">
+         <!-- <div class="col-5"> -->
 
             <?php
             require "../Controller/faqController.php";
             $no = 1;
 
             foreach ($result as $key => $value) {
-               echo '<h4 class="font-color-primary mt-4">' . $value['faq_q_text'] . "</h4>";
-               echo '<p class="mt-1">' . $value['faq_ans_text'] . "</p>";
+               echo '<div class="col-6">';
+               echo '<h4 class="faq-title font-color-primary mt-4">' . $value['faq_q_text'] . "</h4>";
+               echo '<p class="faq-pag mt-1 ms-2">' . $value['faq_ans_text'] . "</p>";
+               echo '</div>';
             }
             ?>
 
@@ -53,7 +56,7 @@
                consectetur, odio, magnam minus nulla pariatur rem. Quam
                molestiae tempora in earum nam.
             </p> -->
-         </div>
+         <!-- </div> -->
 
 
       </div>

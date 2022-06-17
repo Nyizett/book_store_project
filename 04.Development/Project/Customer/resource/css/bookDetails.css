@@ -201,3 +201,69 @@ td{
    outline:none;
    border: none;
 }
+.addbtn{
+   display: none;
+}
+@media screen and (max-width:720px) {
+   .slide-bg {
+      width: 30%;
+      position: absolute;
+      right: 66%;
+      bottom: 10%;
+   }
+   .des-box{
+      margin-top: 2em;
+      
+   }
+   .booknames{
+      font-size: 0.5em;
+   }
+   .details-text{
+      display: none;
+   }
+   
+   .qty-box{
+      width: 100%;
+
+      
+   }
+   .cartbtn{
+      /* width: 50%;
+      font-size: 1em; */
+      display: none;
+   }
+   .rounded{
+      margin-bottom: 1.8em;
+   }
+   .addbtn{
+      display: block;
+      color: white;
+      
+      margin-bottom: 1em;
+   }
+   .addbtn:hover{
+      color: white;
+   }
+   .desc{
+      display: none;
+      
+   }
+   .descbox{
+      display: none;
+   }
+   .review-box{
+      
+   }
+   .commentbox{
+      margin-bottom: 80%;
+      width: 100%;
+      
+   }
+   .commentinput{
+      width: 85%;
+      margin-bottom: 2em;
+   }
+   
+   
+   
+}
