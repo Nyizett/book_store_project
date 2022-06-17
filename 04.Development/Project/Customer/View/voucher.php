@@ -42,7 +42,7 @@
                 <div class="mt-4 p-4 border border-1">
                     <table class="table mb-3">
                         <thead>
-                            <tr>
+                            <tr class="">
                                 <th scope="col">#</th>
                                 <th scope="col">Name</th>
                                 <th scope="col">Item</th>
@@ -56,7 +56,7 @@
                         
                            foreach ($result as $key => $value) {
                                
-                               echo "<tr class='count' id=".$value['id'].">";
+                               echo "<tr class=' count ' id=".$value['id'].">";
                                echo "<th scope='row'>".$i."</th>";
                                echo "<td>".$value['book_name']."</td>";
                                echo "<td class='qty'>".$value['quantity']."</td>";

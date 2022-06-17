@@ -30,12 +30,13 @@ if(!isset($_SESSION['username'])){
 
 <body>
   <div class="container-fluid">
+    
+    <div class="row">
     <div id="navbar" class="my-nav"></div>
-    <div class="row offset-4">
-      <div class="col">
+      <div class="col-10 offset-3 mt-5">
         <a href="./setting.php" class="custombutton text-dec text-dark btn btn-sm-2 fw-bold mt-4 md-4">BACK</a>
       </div>
-      <form action="../Controller/addAdminController.php" method="POST">
+      <form action="../Controller/addAdminController.php" method="POST" class="col-10 offset-3">
         <div class="col-5 mt-3">
           <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Write your name</label>
