@@ -32,7 +32,7 @@
                      <input class="form-control mb-3" type="password" name="password" id="password" placeholder="password">
                      <button type="submit" class="btn btn-outline-primary mb-3">Sign in</button>
                   </form>
-                  <h6 class="text-primary">forget password?</h6>
+                  <h6 class="text-primary">forgot password?</h6>
                </div>
             </div>
             <div class="col-12 col-md-6 inner-right">

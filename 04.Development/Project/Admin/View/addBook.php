@@ -86,6 +86,10 @@ if(!isset($_SESSION['username'])){
                                 <label for="pwd" class="form-label">Established</label>
                                 <input type="text" class="input-box form-control" id="pwd" name="bookEsta">
                             </div>
+                            <div class="col mb-3 mt-3 ">
+                                <label for="pwd" class="form-label">Star Rating</label>
+                                <input type="number" class="input-box form-control" id="pwd" name="bookRating">
+                            </div>
                         </div>
                         <div class="row">
                             <div class="col mb-3 mt-3 ">

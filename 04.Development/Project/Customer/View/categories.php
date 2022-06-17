@@ -68,9 +68,9 @@
                $star = $result[$i]['rating'];
                for ($s = 0; $s < 5; $s++) {
                   if ($star > $s) {
-                     echo "  <i class='fa-solid fa-star'></i>";
+                     echo "  <i class='fa-solid fa-star text-warning'></i>";
                   } else {
-                     echo " <i class='fa-regular fa-star'></i>";
+                     echo " <i class='fa-solid fa-star text-dark'></i>";
                   }
                }
                echo "</span><br>";
