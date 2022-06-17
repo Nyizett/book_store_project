@@ -27,7 +27,7 @@
       <h3 class="ms-5 font-color-primary">View Profile</h3>
       <div class="me-5 font-color-primary"><b>Home</b> -> Profile</div>
    </div>
-   <section class="container mt-5">
+   <section class="container-fluid mt-5">
       <div class="row">
 
          <form id="signUpForm" method="POST">
