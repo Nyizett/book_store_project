@@ -58,7 +58,7 @@ if(!isset($_SESSION['username'])){
                         echo "<td >" . $value['user_name'] . "</td>";
                         echo "<td >" . $value['user_address'] . "</td>";
                         echo "<td >" . $value['delivery_city_name'] . "</td>";
-                        echo "<td >" .number_format($value['total_amount'])." MMK" . "</td>";
+                        echo "<td >" .number_format($value['total_amount']-$value['delivery_fees'])." MMK" . "</td>";
                         echo "<td >" .number_format($value['delivery_fees'])." MMK" . "</td>";
                         echo "<td><a href='../View/orderDetail.php?id=" . $value['customer_id'] . "'><button type='button' class='btn btn-outline-danger'><ion-icon name='enter-outline'></ion-icon></button></a></td>";
                     }

@@ -98,7 +98,7 @@ if(!isset($_SESSION['username'])){
                             echo "<td>" . $no++ . "</td>";
                             echo "<td >" . $value['user_name'] . "</td>";
                             echo "<td >" . $value['create_date'] . "</td>";
-                            echo "<td >" .number_format( $value['total_amount'])." MMK" . "</td>";
+                            echo "<td >" .number_format( $value['total_amount']-$value['delivery_fees'])." MMK" . "</td>";
                             echo "<td >" . $value['user_address'] . "</td>";
                             echo "<td >" . number_format( $value['delivery_fees'])." MMK" . "</td>";
                         }
