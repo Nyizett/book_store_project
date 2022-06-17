@@ -97,7 +97,7 @@ $(document).ready(function () {
     let input = $("#inputtextbox").val();
     console.log(input);
     $(".commentbody").append(
-      ` <div class="userComment">
+      ` <div class="userComment" style="display:block">
             <div class="user d-flex ">
             <i class="fa-solid fa-user mt-1 "></i>
             <p class="mx-3 mb-2 name">${userinfo["user_name"]}</p>   

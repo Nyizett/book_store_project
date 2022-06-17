@@ -24,19 +24,21 @@ $(document).ready(function(){
         $('.count').each(function(){
             let qty = $(this).children('.qty').text();
             let price = $(this).children('.price').text().replaceAll(',','').replaceAll('MMK','');
-            let total_amount = qty * price;
-            console.log(price);
+           
+            
+            // console.log(total_amount);
             let data2 = {
                 "id" : userinfo['id'],
                 "delivery_fees_id" : $('.address').attr('id'),
                 "total" : $('.totalall').text().replaceAll(',','').replaceAll(' MMK + (Delivery Fee)',''),
                 "book_id" : this.id,
-                "order_d_quantity" : $(this).children('.qty').text(),
-                "book_price" : total_amount
+                "order_d_quantity" : qty,
+                "book_price" : price
             }
             datadetail.push(data2);
         })
         
+        console.log(datadetail);
         // $.ajax({
         //     type: "POST",
         //     url: "../Controller/orderDetailController.php",

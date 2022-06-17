@@ -11,8 +11,12 @@ $(document).ready(function () {
             cache: false,
             processData: false,
             success : function(res){
-              
-                let responData = JSON.parse(res);
+                    let responData;
+                    console.log(res);
+                if(res.length > 0){
+                    
+                 responData = JSON.parse(res);
+                }
                 console.log(responData);
                 if(responData.login == true){
                     
@@ -22,7 +26,7 @@ $(document).ready(function () {
                     Swal.fire({
                         icon: 'error',
                         title: 'Oops...',
-                        text: 'Your email does not exit',
+                        text: 'Your email does not exit or banned from admin team',
                     });
                     $('#email').val('');
                     $('#password').val('');
