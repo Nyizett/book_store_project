@@ -39,26 +39,12 @@
             $no = 1;
 
             foreach ($result as $key => $value) {
-               echo '<div class="col-6">';
-               echo '<h4 class="faq-title font-color-primary mt-4">' . $value['faq_q_text'] . "</h4>";
-               echo '<p class="faq-pag mt-1 ms-2">' . $value['faq_ans_text'] . "</p>";
+               echo '<div class="col-6 mt-2">';
+               echo '<h4 class="faq-title font-color-primary mt-4 text-break">'.$no++.".". $value['faq_q_text'] . "</h4>";
+               echo '<p class="faq-pag mt-1 ms-2 text-break">' . $value['faq_ans_text'] . "</p>";
                echo '</div>';
             }
             ?>
-
-
-            <!-- <p class="font-color-primary fw-bold fs-5">
-               Advertisements on our Website
-            </p>
-            <p class="lh-lg">
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.
-               Commodi excepturi molestiae labore aliquid eius qui illum iste
-               consectetur, odio, magnam minus nulla pariatur rem. Quam
-               molestiae tempora in earum nam.
-            </p> -->
-         <!-- </div> -->
-
-
       </div>
    </section>
 
