@@ -86,6 +86,7 @@
                </div>
             </div>
          </div>
+         <!-- Contact -->
          <div class="col-12 col-lg-8">
             <div class="container details-text">
                <div class="row justify-content-center align-items-center">

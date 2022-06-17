@@ -14,9 +14,9 @@
   background-color: var(--main-color);
   text-align: center;
 }
-.btn:focus {
+/* .btn:focus {
   background-color: var(--btn-active-color);
-}
+} */
 .logout {
   background-color: var(--dashboard-items-color);
 }
@@ -32,9 +32,9 @@
   color: var(--color-black);
   border: none;
 }
-.custombutton:focus {
+/* .custombutton:focus {
   background-color: var(--btn-color);
-}
+} */
 .text-dec {
   text-decoration: none;
 }
@@ -99,6 +99,10 @@
 }
 .navBtnInactive{
   background-color: white;
+}
+.dshbtn1:active{
+  /* background-color: var(--btn-color); */
+  background-color: black;
 }
 @media screen and (max-width: 1380px) {
   .Dsnon{

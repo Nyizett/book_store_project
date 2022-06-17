@@ -53,7 +53,7 @@
                     echo "<div class='col-lg-3 col-md-6 col-sm-10 text-light  d-flex justify-content-between align-items-center mx-3 my-2'>";
                     echo "<div class='my-card' >";
                     echo " <div class='my-card-img'>";
-                    echo  "<img src='../../Admin/resource/img/book cover/" . $result[$i]["book_image"] . "' 
+                    echo  "<img src='../../Images/" . $result[$i]["book_image"] . "' 
                     alt=''/>";
                     echo "</div>";
                     echo "<div class='my-card-info'>";
@@ -63,9 +63,9 @@
                     $star = 3;
                     for ($s = 0; $s < 5; $s++) {
                         if ($star > $s) {
-                            echo "  <i class='fa-solid fa-star'></i>";
+                            echo "  <i class='fa-solid fa-star text-warning'></i>";
                         } else {
-                            echo " <i class='fa-regular fa-star'></i>";
+                            echo " <i class='fa-solid fa-star text-dark'></i>";
                         }
                     }
                     echo "</span><br>";

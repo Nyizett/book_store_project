@@ -31,10 +31,7 @@
    </div>
    
    <section class="container mt-5">
-      <div class="row">
-      <h3>စာအုပ်ဆိုင်.com Privacy Policy</h3>
-      <p class="mt-2">စာအုပ်ဆိုင်.com website strictly focuses on the privacy of our customers’ and our loyalty towards our commitment. The policy discloses the practice by which we gather the necessary information through our website.</p>
-      </div>
+      
       <div class="row">
          <div class="col-12">
 
