@@ -100,10 +100,7 @@
 .navBtnInactive{
   background-color: white;
 }
-.dshbtn1:active{
-  /* background-color: var(--btn-color); */
-  background-color: black;
-}
+
 @media screen and (max-width: 1380px) {
   .Dsnon{
     display: none;
