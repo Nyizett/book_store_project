@@ -51,6 +51,14 @@ img{
     background-color: var(--primary-color);
     color: white;
 }
+.activeCityBtn{
+    background-color:var(--primary-color) !important ;
+    color:aliceblue !important; 
+}
+/* .unActiveCityBtn{
+    background-color: aliceblue;
+    color: var(--primary-color);
+} */
 
 @media screen and (max-width:720px) {
     .my-card {

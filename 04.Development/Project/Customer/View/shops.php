@@ -39,9 +39,15 @@
         </div>
     </div>
     <div class="container d-flex justify-content-between align-items-center p-4 mx-6 col-12 col-md-12 col-lg-4 ">
+<<<<<<< HEAD
         <button class="cityBtn btn  btn-outline-primary " type="button">Yangon</button>
         <button class="cityBtn btn btn-outline-primary " type="button">Mandalay</button>
         <button class="cityBtn btn btn-outline-primary " type="button">NayPyiTaw</button>
+=======
+        <button class="activeCityBtn cityBtn btn  btn-outline-primary " type="button" id="ygnBtn">Yangon</button>
+        <button class="cityBtn btn btn-outline-primary " type="button" id="mdyBtn">Mandalay</button>
+        <button class="cityBtn btn btn-outline-primary " type="button" id="nptBtn">NayPyiTaw</button>
+>>>>>>> origin/main
 
     </div>
     </div>
