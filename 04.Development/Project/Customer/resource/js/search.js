@@ -58,6 +58,8 @@ $(document).ready(function () {
                                          <p class="fw-bold mb-0 font-color-primary"> ${book.book_price} MMK</p>
                                       </div>
                                       <button class="btn cart card-button px-1 rounded-1 me-1 viewBook"  id="${book.Book_Id}">Add To Cart</button>
+                                      <button class="btn cart card-button px-1 rounded-1 me-1 bookDetail"  id="${book.Book_Id}"><i class='fa-solid fa-eye'></i> ${book.view_count}</button>
+                                   </div>
                                    </div>
                                 </div>
                              </div>`
@@ -72,6 +74,11 @@ $(document).ready(function () {
               // console.log("#star" + index);
             }
           }
+          $(".bookDetail").click(function (e) {
+            $id = $(this).attr("id");
+            window.location.href =
+              "../../Customer/Controller/bookDetailController.php?id=" + $id;
+          });
           $(".viewBook").click(function (e) {
             if (!ids.includes(this.id)) {
               ids.push(this.id);
