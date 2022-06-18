@@ -3,13 +3,13 @@
     <ion-icon class="my-fcolor fs-1 font-color-primary" name="menu-outline"></ion-icon>
   </button>
   <div class="image-container">
-    <img src="../resource/img/logo.png" alt="main-logo" id="logo" class="main-logo" >
+    <img src="" alt="main-logo" id="logo" class="main-logo">
   </div>
   <a class="my-title navbar-brand font-color-primary pt-4 " href="#">
     <span class="my-fcolor fw-bolder border-bottom" id="pageName">စာ အုပ် ဆိုင်</span>
     <p class="b-title">Book Store</p>
   </a>
-  
+
   <!-- start dropdown -->
   <div class="dropdown">
     <a class="categories border-white text-white dropdown-toggle btn commom-bg ms-4" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
