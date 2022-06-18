@@ -22,8 +22,10 @@ $(document).ready(function () {
     url: "../Controller/categoriesNameGetController.php",
     data: "id=" + categoryId,
     success: function (data) {
-      $text = "about " + json[0].category_name;
       let json = JSON.parse(data);
+      $text = json[0].category_name;
+      
+      console.log(json);
       $(".categoryName").text($text);
     },
   });
