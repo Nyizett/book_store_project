@@ -4,9 +4,9 @@
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   
+
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+
    <link rel="shortcut icon" href="../../Images/latestLogo.png" type="image/x-icon" width="fit-content" />
    <title>Categories</title>
    <link rel="stylesheet" href="../resource/UI Library/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
@@ -42,7 +42,7 @@
    </div>
    <div class="container-fluid d-flex justify-content-between align-items-center my-4 bg-white">
       <div class="container ">
-         <div class="row g-0">
+         <div class="d-flex flex-row flex-wrap w-100">
 
             <?php
             $id = 1;
@@ -57,7 +57,7 @@
                echo "</div>";
             }
             for ($i = 0; $i < count($result); $i++) {
-               echo "<div class='col-lg-3 col-md-6 col-sm-10 text-light  d-flex justify-content-between align-items-center mx-5 my-2'>";
+               echo "<div class='col-lg-3 col-md-6 col-sm-10 text-light  d-flex justify-content-between align-items-center  my-2'>";
                echo "<div class='my-card' >";
                echo " <div class='my-card-img'>";
                echo  "<img src='../../Images/" . $result[$i]["book_image"] . "' 
@@ -82,7 +82,7 @@
                echo " <button class='btn cart card-button px-1 rounded-1 me-1' id='" . $result[$i]['id'] . "' ><i class='fa-solid fa-cart-shopping me-1'></i>add
                   to
                   cart</button>";
-               echo " <span id='" . $result[$i]['id'] . "' class='btn btn-primary bookdetail card-button view-btn'><i class='fa-solid fa-eye'></i> " . $result[$i]['view_count'] . "</span>";
+               echo " <span id='" . $result[$i]['id'] . "' class='btn btn-primary bookdetail card-button view-btn mt-2'><i class='fa-solid fa-eye'></i> " . $result[$i]['view_count'] . "</span>";
                echo "</div>";
                echo "</div>";
                echo "</div>";

@@ -55,7 +55,7 @@
 
 
    <section class="container">
-      <div class="row" id="Bookbox">
+      <div class="d-flex flex-row flex-wrap w-100" id="Bookbox">
          <!-- <div class="col-12 col-lg-2 col-xl-2">
             <div class="card mt-5 card-width">
                <img src="../resource/img/book cover/jsEi.png" class="img-fluid w-75 mx-auto mt-3" alt="" />
