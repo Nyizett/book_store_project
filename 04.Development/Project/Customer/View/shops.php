@@ -39,7 +39,7 @@
         </div>
     </div>
     <div class="container d-flex justify-content-between align-items-center p-4 mx-6 col-12 col-md-12 col-lg-4 ">
-        <button class="cityBtn btn  text-primary border border-primary">Yangon</button>
+        <button class="cityBtn  btn  text-primary border border-primary">Yangon</button>
         <button class="cityBtn btn text-primary border border-primary">Mandalay</button>
         <button class="cityBtn btn text-primary border border-primary">NayPyiTaw</button>
 

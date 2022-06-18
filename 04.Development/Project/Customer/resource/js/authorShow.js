@@ -61,7 +61,7 @@ $(document).ready(function () {
                     <img src="../../Admin/resource/img/authors/${author.author_image}" alt="${author.author_name} Photo" width="50%" height="45%" class="mt-2">
                     <p class="authorName fw-bolder">${author.author_name} </p>
                     <div class="d-flex flex-row">
-                    <button type="button" class="btn authorInfoButton text-white mx-3 mb-3" data-bs-toggle="modal" data-bs-target="#authorInfo${author.id}">Read Profile</button>
+                    <button type="button" class="btn authorInfoButton text-white  mx-3 mb-3" data-bs-toggle="modal" data-bs-target="#authorInfo${author.id}">Read Profile</button>
                     <button type="button" class="btn authorInfoButton text-white mx-3 mb-3 getAuthorId"  id="${author.id}">View Books</button>
                     </div>
                     </div>
