@@ -21,6 +21,10 @@ body{
 }
 .guideDiv{
     width: 30%;
+    margin-left: 3em;
+}
+.guideDiv img{
+    width: 80%;
 }
 @media screen and (max-width:720px) {
     .guideDiv img{
