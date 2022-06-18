@@ -33,14 +33,19 @@
 }
 
 .authorsCard {
+<<<<<<< HEAD
+  /* height: 50vh; */
+=======
   height: fit-content;
   min-height: 50vh;
+>>>>>>> origin/main
   width: 17vw;
   border: 1px solid black;
   border-radius: 5px;
 }
 .authorsCard img {
   border-radius: 2vw;
+  /* width: 50%; */
 }
 .authorName {
   color: var(--primary-darkblue);
@@ -48,11 +53,13 @@
 .authorInfoButton {
   background-color: var(--primary-darkblue) !important;
   color: white;
-  width: 60% !important;
-  height: fit-content !important;
+  width: 80% !important;
+  /* height: fit-content !important; */
   border-style: none;
   border-radius: 5px;
+  margin-top: 1em;
 }
+
 .authorInfoButton:hover {
   color: var(--font-color3);
 }
