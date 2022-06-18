@@ -7,7 +7,7 @@ require_once "../Model/DBConnection.php";
     $dbconnect = $db->connect();
 
     $sql = $dbconnect->prepare(
-        "SELECT m_book.book_name FROM `m_book` WHERE category_id= :id"
+        "SELECT m_book.book_name FROM `m_book` WHERE category_id= :id AND del_flg =0"
     );
 
     $sql->bindValue(":id", $id);
