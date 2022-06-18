@@ -3,7 +3,7 @@
         <div class="">
             <h2 class="ftitle text-white align-top">စာ အုပ် ဆိုင်</h2>
             <p></p>
-            <p class="text-white">Address</p>
+            <p class="text-white" id="FooterAddress"></p>
             <p class="showmap text-white">SHOW ON MAP</p>
             <div class="d-flex">
                 <i class="fab fa-facebook text-white mx-1"></i>
