@@ -23,7 +23,7 @@
       <?php require "../View/common.php" ?>
    </nav>
    <!-- Header -->
-   <div class="container-fluid header d-flex justify-content-between align-items-center p-4 bg-light">
+   <div class="header container-fluid header d-flex justify-content-between align-items-center p-4 ">
       <h3 class="service ms-5">Services</h3>
       <div class="homeService me-5">
          <b>Home</b> -> Services

@@ -7,14 +7,14 @@ let p_price;
 let qty;
 let sum;
 $('.b_price').each(function(index){
-    if( index == vouchers-1){
+    
         p_price =$(this).text().replaceAll(',','').replaceAll(' MMK','');
         qty = $(this).next().children().find('#qty').val();
         sum = qty * p_price;
         console.log(sum);
     $(this).next().next().text(numberWithCommas(sum.toString().concat(text)));
         
-    }
+    
 })
 
     // let qty = $('#qty').val(); 
@@ -167,6 +167,7 @@ $(document).on('click', '.minus', function() {
                         "delivery_fee_id" : $('.dfee').attr('id'),
                         "book_name" : $(this).children('.bookname').text(),
                         "quantity" : $(this).children(".cal").children('.bookquantity').text(),
+                        "book_p"  : numberWithCommas(price),
                         "book_price" : numberWithCommas(total),
                         "total" : numberWithCommas($('.all').text().replaceAll(' MMK',''))
                     };
@@ -178,7 +179,7 @@ $(document).on('click', '.minus', function() {
                     
                    
                 });
-    
+                console.log(items);
                 
                 localStorage.removeItem('cart');
                 window.location.href = `../../Customer/Controller/orderController.php?data=${JSON.stringify(items)}`;

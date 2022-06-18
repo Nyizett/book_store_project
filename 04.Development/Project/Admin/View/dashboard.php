@@ -14,7 +14,7 @@ if(!isset($_SESSION['username'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title class="tit">Dashboard</title>
     <link rel="shortcut icon" href="../../Images/<?php require_once "../Controller/changeWebfavIconController.php";echo $result[0]['fav_icon']; ?>" type="image/x-icon" width="100vw" />
     <link rel="stylesheet" href="../resource/UI Library/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../resource/css/style.css" />
@@ -24,7 +24,9 @@ if(!isset($_SESSION['username'])){
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="../resource/UI Library/jquery-3.3.1.min.js"></script>
     <script src="../resource/js/common.js"></script>
+    <script src="../resource/js/dashboard.js"></script>
     <script src="../resource/js/dashboardChart.js" defer></script>
+    <script src="../resource/js/navigation.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
@@ -97,7 +99,7 @@ if(!isset($_SESSION['username'])){
                             echo "<td>" . $no++ . "</td>";
                             echo "<td >" . $value['user_name'] . "</td>";
                             echo "<td >" . $value['create_date'] . "</td>";
-                            echo "<td >" .number_format( $value['total_amount'])." MMK" . "</td>";
+                            echo "<td >" .number_format( $value['total_amount']-$value['delivery_fees'])." MMK" . "</td>";
                             echo "<td >" . $value['user_address'] . "</td>";
                             echo "<td >" . number_format( $value['delivery_fees'])." MMK" . "</td>";
                         }

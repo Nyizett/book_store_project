@@ -14,9 +14,9 @@
   background-color: var(--main-color);
   text-align: center;
 }
-.btn:focus {
+/* .btn:focus {
   background-color: var(--btn-active-color);
-}
+} */
 .logout {
   background-color: var(--dashboard-items-color);
 }
@@ -32,9 +32,9 @@
   color: var(--color-black);
   border: none;
 }
-.custombutton:focus {
+/* .custombutton:focus {
   background-color: var(--btn-color);
-}
+} */
 .text-dec {
   text-decoration: none;
 }
@@ -93,6 +93,8 @@
   z-index: 100 !important;
   position: relative !important;
 }
+
+
 @media screen and (max-width: 1380px) {
   .Dsnon{
     display: none;

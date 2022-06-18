@@ -22,14 +22,14 @@
       <?php require "../View/common.php" ?>
    </nav>
    <!-- Header -->
-   <div class="container-fluid header d-flex justify-content-between align-items-center p-4 box bg-light">
+   <div class="head d-flex justify-content-between align-items-center p-4 box">
       <h3 class="guide ms-5">Guide</h3>
       <div class="homeGuide me-5">
          <b class="">Home</b> -> Guide
       </div>
    </div>
 
-   <section class="container-fluid mt-3 ms-1 bg-white">
+   <section class="container-fluid mt-3 ms-2 bg-white">
       <div class="row">
 
          <?php
@@ -37,44 +37,16 @@
 
          foreach ($result as $key => $value) {
             global $no;
-            echo '<div class="guideDiv col-6  mt-4">';
+            echo '<div class="guideDiv col-4  mt-4">';
             echo "<img class=img-thumbnail src='../../Images/" . $value['guide_image']. "'>";
-            echo '<p class="text-center fw-bold mt-2">' . $value['guide_text'];
+            echo '<p class=" fw-bold mt-2 text-break">' . $value['guide_text'];
             echo "</p>";
             echo "</div>";
          }
          ?>
-         <!-- <div class="col-12 col-lg-4 mt-3">
-            <img class="img-fluid" src="../resource/img/g1.png" alt="" />
-            <p class="text-center fw-bold">New Books For You</p>
-         </div>
-         <div class="col-12 col-lg-4 mt-3">
-            <img src="../resource/img/g2.png" alt="" class="img-fluid" width="300px" />
-            <p class="fw-bold ms-5">Review Box</p>
-         </div>
-
-         <div class="col-12 col-lg-4 mt-3">
-            <img src="../resource/img/g3.png" alt="" class="img-fluid" />
-            <p class="fw-bold ms-5">5 Categories</p>
-         </div>
-      </div>
-
-      <div class="row my-5">
-         <div class="col-12 col-lg-4 mt-3">
-            <img src="../resource/img/g4.png" alt="" class="img-fluid " />
-            <p class="fw-bold ms-5">Book Release Date and Sizes of Book</p>
-         </div>
-         <div class="col-12 col-lg-4 mt-3">
-            <img src="../resource/img/g5.png" alt="" class="img-fluid" />
-            <p class="fw-bold text-center">Cart List</p>
-         </div>
-         <div class="col-12 col-lg-4 mt-3">
-            <img src="../resource/img/g6.png" alt="" class="img-fluid" />
-            <p class="fw-bold ms-5">Payments</p>
-         </div> -->
       </div>
    </section>
-   <footer id="footer" class="container-fluid commom-bg  mt-5">
+   <footer id="footer" class="container-fluid commom-bg  mt-5 ">
       <?php require "../View/footerCommon.php" ?>
    </footer>
 

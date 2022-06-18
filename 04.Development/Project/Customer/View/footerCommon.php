@@ -3,17 +3,27 @@
         <div class="">
             <h2 class="ftitle text-white align-top">စာ အုပ် ဆိုင်</h2>
             <p></p>
-            <p class="text-white" id="FooterAddress"></p>
-            <p class="showmap text-white">SHOW ON MAP</p>
-            <div class="d-flex">
-                <i class="fab fa-facebook text-white mx-1"></i>
-                <i class="fab fa-instagram text-white mx-1"></i>
-                <i class="fab fa-youtube text-white mx-1"></i>
-                <i class="fab fa-twitter text-white mx-1"></i>
+            <p class="text-white">Address</p>
+
+            <p class="shop-address  ms-3 text-white">
+                <?php require "../Controller/webAddressController.php";
+                echo '-  ' . $webAddress[0]['web_address']; ?>
+            </p>
+            <a href="./contactus.php" class="showmap text-white text-decoration-none mb-2">SHOW ON MAP</a>
+
+            <!-- Social Links -->
+            <div class="d-flex mt-2">
+
+                <a href="https://www.facebook.com/bookshop.org/"><i class="fab fa-facebook text-white mx-1"></i></a>
+                <a href="https://www.instagram.com/bookshop_org/"><i class="fab fa-instagram text-white mx-1"></i></a>
+                <a href="https://www.youtube.com/user/lovespy2010"><i class="fab fa-youtube text-white mx-1"></i></a>
+                <a href="https://twitter.com/bookshop_org"><i class="fab fa-twitter text-white mx-1"></i></a>
             </div>
         </div>
     </div>
+    <!--Footer Web Links  -->
     <div class="col col-lg-8 col-xl-6">
+        <!-- Customer Service -->
         <div class="container-fluid">
             <div class="row mt-5 hello">
                 <div class="col col-6 col-lg-3 text-white me-5">
@@ -24,9 +34,10 @@
                         <small id="FooterEmail"></small>
                     </div>
                 </div>
+                <!-- Communities Links -->
                 <div class="col col-6 col-lg-3 text-white me-5">
                     <div class="fservice">
-                        <p class="fw-bold">Our Services</p>
+                        <p class="fw-bold">Communities</p>
                         <a href="../View/contactus.php" class="btn-link text-white text-decoration-none">
                             <small>Contact Us </small>
                         </a>
@@ -40,11 +51,11 @@
                         </a>
                         <br />
                         <a href="../View/faqs.php" class="btn-link text-white text-decoration-none">
-                            <small> FAQ</small>
+                            <small> FAQ's</small>
                         </a>
                     </div>
                 </div>
-
+                <!-- Shop List -->
                 <div class="col col-6 col-lg-3 ">
                     <div class="fdiv">
                         <p class="fw-bold text-white">Shop List</p>
@@ -65,7 +76,7 @@
         </div>
     </div>
     <div class="row mb-3">
-        <hr class="text-white" />
+        <hr class="text-white mt-4" />
         <div class="col-12 col-lg-6">
             <div class="">
                 <p class="text-white">

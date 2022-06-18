@@ -87,7 +87,7 @@
                     echo "<div class='my-card' >";
                     echo " <div class='my-card-img'>";
                     echo  "<img src='../../Images/" . $result[$i]["book_image"] . "' 
-                          alt=''/>";
+                    alt=''/>";
                     echo "</div>";
                     echo "<div class='my-card-info'>";
                     echo "<h5 class='catTitle'>" . $result[$i]['book_name'] . "</h5>";

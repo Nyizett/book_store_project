@@ -16,7 +16,7 @@ if (!isset($_SESSION['username'])) {
                                                     echo $result[0]['fav_icon']; ?>" type="image/x-icon" width="100vw" />
     <link rel="stylesheet" href="../resource/UI Library/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../resource/css/style.css" />
-    <link rel="stylesheet" href="../resource/css/shopInfo.css" />
+    <link rel="stylesheet" href="../resource/css/comunnity.css" />
     <link rel="stylesheet" href="../resource/css/common.css">
     <script src="../resource/UI Library/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
     <script src="../resource/UI Library/jquery-3.3.1.min.js"></script>
@@ -58,14 +58,13 @@ if (!isset($_SESSION['username'])) {
                 </div>
                 <!-- Customers' View and Rating -->
                 <div class="row">
-                    <p class="h3 mt-4">Customers' View and Rating </p>
+                    <p class="h3 mt-4">Customers' Comment </p>
                     <table class="table table-striped mt-3 ms-3">
                         <tr class="tb-text bg-danger">
                             <th class="col-1">No</th>
                             <th class="col-1">Name</th>
                             <th class="col-2">Book</th>
                             <th class="col-2">Category</th>
-                            <th class="col-1">Rating</th>
                             <th class="col-4">Comment</th>
                         </tr>
                         <?php
@@ -77,7 +76,6 @@ if (!isset($_SESSION['username'])) {
                             echo "<td>" . $value['user_name'] . "</td>";
                             echo "<td>" . $value['book_name'] . "</td>";
                             echo "<td>" . $value['category_name'] . "</td>";
-                            echo "<td>" . $value['customer_rating'] . "</td>";
                             echo "<td>" . $value['customer_comment'] . "</td>";
                             echo "</tr>";
                             $count++;

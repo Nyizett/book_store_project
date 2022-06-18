@@ -15,7 +15,7 @@ if(!isset($_SESSION['username'])){
     <link rel="shortcut icon" href="../../Images/<?php require_once "../Controller/changeWebfavIconController.php";echo $result[0]['fav_icon']; ?>" type="image/x-icon" width="100vw" />
     <link rel="stylesheet" href="../resource/UI Library/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../resource/css/style.css" />
-    <link rel="stylesheet" href="../resource/css/shopInfo.css" />
+    <link rel="stylesheet" href="../resource/css/userinfo.css" />
     <link rel="stylesheet" href="../resource/css/common.css">
     <script src="../resource/UI Library/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
     <script src="../resource/UI Library/jquery-3.3.1.min.js"></script>
@@ -64,7 +64,37 @@ if(!isset($_SESSION['username'])){
 
             </div>
             <div class="btn-group col-8 offset-3 mb-3" role="group" aria-label="Basic outlined example" id="pagbtn"></div>
+            <div class="col-8 offset-3">
+                <p class="h3 mt-5">Ban List</p>
+                <table class="table table-striped mt-4">
 
+                    <tr class="bg-warning tb-text">
+                        <th class="col-1">No</th>
+                        <th class="col-2">Name</th>
+                        <th class="col-3 ">Email</th>
+                        <th class="col-2 ">Phone</th>
+                        <th class="col-4">Address</th>
+                        <th>UnBan</th>
+                    </tr>
+                    <?php
+                    require "../Controller/showBanUserController.php";
+                    $no = 1;
+
+                    foreach ($result as $key => $value) {
+                        global $no;
+                        echo "<tr class=tb-text>";
+                        echo "<td>" . $no++ . "</td>";
+                        echo "<td >" . $value['user_name'] . "</td>";
+                        echo "<td >" . $value['user_email'] . "</td>";
+                        echo "<td >" . $value['user_phone'] . "</td>";
+                        echo "<td >" . $value['user_address'] . "</td>";
+                        echo "<td><a href='../Controller/unBanUserController.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-danger'><ion-icon name='checkmark-circle-outline' class='fs-4'></ion-icon></button></a></td>";
+                    }
+                    ?>
+
+                </table>
+
+            </div>
         </div>
     </div>
 </body>

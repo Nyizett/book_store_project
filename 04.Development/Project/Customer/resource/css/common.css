@@ -9,6 +9,10 @@
     --font-color1: #484343;
     --font-color2: #595e68;
     --yellow-icon: #f4d221;
+    --primary-color: #1f4287;
+   --accent-color: #ebf1fd;
+   --navbar-color: #fff;
+   --body-color: white;
 }
 .header {
     z-index: 1005;
@@ -56,6 +60,15 @@
     left: 20px;
     bottom: 20px;
 }
+/* .header{
+    background-color: var(--accent-color);
+}
+.Coheader{
+    color: var(--primary-darkblue);
+}
+.Cott{
+    color: var(--font-color3);
+} */
 @media screen and (max-width:720px){
     .navbar {
         height: 5em;

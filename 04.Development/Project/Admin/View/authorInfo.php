@@ -18,7 +18,7 @@ if (!isset($_SESSION['username'])) {
     <link rel="stylesheet" href="../resource/css/style.css" />
     <link rel="stylesheet" href="../resource/css/authorInfo.css" />
     <link rel="stylesheet" href="../resource/css/common.css">
-    <link rel="stylesheet" href="../resource/css/dashboard.css">
+    <!-- <link rel="stylesheet" href="../resource/css/dashboard.css"> -->
     <script src="../resource/UI Library/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
     <script src="../resource/UI Library/jquery-3.3.1.min.js"></script>
     <script src="../resource/js/authorinfo.js"></script>
