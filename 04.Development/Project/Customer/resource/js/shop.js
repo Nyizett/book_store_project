@@ -16,6 +16,21 @@ $(document).ready(function () {
   console.log(cityName);
   $(".cityBtn").click(function () {
     var CityName = $(this).text();
+    if(CityName=="Yangon"){
+      $("#ygnBtn").addClass("activeCityBtn")
+      $("#mdyBtn").removeClass("activeCityBtn")
+      $("#nptBtn").removeClass("activeCityBtn")
+    }
+    if(CityName=="Mandalay"){
+      $("#mdyBtn").addClass("activeCityBtn")
+      $("#ygnBtn").removeClass("activeCityBtn")
+      $("#nptBtn").removeClass("activeCityBtn")
+    }
+    if(CityName=="NayPyiTaw"){
+      $("#nptBtn").addClass("activeCityBtn")
+      $("#mdyBtn").removeClass("activeCityBtn")
+      $("#ygnBtn").removeClass("activeCityBtn")
+    }
     showShops(CityName);
   });
 });
