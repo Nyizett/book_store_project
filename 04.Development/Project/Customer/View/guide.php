@@ -37,9 +37,9 @@
 
          foreach ($result as $key => $value) {
             global $no;
-            echo '<div class="guideDiv col-4  mt-4 ms-4">';
+            echo '<div class="guideDiv col-4  mt-4">';
             echo "<img class=img-thumbnail src='../../Images/" . $value['guide_image']. "'>";
-            echo '<p class=" fw-bold mt-2 text-break mx-5 ">' . $value['guide_text'];
+            echo '<p class=" fw-bold mt-2 text-break mx-5 ">' . $value['guide_text'].' ->';
             echo "</p>";
             echo "</div>";
          }
