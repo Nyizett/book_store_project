@@ -27,7 +27,8 @@
   box-shadow: none;
 }
 
-.viewBook {
+.viewBook,
+.bookDetail {
   background-color: var(--primary-darkblue);
   color: white;
   margin-top: 1em;
