@@ -25,6 +25,7 @@ $(document).ready(function () {
 
       $("#logo").attr("src", "../../Images/" + json[0].web_logo);
       $("#pageName").text(json[0].web_name);
+      console.log(json[0].web_name);
     },
   });
   function getCategories() {
