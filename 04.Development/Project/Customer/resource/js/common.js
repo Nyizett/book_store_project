@@ -24,6 +24,7 @@ $(document).ready(function () {
       let json = JSON.parse(data);
 
       $("#logo").attr("src", "../../Images/" + json[0].web_logo);
+      $("#pageName").text(json[0].web_name);
     },
   });
   function getCategories() {

@@ -6,7 +6,7 @@
     <img src="" alt="main-logo" id="logo" class="main-logo">
   </div>
   <a class="my-title navbar-brand font-color-primary pt-4 " href="#">
-    <span class="my-fcolor fw-bolder border-bottom" id="pageName">စာ အုပ် ဆိုင်</span>
+    <span class="my-fcolor fw-bolder border-bottom" id="pageName"></span>
     <p class="b-title">Book Store</p>
   </a>
 
