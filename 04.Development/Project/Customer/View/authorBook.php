@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Author's Book</title>
-    <link rel="shortcut icon" href="../../Images/latestLogo.png" type="image/x-icon" width="100vw" />
+    <link rel="shortcut icon" href="../../Images/<?php require "../Controller/changeFaviconController.php";
+                                                echo $result[0]['fav_icon']; ?>" type="image/x-icon" width="fit-content" />
     <link rel="stylesheet" href="../resource/UI Library/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../resource/css/style.css" />
     <link rel="stylesheet" href="../resource/css/homepage.css" />
@@ -49,18 +50,51 @@
                     echo "<h4>There is no book.</h4>";
                     echo "</div>";
                 }
+                // for ($i = 0; $i < count($result); $i++) {
+                //     echo "<div class='col-lg-3 col-md-6 col-sm-10 text-light  d-flex justify-content-between align-items-center mx-3 my-2'>";
+                //     echo "<div class='my-card' >";
+                //     echo " <div class='my-card-img'>";
+                //     echo  "<img src='../../Admin/resource/img/book cover/" . $result[$i]["book_image"] . "' 
+                //     alt=''/>";
+                //     echo "</div>";
+                //     echo "<div class='my-card-info'>";
+                //     echo "<h5>" . $result[$i]['book_name'] . "</h5>";
+                //     echo "<div class='mb-2'>";
+                //     echo "<span style='font-size:x-small'>";
+                //     $star = 3;
+                //     for ($s = 0; $s < 5; $s++) {
+                //         if ($star > $s) {
+                //             echo "  <i class='fa-solid fa-star'></i>";
+                //         } else {
+                //             echo " <i class='fa-regular fa-star'></i>";
+                //         }
+                //     }
+                //     echo "</span><br>";
+                //     echo "  <span style='font-size:x-small'>" . $result[$i]['author_name'] . "</span> ";
+                //     echo "</div>";
+                //     echo " <p style='font-weight:500 ;'>" . number_format($result[$i]['book_price']) . " MMK</p>";
+                //     echo " <button class='btn cart card-button px-1 rounded-1 me-1' id='" . $result[$i]['Book_Id'] . "' ><i class='fa-solid fa-cart-shopping me-1'></i>add
+                //   to
+                //   cart</button>";
+                //     echo " <span id='" . $result[$i]['Book_Id'] . "' class='btn btn-primary bookdetail card-button'><i class='fa-solid fa-eye'></i> 4</span>";
+                //     echo "</div>";
+                //     echo "</div>";
+                //     echo "</div>";
+                // }
+
+
                 for ($i = 0; $i < count($result); $i++) {
-                    echo "<div class='col-lg-3 col-md-6 col-sm-10 text-light  d-flex justify-content-between align-items-center mx-3 my-2'>";
+                    echo "<div class='col-lg-3 col-md-6 col-sm-10 text-light  d-flex justify-content-between align-items-center mx-5 my-2'>";
                     echo "<div class='my-card' >";
                     echo " <div class='my-card-img'>";
                     echo  "<img src='../../Images/" . $result[$i]["book_image"] . "' 
                     alt=''/>";
                     echo "</div>";
                     echo "<div class='my-card-info'>";
-                    echo "<h5>" . $result[$i]['book_name'] . "</h5>";
+                    echo "<h5 class='catTitle'>" . $result[$i]['book_name'] . "</h5>";
                     echo "<div class='mb-2'>";
                     echo "<span style='font-size:x-small'>";
-                    $star = 3;
+                    $star = $result[$i]['rating'];
                     for ($s = 0; $s < 5; $s++) {
                         if ($star > $s) {
                             echo "  <i class='fa-solid fa-star text-warning'></i>";
@@ -71,11 +105,11 @@
                     echo "</span><br>";
                     echo "  <span style='font-size:x-small'>" . $result[$i]['author_name'] . "</span> ";
                     echo "</div>";
-                    echo " <p style='font-weight:500 ;'>" . number_format($result[$i]['book_price']) . " MMK</p>";
+                    echo " <p class='catPrice' style='font-weight:500 ;'>" . number_format($result[$i]['book_price']) . " MMK</p>";
                     echo " <button class='btn cart card-button px-1 rounded-1 me-1' id='" . $result[$i]['Book_Id'] . "' ><i class='fa-solid fa-cart-shopping me-1'></i>add
-                  to
-                  cart</button>";
-                    echo " <span id='" . $result[$i]['Book_Id'] . "' class='btn btn-primary bookdetail card-button'><i class='fa-solid fa-eye'></i> 4</span>";
+                       to
+                       cart</button>";
+                    echo " <span id='" . $result[$i]['Book_Id'] . "' class='btn btn-primary bookdetail card-button view-btn'><i class='fa-solid fa-eye'></i> " . $result[$i]['view_count'] . "</span>";
                     echo "</div>";
                     echo "</div>";
                     echo "</div>";

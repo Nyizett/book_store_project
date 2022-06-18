@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Voucher</title>
-    <link rel="shortcut icon" href="../../Images/latestLogo.png" type="image/x-icon" width="100vw" />
+    <link rel="shortcut icon" href="../../Images/<?php require "../Controller/changeFaviconController.php";
+                                                    echo $result[0]['fav_icon']; ?>" type="image/x-icon" width="fit-content" />
     <link rel="stylesheet" href="../resource/UI Library/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../resource/css/style.css" />
     <link rel="stylesheet" href="../resource/css/homepage.css" />
@@ -21,7 +22,7 @@
 <body>
 
     <script>
-           
+
     </script>
     <!-- Header -->
     <nav class="navbar navbar-expand-lg   top-0 w-100 " id="cum_navbar">
@@ -50,44 +51,44 @@
                             </tr>
                         </thead>
                         <tbody>
-                        <?php
-                         $i = 1;
-                        
-                           foreach ($result as $key => $value) {
-                               
-                               echo "<tr class=' count ' id=".$value['id'].">";
-                               echo "<th scope='row'>".$i."</th>";
-                               echo "<td>".$value['book_name']."</td>";
-                               echo "<td class='qty'>".$value['quantity']."</td>";
-                               echo "<td class='price'>".$value['book_price']." <span>MMK</span></td>";
-                               $i++;
-                           }
-                        ?>
+                            <?php
+                            $i = 1;
+
+                            foreach ($result as $key => $value) {
+
+                                echo "<tr class=' count ' id=" . $value['id'] . ">";
+                                echo "<th scope='row'>" . $i . "</th>";
+                                echo "<td>" . $value['book_name'] . "</td>";
+                                echo "<td class='qty'>" . $value['quantity'] . "</td>";
+                                echo "<td class='price'>" . $value['book_price'] . " <span>MMK</span></td>";
+                                $i++;
+                            }
+                            ?>
                             <tr class="table-active">
                                 <td colspan="3"> <b>Total Amount :</b> </td>
-                              <?php echo "  <td class='totalall'>".$result[0]['total']." MMK + (Delivery Fee)</td>"  ?>
+                                <?php echo "  <td class='totalall'>" . $result[0]['total'] . " MMK + (Delivery Fee)</td>"  ?>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
-                <div class="col-md-4 mt-5 mx-4">
-                    <div>
-                        <p>Name : <span class="ms-3 name"></span></p>
-                        <p>Phone : <span class="ms-3 phone"></span></p>
-                        <p>Email : <span class="ms-3 email"></span></p>
-                        <p>Address : <?php echo "<span id=".$result['0']['delivery_fee_id']." class='ms-3 address'></span>" ?>  </p>
-                        <p>Payment : <span class="ms-3">Cash On Delivery</span></p>
-                    </div>
-                    <button class="btn btn-primary order" data-bs-toggle="modal" data-bs-target="#modal">Place Order</button>
+            <div class="col-md-4 mt-5 mx-4">
+                <div>
+                    <p>Name : <span class="ms-3 name"></span></p>
+                    <p>Phone : <span class="ms-3 phone"></span></p>
+                    <p>Email : <span class="ms-3 email"></span></p>
+                    <p>Address : <?php echo "<span id=" . $result['0']['delivery_fee_id'] . " class='ms-3 address'></span>" ?> </p>
+                    <p>Payment : <span class="ms-3">Cash On Delivery</span></p>
                 </div>
-              
+                <button class="btn btn-primary order" data-bs-toggle="modal" data-bs-target="#modal">Place Order</button>
             </div>
 
-
-
-
         </div>
+
+
+
+
+    </div>
     </div>
 
     <div id="modal" class="modal fade" role="dialog" data-bs-backdrop="static" data-easein="bounceIn" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -109,10 +110,10 @@
 
                 </div>
             </div>
-           
-        
-          </div>
+
+
         </div>
+    </div>
     </div>
     <footer id="footer" class="container-fluid commom-bg  mt-5">
         <?php require "../View/footerCommon.php" ?>

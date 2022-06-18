@@ -4,13 +4,13 @@
             <h2 class="ftitle text-white align-top">စာ အုပ် ဆိုင်</h2>
             <p></p>
             <p class="text-white">Address</p>
-            
+
             <p class="shop-address  ms-3 text-white">
-                        <?php require "../Controller/webAddressController.php";
-                        echo '-  '.$webAddress[0]['web_address']; ?>
+                <?php require "../Controller/webAddressController.php";
+                echo '-  ' . $webAddress[0]['web_address']; ?>
             </p>
             <a href="./contactus.php" class="showmap text-white text-decoration-none mb-2">SHOW ON MAP</a>
-            
+
             <!-- Social Links -->
             <div class="d-flex mt-2">
 

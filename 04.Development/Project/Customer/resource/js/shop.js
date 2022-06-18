@@ -11,6 +11,7 @@ $(document).ready(function () {
       "http://localhost/book_store_project/04.Development/Project/Customer/View/shops.php"
     );
   }
+
   showShops(cityName);
   console.log(cityName);
   $(".cityBtn").click(function () {
