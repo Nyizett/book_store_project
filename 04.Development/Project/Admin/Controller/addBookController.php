@@ -23,6 +23,7 @@ if (isset($_POST)) {
 
     $file = $_FILES['bookFile']['name'];
     $location = $_FILES['bookFile']['tmp_name'];
+    $image = file_get_contents($location);
 
     if (move_uploaded_file($location, "../../Images/" . $file)) {
         //Call DB Connection

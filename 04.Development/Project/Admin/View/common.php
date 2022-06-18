@@ -1,7 +1,7 @@
 <!-- Navigation Bar -->
 <div class="buttonbox col-7 col-sm-2 position-fixed ">
-    <input type="hidden" name="id" value="<?php require_once "../Controller/commonController.php";
-                                            echo $result[0]['id']; ?>">
+    <!-- <input type="hidden" name="id" value="<?php require_once "../Controller/commonController.php";
+                                            echo $result[0]['id']; ?>"> -->
     <img src="../../Images/<?php echo $result[0]['web_logo']; ?>" alt="" class="my-img">
     <div class="webNameT fs-4 text-light text-center fw-bold "><?php echo $result[0]['web_name']; ?></div>
     <div class="webNameText text-light text-center">Book Store</div>

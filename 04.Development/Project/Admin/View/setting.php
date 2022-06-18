@@ -57,7 +57,7 @@ if(!isset($_SESSION['username'])){
                         <button type="submit" class="custombutton btn btn-sm offset-10 mt-2 mb-3 fw-bold col-2">CHANGE FAV-ICON</button>
                     </form>
                     <!-- Update Logo Start-->
-                    <form action="../Controller/updatelogoController.php" method="POST">
+                    <form action="../Controller/updatelogoController.php" method="POST" enctype="multipart/form-data">
                         <div class="input-group mb-3 mt-5">
                             <input type="file" class="form-control" id="inputGroupFile02" name="webLogo">
                         </div>

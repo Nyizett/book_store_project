@@ -25,16 +25,20 @@
 .my-fcolor {
     color: white;
 }
-.image-container{
+/* .image-container{
     width: 2rem;
+} */
+/* .image-container img{
+    width: 10%;
 }
+     */
 .catdrop{
     font-size: 1.3em;
 }
 
-.my-title {
+/* .my-title {
     padding-left: 9%;
-}
+} */
 .b-title {
     font-size: 0.7em;
     color: white;

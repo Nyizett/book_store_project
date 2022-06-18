@@ -2,9 +2,9 @@
   <button class="navbar-toggler font-color-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <ion-icon class="my-fcolor fs-1 font-color-primary" name="menu-outline"></ion-icon>
   </button>
-  <div class="image-container">
-    <img src="" alt="main-logo" id="logo" class="main-logo">
-  </div>
+  
+    <img src="" alt="main-logo" id="logo" width="5%" >
+  
   <a class="my-title navbar-brand font-color-primary pt-4 " href="#">
     <span class="my-fcolor fw-bolder border-bottom" id="pageName">စာ အုပ် ဆိုင်</span>
     <p class="b-title">Book Store</p>
