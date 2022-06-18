@@ -5,7 +5,8 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="shortcut icon" href="../../Images/latestLogo.png" type="image/x-icon" width="100vw" />
+   <link rel="shortcut icon" href="../../Images/<?php require "../Controller/changeFaviconController.php";
+                                                echo $result[0]['fav_icon']; ?>" type="image/x-icon" width="fit-content" />
    <title>Cart List</title>
    <link rel="stylesheet" href="../resource/UI Library/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
    <link rel="stylesheet" href="../resource/css/style.css" />
@@ -134,7 +135,7 @@
 
          </table>
          <div class="container d-flex justify-content-between align-items-center px-4 ">
-          <a href="../../Customer/View/homepage.php">  <button class="btn btn-primary text-light text-align-center cancel"><b>CANCEL</b></button></a>
+            <a href="../../Customer/View/homepage.php"> <button class="btn btn-primary text-light text-align-center cancel"><b>CANCEL</b></button></a>
             <button class="btn btn-primary text-light text-align-center mx-3 buy"><b>BUY NOW</b></button>
 
          </div>
@@ -150,10 +151,10 @@
    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
    <script src="../resource/UI Library/fontawesome-free/js/all.min.js"></script>
-   
+
    <script src="../resource/js/common.js"></script>
    <script src="../resource/js/addtoCart.js" defer></script>
-   
+
    <script type="text/javascript" defer>
 
    </script>
