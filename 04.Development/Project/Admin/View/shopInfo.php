@@ -34,7 +34,7 @@ if(!isset($_SESSION['username'])){
                 <!-- Yangon Shop List -->
                 <p class="h3 mt-4 ">Yangon Shop List</p>
                 <table class="mcustom2 table table-striped table-sm mt-3">
-                    <tr class="mcustom bg-danger">
+                    <tr class="mcustom bg-danger text-light">
                         <th>No</th>
                         <th class="col-1">Image</th>
                         <th class="col-2">Name</th>
@@ -67,7 +67,7 @@ if(!isset($_SESSION['username'])){
                 <div class="row">
                     <p class="h3 mt-4">Mandalay Shop List</p>
                     <table class="mcustom1 table table-striped mt-3 ms-2">
-                        <tr class="mcustom tb-text bg-danger">
+                        <tr class="mcustom tb-text bg-danger text-light">
                             <th>No</th>
                             <th class="col-1">Image</th>
                             <th class="col-1">Name</th>
@@ -101,7 +101,7 @@ if(!isset($_SESSION['username'])){
                 <div class="row">
                     <p class="h3 mt-4">Nay Pyi Taw Shop List</p>
                     <table class="mcustom1 table table-striped mt-3 ms-2">
-                        <tr class="mcustom tb-text bg-danger">
+                        <tr class="mcustom tb-text bg-danger text-light">
                             <th>No</th>
                             <th class="col-1">Image</th>
                             <th class="col-1">Name</th>
