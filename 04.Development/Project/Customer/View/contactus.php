@@ -64,7 +64,7 @@
                <div class="d-flex justify-content-evenly flex-column p-2">
                   <div class="d-flex justify-content-between pt-4">
                      <i class="fas fa-map-marker text-white"></i>
-                     <p class="shop-address  ms-3 text-white">
+                     <p class="shop-address  ext-white">
                         <?php require "../Controller/webAddressController.php";
                         echo $webAddress[0]['web_address']; ?>
                      </p>
