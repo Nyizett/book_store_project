@@ -32,7 +32,7 @@ if(!isset($_SESSION['username'])){
             <div class="col-8 offset-3">
             <a href="./authorInfo.php" class="custombutton text-dec text-dark btn btn-sm-2 fw-bold ms-4 mt-4">BACK</a>
                 <p class="h3 mt-4 ms-4">Edit Author</p>
-                <form action="../Controller/updateDBAuthorController.php" method="POST">
+                <form action="../Controller/updateDBAuthorController.php" method="POST" enctype="multipart/form-data">
                     <div class="row container col-md-7 mt-3 ">
                         <div class="mb-3 mt-3">
                             <input type="hidden" name="id" value ="<?php require_once "../Controller/editAuthorController.php";  echo $result[0]['id'];?>">

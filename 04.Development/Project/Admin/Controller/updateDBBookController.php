@@ -19,7 +19,11 @@ if(isset($_POST)){
 
     $file = $_FILES['bookFile']['name'];
     $location = $_FILES['bookFile']['tmp_name'];
+<<<<<<< HEAD
     // $image = file_get_contents($location);
+=======
+    
+>>>>>>> origin/main
 
     // echo $file;
 
