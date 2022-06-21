@@ -30,3 +30,7 @@
 .settnbtn{
     background-color: var(--btn-color)
 }
+.activebbtn{
+    background-color: var(--main-color) !important;
+    color:aliceblue;
+}

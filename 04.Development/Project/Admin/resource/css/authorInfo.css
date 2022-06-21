@@ -12,6 +12,10 @@
 .auinfobtn{
     background-color: var(--btn-color)
 }
+.activebbtn{
+    background-color: var(--main-color) !important;
+    color:aliceblue;
+}
 @media screen and (max-width:720px){
    .smBtnn{
        border: none;

@@ -1,6 +1,10 @@
 .bkinbtn{
     background-color: var(--btn-color)
 }
+.activebbtn{
+    background-color: var(--main-color) !important;
+    color:aliceblue;
+}
 @media screen and (max-width:720px){
  .tb-text{
     font-size: 0.7em;
