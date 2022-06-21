@@ -77,7 +77,7 @@
                     echo " <button class='btn cart card-button px-1 rounded-1 me-1' id='" . $result[$i]['Book_Id'] . "' ><i class='fa-solid fa-cart-shopping me-1'></i>add
                        to
                        cart</button>";
-                    echo " <span id='" . $result[$i]['Book_Id'] . "' class='btn btn-primary bookdetail card-button view-btn mt-2'><i class='fa-solid fa-eye'></i> " . $result[$i]['view_count'] . "</span>";
+                    echo " <span id='" . $result[$i]['Book_Id'] . "' class='btn btn-primary bookdetail card-button view-btn '><i class='fa-solid fa-eye'></i> " . $result[$i]['view_count'] . "</span>";
                     echo "</div>";
                     echo "</div>";
                     echo "</div>";

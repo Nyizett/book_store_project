@@ -26,7 +26,7 @@ if(isset($_POST)){
         $sql->bindValue(":todayDate", date("d/m/Y"));
         $sql->bindValue(":adminName", $UserName);
         $sql->execute();
-        header("location: ../view/setting.php");
+        header("location: ../View/setting.php");
     }else{
         echo "error";
     }
