@@ -88,10 +88,10 @@
 
    </div>
 
-   <div class="header d-flex justify-content-between align-items-center p-4 text-primary ">
+   <div class="tottab header d-flex justify-content-between align-items-center p-4 text-primary ">
       <h3 class="fw-bolder"></h3>
       <div>
-         <table class="table table-borderless text px-4">
+         <table class=" table table-borderless text px-4">
             <thead>
                <tr>
                   <th colspan="2" class="text-primary">Total Price</th>
