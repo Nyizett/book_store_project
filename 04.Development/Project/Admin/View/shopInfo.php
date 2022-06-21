@@ -84,7 +84,7 @@ if(!isset($_SESSION['username'])){
                             echo "<td>" . $count . "</td>";
                             echo "<td class='shop-img'> <img src='../../Images/" . $value['shop_image'] . "' </td>";
                             echo "<td>" . $value['shop_name'] . "</td>";
-                            echo "<td class='mcustom text-break'>>" . $value['shop_address'] . "</td>";
+                            echo "<td class='mcustom text-break'>" . $value['shop_address'] . "</td>";
                             echo "<td class='aut-bio text-break'>" . $value['shop_phone_no'] . "</td>";
                             echo "<td class='mcustom text-break'>" . $value['shop_website'] . "</td>";
                             echo "<td><a href='../View/editShop.php?id=" . $value['id'] . "'><button type='button' class='smallbtnn btn btn-outline-primary'><ion-icon name='create-outline'></ion-icon></button></a></td>";

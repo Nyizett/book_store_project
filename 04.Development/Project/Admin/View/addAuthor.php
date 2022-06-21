@@ -33,7 +33,7 @@ if(!isset($_SESSION['username'])){
             <a href="./authorInfo.php" class="custombutton text-dec text-dark btn btn-sm-2 fw-bold ms-4 mt-4">BACK</a>
                 <p class="h3 mt-4 ms-4">Insert Author</p>
                 
-                <form action="../Controller/addAuthorController.php" method="POST" >
+                <form action="../Controller/addAuthorController.php" method="POST" enctype="multipart/form-data">
                     <div class="row container col-md-7 mt-3 ">
                         <div class="mb-3 mt-3">
                             <label for="" class="form-label">Name</label>
