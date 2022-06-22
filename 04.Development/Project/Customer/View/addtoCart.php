@@ -48,8 +48,10 @@
            </tr>
            </thead>
            <tbody class='itembody'>";
+           $count = 1;
          foreach ($result as $key => $value) {
-            echo "<tr  class='items'>";
+            
+            echo "<tr  id='$count' class='items'>";
             echo " <th scope='row'><img src='../../Images/" . $value['0']['book_image'] . "' alt=''></th>";
             echo "<td><span class='name'>" . $value['0']['book_name'] . "</span></b>";
             if ($value['0']['author_name'] == 'None') {
@@ -72,9 +74,10 @@
                </div></td>";
             echo "<td class='total' colspan='1'>" . number_format($value['0']['book_price']) . " MMK</td>";
             echo "<td >
-                  <ion-icon  class='close' name='close-circle-outline'></ion-icon>
+                  <ion-icon id=".($count-1)." class='close' name='close-circle-outline'></ion-icon>
                   </td>";
             echo "</tr>";
+            $count++;
          }
          echo "</tbody>
                </table>";
