@@ -7,7 +7,7 @@ $db =  new DBConnect();
 $dbconnect = $db ->connect();
 
 $sql = $dbconnect->prepare(
-    "SELECT * FROM m_site_master
+    "SELECT web_logo,web_name  FROM m_site_master
             WHERE id = 1;
     ");
 

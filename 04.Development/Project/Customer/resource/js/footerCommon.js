@@ -10,6 +10,7 @@ $(document).ready(function () {
 
       $("#FooterPhoneNumber").text(json[0].web_phno);
       $("#FooterEmail").text(json[0].web_email);
+      $("#FooterAddress").text(json[0].web_address);
     },
   });
 });

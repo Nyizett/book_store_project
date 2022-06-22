@@ -30,7 +30,7 @@ if(!isset($_SESSION['username'])){
             <!--Input Box for Editting Shop-->
             <div class="col-8 offset-3">
             <a href="./shopInfo.php" class="custombutton text-dec text-dark btn btn-sm-2 fw-bold ms-4 mt-4">BACK</a>
-                <form action="../Controller/updateDBShopController.php" method="POST">
+                <form action="../Controller/updateDBShopController.php" method="POST" enctype="multipart/form-data">
                     <div class="row container col-md-8 mt-3 ">
                         <div class="row">
                             <div class="col mb-3 mt-3">

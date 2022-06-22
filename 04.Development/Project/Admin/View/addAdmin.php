@@ -47,7 +47,7 @@ if(!isset($_SESSION['username'])){
             <input type="email" class="customstyle form-control" id="email" name="email" placeholder="example@email.com">
           </div>
           <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Creat your password</label>
+            <label for="exampleFormControlInput1" class="form-label">Create your password</label>
             <input type="password" class="customstyle form-control" id="pwd" name="password" placeholder="">
           </div>
 

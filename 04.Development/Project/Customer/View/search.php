@@ -6,7 +6,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Search</title>
-   <link rel="shortcut icon" href="../../Images/latestLogo.png" type="image/x-icon" width="100vw" />
+   <link rel="shortcut icon" href="../../Images/latestLogo.png" type="image/x-icon" width="fit-content" />
    <link rel="stylesheet" href="../resource/UI Library/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
 
    <link rel="stylesheet" href="../resource/css/style.css" />
@@ -55,7 +55,7 @@
 
 
    <section class="container">
-      <div class="row" id="Bookbox">
+      <div class="d-flex flex-row flex-wrap w-100" id="Bookbox">
          <!-- <div class="col-12 col-lg-2 col-xl-2">
             <div class="card mt-5 card-width">
                <img src="../resource/img/book cover/jsEi.png" class="img-fluid w-75 mx-auto mt-3" alt="" />

@@ -110,6 +110,9 @@ icon{
  .cart-tb{
     background-color: var(--accent-color);
  }
+ .removecss{
+    display: none !important;
+ }
  @media screen and (max-width: 720px) {
     .cartList{
         padding-top: 1em;

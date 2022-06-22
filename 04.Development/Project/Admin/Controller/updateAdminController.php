@@ -32,5 +32,5 @@ if(isset($_POST)){
     $sql->bindValue(":adminName", $UserName);
 
     $sql->execute();
-    header("location: ../view/setting.php");
+    header("location: ../View/setting.php");
 }

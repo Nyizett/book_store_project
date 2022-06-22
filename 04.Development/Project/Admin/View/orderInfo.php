@@ -14,7 +14,7 @@ if(!isset($_SESSION['username'])){
     <link rel="shortcut icon" href="../../Images/<?php require_once "../Controller/changeWebfavIconController.php";echo $result[0]['fav_icon']; ?>" type="image/x-icon" width="100vw" />
     <link rel="stylesheet" href="../resource/UI Library/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../resource/css/style.css" />
-    <link rel="stylesheet" href="../resource/css/shopInfo.css" />
+    <link rel="stylesheet" href="../resource/css/orderInfo.css" />
     <link rel="stylesheet" href="../resource/css/common.css">
     <script src="../resource/UI Library/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
     <script src="../resource/UI Library/jquery-3.3.1.min.js"></script>
@@ -58,7 +58,7 @@ if(!isset($_SESSION['username'])){
                         echo "<td >" . $value['user_name'] . "</td>";
                         echo "<td >" . $value['user_address'] . "</td>";
                         echo "<td >" . $value['delivery_city_name'] . "</td>";
-                        echo "<td >" .number_format($value['total_amount'])." MMK" . "</td>";
+                        echo "<td >" .number_format($value['total_amount']-$value['delivery_fees'])." MMK" . "</td>";
                         echo "<td >" .number_format($value['delivery_fees'])." MMK" . "</td>";
                         echo "<td><a href='../View/orderDetail.php?id=" . $value['customer_id'] . "'><button type='button' class='btn btn-outline-danger'><ion-icon name='enter-outline'></ion-icon></button></a></td>";
                     }

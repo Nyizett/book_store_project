@@ -32,7 +32,7 @@ $(document).ready(function () {
           $("#authorContainer").append(
             `
             <div class="authorsCard noAuthor d-flex flex-column justify-content-center align-items-center mx-4 my-3 gap-3">
-                  <h4>There is no author with the name "${name}".</h4>
+                  <h4>There is no author.</h4>
                   </div>
                   `
           );
@@ -58,10 +58,13 @@ $(document).ready(function () {
             $("#authorContainer").append(
               `
                     <div class="authorsCard d-flex flex-column justify-content-center align-items-center mx-4 my-3 gap-3">
-                    <img src="../../Admin/resource/img/authors/${author.author_image}" alt="${author.author_name} Photo" width="50%" height="45%" class="mt-2">
+                    <div class="authorImage">
+                    <img src="../../Admin/resource/img/authors/${author.author_image}" alt="${author.author_name} Photo" width="100%" height="100%" class="mt-2">
+                    </div>
+                    
                     <p class="authorName fw-bolder">${author.author_name} </p>
                     <div class="d-flex flex-row">
-                    <button type="button" class="btn authorInfoButton text-white mx-3 mb-3" data-bs-toggle="modal" data-bs-target="#authorInfo${author.id}">Read Profile</button>
+                    <button type="button" class="btn authorInfoButton text-white  mx-3 mb-3" data-bs-toggle="modal" data-bs-target="#authorInfo${author.id}">Read Profile</button>
                     <button type="button" class="btn authorInfoButton text-white mx-3 mb-3 getAuthorId"  id="${author.id}">View Books</button>
                     </div>
                     </div>

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shops</title>
-    <link rel="shortcut icon" href="../../Images/latestLogo.png" type="image/x-icon" width="100vw" />
+    <link rel="shortcut icon" href="../../Images/latestLogo.png" type="image/x-icon" width="fit-content" />
     <link rel="stylesheet" href="../resource/UI Library/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../resource/css/style.css" />
     <link rel="stylesheet" href="../resource/css/homepage.css" />
@@ -39,9 +39,9 @@
         </div>
     </div>
     <div class="container d-flex justify-content-between align-items-center p-4 mx-6 col-12 col-md-12 col-lg-4 ">
-        <button class="cityBtn btn  text-primary border border-primary">Yangon</button>
-        <button class="cityBtn btn text-primary border border-primary">Mandalay</button>
-        <button class="cityBtn btn text-primary border border-primary">NayPyiTaw</button>
+        <button class="activeCityBtn cityBtn btn  btn-outline-primary " type="button" id="ygnBtn">Yangon</button>
+        <button class="cityBtn btn btn-outline-primary " type="button" id="mdyBtn">Mandalay</button>
+        <button class="cityBtn btn btn-outline-primary " type="button" id="nptBtn">NayPyiTaw</button>
 
     </div>
     </div>

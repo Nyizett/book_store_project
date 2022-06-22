@@ -42,12 +42,17 @@ function ShowItem(data,row,page){
 }
 function showPagBtn(row,data,row_per_page){
     for (let index = 1; index < row+1; index++) {
-        $("#pagbtn").append(`<button type="button" class="pagfun btn btn-outline-primary">${index}</button>`)
-        
+        if(index==1){
+            $("#pagbtn").append(`<button type="button" class="activebbtn pagfun btn btn-outline-primary">${index}</button>`)
+        }else{
+            $("#pagbtn").append(`<button type="button" class="pagfun btn btn-outline-primary">${index}</button>`)
+        }  
     }
     $(".pagfun").click(function () {
         var npage=$(this).text();
         console.log($(this).text())
+        $(".pagfun").removeClass("activebbtn")
+        $(this).addClass("activebbtn")
         ShowItem(data,row_per_page,npage)
    });
   

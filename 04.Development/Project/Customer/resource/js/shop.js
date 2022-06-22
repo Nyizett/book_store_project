@@ -5,16 +5,47 @@ $(document).ready(function () {
     cityName == "NayPyiTaw"
   ) {
     showShops(cityName);
+    if (cityName == "Yangon") {
+      $("#ygnBtn").addClass("activeCityBtn");
+      $("#mdyBtn").removeClass("activeCityBtn");
+      $("#nptBtn").removeClass("activeCityBtn");
+    }
+    if (cityName == "Mandalay") {
+      $("#mdyBtn").addClass("activeCityBtn");
+      $("#ygnBtn").removeClass("activeCityBtn");
+      $("#nptBtn").removeClass("activeCityBtn");
+    }
+    if (cityName == "NayPyiTaw") {
+      $("#nptBtn").addClass("activeCityBtn");
+      $("#mdyBtn").removeClass("activeCityBtn");
+      $("#ygnBtn").removeClass("activeCityBtn");
+    }
   } else {
-    alert("Wrong Name!");
+    alert("NO BOOK STORE!");
     location.replace(
       "http://localhost/book_store_project/04.Development/Project/Customer/View/shops.php"
     );
   }
+
   showShops(cityName);
   console.log(cityName);
   $(".cityBtn").click(function () {
     var CityName = $(this).text();
+    if (CityName == "Yangon") {
+      $("#ygnBtn").addClass("activeCityBtn");
+      $("#mdyBtn").removeClass("activeCityBtn");
+      $("#nptBtn").removeClass("activeCityBtn");
+    }
+    if (CityName == "Mandalay") {
+      $("#mdyBtn").addClass("activeCityBtn");
+      $("#ygnBtn").removeClass("activeCityBtn");
+      $("#nptBtn").removeClass("activeCityBtn");
+    }
+    if (CityName == "NayPyiTaw") {
+      $("#nptBtn").addClass("activeCityBtn");
+      $("#mdyBtn").removeClass("activeCityBtn");
+      $("#ygnBtn").removeClass("activeCityBtn");
+    }
     showShops(CityName);
   });
 });

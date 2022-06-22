@@ -17,6 +17,17 @@ $(document).ready(function () {
 
     $("#cartCount2").text(`${JSON.parse(localStorage.getItem("cart")).length}`);
   }
+  $.ajax({
+    type: "post",
+    url: "../Controller/headerTextGetController.php",
+    success: function (data) {
+      let json = JSON.parse(data);
+
+      $("#logo").attr("src", "../../Images/" + json[0].web_logo);
+      $("#pageName").text(json[0].web_name);
+      console.log(json[0].web_name);
+    },
+  });
   function getCategories() {
     $.ajax({
       type: "post",

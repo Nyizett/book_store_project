@@ -6,7 +6,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Privacy & Policy</title>
-   <link rel="shortcut icon" href="../../Images/latestLogo.png" type="image/x-icon" width="100vw" />
+   <link rel="shortcut icon" href="../../Images/latestLogo.png" type="image/x-icon" width="fit-content" />
    <link rel="stylesheet" href="../resource/UI Library/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
    <link rel="stylesheet" href="../resource/css/style.css" />
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
@@ -29,16 +29,13 @@
          <b>Home</b> -> Privacy & Policy
       </div>
    </div>
-   
+
    <section class="container mt-5">
-      <div class="row">
-      <h3>စာအုပ်ဆိုင်.com Privacy Policy</h3>
-      <p class="mt-2">စာအုပ်ဆိုင်.com website strictly focuses on the privacy of our customers’ and our loyalty towards our commitment. The policy discloses the practice by which we gather the necessary information through our website.</p>
-      </div>
+
       <div class="row">
          <div class="col-12">
 
-         <?php
+            <?php
             require "../Controller/privacyPolicyController.php";
             $no = 1;
 
@@ -60,7 +57,7 @@
             </p> -->
          </div>
 
-         
+
       </div>
    </section>
 

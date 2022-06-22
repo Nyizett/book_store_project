@@ -8,7 +8,6 @@
   color: var(--primary-darkblue);
 }
 .homeTextColor {
-  
   color: var(--font-color3);
 }
 .startName span {
@@ -34,13 +33,15 @@
 }
 
 .authorsCard {
-  height: 40vh;
+  height: fit-content;
+  min-height: 50vh;
   width: 17vw;
   border: 1px solid black;
   border-radius: 5px;
 }
 .authorsCard img {
   border-radius: 2vw;
+  /* width: 50%; */
 }
 .authorName {
   color: var(--primary-darkblue);
@@ -48,15 +49,22 @@
 .authorInfoButton {
   background-color: var(--primary-darkblue) !important;
   color: white;
-  width: 60% !important;
-  height: fit-content !important;
+  width: 80% !important;
+  /* height: fit-content !important; */
   border-style: none;
   border-radius: 5px;
+  margin-top: 1em;
 }
+
 .authorInfoButton:hover {
   color: var(--font-color3);
 }
 .noAuthor {
-  background-color: rgba(255, 224, 224, 0.89) !important;
+  /* background-color: rgba(255, 224, 224, 0.89) !important; */
+
+  border: none;
+  width: 50%;
+}
+.authorImage {
   width: 50%;
 }

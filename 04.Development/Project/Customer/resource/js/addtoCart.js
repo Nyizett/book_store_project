@@ -8,12 +8,16 @@ let vouchers = $('.vouchers').length;
 let p_price;
 let qty;
 let sum;
+if($(".no-item").text()=="There is no item in your cart."){
+    $(".tottab").addClass("removecss");
+}else{$(".tottab").removeClass("removecss");}
 $('.b_price').each(function(index){
     
         p_price =$(this).text().replaceAll(',','').replaceAll(' MMK','');
         qty = $(this).next().children().find('#qty').val();
         sum = qty * p_price;
         console.log(sum);
+        console.log(qty);
     $(this).next().next().text(numberWithCommas(sum.toString().concat(text)));
         
     

@@ -6,7 +6,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Guide</title>
-   <link rel="shortcut icon" href="../../Images/latestLogo.png" type="image/x-icon" width="100vw" />
+   <link rel="shortcut icon" href="../../Images/latestLogo.png" type="image/x-icon" width="fit-content" />
    <link rel="stylesheet" href="../resource/UI Library/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
    <link rel="stylesheet" href="../resource/css/style.css" />
    <link rel="stylesheet" href="../resource/css/guide.css" />
@@ -39,7 +39,7 @@
             global $no;
             echo '<div class="guideDiv col-4  mt-4">';
             echo "<img class=img-thumbnail src='../../Images/" . $value['guide_image']. "'>";
-            echo '<p class=" fw-bold mt-2 text-break">' . $value['guide_text'];
+            echo '<p class=" fw-bold mt-2 text-break mx-5 ">' . $value['guide_text'].' ->';
             echo "</p>";
             echo "</div>";
          }

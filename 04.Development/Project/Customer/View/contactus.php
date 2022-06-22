@@ -6,7 +6,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <title>Contact Us</title>
-   <link rel="shortcut icon" href="../../Images/latestLogo.png" type="image/x-icon" width="100vw" />
+   <link rel="shortcut icon" href="../../Images/latestLogo.png" type="image/x-icon" width="fit-content" />
    <link rel="stylesheet" href="../resource/UI Library/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
    <link rel="stylesheet" href="../resource/css/style.css" />
    <link rel="stylesheet" href="../resource/css/contactus.css" />
@@ -64,7 +64,7 @@
                <div class="d-flex justify-content-evenly flex-column p-2">
                   <div class="d-flex justify-content-between pt-4">
                      <i class="fas fa-map-marker text-white"></i>
-                     <p class="shop-address  ms-3 text-white">
+                     <p class="shop-address  ext-white">
                         <?php require "../Controller/webAddressController.php";
                         echo $webAddress[0]['web_address']; ?>
                      </p>
@@ -86,6 +86,7 @@
                </div>
             </div>
          </div>
+         <!-- Contact -->
          <div class="col-12 col-lg-8">
             <div class="container details-text">
                <div class="row justify-content-center align-items-center">
