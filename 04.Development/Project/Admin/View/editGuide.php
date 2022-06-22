@@ -33,7 +33,7 @@ if(!isset($_SESSION['username'])){
       <div class="col">
         <a href="./setting.php" class="custombutton text-dec text-dark btn btn-sm-2 fw-bold mt-4 md-4">BACK</a>
       </div>
-      <form action="../Controller/updateGuideController.php" method="POST">
+      <form action="../Controller/updateGuideController.php" method="POST" enctype="multipart/form-data">
 
         <div class="col-5 mt-3">
 

@@ -50,23 +50,23 @@ if(!isset($_SESSION['username'])){
                 <!-- site Master start -->
                 <div class="stm">
                     <!-- Update Fav-Icon -->
-                    <form action="../Controller/updateFICONController.php" method="POST">
+                    <form action="../Controller/updateFICONController.php" method="POST" enctype="multipart/form-data">
                         <div class="input-group mb-3 mt-5">
-                            <input type="file" class="form-control" id="inputGroupFile02" name="fIcon">
+                            <input type="file" class="customstyle form-control" id="inputGroupFile02" name="fIcon">
                         </div>
                         <button type="submit" class="custombutton btn btn-sm offset-10 mt-2 mb-3 fw-bold col-2">CHANGE FAV-ICON</button>
                     </form>
                     <!-- Update Logo Start-->
                     <form action="../Controller/updatelogoController.php" method="POST" enctype="multipart/form-data">
                         <div class="input-group mb-3 mt-5">
-                            <input type="file" class="form-control" id="inputGroupFile02" name="webLogo">
+                            <input type="file" class="customstyle form-control" id="inputGroupFile02" name="webLogo">
                         </div>
                         <button type="submit" class="custombutton btn btn-sm offset-10 mt-2 mb-3 fw-bold col-2">CHANGE LOGO</button>
                     </form>
                     <!-- Update Google Map Start-->
                     <form action="../Controller/updateGMController.php" method="POST">
                         <div class="input-group mb-3 mt-5">
-                            <input type="text" class="form-control"  name="webGM">
+                            <input type="text" class="customstyle form-control"  name="webGM">
                         </div>
                         <button type="submit" class="custombutton btn btn-sm offset-10 mt-2 mb-3 fw-bold">CHANGE GOOGLE MAP</button>
                     </form>
@@ -82,14 +82,14 @@ if(!isset($_SESSION['username'])){
                     
 
                     <!-- Change Slider Start -->
-                    <form action="../Controller/updateSliderContoller.php" method="POST">
+                    <form action="../Controller/updateSliderContoller.php" method="POST" enctype="multipart/form-data">
                     <div >
                         
                         <label for="" class="mb-2">Web Sliders</label>
-                        <input type="file" class="form-control" name="sliderOne"><br>
-                        <input type="file" class="form-control" name="sliderTwo"><br>
-                        <input type="file" class="form-control" name="sliderThree"><br>
-                        <input type="file" class="form-control" name="sliderFour">
+                        <input type="file" class="customstyle form-control" name="sliderOne"><br>
+                        <input type="file" class="customstyle form-control" name="sliderTwo"><br>
+                        <input type="file" class="customstyle form-control" name="sliderThree"><br>
+                        <input type="file" class="customstyle form-control" name="sliderFour">
                         <button type="submit" class="custombutton btn btn-sm offset-10 mt-4 fw-bold col-2">ADD SLIDER</button>
                     </div>
                     </form>
@@ -138,7 +138,7 @@ if(!isset($_SESSION['username'])){
                 <div class="custom closemaster mb-4">
                     <!-- Category Table start -->
                     <div class="mt-5 ">
-                        <table class="table table-striped table-sm container">
+                        <table class=" table table-striped table-sm container">
                             <tr class="tb-text">
                                 <th class="col-2">No</th>
                                 <th class="col-6 ">Name</th>

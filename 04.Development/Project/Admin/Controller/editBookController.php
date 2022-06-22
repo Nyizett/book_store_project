@@ -17,7 +17,7 @@ $sql->bindValue(":id", $id);
 $sql->execute();
 
 $result = $sql->fetchAll(PDO::FETCH_ASSOC);
-// echo "<pre>";
+//  echo $file;
 // print_r($result);
 }
 

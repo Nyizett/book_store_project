@@ -4,7 +4,8 @@ session_start();
 
 // Get Data from Add Book From
 if(isset($_POST)){
-    $Guideimg = $_POST['guideImg'];
+    $file = $_FILES['guideImg']['name'];
+    $location = $_FILES['guideImg']['tmp_name'];
     $Guidepargh = $_POST['guideParagraph'];
     $UserName=$_SESSION['username'];
 
@@ -13,6 +14,7 @@ if(isset($_POST)){
     $db =  new DBConnect();
     $dbconnect = $db->connect();
 
+    if (move_uploaded_file($location, "../../Images/" . $file)) {
     $sql = $dbconnect->prepare(
         "INSERT INTO m_guide
         (
@@ -29,10 +31,11 @@ if(isset($_POST)){
         )"
     );
     $sql->bindValue(":gtext", $Guidepargh  );
-    $sql->bindValue(":gimage",  $Guideimg);
+    $sql->bindValue(":gimage",  $file);
     $sql->bindValue(":todayDate", date("d/m/Y"));
     $sql->bindValue(":adminName", $UserName);
 
     $sql->execute();
+    }
     header ("Location: ../View/setting.php");
 }
