@@ -32,7 +32,7 @@ if(!isset($_SESSION['username'])){
             <div class="col-8 offset-3">
                 <p class="h4 mt-5">Order Detail</p>
                 <table class="table table-striped mt-4 col-10">
-                    <tr class="tb-text bg-danger">
+                    <tr class="tb-text text-light bg-danger">
                         <th class="col-1">No</th>
                         <th class="col-2">BookName</th>
                         <th class="col-3">Price</th>
