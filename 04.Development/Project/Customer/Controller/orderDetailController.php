@@ -2,18 +2,30 @@
 
 require_once "../../Admin/Model/DBConnection.php";
     if(isset($_POST['orderdetail'])){
+        
         // $order = json_decode($_POST['order'],true);
         $orderDetail  = json_decode($_POST['orderdetail'],true);
         // print_r(count(($orderDetail)));
         $id = $orderDetail['0']['id'];
         $delivery_fees_id = $orderDetail['0']['delivery_fees_id'];
         $total = $orderDetail['0']['total'];
-        echo $id;
-        echo $delivery_fees_id;
-        echo $total;
+        // echo $id;
+        // echo $delivery_fees_id;
+        // echo $total;
 
         $db =  new DBConnect();
         $dbconnect = $db->connect();
+        
+        $sql = $dbconnect->prepare("
+        SELECT user_valid FROM m_user_list
+        WHERE id=:ban; 
+        ");
+        $sql->bindValue(":ban", $id);
+        $sql->execute();
+        $result = $sql->fetchAll(PDO::FETCH_ASSOC);
+
+        echo json_encode($result);
+
         $sql = $dbconnect->prepare(
             "INSERT INTO m_orders
             (

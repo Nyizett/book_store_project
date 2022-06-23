@@ -7,7 +7,7 @@ $(document).ready(function(){
  
 
     if(localStorage.getItem('user') != null){
-         userinfo = JSON.parse(localStorage.getItem('user'));
+        userinfo = JSON.parse(localStorage.getItem('user'));
     console.log(userinfo);
         $('.name').text(userinfo['user_name']);
         $('.phone').text(userinfo['user_phone']);
@@ -18,13 +18,13 @@ $(document).ready(function(){
 
     $('.order').click(function(){
 
-       
-       
+        // window.location.reload();
+        
         let datadetail = [];
         $('.count').each(function(){
             let qty = $(this).children('.qty').text();
             let price = $(this).children('.price').text().replaceAll(',','').replaceAll('MMK','');
-           
+            
             
             // console.log(total_amount);
             let data2 = {
@@ -36,6 +36,7 @@ $(document).ready(function(){
                 "book_price" : price
             }
             datadetail.push(data2);
+
         })
         
         console.log(datadetail);
@@ -59,16 +60,19 @@ $(document).ready(function(){
             url: "../Controller/orderDetailController.php",
             data: { orderdetail: JSON.stringify(datadetail) },
             success: function (res) {
-                
-              
-    
-              
+                let json = JSON.parse(res);
+                console.log(json[0]["user_valid"]);
+                if(json[0]["user_valid"]==0){
+                    localStorage.removeItem("user");
+                    localStorage.removeItem("cart");
+                    window.location.href = `../../Customer/View/signin.php`;
+                }
             },
             error: function (err) {
-                
             },
-          });
+        });
     })
+    
 });
 
 function numberWithCommas(x) {
