@@ -13,7 +13,7 @@ $sql = $dbconnect->prepare(
 
 $sql->execute();
 
-$result = $sql->fetchAll(PDO::FETCH_ASSOC);
+$favIcon = $sql->fetchAll(PDO::FETCH_ASSOC);
 
 
 

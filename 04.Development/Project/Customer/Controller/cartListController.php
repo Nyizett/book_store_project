@@ -17,7 +17,7 @@ if (isset($_GET['data'])) {
         $sql = $dbconnect->prepare("SELECT id,delivery_fees FROM m_delivery_fees WHERE delivery_city_name LIKE '%$name%' AND del_flg=0 ");
         $sql->execute();
         $result2 = $sql->fetchAll(PDO::FETCH_ASSOC);
-        
+        // print_r ($data);
         if (count($result2) > 0) {
             $delivery = $result2;
             $result = $data;
