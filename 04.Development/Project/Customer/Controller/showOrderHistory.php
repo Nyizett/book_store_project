@@ -2,7 +2,7 @@
 <?php
 
  $id = $_POST['id'];
-require "../../Admin/Model/DBConnection.php";
+ require_once "../../Admin/Model/DBConnection.php";
 $db =  new DBConnect();
 $dbconnect = $db->connect();
 $sql = $dbconnect->prepare("SELECT m_book.book_name,m_book.book_image,m_book.book_price,m_author.author_name,m_order_details.order_d_quantity,m_order_details.total_amount FROM `m_order_details`

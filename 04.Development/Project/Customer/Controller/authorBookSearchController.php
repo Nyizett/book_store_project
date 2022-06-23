@@ -1,7 +1,7 @@
 <?php
 
 echo "<script src='//cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
-require "../../Admin/Model/DBConnection.php";
+require_once "../../Admin/Model/DBConnection.php";
 $db =  new DBConnect();
 $dbconnect = $db->connect();
 $sql = $dbconnect->prepare("SELECT author_name,book_image,book_name,book_price,m_book.id AS Book_Id ,view_count,rating FROM m_book INNER JOIN m_author ON m_book.author_id = m_author.id

@@ -1,5 +1,5 @@
 <?php
-require "../../Admin/Model/DBConnection.php";
+require_once "../../Admin/Model/DBConnection.php";
 $db =  new DBConnect();
 $dbconnect = $db->connect();
 $sql = $dbconnect->prepare("SELECT *  FROM m_site_master WHERE del_flg=0 ");

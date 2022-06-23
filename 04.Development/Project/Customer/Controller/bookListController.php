@@ -1,7 +1,7 @@
 <?php
 
 echo "<script src='//cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
-require "../../Admin/Model/DBConnection.php";
+require_once "../../Admin/Model/DBConnection.php";
 $db =  new DBConnect();
 $dbconnect = $db->connect();
 

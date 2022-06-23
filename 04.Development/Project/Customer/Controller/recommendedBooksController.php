@@ -1,7 +1,7 @@
 <?php
 
 $id = $_POST['id'];
-require "../../Admin/Model/DBConnection.php";
+require_once "../../Admin/Model/DBConnection.php";
 $db =  new DBConnect();
 $dbconnect = $db->connect();
 $sql = $dbconnect->prepare("SELECT m_category.category_name,COUNT( m_order_details.book_id) AS boughtCategoryAmount FROM `m_order_details`

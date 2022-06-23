@@ -10,7 +10,7 @@ if (isset($_POST['send'])) {
     $address = $data['useraddress'];
     $customerinfor = [];
 }
-require "../../Admin/Model/DBConnection.php";
+require_once "../../Admin/Model/DBConnection.php";
 
 
 // $array = [$username,$passowrd,$email,$phone,$address];

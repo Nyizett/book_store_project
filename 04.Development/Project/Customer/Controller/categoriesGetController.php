@@ -1,7 +1,7 @@
 <?php
 
 
-require "../../Admin/Model/DBConnection.php";
+require_once "../../Admin/Model/DBConnection.php";
 $db =  new DBConnect();
 $dbconnect = $db->connect();
 $sql = $dbconnect->prepare("SELECT * FROM m_category WHERE del_flg=0 ");

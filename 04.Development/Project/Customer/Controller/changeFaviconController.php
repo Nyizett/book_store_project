@@ -1,6 +1,6 @@
 <?php
 
-require "../../Admin/Model/DBConnection.php";
+require_once "../../Admin/Model/DBConnection.php";
 
 
 

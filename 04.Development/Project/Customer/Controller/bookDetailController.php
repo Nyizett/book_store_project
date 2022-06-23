@@ -3,7 +3,7 @@
 
 if (isset($_GET['id'])) {
 
-    require "../../Admin/Model/DBConnection.php";
+    require_once "../../Admin/Model/DBConnection.php";
     $db =  new DBConnect();
     $dbconnect = $db->connect();
     $id = $_GET['id'];

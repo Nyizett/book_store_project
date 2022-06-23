@@ -7,7 +7,7 @@
         $comment = $data['comment'];
       
 
-        require "../../Admin/Model/DBConnection.php";
+        require_once "../../Admin/Model/DBConnection.php";
         $db =  new DBConnect();
         $dbconnect = $db->connect();
         $sql = $dbconnect->prepare(

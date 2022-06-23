@@ -11,7 +11,7 @@ if (isset($_GET['data'])) {
     if (isset($_GET['address'])) {
         $address = json_decode($_GET['address'], true);
         $name = $address['address'];
-        require "../../Admin/Model/DBConnection.php";
+        require_once "../../Admin/Model/DBConnection.php";
         $db = new DBConnect();
         $dbconnect = $db->connect();
         $sql = $dbconnect->prepare("SELECT id,delivery_fees FROM m_delivery_fees WHERE delivery_city_name LIKE '%$name%' AND del_flg=0 ");

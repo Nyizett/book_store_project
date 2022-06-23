@@ -1,5 +1,5 @@
 <?php
-require "../../Admin/Model/DBConnection.php";
+require_once "../../Admin/Model/DBConnection.php";
 $db =  new DBConnect();
 $dbconnect = $db->connect();
 $sql = $dbconnect->prepare("SELECT sum(order_d_quantity) AS total_Sold_Book  FROM m_order_details WHERE del_flg=0   ");

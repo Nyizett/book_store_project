@@ -1,7 +1,7 @@
 <?php
 
 $cityName = $_POST['cname'];
-require "../../Admin/Model/DBConnection.php";
+require_once "../../Admin/Model/DBConnection.php";
 $db =  new DBConnect();
 $dbconnect = $db->connect();
 $sql = $dbconnect->prepare("SELECT * FROM `m_shop` 
