@@ -25,8 +25,8 @@ require_once "../../Admin/Model/DBConnection.php";
         $result = $sql->fetchAll(PDO::FETCH_ASSOC);
 
         echo json_encode($result);
-
-        $sql = $dbconnect->prepare(
+        if($result[0]["user_valid"]==1){
+                 $sql = $dbconnect->prepare(
             "INSERT INTO m_orders
             (
                 customer_id,
@@ -84,6 +84,9 @@ require_once "../../Admin/Model/DBConnection.php";
 
             $sql->execute();
         }
+        }
+        
+   
     }
 
 

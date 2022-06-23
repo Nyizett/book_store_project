@@ -61,6 +61,7 @@ $(document).ready(function(){
             data: { orderdetail: JSON.stringify(datadetail) },
             success: function (res) {
                 let json = JSON.parse(res);
+                // console.log(res)
                 console.log(json[0]["user_valid"]);
                 if(json[0]["user_valid"]==0){
                     localStorage.removeItem("user");
