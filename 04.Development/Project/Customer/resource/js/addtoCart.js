@@ -1,6 +1,8 @@
 $(document).ready(function() {
 $('.count').prop('disabled', true);
 let total = [];
+let order = new Array();
+let orders = [];
 let text = ' MMK';
 let vouchers = $('.vouchers').length;
 let p_price;
@@ -121,30 +123,53 @@ $(document).on('click', '.minus', function() {
                }
            });
     }
+   
     totalPrice(total,text);
 });
 
 
-    $('.close').click(function(){
+    $('.close').click(function(e){
+
         total = [];
+          let deleteId = this.id;
         $(this).parent().parent().remove();
         let name = $(this).parent().parent().children().next().find('.name').text();
-
-        $('.bookname').each(function(index){
-            // console.log(  index+ '' +$(this).text());
-       
-               if((name == $(this).text())){
+        let carts  = JSON.parse(localStorage.getItem('cart'));
+        carts.splice(deleteId,1);
+        localStorage.setItem('cart',JSON.stringify(carts));
+        console.log(carts);
     
+        $('.bookname').each(function(index){
+            
+               if((name == $(this).text())){
+
                      $('.cal').each(function(e){
                     
                         if(  name == $(this).prev().text()){
                             $(this).parent().remove();
+                         
                         }
                         
                          
                      })
                }
            });
+           if (localStorage.getItem("user") != null) {
+            let user = JSON.parse(localStorage.getItem("user"));
+            let deliver = {
+              address: user["user_address"],
+            };
+            window.location.href = `../../Customer/Controller/cartListController.php?data=${JSON.stringify(
+              carts
+            )}&address=${JSON.stringify(deliver)}`;
+          } else {
+            let deliver = {
+              address: "Default",
+            };
+            window.location.href = `../../Customer/Controller/cartListController.php?data=${JSON.stringify(
+              carts
+            )}&address=${JSON.stringify(deliver)}`;
+          }
         totalPrice(total,text);
     });
 
@@ -222,4 +247,8 @@ function totalPrice(total,text){
 }
 function numberWithCommas(x) {
     return x.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
+}
+
+function checkName(name){
+
 }

@@ -56,11 +56,11 @@ if (!isset($_SESSION['username'])) {
                         ?>
                     </table>
                 </div>
-                <!-- Customers' View and Rating -->
+                <!-- Customers' Comment-->
                 <div class="row">
                     <p class="h3 mt-4">Customers' Comment </p>
                     <table class="table table-striped mt-3 ms-3">
-                        <tr class="tb-text bg-danger">
+                        <tr class="tb-text bg-danger text-light">
                             <th class="col-1">No</th>
                             <th class="col-1">Name</th>
                             <th class="col-2">Book</th>

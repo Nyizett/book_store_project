@@ -36,7 +36,7 @@ if (!isset($_SESSION['username'])) {
                 <p class="tttt h3 mt-4">Author List</p>
                 <a href="../View/addAuthor.php" class="text-dec  text-dark "><button class=" text-dec btn fw-bold custombutton btn-sm offset-10 col-2 mb-4">ADD AUTHOR</button></a>
                 <table class=" table table-striped table-sm mt-4">
-                    <tr>
+                    <tr class="tb-text">
                         <th>No</th>
                         <th class="col-1">Name</th>
                         <th class="col-1">Image</th>

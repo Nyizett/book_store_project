@@ -53,7 +53,7 @@ $(document).ready(function () {
         success: function (res) {
           console.log(res);
           books.push(JSON.parse(res));
-
+          console.log(books);
           localStorage.setItem("cart", JSON.stringify(books));
           $("#cartCount2").text(
             `${JSON.parse(localStorage.getItem("cart")).length}`

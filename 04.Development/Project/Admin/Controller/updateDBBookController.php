@@ -20,12 +20,15 @@ if(isset($_POST)){
     $file = $_FILES['bookFile']['name'];
     $location = $_FILES['bookFile']['tmp_name'];
     
+<<<<<<< HEAD
 
     // echo $file;
 
     // echo "$bookCategory";
 
     echo "$id";
+=======
+>>>>>>> origin/main
     //Call DB Connection
     $db =  new DBConnect();
     $dbconnect = $db->connect();
