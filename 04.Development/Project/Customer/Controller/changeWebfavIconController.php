@@ -1,5 +1,5 @@
 <?php
-require_once "../Model/DBConnection.php";
+require_once "../../Admin/Model/DBConnection.php";
 {
 //Call DB Connection
 $db =  new DBConnect();
@@ -15,6 +15,6 @@ $sql->execute();
 
 $result = $sql->fetchAll(PDO::FETCH_ASSOC);
 
-// print_r ($result);
+
 
 }
