@@ -88,7 +88,7 @@ if(!isset($_SESSION['username'])){
                         echo "<td >" . $value['user_email'] . "</td>";
                         echo "<td >" . $value['user_phone'] . "</td>";
                         echo "<td >" . $value['user_address'] . "</td>";
-                        echo "<td><a href='../Controller/unBanUserController.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-danger'><ion-icon name='checkmark-circle-outline' class='fs-4'></ion-icon></button></a></td>";
+                        echo "<td><a href='../Controller/unBanUserController.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-success'><ion-icon name='checkmark-circle-outline' class='fs-4'></ion-icon></button></a></td>";
                     }
                     ?>
 

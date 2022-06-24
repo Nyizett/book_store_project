@@ -243,7 +243,7 @@
                </div>
                <div class="col-9 bottomCardText">
                   <p class=" m-0 pt-3 fw-bold fs-4 counter-one" id="totalUserShow"></p>
-                  <p class=" m-0 pb-3">Happy Customers</p>
+                  <p class=" m-0 pb-3">Customers</p>
                </div>
             </div>
          </div>

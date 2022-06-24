@@ -1,7 +1,7 @@
 <?php
 session_start();
-if(!isset($_SESSION['username'])){
-  header("Location: ../View/adminLogin.php");
+if (!isset($_SESSION['username'])) {
+    header("Location: ../View/adminLogin.php");
 }
 // else{
 //     echo $_SESSION['username'];
@@ -15,7 +15,8 @@ if(!isset($_SESSION['username'])){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title class="tit">Dashboard</title>
-    <link rel="shortcut icon" href="../../Images/<?php require_once "../Controller/changeWebfavIconController.php";echo $result[0]['fav_icon']; ?>" type="image/x-icon" width="100vw" />
+    <link rel="shortcut icon" href="../../Images/<?php require_once "../Controller/changeWebfavIconController.php";
+                                                    echo $result[0]['fav_icon']; ?>" type="image/x-icon" width="100vw" />
     <link rel="stylesheet" href="../resource/UI Library/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../resource/css/style.css" />
     <link rel="stylesheet" href="../resource/css/dashboard.css" />
@@ -46,9 +47,62 @@ if(!isset($_SESSION['username'])){
                     <!-- <div class="top">
                         <ion-icon name="person" class="fs-2 text-primary"></ion-icon>
                     </div> -->
-                    <div class="top"><a href="../../Customer/View/homepage.php" class="cusPag me-md-4 text-dec text-dark fw-bold text-nowrap">CustomerPage &#8594;</a></div>
+                    <div class="top mt-4"><a href="../../Customer/View/homepage.php" class="cusPag me-md-4 text-dec text-dark fw-bold text-nowrap fs-4">CustomerPage &#8594;</a></div>
                 </div>
-                <div class="box">
+                <section class=" mt-5 row  d-flex  bottomRow">
+                <div class="col-12 col-lg-4  col-sm-12  bottomInfo ">
+                        <div class="boxBgg container border rounded border-dark bottomMinHeight">
+                            <div class="row align-items-center justify-content-center">
+                                <div class="col-3">
+                                    <button class="btn rounded-circle">
+                                    <ion-icon name="person-circle-outline" class="fs-1"></ion-icon>
+                                    </button>
+                                </div>
+                                <div class="col-9 bottomCardText">
+                                <p class="fs-4 mt-4 ms-4 fw-bold"><?php require "../Controller/dashboardController.php";
+                                                        echo $userQty[0]['userQty']; ?></p>
+                                    <p class="fs-4 ps-4 pt-1">Customers</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4  col-sm-12  bottomInfo ">
+                        <div class="boxBgg  container border rounded border-dark bottomMinHeight">
+                            <div class="row align-items-center justify-content-center">
+                                <div class="col-3">
+                                    <button class="btn rounded-circle">
+                                    <ion-icon name="cart-outline" class="fs-1" ></ion-icon>
+                                    </button>
+                                </div>
+                                <div class="col-9  bottomCardText">
+                                <p class="fs-4 mt-4  fw-bold" ><?php require "../Controller/dashboardController.php";
+                                            echo number_format($totalPrice[0]['totalPrice']) . " MMK"; ?></p>
+                                    <p class="fs-4 pt-1">Sold</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 col-sm-12  bottomInfo">
+                    <div class="boxBgg container border rounded border-dark bottomMinHeight">
+                            <div class="row align-items-center justify-content-center">
+                                <div class="col-3">
+                                    <button class="btn rounded-circle">
+                                    <ion-icon name="document-outline" class="fs-1"></ion-icon>
+                                    </button>
+                                </div>
+                                <div class="col-9  bottomCardText">
+                                <p class="fs-4 mt-4 ms-4 fw-bold" ><?php require "../Controller/dashboardController.php";
+                                            echo number_format($totalOrder[0]['totalOrder']); ?></p>
+                                    <p class="fs-4 ps-4 pt-1">Orders</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <!-- </div> -->
+                </section>
+                <!-- <div class="box">
                     <div class="box1 box2">
                         <span class="removeicon"><ion-icon name="person-circle-outline" class="iconic"></ion-icon></span>
                         <p class="number">User</p>
@@ -67,7 +121,7 @@ if(!isset($_SESSION['username'])){
                         <p class="quantity"><?php require "../Controller/dashboardController.php";
                                             echo number_format($totalOrder[0]['totalOrder']); ?></p>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- Monthly Order Chart -->
                 <div class="chart mt-3">
@@ -99,9 +153,9 @@ if(!isset($_SESSION['username'])){
                             echo "<td>" . $no++ . "</td>";
                             echo "<td >" . $value['user_name'] . "</td>";
                             echo "<td >" . $value['create_date'] . "</td>";
-                            echo "<td >" .number_format( $value['total_amount']-$value['delivery_fees'])." MMK" . "</td>";
+                            echo "<td >" . number_format($value['total_amount'] - $value['delivery_fees']) . " MMK" . "</td>";
                             echo "<td >" . $value['user_address'] . "</td>";
-                            echo "<td >" . number_format( $value['delivery_fees'])." MMK" . "</td>";
+                            echo "<td >" . number_format($value['delivery_fees']) . " MMK" . "</td>";
                         }
                         ?>
 
