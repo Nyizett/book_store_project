@@ -63,18 +63,16 @@
                <h3 class="text-white text-center p-4">Contact us</h3>
                <div class="d-flex justify-content-evenly flex-column p-2">
                   <div class="d-flex justify-content-between pt-4">
-                     <i class="fas fa-map-marker text-white"></i>
-                     <p class="shop-address  ext-white">
+                     <span><i class="fas fa-map-marker text-white"></i></span>
+                     <span><p class="shop-address  text-white">
                         <?php require "../Controller/webAddressController.php";
                         echo $webAddress[0]['web_address']; ?>
-                     </p>
+                     </p></span>
                   </div>
                   <div class="d-flex justify-content-between pt-4">
-                     <i class="fas fa-envelope text-white"></i>
-                     <p class="shop-email text-white ">
-                        <?php require "../Controller/webAddressController.php";
-                        echo $webEmail[0]['web_email']; ?>
-                     </p>
+                     <span><i class="fas fa-envelope text-white"></i></span>
+                     <span class="text-white shop-email"> <?php require "../Controller/webAddressController.php";
+                        echo $webEmail[0]['web_email']; ?></span>
                   </div>
                   <div class="d-flex justify-content-between pt-4">
                      <i class="fas fa-phone text-white"></i>

@@ -47,11 +47,11 @@ if (!isset($_SESSION['username'])) {
                     <!-- <div class="top">
                         <ion-icon name="person" class="fs-2 text-primary"></ion-icon>
                     </div> -->
-                    <div class="top"><a href="../../Customer/View/homepage.php" class="cusPag me-md-4 text-dec text-dark fw-bold text-nowrap">CustomerPage &#8594;</a></div>
+                    <div class="top mt-4"><a href="../../Customer/View/homepage.php" class="cusPag me-md-4 text-dec text-dark fw-bold text-nowrap fs-4">CustomerPage &#8594;</a></div>
                 </div>
                 <section class=" mt-5 row  d-flex  bottomRow">
                 <div class="col-12 col-lg-4  col-sm-12  bottomInfo ">
-                        <div class="container border rounded bg-warning border-dark bottomMinHeight">
+                        <div class="boxBgg container border rounded border-dark bottomMinHeight">
                             <div class="row align-items-center justify-content-center">
                                 <div class="col-3">
                                     <button class="btn rounded-circle">
@@ -59,15 +59,15 @@ if (!isset($_SESSION['username'])) {
                                     </button>
                                 </div>
                                 <div class="col-9 bottomCardText">
-                                <p class="fs-2 mt-4 ms-4"><?php require "../Controller/dashboardController.php";
+                                <p class="fs-4 mt-4 ms-4 fw-bold"><?php require "../Controller/dashboardController.php";
                                                         echo $userQty[0]['userQty']; ?></p>
-                                    <p class="fs-4 ">Customers</p>
+                                    <p class="fs-4 ps-4 pt-1">Customers</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-lg-4  col-sm-12  bottomInfo ">
-                        <div class="container border rounded border-dark bg-warning bottomMinHeight">
+                        <div class="boxBgg  container border rounded border-dark bottomMinHeight">
                             <div class="row align-items-center justify-content-center">
                                 <div class="col-3">
                                     <button class="btn rounded-circle">
@@ -75,7 +75,7 @@ if (!isset($_SESSION['username'])) {
                                     </button>
                                 </div>
                                 <div class="col-9  bottomCardText">
-                                <p class="fs-3 mt-4 ms-4" ><?php require "../Controller/dashboardController.php";
+                                <p class="fs-4 mt-4  fw-bold" ><?php require "../Controller/dashboardController.php";
                                             echo number_format($totalPrice[0]['totalPrice']) . " MMK"; ?></p>
                                     <p class="fs-4 pt-1">Sold</p>
                                 </div>
@@ -83,7 +83,7 @@ if (!isset($_SESSION['username'])) {
                         </div>
                     </div>
                     <div class="col-12 col-lg-4 col-sm-12  bottomInfo">
-                    <div class="container border rounded bg-warning border-dark bottomMinHeight">
+                    <div class="boxBgg container border rounded border-dark bottomMinHeight">
                             <div class="row align-items-center justify-content-center">
                                 <div class="col-3">
                                     <button class="btn rounded-circle">
@@ -91,9 +91,9 @@ if (!isset($_SESSION['username'])) {
                                     </button>
                                 </div>
                                 <div class="col-9  bottomCardText">
-                                <p class="fs-3 mt-4 ms-4" ><?php require "../Controller/dashboardController.php";
+                                <p class="fs-4 mt-4 ms-4 fw-bold" ><?php require "../Controller/dashboardController.php";
                                             echo number_format($totalOrder[0]['totalOrder']); ?></p>
-                                    <p class="fs-4 pt-1">Orders</p>
+                                    <p class="fs-4 ps-4 pt-1">Orders</p>
                                 </div>
                             </div>
                         </div>

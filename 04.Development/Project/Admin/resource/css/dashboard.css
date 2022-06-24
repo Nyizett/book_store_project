@@ -6,7 +6,6 @@
     margin-left: 2em;
     
 }
-
 .my-col{
     padding-top: 2.1em;
     padding-right: 8em;
@@ -15,33 +14,30 @@
     background-color: var(--btn-color);
 }
 .bottomInfo{
-    width: 40% !important;
+    width: 32% !important;
     padding-top: 1em;
     
 }
 .bottomMinHeight {
     min-height: 13vh !important;
-    min-width: 18vw !important;
+    min-width: 16vw !important;
     
 }
-.container{
-    background-color: blanchedalmond;
-}
+
 .rounded-circle {
     width: 3em;
 }
 /* .bottomCardText p {
     font-size: 0.6rem !important;
 } */
+.boxBgg{
+    background-color: var(--dashboard-items-color);
+}
 .bottomCardText {
     padding-left: 10px !important;
 }
 @media screen and (max-width:720px){
 
-    .box1{
-        height: 12vh;
-    }
-    
     .table{
         margin-right: 5%;
     }
@@ -55,12 +51,10 @@
     .chart{
         margin-top: 10%;
     }
-    .box2{
-        margin-left: 10%;
-    }
-   .tb-text{
+    
+    .tb-text{
     font-size: 0.7em;
-   }
+}
 }
 @media screen and (max-width:1080px){
     .removeicon,.quantity{
