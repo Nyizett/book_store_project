@@ -7,7 +7,9 @@ $(document).ready(function () {
         success: function (res) {
             let json = JSON.parse(res);
             current_page=1;
-            let pagrow=parseInt( json.length/10)+1
+            if(json.length%10==0){
+                var pagrow=parseInt( json.length/10)
+            }else{var pagrow=parseInt( json.length/10)+1}
             showPagBtn(pagrow,json,10,current_page)
             ShowItem(json,10,current_page)
         },

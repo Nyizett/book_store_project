@@ -7,7 +7,10 @@ $(document).ready(function () {
         success: function (res) {
             let json = JSON.parse(res);
             current_page=1;
-            let pagrow=parseInt( json.length/10)+1
+            if(json.length%10==0){
+                var pagrow=parseInt( json.length/10)
+            }else{var pagrow=parseInt( json.length/10)+1}
+            
             showPagBtn(pagrow,json,10,current_page)
             ShowItem(json,10,current_page)
             const sliceArray=json.slice(0, 4);
@@ -33,7 +36,7 @@ function ShowItem(data,row,page){
             <td class='tb-img'> <img src="../../Images/${book.book_image}"</td>
             <td >${book.category_name}</td>
             <td>${book.author_name}</td>
-            <td>${book.book_price.toLocaleString('en-US')} MMK</td>
+            <td>${book.book_price} MMK</td>
             <td ><a href='../View/editBook.php?id= ${book.id}'><button type='button' class='smBtnn btn btn-sm btn-outline-primary'><ion-icon name='create-outline'></ion-icon></button></a></td>
             <td ><a href='../Controller/deleteBookController.php?id= ${book.id}'><button type='button' class='smBtnn btn btn-sm btn-outline-danger'><ion-icon name='trash-outline'></ion-icon></button></a></td>
             </tr>`
