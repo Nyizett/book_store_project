@@ -35,7 +35,7 @@
         <th>Items</th>
         <th>Name</th>
         <th>Price</th>
-        <th>Quatity</th>
+        <th>Quantity</th>
         <th>Total</th>
       </tr>
       <tbody id="orderData">

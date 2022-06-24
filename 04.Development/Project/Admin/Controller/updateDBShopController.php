@@ -43,13 +43,8 @@ if (isset($_POST)) {
             $sql->bindValue(":adminName", $UserName);
             $sql->bindValue(":id", $id);
             $sql->execute();
-<<<<<<< HEAD
-        } 
-    }else {
-=======
         }
     } else {
->>>>>>> origin/main
         $sql = $dbconnect->prepare(
             "UPDATE m_shop SET
             shop_city = :city,

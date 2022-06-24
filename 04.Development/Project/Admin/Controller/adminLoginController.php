@@ -39,7 +39,7 @@ if(isset($_POST)){
         //     unset($_SESSION['username']);
         // }
         
-        require "../View/adminLogin.php ";
+        require "../View/adminLogin.php";
         echo '<div class="text-center mt-2 text-danger fs-4">Wrong Username or Password.Login Again!</div>';
 
     }
