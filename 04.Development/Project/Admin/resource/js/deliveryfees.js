@@ -31,7 +31,7 @@ function ShowItem(data,row,page){
             <td>${count++}</td>
             <td>${deleyeryfee.delivery_city_name}</td>
             <td>${deleyeryfee.delivery_fees.toLocaleString('en-US')} MMK</td>
-            <td><a href='../View/editDeliveryFee.php?id= ${deleyeryfee.id}'><button type='button' class='btn btn-outline-primary'><ion-icon name='create-outline'></ion-icon></button></a></td>
+            <td><a href='../View/editDeliveryfee.php?id= ${deleyeryfee.id}'><button type='button' class='btn btn-outline-primary'><ion-icon name='create-outline'></ion-icon></button></a></td>
             <td><a href='../Controller/deleteDeliveryFeeController.php?id= ${deleyeryfee.id}'><button type='button' class='btn btn-outline-danger'><ion-icon name='trash-outline'></ion-icon></button></a></td>
             </tr>`
         )
