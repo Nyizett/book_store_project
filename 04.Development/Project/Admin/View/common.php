@@ -25,7 +25,7 @@
         <a href="authorInfo.php" class="text-dec text-dark"><button type="button" class="navBtnGp1 auinfobtn col-12 btn btn-light overflow-hidden mt-3 text-nowrap text-center">
                 <div class="row justify-content-center">
                     <div class="icons col-1 ">
-                        <ion-icon name="bookmarks-outline"></ion-icon>
+                    <ion-icon name="pencil-outline"></ion-icon>
                     </div>
                     <span class="Dsnon col-5">Author Info</span>
                 </div>
