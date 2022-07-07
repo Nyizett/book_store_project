@@ -75,7 +75,7 @@
 } */
 @media screen and (max-width:720px){
     .navbar {
-        height: 5em;
+        height: 3em;
         
     }
     .container-fluid{
@@ -117,5 +117,13 @@
     .m-icon{
         margin-right: 73%;
     }
-    
+    .rescategory{
+        margin-left: 59%;
+        margin-bottom: 5%;
+    }
+    .responmenu{
+        position: absolute;
+        top: 330%;
+        margin-left: 10%;
+    }
 }
