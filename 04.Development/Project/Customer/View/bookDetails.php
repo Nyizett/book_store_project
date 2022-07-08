@@ -33,11 +33,11 @@
 
    <section class="container-fluid bg-white">
       <div class="row align-items-center justify-content-center min-vh-100">
-         <div class="col-12 col-lg-4 ps-5 ms-3">
+         <div class=" col-12  col-lg-4 ps-5 ms-3">
             <div class="slider slide-bg d-flex">
                <div class="detail mb-5">
                   <?php
-                  echo "<img  id='" . $result[0]['book_image'] . "'class='img-fluid mt-3 bookimage' src='../../Images/" . $result[0]['book_image'] . "' alt=''>"
+                  echo "<img  id='" . $result[0]['book_image'] . "'class='responimagee img-fluid mt-3 bookimage' src='../../Images/" . $result[0]['book_image'] . "' alt=''>"
                   ?>
                </div>
 
@@ -47,7 +47,7 @@
          <div class="col-12 col-lg-2"></div>
 
 
-         <div class="col-12 col-lg-5">
+         <div class="responad col-10 col-lg-5">
             <div class="des-box">
                <div class="card mb-5 mb-lg-0 card-width ">
                   <div class="card-body d-flex flex-column ">
@@ -94,8 +94,8 @@
                   </div>
 
                   <div class="d-flex col-md-12 col-sm-10 detail-box">
-                     <div class="container-fluid col-md-10 col-sm-6 d-flex  mb-3 qty-box">
-                        <div class="d-flex justify-content-center  col-md-5 bg-light  rounded mt-3 qty ">
+                     <div class=" col-md-10 col-sm-6 d-flex  mb-3 qty-box">
+                        <div class="d-flex justify-content-center  col-md-5 bg-light ms-3  rounded mt-3 qty ">
                            <span class="minus">-</span>
                            <input type="number" class="counts" id="qty" name="qty" value="1">
                            <span class="plus">+</span>

@@ -118,6 +118,18 @@ icon {
     font-size: 1.4em;
     margin-bottom: 1em;
   }
-  
-  
+  .responheader{
+    margin-top: 154px;
+  }
+  .responmenu{
+    position: absolute;
+    top: 390% !important;
+    margin-left: 10%;
+}
+}
+@media screen and (max-width: 500px) {
+  .rescategory{
+    margin-left: 50% !important;
+    margin-bottom: 5%;
+}
 }

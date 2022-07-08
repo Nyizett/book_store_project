@@ -30,7 +30,7 @@
       <?php require "./common.php" ?>
    </nav>
    <!-- Header -->
-   <div class="container-fluid bg p-4 ">
+   <div class="responheader bg p-4 ">
       <div class="container d-flex justify-content-between align-items-center cat-header">
          <h3 class="text-primary categoryName"></h3>
          <div class="text-primary">
@@ -63,7 +63,7 @@
                      alt=''/>";
                echo "</div>";
                echo "<div class='my-card-info'>";
-               echo "<h5 class='catTitle'>" . $result[$i]['book_name'] . "</h5>";
+               echo "<h5 class=' catTitle text-break'>" . $result[$i]['book_name'] . "</h5>";
                echo "<div class='mb-2'>";
                echo "<span style='font-size:x-small'>";
                $star = $result[$i]['rating'];
