@@ -1,9 +1,9 @@
 <div class="container-fluid">
-  <button class="navbar-toggler font-color-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="responmenu navbar-toggler font-color-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <ion-icon class="my-fcolor fs-1 font-color-primary" name="menu-outline"></ion-icon>
   </button>
   
-    <img src="" alt="main-logo" id="logo" width="5%" >
+    <img src="" class="responimg" alt="main-logo" id="logo" width="5%" >
   
   <a class="my-title navbar-brand font-color-primary pt-4 " href="#">
     <span class="my-fcolor fw-bolder border-bottom" id="pageName"></span>
@@ -11,7 +11,7 @@
   </a>
 
   <!-- start dropdown -->
-  <div class="dropdown">
+  <div class="rescategory dropdown">
     <a class="categories border-white text-white dropdown-toggle btn commom-bg ms-4" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
       <ion-icon class="pe-2 pt-2" name="apps-outline"></ion-icon>
       <span class="catdrop">Categories </span>
@@ -20,7 +20,7 @@
     </ul>
   </div>
   <!-- end dropdown -->
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <div class=" collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ms-auto me-4 mb-2 mb-lg-0">
       <li class="nav-item me-4">
         <a class="text-white nav-link text-decoration-none fw-bold fs-6 border-white" aria-current="page" href="../View/homepage.php" id="CommonHomePage">Home</a>
