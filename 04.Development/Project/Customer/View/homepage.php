@@ -28,7 +28,7 @@
    <!-- Slider -->
    <section id="welcome-section" class="container ">
       <div class=" row pt-5 ">
-         <div class="slider-div col-12 col-lg-6 mt-5">
+         <div class="slider-div col-12 col-lg-7 mt-5">
             <div class="slider secondary-bg content">
                <div class="ms-4" id="headerSlider1">
                   <!-- <img class="img-slide1" src="../resource/img/main slider_1.png" alt=""> -->
@@ -57,7 +57,7 @@
    </section>
 
    <section id="blueBox" class="container">
-      <div class=" row pt-3 w-100 h-100">
+      <div class=" row pt-5">
          <div class="col-12 col-lg-4 content">
             <div class="web-box1  container commom-bg rounded">
                <div class="row align-items-center justify-content-center  ">
@@ -119,12 +119,12 @@
                </div>
             </div>
          </div> -->
-         <div class="my-5"></div>
+         <div class=""></div>
          <hr class="newhr content">
          <!-- <div class="col-12 "> -->
          <div class="bsb my-5 content">
-            <div class="text-left ms-5 d-flex flex-row ">
-               <h2 class="fw-bold ">
+            <div class="text-left ms-5 d-flex flex-row newB">
+               <h2 class="fw-bold font-color-primary ">
                   New Books
                </h2>
             </div>
@@ -136,7 +136,7 @@
    <!-- Best selling books Start -->
    <section class=" container bg-lightBlue my-5 ">
       <div class="row justify-content-evenly align-items-center   " id="bestSellingBookAppend">
-         <div class="my-5"></div>
+         <div class=""></div>
          <!-- <div class="col-12 "> -->
          <div class="bsb my-5 ">
             <div class="text-left ms-5 d-flex flex-row ">
@@ -162,7 +162,7 @@
    <section class="container my-5 ">
       <div class="row">
          <div class="col-12 ">
-            <h1 class="font-color-primary ms-5 ">Popular Books</h1>
+            <h2 class="font-color-primary ms-5 ">Popular Books</h2>
          </div>
       </div>
       <div class="row justify-content-evenly mt-3" id="popularBookAppend">
@@ -190,10 +190,10 @@
       <!-- <div class="row  d-flex  bottomRow"> -->
       <div class="col-12 col-lg-3  col-sm-12  bottomInfo ">
          <div class="container border rounded border-dark bottomMinHeight">
-            <div class="row align-items-center justify-content-center">
+            <div class="row align-items-center justify-content-cente mt-2">
                <div class="col-3">
                   <button class="btn rounded-circle">
-                     <i class="fas fa-book fs-2  text-danger "></i>
+                     <i class="fas fa-book fs-1 text-danger "></i>
                   </button>
                </div>
                <div class="col-9  bottomCardText">
@@ -205,10 +205,10 @@
       </div>
       <div class="col-12 col-lg-3  col-sm-12   bottomInfo">
          <div class="container border rounded border-dark bottomMinHeight">
-            <div class="row align-items-center justify-content-center">
+            <div class="row align-items-center justify-content-center mt-2">
                <div class="col-3">
                   <button class="btn rounded-circle">
-                     <i class="fas fa-users fs-3 text-success "></i>
+                     <i class="fas fa-users fs-1 text-success "></i>
                   </button>
                </div>
                <div class="col-9  bottomCardText">
@@ -220,25 +220,25 @@
       </div>
       <div class="col-12 col-lg-3  col-sm-12  bottomInfo ">
          <div class="container border rounded border-dark bottomMinHeight">
-            <div class="row align-items-center justify-content-center">
+            <div class="row align-items-center justify-content-center mt-2">
                <div class="col-3">
                   <button class="btn rounded-circle">
-                     <i class="fas fa-shopping-cart fs-2 text-info"></i>
+                     <i class="fas fa-shopping-cart fs-1 text-info"></i>
                   </button>
                </div>
                <div class="col-9  bottomCardText">
                   <p class=" m-0 pt-3 fw-bold fs-4 counter-one" id="totalSoldBooksShow"></p>
-                  <p class=" m-0 ">Sold Books</p>
+                  <p class=" m-0  pb-3">Sold Books</p>
                </div>
             </div>
          </div>
       </div>
       <div class="col-12 col-lg-3  col-sm-12  bottomInfo ">
          <div class="container border rounded border-dark bottomMinHeight">
-            <div class="row align-items-center justify-content-center">
+            <div class="row align-items-center justify-content-center mt-2">
                <div class="col-3">
                   <button class="btn rounded-circle">
-                     <i class="fas fa-smile fs-2 text-primary"></i>
+                     <i class="fas fa-smile fs-1 text-primary"></i>
                   </button>
                </div>
                <div class="col-9 bottomCardText">

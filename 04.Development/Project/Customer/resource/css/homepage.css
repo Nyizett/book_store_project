@@ -3,27 +3,23 @@
   border: 1px solid white;
 }
 .secondary-bg {
-  width: 540px;
+  width:100%;
   height: 300px;
 }
-.shop-now {
-  width: 200px;
-}
+
 .slider {
-  margin-top: 5%;
+  margin-top: 2%;
+  
 }
-/* .{
-  width: 540px;
-  height: 300px;
-} */
+
 .img-slide1 {
-  width: 500px;
-  height: 300px;
+  width: 100%;
+  height: 400px;
 }
 
 .card-width {
   width: 200px;
-}
+  }
 .cardLg {
   width: 300px;
 }
@@ -98,6 +94,10 @@
 .bookCards {
   min-height: 60vh !important;
 }
+
+.bookCards img{
+  margin: 2em;
+}
 .authorCards {
   min-height: 30vh !important;
 }
@@ -110,7 +110,7 @@
   padding-left:15%;
 }
 .bottomMinHeight {
-  min-height: 13vh !important;
+  min-height: 10vh !important;
   min-width: 15vw !important;
 }
 
@@ -119,11 +119,9 @@
 }
 .bottomInfo {
   width: 35% !important;
-  
   padding-top: 1em;
-  
-  
 }
+
 @media screen and (max-width: 720px) {
   .secondary-bg {
     width: 50%;
@@ -153,12 +151,7 @@
     font-size: 0.5em;
     margin-left: 17em;
   }
-  .web-box1,
-  .web-box2,
-  .web-box3 {
-    /* margin-top: 2em; */
-    display: none;
-  }
+  
   .rounded-circle {
     width: 2em;
     height: 2em;
@@ -167,9 +160,9 @@
     font-size: 0.7em;
     padding-bottom: 0.4em;
   }
-  .newhr {
+  /* .newhr {
     display: none;
-  }
+  } */
   .newsBook {
     position: absolute;
     top: 37%;
@@ -194,6 +187,7 @@
   }
   .img-fluid {
     width: 5em;
+    
   }
   .card-body {
     height: 10em;
@@ -230,7 +224,7 @@
   }
   .bottomRow {
     width: 100% !important;
-    margin-left: 10vw !important;
+    /* margin-left: 10vw !important; */
   }
   .bottomCardText p {
     font-size: 0.6rem !important;
@@ -240,18 +234,35 @@
     
   }
   
-  /* .card {
-    min-height: 2vh !important;
-    min-width: 10% !important;
-  } */
 }
 @media screen and (max-width: 500px) {
+  .secondary-bg {
+    width: 55%;
+    height: 20%;
+  }
+  .img-slide1 {
+    width: 13em;
+    height: 8em;
+  }
   .stext {
     position: absolute;
-    left: 35%;
-    bottom: 70%;
-    width: 55%;
+    left: 39%;
+    bottom: 73%;
+    width: 50%;
   }
+  .stext1{
+    font-size: 0.8em;
+  }
+  .stext2{
+    font-size: 1em;
+  }
+  .slider {
+    margin-top: 23%;
+  }
+  .cat{
+    font-size: 0.6em;
+  }
+  
 }
 @media screen and (max-width: 380px) {
   .stext {

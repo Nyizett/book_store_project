@@ -68,3 +68,34 @@
 .authorImage {
   width: 50%;
 }
+@media screen and (max-width: 720px) {
+  .authorsCard {
+    width: 25%;
+    height: fit-content;
+    min-height: 13vh;
+  }
+  .authorInfoButton {
+    width: 45% !important;
+  }
+  .startName{
+    line-height: 3em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .authorsImage .mt-2 {
+    margin-top: 2em;
+  }
+  .autCard .btn{
+    font-size: 0.6em;
+  }
+  .getbtn{
+    padding-left: 0.35em;
+  }
+}
+@media screen and (max-width: 500px) {
+  .authorsCard {
+    width: 32%;
+    
+  }
+}

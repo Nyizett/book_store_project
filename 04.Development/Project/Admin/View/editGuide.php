@@ -44,10 +44,10 @@ if(!isset($_SESSION['username'])){
           </div>
           <div class="mb-3">
             <label for="exampleFormControlTextarea1" class="form-label">Write Guide for Users</label>
-            <textarea class="customstyle form-control" id="exampleFormControlTextarea1" rows="3" name="guideParagraph"><?php echo $result[0]["guide_text"]; ?></textarea>
+            <textarea class="customstyle form-control" id="exampleFormControlTextarea1" rows="3" name="guideParagraph"><?php echo $result[0]['guide_text'];?></textarea>
           </div>
 
-          <button type="submit" class="custombutton btn btn-sm offset-10 mt-3 fw-bold">ADD GUIDE</button>
+          <button type="submit" class="custombutton btn btn-sm offset-10 mt-3 fw-bold">SAVE</button>
 
         </div>
       </form>

@@ -14,7 +14,7 @@ $(document).ready(function () {
             <div class="card card-width mb-lg-0 bookCards" >
               <img src="../../Images/${
                 book.book_image
-              }" class="img-fluid  mx-auto mt-3 " alt="${
+              }" class="img-fluid  mx-auto" alt="${
             book.book_name
           }' Photo" width="60%" />
               <div class="card-body d-flex flex-column justify-content-center align-items-center">
@@ -85,7 +85,7 @@ $(document).ready(function () {
                                       <div class="card mb-5 mb-lg-0 card-width bg-lightBlue border-0  nb-card bookCards" >
                                         <img src="../../Images/${
                                           jsonBook[0].book_image
-                                        }" class="img-fluid mx-auto mt-3" width="60%" alt="${
+                                        }" class="img-fluid mx-auto" width="60%" alt="${
                 jsonBook[0].book_name
               }' Photo" />
                                         <div class="card-body d-flex flex-column justify-content-center align-items-center">
@@ -159,7 +159,7 @@ $(document).ready(function () {
             <div class="card mb-5 mb-lg-0 card-width bg-lightBlue border-1 bookCards" >
                <img src="../../Images/${
                  jsonBook[0].book_image
-               }" class="img-fluid mx-auto mt-3" width="60%" alt="${
+               }" class="img-fluid mx-auto" width="60%" alt="${
               jsonBook[0].book_name
             }' Photo" />
                <div class="card-body d-flex flex-column justify-content-center align-items-center">
