@@ -204,7 +204,16 @@ td{
 .addbtn{
    display: none;
 }
-@media screen and (max-width:720px) {
+@media screen and (max-width:990px){
+.responad{
+   margin-top: 20%;
+}
+.responimagee{
+   margin-left: 60%;
+
+}
+}
+/* @media screen and (max-width:720px) {
    .slide-bg {
       width: 30%;
       position: absolute;
@@ -228,8 +237,6 @@ td{
       
    }
    .cartbtn{
-      /* width: 50%;
-      font-size: 1em; */
       display: none;
    }
    .rounded{
@@ -266,4 +273,4 @@ td{
    
    
    
-}
+} */
