@@ -13,7 +13,12 @@
    height: 350px;
 }
 
-
+.positionreview{
+   margin-top: 13%;
+}
+.descriptionposition{
+   margin-top: 14%;
+}
 .slide-bg {
    width: 500px;
    height: 500px;
@@ -204,10 +209,77 @@ td{
 .addbtn{
    display: none;
 }
-@media screen and (max-width:990px){
-/* .responad{
-   margin-top: -20%;
-} */
+@media screen and (max-width:720px){
+   .responheader{
+      margin-top: 23%;
+   }
+   .responimagee{
+      width: 50%;
+   }
+   .responatcbtn{
+      width: 240%;
+   }
+   .responmpbtn{
+      position: absolute;
+      top: 70%;
+      left: 3%;
+      width: 80%;
+   }
+   .counts{
+      width: 30%;
+   }
+   .responad{
+      height: 60vh;
+      margin-top: 25%;
+   }
+   .respondestext{
+      height: 20vh;
+      overflow:scroll;
+   }
+   .responaddtobtn {
+      padding-left: 20%;
+   }
+   .rescommentbox{
+      width: 100%;
+   }
+   .commentinput{
+      width: 80%;
+      margin: auto;
+   }
+   .QuestionHeader{
+      margin-left: 32%;
+   }
+}
+@media screen and (max-width:415px){
+   .responheader{
+      margin-top: 40%;
+   }
+   .respondestext{
+      font-size: 0.6em;
+   }
+   .responatcbtn{
+      width: 100%;
+   }
+   .responaddtobtn {
+      padding-left: 10%;
+      margin-top: 65%;
+   }
+   .responad{
+      height: 67vh;
+   }
+   .responmpbtn{
+      position: absolute;
+      top: 65%;
+   }
+   .descbox{
+      width: 100%;
+   }
+  .desctable{
+   width: 80%;
+  }
+}
+/* @media screen and (max-width:990px){
+
 .responimagee{
    margin-left: 20%;
    width: 50%;
@@ -243,17 +315,11 @@ td{
    }
    }
    @media screen and (max-width:500px){
-      /* .responad{
-         margin-top: 20%;
-      } */
+
       .responimagee{
          margin-left: 5%;
       
       }
-      /* .rescategory{
-         margin-left: 50% !important;
-         margin-bottom: 5%;
-     } */
       .respondescription{
          margin-top: -193%;
          margin-left: 6%;
@@ -271,7 +337,6 @@ td{
          width: 90%;
       }
       .resreview{
-         /* margin-top:-5% ; */
          margin-left: 5%;
       }
       .commentinput{
@@ -280,7 +345,7 @@ td{
       .sendbutton{
          font-size: 10px;
       }
-      }
+      } */
 /* @media screen and (max-width:720px) {
    .slide-bg {
       width: 30%;

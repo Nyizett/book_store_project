@@ -31,9 +31,9 @@
    </nav>
    <!-- Header -->
 
-   <section class="container-fluid bg-white">
-      <div class="row align-items-center justify-content-center min-vh-100">
-         <div class="responimgg col-5  col-lg-4 ps-5 ms-3">
+   <section class="responheader container-fluid bg-white">
+      <div class="row align-items-center justify-content-center">
+         <div class="responimgg col-5  col-lg-4 ms-3">
             <div class="slider slide-bg d-flex">
                <div class="detail mb-3">
                   <?php
@@ -47,9 +47,9 @@
          <!-- <div class="col-12 col-lg-2"></div> -->
 
 
-         <div class="responad col-5 col-lg-5">
+         <div class=" col-5 col-lg-5">
             <div class="des-box">
-               <div class="card mb-5 mb-lg-0 card-width ">
+               <div class="responad card mb-5 mb-lg-0 card-width ">
                   <div class="card-body d-flex flex-column ">
                      <p class="card-title fw-bold mb-0 font-color-primary"></p>
                      <?php echo " <small  class='card-text d-block mb-2 fs-3 fw-bold booknames'>" . $result[0]['book_name'] . " </small>";
@@ -88,22 +88,22 @@
                         <?php echo " <p class='fw-bold mb-0 font-color-primary bookprices'>" . number_format($result[0]['book_price']) . " MMK</p>"; ?>
                      </div>
 
-                     <div class="details-text  mt-2">
+                     <div class="respondestext details-text  mt-2">
                         <?php echo " <p class='p-3'>" . $result[0]['book_description'] . "</p>" ?>
                      </div>
                   </div>
 
                   <div class="d-flex col-md-12 col-sm-10 detail-box">
                      <div class=" col-md-10 col-sm-6 d-flex  mb-3 qty-box">
-                        <div class="d-flex justify-content-center  col-md-5 bg-light ms-3  rounded mt-3 qty ">
+                        <div class="responmpbtn d-flex justify-content-center col-1  col-md-5 bg-light ms-3  rounded mt-3 qty ">
                            <span class="minus">-</span>
-                           <input type="number" class="counts" id="qty" name="qty" value="1">
-                           <span class="plus">+</span>
+                           <input type="number" class=" counts " id="qty" name="qty" value="1">
+                           <span class="plus ">+</span>
                         </div>
 
-                        <div class="mt-3">
+                        <div class="responaddtobtn mt-3 ">
 
-                           <button class="btn cartbtn"><i class="fas fa-shopping-cart mx-1"></i> Add to Cart</button>
+                           <button class="responatcbtn btn cartbtn"><i class="fas fa-shopping-cart mx-1"></i> Add to Cart</button>
                            <button class="btn addbtn" id="addbtn"><i class="fas fa-shopping-cart mx-1"></i></button>
                         </div>
                      </div>
@@ -121,11 +121,11 @@
 
       <?php echo "<div id='" . $result[0]['category_id'] . "'  class='row mt-5 reviews'>";  ?>
 
-      <div class="respondescription  col-md-4 desc">
+      <div class="descriptionposition col-md-4 desc ">
          <div class="col-md-12">
             <p class="resdestt titles commom-bg">Description</p>
          </div>
-         <div class="col-md-12">
+         <div class=" col-md-12">
             <div class="descbox">
                <div class="desctable ">
                   <table class="table table-bordered m-5">
@@ -147,7 +147,7 @@
          </div>
       </div>
       </div>
-      <div class=" review col-12 col-lg-1"></div>
+      <div class=" review col-12 col-lg-1 "></div>
       <div class="col-12 col-lg-5"></div>
       </div>
    </section>
