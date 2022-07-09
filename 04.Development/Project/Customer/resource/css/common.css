@@ -162,3 +162,9 @@
         margin-left: 3.5%;
     }
 }
+@media screen and (max-width:500px){
+    .rescategory{
+        margin-left: 60% !important;
+        margin-bottom: 5%;
+    }
+}
