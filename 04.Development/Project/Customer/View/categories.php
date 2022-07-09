@@ -56,7 +56,7 @@
                echo "</div>";
             }
             for ($i = 0; $i < count($result); $i++) {
-               echo "<div class='col-lg-3 col-md-6 col-sm-10 text-light  d-flex justify-content-between align-items-center  my-2'>";
+               echo "<div class='catCard col-lg-3 col-md-6 col-sm-10 text-light  d-flex justify-content-between align-items-center  my-2'>";
                echo "<div class='my-card' >";
                echo " <div class='my-card-img'>";
                echo  "<img src='../../Images/" . $result[$i]["book_image"] . "' 
@@ -78,7 +78,7 @@
                echo "  <span style='font-size:x-small'>" . $result[$i]['author_name'] . "</span> ";
                echo "</div>";
                echo " <p class='catPrice' style='font-weight:500 ;'>" . number_format($result[$i]['book_price']) . " MMK</p>";
-               echo " <button class='btn cart card-button px-1 rounded-1 me-1' id='" . $result[$i]['id'] . "' ><i class='fa-solid fa-cart-shopping me-1'></i>add
+               echo " <button class='btn  card-button px-1 rounded-1 me-1' id='" . $result[$i]['id'] . "' ><i class='fa-solid fa-cart-shopping me-1'></i>add
                   to
                   cart</button>";
                echo " <span id='" . $result[$i]['id'] . "' class='btn btn-primary bookdetail card-button view-btn'><i class='fa-solid fa-eye'></i> " . $result[$i]['view_count'] . "</span>";

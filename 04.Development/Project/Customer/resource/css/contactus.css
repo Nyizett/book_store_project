@@ -39,7 +39,9 @@
       margin-top: 11.5em;
       background-color: var(--accent-color);
    }
-   
+   .ctUs-home{
+      margin-left: 3em;
+   }
    .faq-title{
       font-size: 1em;
       margin-left: 1em;
@@ -54,9 +56,9 @@
    .gt-text{
       font-size: 0.8em;
    }
-   /* .web-box{
-      height: 30vh;
-   } */
+   .gt-text{
+      font-size: 0.7em;
+   }
 .msg-box{
    width: 100%;
 }

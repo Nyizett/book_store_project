@@ -30,16 +30,16 @@
       <div class=" row pt-5 ">
          <div class="slider-div col-12 col-lg-7 mt-5">
             <div class="slider secondary-bg content">
-               <div class="ms-4" id="headerSlider1">
+               <div class="" id="headerSlider1">
                   <!-- <img class="img-slide1" src="../resource/img/main slider_1.png" alt=""> -->
                </div>
-               <div class="ms-4" id="headerSlider2">
+               <div class="" id="headerSlider2">
                   <!-- <img class="img-slide2" src="../resource/img/main slider_2.png" alt=""> -->
                </div>
-               <div class="ms-4" id="headerSlider3">
+               <div class="" id="headerSlider3">
                   <!-- <img class="img-slide2" src="../resource/img/main slider_2.png" alt=""> -->
                </div>
-               <div class="ms-4" id="headerSlider4">
+               <div class="" id="headerSlider4">
                   <!-- <img class="img-slide2" src="../resource/img/main slider_2.png" alt=""> -->
                </div>
             </div>
@@ -109,16 +109,8 @@
    </section>
    <!-- NEW BOOK -->
    <section class="bg-light my-5  ">
-      <div class=" row justify-content-evenly align-items-center content" id="newsBookAppend">
-         <!-- <div class="my-5"></div>
-         <hr class="newhr content">
-         <div class="newsBook   content">
-            <div class="my-5">
-               <div class=" ms-5 d-flex flex-row">
-                  <h2 class="nb fw-bold">NEW BOOKS </h2>
-               </div>
-            </div>
-         </div> -->
+      <div class="row justify-content-evenly align-items-center content" id="newsBookAppend">
+         
          <div class=""></div>
          <hr class="newhr content">
          <!-- <div class="col-12 "> -->

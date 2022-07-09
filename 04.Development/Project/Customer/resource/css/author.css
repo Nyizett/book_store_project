@@ -1,5 +1,5 @@
 .authorHeader {
-  height: 23vh;
+  
   width: 100%;
   background-color: rgba(199, 225, 250, 0.452);
 }
@@ -93,8 +93,8 @@
     padding-left: 0.35em;
   }
   .authorHeader{
-    margin-top: 14.5em;
-    height: 20%;
+    margin-top: 13em;
+    
   }
   .authorHeader .author{
     margin-bottom: 2.5em;

@@ -277,11 +277,24 @@
     
   }
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 420px) {
   .stext {
     position: absolute;
     left: 35%;
     bottom: 60%;
     width: 55%;
+    
+    
+  }
+  .img-slide1 {
+    width: 8em;
+    height: 6em;
+    margin-top: 4em;
+  }
+  .stext1{
+    font-size: 0.6em;
+  }
+  .stext2{
+    font-size: 0.8em;
   }
 }

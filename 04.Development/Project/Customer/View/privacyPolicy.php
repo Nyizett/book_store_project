@@ -24,7 +24,7 @@
    </nav>
    <!-- Header -->
    <div class="container-fluid header d-flex justify-content-between align-items-center p-4 box ">
-      <h3 class="prav ms-5 text-break ">Privacy & Policy</h3>
+      <h3 class="prav ms-5">Privacy & Policy</h3>
       <div class="pravHome me-5">
          <b>Home</b> -> Privacy & Policy
       </div>

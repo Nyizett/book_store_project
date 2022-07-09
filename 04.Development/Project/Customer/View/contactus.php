@@ -57,8 +57,8 @@
    </section>
 
    <section class="container mb-5">
-      <div class="row me-4">
-         <div class="col-12 col-lg-4 commom-bg">
+      <div class="row ">
+         <div class="webDiv col-12 col-lg-4 commom-bg">
             <div class="web-box p-1">
                <h3 class="text-white text-center p-4">Contact us</h3>
                <div class="d-flex justify-content-evenly flex-column p-2">

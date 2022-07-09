@@ -6,7 +6,8 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Services</title>
-   <link rel="shortcut icon" href="../../Images/<?php require_once "../Controller/changeWebfavIconController.php";echo $favIcon[0]['fav_icon']; ?>" type="image/x-icon" width="100vw" />
+   <link rel="shortcut icon" href="../../Images/<?php require_once "../Controller/changeWebfavIconController.php";
+                                                echo $favIcon[0]['fav_icon']; ?>" type="image/x-icon" width="100vw" />
    <link rel="stylesheet" href="../resource/UI Library/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
    <link rel="stylesheet" href="../resource/css/style.css" />
    <link rel="stylesheet" href="../resource/css/service.css" />
@@ -18,22 +19,22 @@
 
 <body>
 
-   <div class="container-fluid bg-light">
+   
       <!-- Header -->
-   <nav class="navbar navbar-expand-lg   top-0 w-100 " id="cum_navbar">
-      <?php require "../View/common.php" ?>
-   </nav>
-   <!-- Header -->
-   <div class="header d-flex justify-content-between align-items-center p-4 ">
-      <h3 class="service ms-5">Services</h3>
-      <div class="homeService me-5">
-         <b>Home</b> -> Services
+      <nav class="navbar navbar-expand-lg   top-0 w-100 " id="cum_navbar">
+         <?php require "../View/common.php" ?>
+      </nav>
+      <!-- Header -->
+      <div class="header d-flex justify-content-between align-items-center p-4 ">
+         <h3 class="service ms-5">Services</h3>
+         <div class="homeService me-5">
+            <b>Home</b> -> Services
+         </div>
       </div>
-   </div>
 
 
-   <section class="container ">
-      <!-- <div class="row">
+      <section class="container ">
+         <!-- <div class="row">
          <div class="col-12">
             <h3 class="font-color-primary">Our Services</h3>
             <hr>
@@ -41,26 +42,26 @@
       </div> -->
 
 
-      <div class="row">
-         <div class="col-12">
+         <div class="row">
+            <div class="col-12">
 
-            <?php
-            require "../Controller/showServicesController.php";
-            $no = 1;
+               <?php
+               require "../Controller/showServicesController.php";
+               $no = 1;
 
-            foreach ($result as $key => $value) {
-               echo '<h4 class="font-color-primary mt-4">'. $value['service_tilte'] ."</h4>";
-               echo '<p class="pag mt-1">' . $value['service_paragraph'] . "</p>";
-            }
-            ?>
+               foreach ($result as $key => $value) {
+                  echo '<h4 class="font-color-primary mt-4">' . $value['service_tilte'] . "</h4>";
+                  echo '<p class="pag mt-1">' . $value['service_paragraph'] . "</p>";
+               }
+               ?>
 
-            
+
+            </div>
          </div>
-      </div>
 
 
-   </section>
-   </div>
+      </section>
+   
 
    <footer id="footer" class="container-fluid commom-bg  mt-5">
       <?php require "../View/footerCommon.php" ?>
