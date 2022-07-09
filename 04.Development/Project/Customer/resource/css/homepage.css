@@ -219,12 +219,8 @@
     width: fit-content !important;
     
   }
-  .bottomInfo {
-    width: 30% !important;
-    padding-top: 1em;
-    
-    
-  }
+  
+  
   .bottomRow {
     width: 100% !important;
     /* margin-left: 10vw !important; */
@@ -241,9 +237,7 @@
     padding-left: 1.5em;
     padding-top: 1em;
   }
-  .bottomInfo {
-   width: 30%;
-  }
+  
 }
 @media screen and (max-width: 500px) {
   .secondary-bg {
@@ -273,20 +267,11 @@
   .cat{
     font-size: 0.6em;
   }
-<<<<<<< HEAD
-  .card-width{
-    width: 140px;
-  }
-  
-  .bottomInfo{
-    width: 55%;
-  }
-=======
   .rescategory{
     margin-left: 50% !important;
     margin-bottom: 5%;
-}
->>>>>>> origin/main
+  }
+  
 }
 @media screen and (max-width: 380px) {
   .stext {
