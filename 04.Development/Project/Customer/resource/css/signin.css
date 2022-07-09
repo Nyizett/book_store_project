@@ -32,10 +32,28 @@
    border-left: none;
    background-color: var(--primary-darkblue);
 }
-
+.inner-left{
+   border-radius: 1em 0em 0em 1em;
+}
+.inner-right{
+   border-radius:  0em 1em 1em 0em;
+}
 @media (max-width: 768px) {
+   
    .inner-left,
    .inner-right {
       border: none;
+      width: 80%;
+      margin-left: 10%;
+   }
+   .inner-left{
+      border-radius: 0em 0em 1em 1em;
+   }
+   .inner-right{
+      border-radius: 1em 1em 0em 0em;
+   }
+   .welcome{
+      padding-top: 8%;
+      height: 15vh;
    }
 }

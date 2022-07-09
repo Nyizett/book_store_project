@@ -25,12 +25,12 @@
    </nav>
    <!-- Header -->
 
-   <div class="container-fluid header d-flex justify-content-between align-items-center p-4">
+   <div class="header d-flex justify-content-between align-items-center p-4">
       <h3 class="ctUs ms-5">Contact us</h3>
       <div class="ctUs-home me-5"><b>Home</b> -> Contact us</div>
    </div>
 
-   <section class="container-fluid">
+   <section class="mt-1">
       <div class="row">
          <div class="col-12">
             <img src="../resource/img/Rectangle 1.png" class="img-fluid" alt="" />
@@ -40,9 +40,9 @@
 
    <section class="container" id="menu">
       <div class="row justify-content-center">
-         <div class="my-5"></div>
+         <div class="my-3"></div>
          <div class="col-12">
-            <div class="">
+            <div class="me-4">
                <div class="text-center">
                   <h2 class="gt font-color-primary">GET IN TOUCH</h2>
                   <hr />
@@ -57,7 +57,7 @@
    </section>
 
    <section class="container mb-5">
-      <div class="row">
+      <div class="row me-4">
          <div class="col-12 col-lg-4 commom-bg">
             <div class="web-box p-1">
                <h3 class="text-white text-center p-4">Contact us</h3>
@@ -85,7 +85,7 @@
             </div>
          </div>
          <!-- Contact -->
-         <div class="col-12 col-lg-8">
+         <div class="col-12 col-lg-8 mt-5">
             <div class="container details-text">
                <div class="row justify-content-center align-items-center">
                   <div class="col-12">
@@ -100,7 +100,7 @@
                         <div class="mb-2 pt-1">
                            <input type="email" class="form-control" name="cEmail" placeholder="Email" />
                         </div>
-                        <textarea id="" class="msg-box pt-2" cols="99" rows="8" name="Message" placeholder="Type Your Message"></textarea>
+                        <textarea id="" class="msg-box pt-2" cols="95" rows="8" name="Message" placeholder="Type Your Message"></textarea>
                         <button type="submit" class="send mb-2">Send</button>
                      </form>
                   </div>
@@ -110,7 +110,7 @@
       </div>
    </section>
 
-   <section class="container-fluid">
+   <section class="">
       <div class="row">
 
 

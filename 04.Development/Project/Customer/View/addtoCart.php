@@ -6,7 +6,8 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Cart List</title>
-   <link rel="shortcut icon" href="../../Images/<?php require_once "../Controller/changeWebfavIconController.php";echo $favIcon[0]['fav_icon']; ?>" type="image/x-icon" width="100vw" />
+   <link rel="shortcut icon" href="../../Images/<?php require_once "../Controller/changeWebfavIconController.php";
+                                                echo $favIcon[0]['fav_icon']; ?>" type="image/x-icon" width="100vw" />
    <link rel="stylesheet" href="../resource/UI Library/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
    <link rel="stylesheet" href="../resource/css/style.css" />
 
@@ -23,7 +24,7 @@
       <?php require "../View/common.php" ?>
    </nav>
    <!-- Header -->
-   <div class=" header d-flex justify-content-between align-items-center p-4 ">
+   <div class="cartHeader d-flex justify-content-between align-items-center p-4 ">
       <h3 class="cartList fw-bolder ms-5">Cart List</h3>
       <div class="dbHome me-5">
          <b>Home</b> -> Detail Book -> Book Cart
@@ -45,12 +46,12 @@
             <th scope='col' colspan='2'>Quantity</th>
             <th scope='col'>Total</th>
             <th></th>
-           </tr>
-           </thead>
-           <tbody class='itembody'>";
-           $count = 1;
+            </tr>
+            </thead>
+            <tbody class='itembody'>";
+         $count = 1;
          foreach ($result as $key => $value) {
-            
+
             echo "<tr  id='$count' class='items'>";
             echo " <th scope='row'><img src='../../Images/" . $value['0']['book_image'] . "' alt=''></th>";
             echo "<td><span class='name'>" . $value['0']['book_name'] . "</span></b>";
@@ -74,7 +75,7 @@
                </div></td>";
             echo "<td class='total' colspan='1'>" . number_format($value['0']['book_price']) . " MMK</td>";
             echo "<td >
-                  <ion-icon id=".($count-1)." class='close' name='close-circle-outline'></ion-icon>
+                  <ion-icon id=" . ($count - 1) . " class='close' name='close-circle-outline'></ion-icon>
                   </td>";
             echo "</tr>";
             $count++;
@@ -93,7 +94,7 @@
 
    <div class="tottab header d-flex justify-content-between align-items-center p-4 text-primary ">
       <h3 class="fw-bolder"></h3>
-      <div>
+      <div class="">
          <table class=" table table-borderless text px-4">
             <thead>
                <tr>

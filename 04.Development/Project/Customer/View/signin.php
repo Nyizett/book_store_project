@@ -22,11 +22,11 @@
 
 
    <div class="wrapper">
-      <div class="col-12 col-md-6 mx-auto">
+      <div class="col-12 col-md-6 mx-auto ">
          <div class="row g-0 flex-column-reverse flex-md-row">
             <div class="col-12 col-md-6 inner-left">
                <div class="text-center m-5">
-                  <h3 class="my-class text-primary mb-3">Sign in</h3>
+                  <h3 class="my-class text-primary mb-4">Sign in</h3>
                   <form id="signinForm">
                      <input class="form-control mb-3" type="email" name="email" id="email" placeholder="email">
                      <input class="form-control mb-3" type="password" name="password" id="password" placeholder="password">
@@ -36,7 +36,7 @@
                </div>
             </div>
             <div class="col-12 col-md-6 inner-right">
-               <div class="text-center m-5 h-100">
+               <div class="text-center m-5 welcome">
                   <h2 class="text-white">Welcome To Our Book Store!</h2>
                   <p class="text-light">New Here!</p>
                   <a href="../View/signup.php"> <button class="btn btn-light text-primary">Sign Up</button> </a>

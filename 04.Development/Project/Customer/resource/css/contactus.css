@@ -35,11 +35,11 @@
    background-color: #4d82ed;
 }
 @media screen and (max-width:720px) {
-   
-   .ctUs,.ctUs-home{
-      color: white;
-      
+   .header{
+      margin-top: 11.5em;
+      background-color: var(--accent-color);
    }
+   
    .faq-title{
       font-size: 1em;
       margin-left: 1em;

@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Voucher</title>
-    <link rel="shortcut icon" href="../../Images/<?php require_once "../Controller/changeWebfavIconController.php";echo $favIcon[0]['fav_icon']; ?>" type="image/x-icon" width="100vw" />
+    <link rel="shortcut icon" href="../../Images/<?php require_once "../Controller/changeWebfavIconController.php";
+                                                    echo $favIcon[0]['fav_icon']; ?>" type="image/x-icon" width="100vw" />
     <link rel="stylesheet" href="../resource/UI Library/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../resource/css/style.css" />
     <link rel="stylesheet" href="../resource/css/homepage.css" />
     <link rel="stylesheet" href="../resource/css/voucher.css" />
-    <link rel="stylesheet" href="../resource/css/signup.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
     <link rel="stylesheet" href="../resource/UI Library/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="../resource/css/footer.css">
@@ -28,14 +29,14 @@
         <?php require "../View/common.php" ?>
     </nav>
     <!-- Header -->
-    <div class="container-fluid header">
+    <div class="header">
         <div class="header d-flex justify-content-between align-items-center flex-wrap py-5 ">
             <h3 class="Coheader ms-5">Checkout your order</h3>
             <span class="Cott me-5"><b>Home</b> -> Checkout</span>
         </div>
     </div>
 
-    <div class="container-fluid">
+    <div class="container mt-5">
 
         <div class="row">
             <div class="col-md-6">
@@ -81,12 +82,7 @@
                 </div>
                 <button class="btn btn-primary order" data-bs-toggle="modal" data-bs-target="#modal">Place Order</button>
             </div>
-
         </div>
-
-
-
-
     </div>
     </div>
 
