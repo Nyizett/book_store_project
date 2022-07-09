@@ -35,7 +35,7 @@
                     </div>
                 </div>
                 <!-- Communities Links -->
-                <div class="col col-6 col-lg-3 text-white me-5">
+                <div class="col col-6 col-lg-3 text-white me-5 com">
                     <div class="fservice">
                         <p class="fw-bold">Communities</p>
                         <a href="../View/contactus.php" class="btn-link text-white text-decoration-none">

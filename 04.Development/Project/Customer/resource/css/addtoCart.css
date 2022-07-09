@@ -14,11 +14,6 @@
 .dbHome{
     color: var(--font-color3);
 }
-img{
-    width: 30%;
-    height: 10vh;
-    object-fit: cover;
-}
 
 .underline{
     width: 100%;
@@ -49,8 +44,8 @@ div div h4 div{
     font-size: 10px;
 }
 
-icon{
-    color:b ;
+.itembody img{
+    width: 60%;
 }
 .my-card-info {
     width: 100%;
@@ -63,9 +58,7 @@ icon{
     color: white;
 }
 
-#logo {
-    width: 9em;
-}
+
 
 
 .qty .counts {
@@ -113,7 +106,7 @@ icon{
  }
  .table{
     width: 80%;
-    margin-left: 8%;
+    margin: auto;
  }
  .tottab{
     width: 80%;
@@ -121,25 +114,24 @@ icon{
  }
  @media screen and (max-width: 720px) {
     .cartHeader{
-        margin-top: 8.8em;
+        margin-top:50%;
         background-color: var(--accent-color);
     }
     .cartList{
         padding-top: 1em;
+        font-size: 1.3em;
     }
     .dbHome{
         width: 40%;
         padding-top: 1em;
+        font-size: 0.8em;
     }
     .no-item{
         color: white;
         padding-top: 0.5em;
         
     }
-    img{
-        width: 70%;
-        height: 5vh;
-    }
+    
     .quantity{
         width: 50%;
         
@@ -151,9 +143,9 @@ icon{
         
         margin-right: 0.4rem;
         
-      
+
         }
-     .qty .minus {
+    .qty .minus {
         
         width: 40%;
         height: 1.3em;
@@ -161,6 +153,6 @@ icon{
         
         margin-right: 0.4rem;
         
-      
-     }
+    }
+    
  }

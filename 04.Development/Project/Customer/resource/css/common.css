@@ -25,20 +25,12 @@
 .my-fcolor {
     color: white;
 }
-/* .image-container{
-    width: 2rem;
-} */
-/* .image-container img{
-    width: 10%;
-}
-     */
+   */
 .catdrop{
     font-size: 1.3em;
 }
 
-/* .my-title {
-    padding-left: 9%;
-} */
+
 .b-title {
     font-size: 0.7em;
     color: white;
@@ -78,9 +70,9 @@
         height: 20%;
         
     }
-    .container-fluid{
+    /* .container-fluid{
         background-color: #1f4287;
-    }
+    } */
  }
   /*  .my-title{
         padding-bottom: 25%;
@@ -164,7 +156,7 @@
 }
 @media screen and (max-width:500px){
     .rescategory{
-        margin-left: 60% !important;
+        margin-left: 40% !important;
         margin-bottom: 5%;
     }
 }

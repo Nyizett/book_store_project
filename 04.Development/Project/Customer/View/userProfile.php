@@ -32,7 +32,7 @@
       <div class="row mt-5">
 
          <form id="signUpForm" method="POST">
-            <div class="col-12 col-lg-4 mx-5">
+            <div class="col col-lg-4 mx-5">
 
                <div class="">
                   <label for="exampleInputName" class="form-label font-color-primary fw-bold">NAME</label>
@@ -47,7 +47,7 @@
       <div class="row mt-5">
 
 
-         <div class="col-12 col-lg-4 mx-5">
+         <div class="col col-lg-4 mx-5">
 
             <div class="mb-3">
                <label for="exampleInputPassword1" class="form-label font-color-primary fw-bold">PHONE</label>
@@ -55,18 +55,18 @@
             </div>
 
          </div>
-
-         <div class="row">
-
-            <div class="col-12  mx-5 mb-3 mt-3 ">
-               <label for="exampleFormControlTextarea1" class="form-label font-color-primary fw-bold">ADDRESS</label><br>
-               <textarea class="address" id="addressInput" name="address" cols="95"  rows="3"></textarea>
-            </div>
-
-         </div>
       </div>
       <div class="row">
-         <div class="col-12  mx-5">
+
+         <div class="col mx-5 mb-3 mt-3 ">
+            <label for="exampleFormControlTextarea1" class="form-label font-color-primary fw-bold">ADDRESS</label><br>
+            <textarea class="address" id="addressInput" name="address" cols="95" rows="3"></textarea>
+         </div>
+
+      </div>
+      
+      <div class="row">
+         <div class="col mx-5">
             <button type="submit" class="btn btn-primary me-5 commom-bg">SAVE</button>
          </div>
       </div>

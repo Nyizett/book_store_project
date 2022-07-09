@@ -18,7 +18,7 @@
 
 <body>
    <!-- Header -->
-   <nav class="navbar navbar-expand-lg top-0 " id="cum_navbar">
+   <nav class="navbar navbar-expand-lg top-0 w-100 " id="cum_navbar">
       <?php require "../View/common.php" ?>
    </nav>
    <!-- Header -->
@@ -38,7 +38,7 @@
             global $no;
             echo '<div class="guideDiv col-4  mt-4">';
             echo "<img class=img-thumbnail src='../../Images/" . $value['guide_image']. "'>";
-            echo '<p class=" fw-bold mt-2 text-break mx-5 ">' . $value['guide_text'].' ->';
+            echo '<p class=" fw-bold mt-2 ">' . $value['guide_text'].' ';
             echo "</p>";
             echo "</div>";
          }

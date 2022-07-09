@@ -18,19 +18,16 @@
   height: 55vh;
 }
 
-.card-width {
+/* .card-width {
   width: 200px;
-  }
+  } */
 .cardLg {
   width: 300px;
 }
 .cs-width {
   width: 200px;
 }
-.hello {
-  width: 700px;
-  height: 180px;
-}
+
 .stext {
   margin-top: 15vh;
   margin-left: 2em;
@@ -271,7 +268,14 @@
     margin-left: 50% !important;
     margin-bottom: 5%;
   }
-  
+  .bottomInfo{
+    width: 60% !important;
+    margin-left: 2em;
+  }
+  .bottomCardText .pb-3{
+    padding-left: 1.2em;
+    
+  }
 }
 @media screen and (max-width: 380px) {
   .stext {
