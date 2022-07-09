@@ -108,8 +108,8 @@
       </div>
    </section>
    <!-- NEW BOOK -->
-   <section class="container-fluid bg-light my-5  ">
-      <div class=" row justify-content-evenly align-items-center content ms-4" id="newsBookAppend">
+   <section class="bg-light my-5  ">
+      <div class=" row justify-content-evenly align-items-center content" id="newsBookAppend">
          <!-- <div class="my-5"></div>
          <hr class="newhr content">
          <div class="newsBook   content">
@@ -123,8 +123,8 @@
          <hr class="newhr content">
          <!-- <div class="col-12 "> -->
          <div class="bsb my-5 content">
-            <div class="text-left ms-5 d-flex flex-row newB">
-               <h2 class="fw-bold font-color-primary ">
+            <div class="text-left d-flex flex-row newB">
+               <h2 class="fw-bold font-color-primary ms-5">
                   New Books
                </h2>
             </div>
@@ -134,13 +134,13 @@
       </div>
    </section>
    <!-- Best selling books Start -->
-   <section class="bgBSB container-fluid my-5 ">
-      <div class="row justify-content-evenly align-items-center ms-4  " id="bestSellingBookAppend">
-         <div class=""></div>
+   <section class="bgBSB my-5">
+      <div class="row bgBSB justify-content-evenly align-items-center" id="bestSellingBookAppend">
+         
          <!-- <div class="col-12 "> -->
-         <div class="bsb my-5 ">
-            <div class="text-left ms-5 d-flex flex-row ">
-               <h2 class="fw-bold font-color-primary">
+         <div class="bsb my-5">
+            <div class="text-left d-flex flex-row ">
+               <h2 class="fw-bold font-color-primary ms-5">
                   Best Selling Books
                </h2>
             </div>
@@ -159,13 +159,13 @@
    </section>
    <!-- Best selling books end -->
    <!-- Popular Books start -->
-   <section class="container-fluid bg-light my-5 ">
-      <div class="row ms-4">
+   <section class="bg-light my-5 ">
+      <div class="text-left d-flex flex-row ">
          <div class="col-12 ">
-            <h2 class="font-color-primary ms-5 ">Popular Books</h2>
+            <h2 class="fw-bold font-color-primary ms-5">Popular Books</h2>
          </div>
       </div>
-      <div class="row justify-content-evenly mt-3 ms-4" id="popularBookAppend">
+      <div class="row justify-content-evenly mt-3 ms-1 " id="popularBookAppend">
 
 
       </div>

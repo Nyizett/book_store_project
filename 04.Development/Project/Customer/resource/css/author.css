@@ -105,6 +105,9 @@
 }
 @media screen and (max-width: 500px) {
   .authorsCard {
-    width: 32%;
+    width: 37%;
+  }
+  .autCard .btn{
+    font-size: 0.5em;
   }
 }

@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Author's Book</title>
-    <link rel="shortcut icon" href="../../Images/<?php require_once "../Controller/changeWebfavIconController.php";echo $favIcon[0]['fav_icon']; ?>" type="image/x-icon" width="100vw" />
+    <link rel="shortcut icon" href="../../Images/<?php require_once "../Controller/changeWebfavIconController.php";
+                                                    echo $favIcon[0]['fav_icon']; ?>" type="image/x-icon" width="100vw" />
     <link rel="stylesheet" href="../resource/UI Library/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../resource/css/style.css" />
     <link rel="stylesheet" href="../resource/css/homepage.css" />
@@ -36,7 +37,7 @@
         </div>
     </div>
     </div>
-    <div class="container-fluid d-flex justify-content-between align-items-center my-4 w-100">
+    <div class="d-flex justify-content-between align-items-center my-4 w-100">
         <div class="container w-100">
             <div class="d-flex flex-row flex-wrap w-100">
 
@@ -91,8 +92,9 @@
     </div>
 
     <footer id="footer" class="container-fluid commom-bg  mt-5">
-
+        <?php require "../View/footerCommon.php" ?>
     </footer>
+
 
 
 

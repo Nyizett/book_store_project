@@ -99,8 +99,7 @@ icon {
     background-color: white;
   }
   .my-card {
-    margin-left: 15em;
-    width: 40%;
+    margin-top: 15%;
   }
   
   .my-card-img img {
@@ -108,12 +107,7 @@ icon {
     height: 20vh;
     object-fit: cover;
   }
-  .catTitle{
-    font-size: 2.8em;
-  }
-  .catPrice{
-    font-size: 2em;
-  }
+  
   .card-button{
     font-size: 1.4em;
     margin-bottom: 1em;

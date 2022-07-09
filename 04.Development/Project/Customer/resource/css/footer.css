@@ -1,7 +1,4 @@
-.hello {
-   width: 700px;
-   height: 180px;
-}
+
 .my-footer{
    margin-top: 34%;
 }
@@ -12,11 +9,7 @@
    .ftitle{
       font-size: 1.5em;
    }
-   .hello{
-      display: flex;
-      flex-direction: column;
-      padding-right: 50%;
-   }
+   
    .cs-width{
       margin-left: 1.2em;
    }
@@ -28,15 +21,17 @@
    .ftitle{
       font-size: 1.5em;
    }
-   .hello{
-      display: flex;
-      flex-direction: column;
-      padding-right: 50%;
-   }
+   
    .cs-width{
       margin-left: 1.2em;
    }
    .fdiv{
+      display: none;
+   }
+   
+}
+@media screen and (max-width:500px){
+   .fservice{
       display: none;
    }
 

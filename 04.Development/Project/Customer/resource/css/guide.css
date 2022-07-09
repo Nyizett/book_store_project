@@ -7,9 +7,7 @@
 .customgimage{
     width: 50vh;
 }
-body{
-    width: 213vh;
-}
+
 .head{
     background-color: var(--accent-color);
 }
@@ -34,5 +32,8 @@ body{
 @media screen and (max-width:720px) {
     .guideDiv img{
         width: 30%;
+    }
+    .head{
+        margin-top: 11em;
     }
 }

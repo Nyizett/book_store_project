@@ -18,7 +18,8 @@
 
 <body>
 
-   <!-- Header -->
+   <div class="container-fluid bg-light">
+      <!-- Header -->
    <nav class="navbar navbar-expand-lg   top-0 w-100 " id="cum_navbar">
       <?php require "../View/common.php" ?>
    </nav>
@@ -59,6 +60,7 @@
 
 
    </section>
+   </div>
 
    <footer id="footer" class="container-fluid commom-bg  mt-5">
       <?php require "../View/footerCommon.php" ?>

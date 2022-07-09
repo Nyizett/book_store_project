@@ -20,7 +20,7 @@
 
 <body>
    <!-- Header -->
-   <nav class="navbar navbar-expand-lg   top-0 w-100 " id="cum_navbar">
+   <nav class="navbar navbar-expand-lg position-fixed top-0 w-100 header" id="cum_navbar">
       <?php require "../View/common.php" ?>
    </nav>
    <!-- Header -->
