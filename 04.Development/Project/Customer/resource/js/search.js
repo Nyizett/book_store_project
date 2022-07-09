@@ -40,9 +40,9 @@ $(document).ready(function () {
             $("#Bookbox").append(
               `<div class="Bookitems col-12 col-lg-2 col-xl-2 mx-4">
                                 <div class="card-search card mt-5 card-width" style="min-height:70vh">
-                                   <img src="../../Images/${book.book_image}" class="img-fluid w-75 mx-auto mt-3" alt="" />
-                                   <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                                      <p class="card-title fw-bold mb-0 font-color-primary">
+                                   <img src="../../Images/${book.book_image}" class="responbookimg img-fluid w-75 mx-auto mt-3" alt="" />
+                                   <div class="responitembox card-body  d-flex flex-column ">
+                                      <p class="card-title fw-bold mb-0  font-color-primary">
                                         ${book.book_name}
                                       </p>
                                       <small>

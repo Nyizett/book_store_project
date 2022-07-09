@@ -36,6 +36,12 @@
 /* .footer-class{
   margin-top: 30%;
 } */
+@media screen and (max-width:990px){
+  .responitembox{
+    align-items: center;
+    justify-content: center;
+  }
+}
 @media screen and (max-width: 720px) {
   .searchbox {
     width: 50%;
@@ -50,4 +56,19 @@
     width: 11em;
     padding-top: 5em;
   }
+  .responsearchbox{
+    margin-top: 28%;
+  }
+  .ressearchbox{
+    margin-left: -100%;
+  }
+}
+@media screen and (max-width:500px){
+  .rescategory{
+    margin-left: 50% !important;
+    margin-bottom: 5%;
+}
+.responsearchbox{
+  margin-top: 38%;
+}
 }
