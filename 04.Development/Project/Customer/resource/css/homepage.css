@@ -273,20 +273,10 @@
   .cat{
     font-size: 0.6em;
   }
-<<<<<<< HEAD
-  .card-width{
-    width: 140px;
-  }
-  
-  .bottomInfo{
-    width: 55%;
-  }
-=======
-  .rescategory{
+  /* .rescategory{
     margin-left: 50% !important;
     margin-bottom: 5%;
-}
->>>>>>> origin/main
+} */
 }
 @media screen and (max-width: 380px) {
   .stext {

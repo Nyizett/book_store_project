@@ -205,11 +205,12 @@ td{
    display: none;
 }
 @media screen and (max-width:990px){
-.responad{
-   margin-top: 20%;
-}
+/* .responad{
+   margin-top: -20%;
+} */
 .responimagee{
-   margin-left: 60%;
+   margin-left: 20%;
+   width: 50%;
 
 }
 .respondescription{
@@ -249,10 +250,10 @@ td{
          margin-left: 5%;
       
       }
-      .rescategory{
+      /* .rescategory{
          margin-left: 50% !important;
          margin-bottom: 5%;
-     }
+     } */
       .respondescription{
          margin-top: -193%;
          margin-left: 6%;
