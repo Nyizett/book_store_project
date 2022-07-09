@@ -19,20 +19,20 @@ $(document).ready(function () {
     userinfo = JSON.parse(localStorage.getItem("user"));
     console.log(userinfo);
     $(".reviews").prepend(`
-        <div class="resreview col-md-7 ">
+        <div class="positionreview col-md-7 ">
 
         <div class="respontitt col-md-12 ">
           <p class="titles review-box commom-bg">Review</p>
         </div>
         <div class="col-md-12">
-          <div class="commentbox">
+          <div class="rescommentbox commentbox ">
               <div class="commentboxheader">
                 <p class="QuestionHeader">Review About This Product</p>
               </div>
               <div class="commentbody">
 
               </div>
-              <div class="commentinput mt-4">
+              <div class=" commentinput mt-4">
 
                 <input type="text" class="inputtextbox" id="inputtextbox" placeholder="Please Type here..." />
                 <button class="sendbutton">

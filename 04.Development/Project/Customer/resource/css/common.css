@@ -103,6 +103,7 @@
     }
     .container-fluid{
         background-color: #1f4287;
+        z-index:3;
     }
     
     .image-container img{
@@ -149,6 +150,7 @@
         position: absolute;
         top: 490%;
         margin-left: 10%;
+        
     }
     .responimg{
         margin-left: 3.5%;
