@@ -1,0 +1,32 @@
+:root {
+    --primary-color: #1f4287;
+    --accent-color: #ebf1fd;
+    --navbar-color: #fff;
+    --body-color: white;
+}
+.header{
+    background-color: var(--accent-color);
+}
+.userForm{
+    border: 1px solid gray;
+    width: 60%;
+    height: 60vh;
+    margin-left: 20%;
+}
+@media screen and (max-width:720px) {
+    .header{
+        margin-top: 12em;
+        
+    }
+    .form-control{
+        width: 80%;
+    }
+    .address{
+        width: 85%;
+    }
+    .userForm{
+        
+        height: 40vh;
+        
+    }
+}

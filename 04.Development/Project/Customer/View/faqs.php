@@ -24,7 +24,7 @@
       <?php require "../View/common.php" ?>
    </nav>
    <!-- Header -->
-   <div class="container-fluid header d-flex justify-content-between align-items-center p-4 box ">
+   <div class="header d-flex justify-content-between align-items-center p-4 box ">
       <h3 class="faq ms-5">FAQs</h3>
       <div class="faqHome me-5">
          <b>Home</b> -> FAQs

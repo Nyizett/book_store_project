@@ -18,7 +18,8 @@
 }
 @media screen and (max-width:720px) {
     .header{
-        margin-top: 1em;
+        margin-top: 11.6em;
+        background-color: var(--accent-color);
     }
     .prav{
         width: 20%;

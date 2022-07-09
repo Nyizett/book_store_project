@@ -17,11 +17,11 @@
 
 <body>
 
-   <div class="wrapper ">
+   <div class="wrapper">
       <div class="col-12 col-md-6 mx-auto ">
          <div class="row g-0 flex-column-reverse flex-md-row ">
             <div class="col-12 col-md-6  commom-bg">
-               <div class="text-center mt-5 h-100 ">
+               <div class="text-center mt-5 welcome">
                   <h3 class="text-white ">Welcome Back!</h3>
                   <p class="text-light mt-5 mx-1">To Keep Connected With Us Please Login</p>
                   <p class="text-light ">With Your Personal Infomation</p>
@@ -29,11 +29,11 @@
                </div>
             </div>
             <div class="col-12 col-md-6 inner-left">
-               <div class="text-center m-3">
+               <div class="text-center m-3 create">
                   <h3 class="fw-bolder">Create Account</h3>
                   <p>use your email for registration</p>
                   <form id="signUpForm" method="POST">
-                     <div class="form-control ">
+                     <div class="form-control">
                         <input class="mt-3 mb-3 px-3" type="text" name="name" id="name" placeholder="Name">
                         <input class="mb-3 px-3" type="password" name="password" id="password" placeholder="password">
                         <input class="mb-3 px-3" type="email" name="email" id="email" placeholder="Email">

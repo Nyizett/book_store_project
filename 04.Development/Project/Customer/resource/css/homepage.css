@@ -3,8 +3,9 @@
   border: 1px solid white;
 }
 .secondary-bg {
-  width:100%;
-  height: 300px;
+  width:85%;
+  height: 10%;
+  margin-left: 10%;
 }
 
 .slider {
@@ -14,7 +15,7 @@
 
 .img-slide1 {
   width: 100%;
-  height: 400px;
+  height: 55vh;
 }
 
 .card-width {
@@ -117,39 +118,44 @@
 .bottomCardText {
   padding-left: 30px !important;
 }
+.bottomCardText .pt-3{
+  font-size: 1.5em;
+}
 .bottomInfo {
   width: 35% !important;
   padding-top: 1em;
 }
+.bgBSB {
+  background-color: var(--accent-color);
+}
 
 @media screen and (max-width: 720px) {
   .secondary-bg {
-    width: 50%;
-    height: 20%;
+    margin-top: 25%;
+    
   }
   .img-slide1 {
-    width: 11em;
-    height: 7em;
+    width: 13em;
+    height: 8em;
   }
   .stext1 {
-    font-size: 0.9em;
+    font-size: 0.7em;
   }
   .stext2,
   .cat {
-    font-size: 1.1em;
+    font-size: 1em;
   }
   .stext {
     position: absolute;
-    left: 35%;
-    bottom: 59%;
+    left: 37%;
+    bottom: 68%;
     width: 55%;
   }
   #blueBox {
-    margin-top: 5em;
     width: 50%;
     display: block;
     font-size: 0.5em;
-    margin-left: 17em;
+    margin-left: 25%;
   }
   
   .rounded-circle {
@@ -157,7 +163,7 @@
     height: 2em;
   }
   .icon {
-    font-size: 0.7em;
+    font-size: 0.5em;
     padding-bottom: 0.4em;
   }
   /* .newhr {
@@ -226,14 +232,21 @@
     width: 100% !important;
     /* margin-left: 10vw !important; */
   }
-  .bottomCardText p {
-    font-size: 0.6rem !important;
-  }
-  .bottomCardText {
-    padding-left: 10px !important;
+  
+  
+  .bottomCardText .pt-3{
+    font-size: 1em;
+    padding-left: 1.5em;
+    padding-top: 1em;
     
   }
-  
+  .bottomCardText .pb-3{
+    padding-left: 1.5em;
+    padding-top: 1em;
+  }
+  .bottomInfo {
+   width: 30%;
+  }
 }
 @media screen and (max-width: 500px) {
   .secondary-bg {

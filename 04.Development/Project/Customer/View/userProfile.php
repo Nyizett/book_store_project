@@ -6,10 +6,11 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>User Profile</title>
-   <link rel="shortcut icon" href="../../Images/<?php require_once "../Controller/changeWebfavIconController.php";echo $favIcon[0]['fav_icon']; ?>" type="image/x-icon" width="100vw" />
+   <link rel="shortcut icon" href="../../Images/<?php require_once "../Controller/changeWebfavIconController.php";
+                                                echo $favIcon[0]['fav_icon']; ?>" type="image/x-icon" width="100vw" />
    <link rel="stylesheet" href="../resource/UI Library/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
    <link rel="stylesheet" href="../resource/css/style.css" />
-   <link rel="stylesheet" href="../resource/css/user_profile.css" />
+   <link rel="stylesheet" href="../resource/css/userProfile.css" />
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
    <link rel="stylesheet" href="../resource/UI Library/fontawesome-free/css/all.min.css">
    <link rel="stylesheet" href="../resource/css/common.css">
@@ -23,17 +24,17 @@
       <?php require "../View/common.php" ?>
    </nav>
    <!-- Header -->
-   <div class="container-fluid header d-flex justify-content-between align-items-center p-4 bg-light">
+   <div class="header d-flex justify-content-between align-items-center p-4">
       <h3 class="ms-5 font-color-primary">View Profile</h3>
       <div class="me-5 font-color-primary"><b>Home</b> -> Profile</div>
    </div>
-   <section class="container-fluid mt-5">
-      <div class="row">
+   <section class="mt-5 userForm">
+      <div class="row mt-5">
 
          <form id="signUpForm" method="POST">
             <div class="col-12 col-lg-4 mx-5">
 
-               <div class="mb-3">
+               <div class="">
                   <label for="exampleInputName" class="form-label font-color-primary fw-bold">NAME</label>
                   <input type="text" class="form-control" name="name" id="usernameInput" />
                </div>
@@ -55,11 +56,11 @@
 
          </div>
 
-         <div class="col-12 col-lg-4 mx-5">
+         <div class="row">
 
-            <div class="mb-3">
-               <label for="exampleFormControlTextarea1" class="form-label font-color-primary fw-bold">ADDRESS</label>
-               <textarea class="form-control" id="addressInput" name="address" rows="3"></textarea>
+            <div class="col-12  mx-5 mb-3 mt-3 ">
+               <label for="exampleFormControlTextarea1" class="form-label font-color-primary fw-bold">ADDRESS</label><br>
+               <textarea class="address" id="addressInput" name="address" cols="95"  rows="3"></textarea>
             </div>
 
          </div>

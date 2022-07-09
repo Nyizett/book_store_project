@@ -18,7 +18,7 @@
 
 <body>
    <!-- Header -->
-   <nav class="navbar navbar-expand-lg   top-0 w-100 " id="cum_navbar">
+   <nav class="navbar navbar-expand-lg top-0 " id="cum_navbar">
       <?php require "../View/common.php" ?>
    </nav>
    <!-- Header -->
@@ -30,9 +30,8 @@
    </div>
 
    <section class="container-fluid mt-3 ms-2 bg-white">
-      <div class="row">
-
-         <?php
+      <div class="row guide">
+      <?php
          require "../Controller/showGuideController.php";
 
          foreach ($result as $key => $value) {

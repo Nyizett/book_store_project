@@ -26,7 +26,7 @@
       <?php require "../View/common.php" ?>
    </nav>
    <!-- Slider -->
-   <section id="welcome-section" class="container ">
+   <section id="welcome-section" class="container-fluid bg-light ">
       <div class=" row pt-5 ">
          <div class="slider-div col-12 col-lg-7 mt-5">
             <div class="slider secondary-bg content">
@@ -108,8 +108,8 @@
       </div>
    </section>
    <!-- NEW BOOK -->
-   <section class="container my-5  ">
-      <div class=" row justify-content-evenly align-items-center content" id="newsBookAppend">
+   <section class="container-fluid bg-light my-5  ">
+      <div class=" row justify-content-evenly align-items-center content ms-4" id="newsBookAppend">
          <!-- <div class="my-5"></div>
          <hr class="newhr content">
          <div class="newsBook   content">
@@ -134,8 +134,8 @@
       </div>
    </section>
    <!-- Best selling books Start -->
-   <section class=" container bg-lightBlue my-5 ">
-      <div class="row justify-content-evenly align-items-center   " id="bestSellingBookAppend">
+   <section class="bgBSB container-fluid my-5 ">
+      <div class="row justify-content-evenly align-items-center ms-4  " id="bestSellingBookAppend">
          <div class=""></div>
          <!-- <div class="col-12 "> -->
          <div class="bsb my-5 ">
@@ -159,13 +159,13 @@
    </section>
    <!-- Best selling books end -->
    <!-- Popular Books start -->
-   <section class="container my-5 ">
-      <div class="row">
+   <section class="container-fluid bg-light my-5 ">
+      <div class="row ms-4">
          <div class="col-12 ">
             <h2 class="font-color-primary ms-5 ">Popular Books</h2>
          </div>
       </div>
-      <div class="row justify-content-evenly mt-3" id="popularBookAppend">
+      <div class="row justify-content-evenly mt-3 ms-4" id="popularBookAppend">
 
 
       </div>
@@ -173,7 +173,7 @@
    <!-- Popular Books End -->
    <!-- Favourite Author Start -->
    <section class="container py-5">
-      <div class="row">
+      <div class="row ms-4">
          <div class="col-12 col-lg-6">
             <h3 class="font-color-primary fw-bold">Favorite Authors</h3>
          </div>
@@ -186,7 +186,7 @@
       </div>
    </section>
    <!-- Favourite Author End -->
-   <section class=" mt-5 row  d-flex  bottomRow">
+   <section class=" mt-5 row  d-flex  bottomRow ">
       <!-- <div class="row  d-flex  bottomRow"> -->
       <div class="col-12 col-lg-3  col-sm-12  bottomInfo ">
          <div class="container border rounded border-dark bottomMinHeight">
@@ -197,7 +197,7 @@
                   </button>
                </div>
                <div class="col-9  bottomCardText">
-                  <p class=" m-0 pt-3 fw-bold fs-4 counter-one" id="totalBookShow"></p>
+                  <p class=" m-0 pt-3 fw-bold counter-one" id="totalBookShow"></p>
                   <p class=" m-0 pb-3">Total Books</p>
                </div>
             </div>
@@ -212,7 +212,7 @@
                   </button>
                </div>
                <div class="col-9  bottomCardText">
-                  <p class=" m-0 pt-3 fw-bold fs-4 counter-one" id="totalAuthorShow"></p>
+                  <p class=" m-0 pt-3 fw-bold counter-one" id="totalAuthorShow"></p>
                   <p class=" m-0 pb-3">Authors</p>
                </div>
             </div>
@@ -227,7 +227,7 @@
                   </button>
                </div>
                <div class="col-9  bottomCardText">
-                  <p class=" m-0 pt-3 fw-bold fs-4 counter-one" id="totalSoldBooksShow"></p>
+                  <p class=" m-0 pt-3 fw-bold counter-one" id="totalSoldBooksShow"></p>
                   <p class=" m-0  pb-3">Sold Books</p>
                </div>
             </div>
@@ -242,7 +242,7 @@
                   </button>
                </div>
                <div class="col-9 bottomCardText">
-                  <p class=" m-0 pt-3 fw-bold fs-4 counter-one" id="totalUserShow"></p>
+                  <p class=" m-0 pt-3 fw-bold counter-one" id="totalUserShow"></p>
                   <p class=" m-0 pb-3">Customers</p>
                </div>
             </div>
@@ -250,7 +250,7 @@
       </div>
       <!-- </div> -->
    </section>
-   <footer id="footer" class="container-fluid commom-bg  mt-5   ">
+   <footer id="footer" class="container-fluid commom-bg mt-5 ">
       <?php require "../View/footerCommon.php" ?>
    </footer>
 

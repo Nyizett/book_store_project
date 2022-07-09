@@ -26,6 +26,11 @@ body{
 .guideDiv img{
     width: 80%;
 }
+.guide{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
 @media screen and (max-width:720px) {
     .guideDiv img{
         width: 30%;

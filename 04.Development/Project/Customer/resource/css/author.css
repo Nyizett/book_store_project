@@ -92,10 +92,19 @@
   .getbtn{
     padding-left: 0.35em;
   }
+  .authorHeader{
+    margin-top: 14.5em;
+    height: 20%;
+  }
+  .authorHeader .author{
+    margin-bottom: 2.5em;
+  }
+  .authorHeader .mt-5{
+    margin-bottom: 2.5em;
+  }
 }
 @media screen and (max-width: 500px) {
   .authorsCard {
     width: 32%;
-    
   }
 }

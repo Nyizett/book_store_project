@@ -23,7 +23,7 @@
       <?php require "../View/common.php" ?>
    </nav>
    <!-- Header -->
-   <div class="header container-fluid header d-flex justify-content-between align-items-center p-4 ">
+   <div class="header d-flex justify-content-between align-items-center p-4 ">
       <h3 class="service ms-5">Services</h3>
       <div class="homeService me-5">
          <b>Home</b> -> Services
@@ -53,33 +53,7 @@
             }
             ?>
 
-            <!-- <h5 class="font-color-primary">Store pickup & Delivery</h5>
-            <br>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam incidunt expedita quidem consectetur? Fuga natus voluptatum, laudantium quibusdam placeat est, odio velit rem necessitatibus assumenda nemo tenetur saepe blanditiis ex.
-               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam incidunt expedita quidem consectetur? Fuga natus voluptatum, laudantium quibusdam placeat est, odio velit rem necessitatibus assumenda nemo tenetur saepe blanditiis ex.
-               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam incidunt expedita quidem consectetur? Fuga natus
             
-
-
-
-            <h5 class="font-color-primary">Bookstore Policies </h5>
-            <br>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam incidunt expedita quidem consectetur? Fuga natus voluptatum, laudantium quibusdam placeat est, odio velit rem necessitatibus assumenda nemo tenetur saepe blanditiis ex.
-               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam incidunt expedita quidem consectetur? Fuga natus voluptatum, laudantium quibusdam placeat est, odio velit rem necessitatibus assumenda nemo tenetur saepe blanditiis ex.
-               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam incidunt expedita quidem consectetur? Fuga natus
-            </p>
-            <h5 class="font-color-primary">Delivery</h5>
-            <br>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam incidunt expedita quidem consectetur? Fuga natus voluptatum, laudantium quibusdam placeat est, odio velit rem necessitatibus assumenda nemo tenetur saepe blanditiis ex.
-               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam incidunt expedita quidem consectetur? Fuga natus voluptatum, laudantium quibusdam placeat est, odio velit rem necessitatibus assumenda nemo tenetur saepe blanditiis ex.
-               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam incidunt expedita quidem consectetur? Fuga natus
-            </p>
-            <h5 class="font-color-primary">Delivery Time</h5>
-            <br>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam incidunt expedita quidem consectetur? Fuga natus voluptatum, laudantium quibusdam placeat est, odio velit rem necessitatibus assumenda nemo tenetur saepe blanditiis ex.
-               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam incidunt expedita quidem consectetur? Fuga natus voluptatum, laudantium quibusdam placeat est, odio velit rem necessitatibus assumenda nemo tenetur saepe blanditiis ex.
-               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam incidunt expedita quidem consectetur? Fuga natus
-            </p> -->
          </div>
       </div>
 
