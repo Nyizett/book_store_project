@@ -27,7 +27,7 @@
    </nav>
    <!-- Header -->
 
-   <div class="resp header container-fluid d-flex justify-content-between align-items-center p-4">
+   <div class="responsearchbox resp header  d-flex justify-content-between align-items-center p-4">
       <h3 class="search ms-5 ">Search</h3>
       <div class="hometextColor me-5 ">
          <b>Home</b> -> Search
@@ -37,7 +37,7 @@
 
    <section class="searchbox container">
       <br />
-      <div class="row justify-content-center">
+      <div class="ressearchbox row justify-content-center">
          <div class="col-12 col-md-10 col-lg-8">
             <form class="card card-sm">
                <div class="card-body row no-gutters align-items-center">

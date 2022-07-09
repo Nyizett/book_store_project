@@ -262,7 +262,10 @@
   .cat{
     font-size: 0.6em;
   }
-  
+  .rescategory{
+    margin-left: 50% !important;
+    margin-bottom: 5%;
+}
 }
 @media screen and (max-width: 380px) {
   .stext {

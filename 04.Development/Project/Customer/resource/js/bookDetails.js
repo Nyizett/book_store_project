@@ -19,9 +19,9 @@ $(document).ready(function () {
     userinfo = JSON.parse(localStorage.getItem("user"));
     console.log(userinfo);
     $(".reviews").prepend(`
-        <div class="col-md-7 ">
+        <div class="resreview col-md-7 ">
 
-        <div class="col-md-12 ">
+        <div class="respontitt col-md-12 ">
           <p class="titles review-box commom-bg">Review</p>
         </div>
         <div class="col-md-12">

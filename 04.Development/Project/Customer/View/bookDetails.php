@@ -33,7 +33,7 @@
 
    <section class="container-fluid bg-white">
       <div class="row align-items-center justify-content-center min-vh-100">
-         <div class=" col-12  col-lg-4 ps-5 ms-3">
+         <div class="responimgg col-12  col-lg-4 ps-5 ms-3">
             <div class="slider slide-bg d-flex">
                <div class="detail mb-5">
                   <?php
@@ -121,9 +121,9 @@
 
       <?php echo "<div id='" . $result[0]['category_id'] . "'  class='row mt-5 reviews'>";  ?>
 
-      <div class="col-md-4 desc">
+      <div class="respondescription  col-md-4 desc">
          <div class="col-md-12">
-            <p class="titles commom-bg">Description</p>
+            <p class="resdestt titles commom-bg">Description</p>
          </div>
          <div class="col-md-12">
             <div class="descbox">
@@ -147,7 +147,7 @@
          </div>
       </div>
       </div>
-      <div class="review col-12 col-lg-1"></div>
+      <div class=" review col-12 col-lg-1"></div>
       <div class="col-12 col-lg-5"></div>
       </div>
    </section>

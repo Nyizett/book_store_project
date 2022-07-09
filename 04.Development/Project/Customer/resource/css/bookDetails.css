@@ -212,7 +212,74 @@ td{
    margin-left: 60%;
 
 }
+.respondescription{
+   margin-left: -58%;
 }
+.resreview{
+   margin-top:50% ;
+}
+}
+
+@media screen and (max-width:720px){
+   .responad{
+      margin-top: 20%;
+   }
+   .responimagee{
+      margin-left: 30%;
+   }
+   .responimgg{
+      margin-top: 30%;
+   }
+   .respondescription{
+      margin-top:-175% ;
+      margin-left: 2%;
+   }
+   .respontitt{
+      margin-top: 15%;
+   }
+   .resreview{
+      margin-left: -5%;
+   }
+   }
+   @media screen and (max-width:500px){
+      /* .responad{
+         margin-top: 20%;
+      } */
+      .responimagee{
+         margin-left: 5%;
+      
+      }
+      .rescategory{
+         margin-left: 50% !important;
+         margin-bottom: 5%;
+     }
+      .respondescription{
+         margin-top: -193%;
+         margin-left: 6%;
+      }
+      .resdestt,.titles{
+         width: 25%;
+      }
+      .descbox{
+         width: 90%;
+      }
+      .desctable{
+         width: 80%;
+      }
+      .commentbox{
+         width: 90%;
+      }
+      .resreview{
+         /* margin-top:-5% ; */
+         margin-left: 5%;
+      }
+      .commentinput{
+         width: 80%;
+      }
+      .sendbutton{
+         font-size: 10px;
+      }
+      }
 /* @media screen and (max-width:720px) {
    .slide-bg {
       width: 30%;
