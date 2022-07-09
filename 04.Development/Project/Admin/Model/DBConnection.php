@@ -4,7 +4,7 @@ class DBConnect
 {
     private $hostname = "localhost";
     private $port = 3306;
-    private $dbname = "paradise_db";
+    private $dbname = "bookstore_db";
     private $username = "root";
     private $password = "";
 
