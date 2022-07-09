@@ -182,10 +182,7 @@
   #newsBookAppend {
     width: fit-content !important;
   }
-  /* .card-width{
-    width: 11em;
-    height: 6em;
-  } */
+  
   .resp {
     width: 100px;
     height: 50px;
@@ -254,13 +251,14 @@
     height: 20%;
   }
   .img-slide1 {
-    width: 13em;
-    height: 8em;
+    width: 11em;
+    
+    margin-top: 2em;
   }
   .stext {
     position: absolute;
-    left: 39%;
-    bottom: 73%;
+    left: 40%;
+    bottom: 70%;
     width: 50%;
   }
   .stext1{
@@ -275,10 +273,20 @@
   .cat{
     font-size: 0.6em;
   }
+<<<<<<< HEAD
+  .card-width{
+    width: 140px;
+  }
+  
+  .bottomInfo{
+    width: 55%;
+  }
+=======
   .rescategory{
     margin-left: 50% !important;
     margin-bottom: 5%;
 }
+>>>>>>> origin/main
 }
 @media screen and (max-width: 380px) {
   .stext {
