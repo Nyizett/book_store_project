@@ -64,10 +64,10 @@
   }
 }
 @media screen and (max-width:500px){
-  .rescategory{
+  /* .rescategory{
     margin-left: 50% !important;
     margin-bottom: 5%;
-}
+} */
 .responsearchbox{
   margin-top: 45%;
 }

@@ -33,9 +33,9 @@
 
    <section class="container-fluid bg-white">
       <div class="row align-items-center justify-content-center min-vh-100">
-         <div class="responimgg col-12  col-lg-4 ps-5 ms-3">
+         <div class="responimgg col-5  col-lg-4 ps-5 ms-3">
             <div class="slider slide-bg d-flex">
-               <div class="detail mb-5">
+               <div class="detail mb-3">
                   <?php
                   echo "<img  id='" . $result[0]['book_image'] . "'class='responimagee img-fluid mt-3 bookimage' src='../../Images/" . $result[0]['book_image'] . "' alt=''>"
                   ?>
@@ -44,10 +44,10 @@
             </div>
          </div>
 
-         <div class="col-12 col-lg-2"></div>
+         <!-- <div class="col-12 col-lg-2"></div> -->
 
 
-         <div class="responad col-10 col-lg-5">
+         <div class="responad col-5 col-lg-5">
             <div class="des-box">
                <div class="card mb-5 mb-lg-0 card-width ">
                   <div class="card-body d-flex flex-column ">

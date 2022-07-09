@@ -264,6 +264,12 @@
   .cat{
     font-size: 0.6em;
   }
+<<<<<<< HEAD
+  /* .rescategory{
+    margin-left: 50% !important;
+    margin-bottom: 5%;
+} */
+=======
   .rescategory{
     margin-left: 50% !important;
     margin-bottom: 5%;
@@ -276,6 +282,7 @@
     padding-left: 1.2em;
     
   }
+>>>>>>> origin/main
 }
 @media screen and (max-width: 420px) {
   .stext {
