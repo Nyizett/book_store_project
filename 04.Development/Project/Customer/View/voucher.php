@@ -31,8 +31,8 @@
     <!-- Header -->
     <div class="header">
         <div class="header d-flex justify-content-between align-items-center flex-wrap py-5 ">
-            <h3 class="Coheader ms-5">Checkout your order</h3>
-            <span class="Cott me-5"><b>Home</b> -> Checkout</span>
+            <h3 class="coheader ms-5">Checkout your order</h3>
+            <span class="cott me-5"><b>Home</b> -> Checkout</span>
         </div>
     </div>
 

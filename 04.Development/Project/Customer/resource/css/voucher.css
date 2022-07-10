@@ -26,15 +26,24 @@ textarea {
 .header{
     background-color: var(--accent-color);
 }
-.Coheader{
+.coheader{
     color: var(--primary-darkblue);
 }
-.Cott{
+.cott{
     color: var(--font-color3);
 }
 @media screen and (max-width:720px) {
     .header{
         margin-top: 11.6em;
         background-color: var(--accent-color);
+    }
+}
+@media screen and (max-width:500px) {
+    .coheader{
+        padding-left: 10%;
+    }
+    .cott{
+        margin-top: 0.5em;
+        margin-left: 30%;
     }
 }
