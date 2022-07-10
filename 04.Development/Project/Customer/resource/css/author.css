@@ -78,7 +78,6 @@
     width: 45% !important;
   }
   .startName{
-    line-height: 3em;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -110,4 +109,5 @@
   .autCard .btn{
     font-size: 0.5em;
   }
+  
 }

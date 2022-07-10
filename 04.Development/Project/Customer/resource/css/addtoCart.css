@@ -132,9 +132,11 @@ div div h4 div{
         
     }
     .itembody img{
-        width: 100%;
+        width: 60%;
     }
-    
+    .qty{
+        width: 70%;
+    }
     
     .qty .plus {
         width: 40%;
@@ -155,4 +157,16 @@ div div h4 div{
         
     }
     
+ }
+ @media screen and (max-width: 500px) {
+    .qty{
+        width: 120%;
+        border: none;
+    }
+    .qty .plus {
+        width: 150%;
+    }
+    .qty .minus {
+        width: 150%;
+    }
  }

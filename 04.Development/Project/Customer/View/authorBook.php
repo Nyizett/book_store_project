@@ -38,7 +38,7 @@
     </div>
     </div>
     <div class="d-flex justify-content-between align-items-center my-4 w-100">
-        <div class="container w-100">
+        <div class=" container mt-5 mx-5">
             <div class="d-flex flex-row flex-wrap w-100">
 
                 <?php

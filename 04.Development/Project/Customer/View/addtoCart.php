@@ -62,7 +62,7 @@
             }
             echo "<td class='b_price'>" . number_format($value['0']['book_price']) . " MMK</td>";
             echo "<td  colspan='2' class='quantity'>
-                  <div class='d-flex justify-content-start rounded qty '>
+                  <div class='qty d-flex justify-content-start rounded '>
                   <span class='minus'>-</span>";
             if (isset($value['0']['qty'])) {
                echo  " <input type='number' class='counts' id='qty' name='qty' value='" . $value['0']['qty'] . "'>";
