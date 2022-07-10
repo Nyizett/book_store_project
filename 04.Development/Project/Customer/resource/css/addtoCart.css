@@ -45,7 +45,7 @@ div div h4 div{
 }
 
 .itembody img{
-    width: 60%;
+    width: 10%;
 }
 .my-card-info {
     width: 100%;
@@ -131,11 +131,11 @@ div div h4 div{
         padding-top: 0.5em;
         
     }
-    
-    .quantity{
-        width: 50%;
-        
+    .itembody img{
+        width: 100%;
     }
+    
+    
     .qty .plus {
         width: 40%;
         height: 1.3em;
