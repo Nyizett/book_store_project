@@ -257,6 +257,9 @@ td{
    .respondestext{
       font-size: 0.6em;
    }
+   .responimagee{
+      width: 30%;
+   }
    .responatcbtn{
       width: 100%;
    }
